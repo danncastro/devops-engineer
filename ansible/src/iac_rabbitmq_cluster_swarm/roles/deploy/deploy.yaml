@@ -1,8 +1,0 @@
----
-- name: 'Adicionando configurações de clusterização Produção'
-  copy: src=roles/docker/files/cluster-rabbitmq/{{ item }} dest=/$USER/rabbitmq mode=+x
-  with_items:
-    - clustering.sh
-
-- name: 'Clusterizando o rabbitmq'
-  shell: sh /$USER/rabbitmq/clustering.sh
