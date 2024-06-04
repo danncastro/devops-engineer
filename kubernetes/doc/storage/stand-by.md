@@ -2,66 +2,6 @@
 
 ***
 
-## <mark style="color:red;">PersistentVolume (PV)</mark>&#x20;
-
-PVs são plugins de `volume`, porém, com um ciclo de vida independente de qualquer pod que utilize um PV.&#x20;
-
-### <mark style="color:red;">PersistentVolumeClaim (PVC)</mark>&#x20;
-
-PVC é uma requisição para armazenamento por um usuário.  Claims podem solicitar ao PV tamanho e modos de acesso específicos.  Uma reivindicação de volume persistente (PVC) é a solicitação de armazenamento, que é atendida vinculando a PVC a um volume persistente (PV). Exemplo:
-
-***
-
-### StorageClasses(SC)&#x20;
-
-Fornecem dinamismo para criação de `PersistentVolume` conforme demanda. Também são capazes de criar discos de armazenamento
-
-***
-
-## <mark style="color:red;">Persistent Storage</mark>
-
-Quando falamos de armazenamento persistente em Kubernetes, precisamos entender dois recursos, o `PersistentVolumes` ou `PV` e o `PersistentVolumeClaim` ou `PVC`
-
-* <mark style="color:yellow;">Persistent Volume ou PV</mark> - `PVs` é um recurso de armazenamento virtual disponível no cluster, que aponta para um armazenamento físico na infraestrutura.
-
-***
-
-* <mark style="color:yellow;">Persistent Volume Claim ou PVC</mark> - `PVCs` são solicitações de volume feitas pelo kubernetes que será atrelado a um APP.
-
-{% hint style="info" %}
-Podemos resumir como `PV` sendo a unidade lógica atribuída a uma unidade de armazenamento físico que será disponibilizado para o kubernetes, e o `PVC` como a solicitação do kubernetes para que um volume com especificação `x` seja utilizado.
-{% endhint %}
-
-{% hint style="warning" %}
-Um ponto importante a se notar é que o `PVC` sempre irá buscar o menor armazenamento possível que entregue todos os recursos que forem solicitados.
-{% endhint %}
-
-Caso um `PVC` solicite 500Mb e o menor volume com todas as características requisitadas tenha 1Gb, o `PVC` irá adquirir o `PV` de 1Gb e o utilizará para a aplicação.
-
-***
-
-#### <mark style="color:yellow;">Modos de Acesso</mark>
-
-Os volumes no kubernetes podem ter diversos modos de acesso:
-
-* `ReadWriteOnce` ou `RWO` - O volume pode ser montado como leitura e escrita por apenas um único nó
-
-***
-
-* `ReadOnlyMany` ou `ROX` - O volume pode ser montado como apenas leitura por diversos nós
-
-***
-
-* `ReadWriteMany` ou `RWX` - O volume pode ser montado como leitura e escrita por diversos nós
-
-***
-
-* `ReadWriteOncePod` ou `RWOP` - O volume pode ser montado como leitura e escrita por apenas um pod. (Apenas no Kubernetes 1.22+)
-
-Precisamos descrever o modo de acesso quando criamos nossos volumes.
-
-***
-
 ### <mark style="color:red;">Criando PVs</mark>
 
 Como todo recurso no kubernetes, criamos `PVs` através de arquivos yaml. Porém precisaremos criar os volumes antes de criar os `PVs`, vamos conectar em nosso minikube e criar os volumes

@@ -37,7 +37,7 @@ O Kubernetes trabalha com Volumes Ephemerals e Volumes Persistentes, no caso dos
 
 Suporta montar sistemas de arquivos do tipo **tmpfs** - Temporary File System, que é um sistema de arquivos com suporte de RAM, armazenado na memória, que simula um disco, a vantagem de utilização do tmpfs, é  que se ganha uma grande velocidade, mas em contra partida é que tem um grande consumo de memória do container.
 
-* Suporte a protocolos do tipo NFS & iSCSI
+* Suporte a protocolos do tipo NFS e iSCSI&#x20;
 * Suporta armazenamentos em nuvem, como Elastic Block Store(Amazon), Files and Disk Storage(Azure) e Persistent Disk(Google).
 
 ***
@@ -213,7 +213,7 @@ pod "volume-ephemeral-pod" deleted
 {% tabs %}
 {% tab title="Create" %}
 ```bash
-kubectl apply -f nki-kubernetes-projects/k8s-cka-exemples/pods/pods_volumes_hostpath.yml
+kubectl apply -f k8s-hands-on-testing/k8s-cka-exemples/pods/pods_volumes_hostpath.yml
 ```
 
 pod/volume-hostpath-pod created
@@ -236,7 +236,7 @@ watch kubectl get po -owide
 kubectl exec -it volume-hostpath-pod bash
 ```
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -348,5 +348,84 @@ No resources found in default namespace.
 ***
 {% endtab %}
 {% endtabs %}
+
+***
+
+## <mark style="color:red;">Persistent Storage</mark>
+
+Quando falamos de armazenamento persistente em Kubernetes, precisamos entender dois recursos, o `PersistentVolumes` ou `PV` e o `PersistentVolumeClaim` ou `PVC`
+
+#### <mark style="color:blue;">Persistent Volume ou PV</mark>
+
+&#x20;`PVs` é um recurso de armazenamento virtual disponível no cluster, que aponta para um armazenamento físico na infraestrutura.
+
+#### <mark style="color:blue;">Persistent Volume Claim ou PVC</mark>&#x20;
+
+`PVCs` são solicitações de volume feitas pelo kubernetes que será atrelado a um APP.
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+Podemos resumir como `PV` sendo a unidade lógica atribuída a uma unidade de armazenamento físico que será disponibilizado para o kubernetes, e o `PVC` como a solicitação do kubernetes para que um volume com especificação `x` seja utilizado.
+{% endhint %}
+
+{% hint style="warning" %}
+Um ponto importante a se notar é que o `PVC` sempre irá buscar o menor armazenamento possível que entregue todos os recursos que forem solicitados.
+{% endhint %}
+
+Caso um `PVC` solicite 500Mb e o menor volume com todas as características requisitadas tenha 1Gb, o `PVC` irá adquirir o `PV` de 1Gb e o utilizará para a aplicação.
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+#### <mark style="color:blue;">Modos de Acesso</mark>
+
+Os volumes no kubernetes podem ter diversos modos de acesso:
+
+* `ReadWriteOnce` ou `RWO` - O volume pode ser montado como leitura e escrita por apenas um único nó
+
+***
+
+* `ReadOnlyMany` ou `ROX` - O volume pode ser montado como apenas leitura por diversos nós
+
+***
+
+* `ReadWriteMany` ou `RWX` - O volume pode ser montado como leitura e escrita por diversos nós
+
+***
+
+* `ReadWriteOncePod` ou `RWOP` - O volume pode ser montado como leitura e escrita por apenas um pod. (Apenas no Kubernetes 1.22+)
+
+***
+
+## <mark style="color:red;">PersistentVolume (PV)</mark>&#x20;
+
+Este é o recurso Kubernetes que representa um volume de armazenamento. Ele existe independentemente de qualquer Pod e tem seu ciclo de vida próprio. O PV é provisionado por um administrador do cluster.
+
+> _PVs são plugins de `volume`, porém, com um ciclo de vida independente de qualquer pod que utilize um PV. Essa API tem por objetivo mostrar detalhes da implementação do armazenamento, seja ele NFS, iSCSI ou armazenamento específico de um provedor de Cloud Pública._
+
+***
+
+### <mark style="color:red;">Criando PVs</mark>
+
+```bash
+```
+
+***
+
+## <mark style="color:red;">PersistentVolumeClaim (PVC)</mark>&#x20;
+
+Um PVC é uma solicitação de armazenamento por um usuário ou Pod. Ele é usado para solicitar um volume de armazenamento específico. O PVC especifica os requisitos, como tamanho e modo de acesso. Quando um PVC é criado, o Kubernetes procura um PV adequado que atenda aos requisitos definidos.
+
+> _Uma reivindicação de volume persistente (PVC) é a solicitação de armazenamento, que é atendida vinculando a PVC a um volume persistente (PV)_
+
+Claims podem solicitar ao PV tamanho e modos de acesso específicos. &#x20;
+
+***
+
+## <mark style="color:red;">StorageClasses(SC)</mark>&#x20;
+
+Uma Classe de Armazenamento define as propriedades do volume de armazenamento, como tipo de provisionamento, localização, desempenho, etc. As Classes de Armazenamento são usadas pelos PVCs para solicitar volumes de armazenamento com base em suas necessidades.
+
+> _Fornecem dinamismo para criação de `PersistentVolume` conforme demanda. Também são capazes de criar discos de armazenamento_
 
 ***
