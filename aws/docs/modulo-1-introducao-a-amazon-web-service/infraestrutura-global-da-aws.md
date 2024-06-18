@@ -12,13 +12,13 @@ Na AWS, essa infraestrutura física constitui a base global da AWS, organizada e
 
 ## <mark style="color:red;">**Regiões**</mark>
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 A AWS hospeda seus datacenters em diversas regiões geográficas ao redor do mundo. Cada região recebe o nome do local onde está situada, como por exemplo, Região do Norte da Virgínia nos Estados Unidos e Região do Oregon, também nos Estados Unidos. A AWS possui regiões em várias partes do mundo, incluindo Ásia-Pacífico, Canadá, Europa, Oriente Médio e América do Sul, e está em constante expansão para melhor atender às necessidades de seus clientes.
 
 Cada região da AWS está associada a um nome geográfico e a um código de região.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Aqui estão exemplos de códigos de região:
 
@@ -57,7 +57,7 @@ Para empresas corporativas, é comum haver regulamentações que exigem que os d
 
 ## <mark style="color:red;">Zonas de disponibilidade</mark>
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 Dentro de cada Região da AWS, existem clusters de Zonas de Disponibilidade (AZs). Cada AZ é composta por um ou mais datacenters equipados com redundância de energia, rede e conectividade. Esses datacenters são situados em locais discretos e não divulgados, mas são interligados por links de alta velocidade e baixa latência, garantindo alta disponibilidade e confiabilidade dos serviços hospedados.
 
@@ -85,7 +85,7 @@ Quando não for possível usar serviços gerenciados com escopo de região, é e
 
 Essa abordagem distribuída em várias AZs não apenas reduz o impacto de possíveis falhas locais, mas também melhora a resiliência global da sua infraestrutura na nuvem, assegurando que sua aplicação permaneça disponível para seus usuários mesmo diante de eventos inesperados.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
