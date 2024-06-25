@@ -60,7 +60,7 @@ O Amazon ECS e o Amazon EKS permitem que você execute seus contêineres nos doi
 * Amazon EC2
 * AWS Fargate
 
-<figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
 O AWS Fargate é uma solução de computação sem servidor projetada especificamente para contêineres. Ele simplifica significativamente o gerenciamento de infraestrutura ao dimensionar automaticamente os recursos necessários para executar aplicações, permitindo que os desenvolvedores se concentrem no desenvolvimento de software.
 
@@ -115,8 +115,6 @@ Em resumo, o AWS Lambda permite implantar e escalar suas cargas de trabalho e ap
 ### <mark style="color:red;">Como o AWS Lambda funciona</mark>
 
 Uma função do Lambda tem três componentes principais: acionador, código e configuração.
-
-<figure><img src="https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1718863200/Vwij0lEuq2M34BvoCAZcyQ/tincan/954352_1676568571_p1gpdis23dphj1i0b12fk1vub1t4o4_zip/assets/5s5GH79a3SZmZN92_hu7XY151CpeRp61o.jpg" alt=""><figcaption></figcaption></figure>
 
 O AWS Lambda é uma plataforma de computação sem servidor que oferece flexibilidade no desenvolvimento e configuração de funções executadas em resposta a eventos. Aqui estão os principais pontos sobre como configurar e usar funções do Lambda:
 
@@ -200,7 +198,7 @@ Em resumo, o modelo de cobrança do AWS Lambda é ideal para aplicações com de
 
 ***
 
-### **Código-fonte**
+### <mark style="color:red;">**Código-fonte**</mark>
 
 Você pode encontrar um tutorial sobre a criação da função do AWS Lambda, assim como o código usado na demonstração do AWS Lambda, aqui:&#x20;
 

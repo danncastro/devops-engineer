@@ -41,8 +41,6 @@ O Docker se destaca por sua abordagem simplificada para a criação de ambientes
 
 ## <mark style="color:red;">Qual é a diferença entre contêineres e máquinas virtuais (VMs)?</mark>
 
-<figure><img src="https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1718852400/t8NxEphJo2w8aY5YtIBeag/tincan/954352_1676568571_p1gpdis23dphj1i0b12fk1vub1t4o4_zip/assets/r-5msO3v65l8svTq_w21tw4DWWcwlw5Hc.jpg" alt=""><figcaption></figcaption></figure>
-
 As máquinas virtuais compartilham o mesmo sistema operacional e kernel do host em que estão executando, enquanto cada máquina virtual contém seu próprio sistema operacional completo. Isso significa que cada máquina virtual precisa manter uma cópia separada do sistema operacional, o que pode resultar em algum desperdício de espaço.
 
 Em contraste, os contêineres são mais leves. Eles inicializam mais rapidamente, quase instantaneamente, em comparação com as máquinas virtuais. Essa diferença no tempo de inicialização é crucial ao projetar aplicações que precisam ser escaladas rapidamente em momentos de picos de carga, como interrupções de entrada e saída (E/S).
@@ -89,11 +87,11 @@ Esses serviços oferecem funcionalidades avançadas de orquestração, facilitan
 
 O Amazon ECS é um serviço robusto para gerenciar contêineres, permitindo criar e administrar contêineres em clusters de instâncias EC2. Para utilizar o ECS, é necessário instalar o agente de contêiner em suas instâncias EC2, que facilita a comunicação com o serviço ECS para gerenciar o cluster.
 
-<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
 Uma vez que as instâncias de contêiner estão em execução, você pode realizar várias ações, como iniciar, parar e monitorar contêineres, dimensionar horizontalmente e verticalmente, agendar a distribuição de contêineres no cluster, além de configurar permissões e garantir requisitos de disponibilidade.
 
-<figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
 Para executar sua aplicação no ECS, você define uma "tarefa", que é um arquivo JSON descrevendo os contêineres necessários, incluindo especificações como CPU, memória, portas, imagens, armazenamento e configurações de rede. Essa definição permite que o ECS saiba como configurar e executar seus contêineres de forma eficiente.
 
@@ -156,5 +154,3 @@ Se você já utiliza o Kubernetes e busca uma solução de orquestração avanç
 [Amazon ECS ContainerInstances](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS\_instances.html)
 
 [Curso Coursera: criando aplicações em contêineres na AWS](https://www.coursera.org/learn/containerized-apps-on-aws)
-
-***
