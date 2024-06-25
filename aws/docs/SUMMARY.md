@@ -29,3 +29,4 @@
 * [Módulo 4: Armazenamento da AWS](fundamentos-tecnicos-da-aws/modulo-4-armazenamento-da-aws/README.md)
   * [Tipos de Armazenamento](fundamentos-tecnicos-da-aws/modulo-4-armazenamento-da-aws/tipos-de-armazenamento.md)
   * [Amazon EC2 Instance Storage e Amazon Elastic Block Store](fundamentos-tecnicos-da-aws/modulo-4-armazenamento-da-aws/amazon-ec2-instance-storage-e-amazon-elastic-block-store.md)
+  * [Armazenamento de objeto com o Amazon Simple Storage Service](fundamentos-tecnicos-da-aws/modulo-4-armazenamento-da-aws/armazenamento-de-objeto-com-o-amazon-simple-storage-service.md)
