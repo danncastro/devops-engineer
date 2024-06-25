@@ -20,11 +20,12 @@
   * [AWS Lambda](fundamentos-tecnicos-da-aws/modulo-2-computacao-da-aws/aws-lambda.md)
   * [Casos de Uso](fundamentos-tecnicos-da-aws/modulo-2-computacao-da-aws/casos-de-uso.md)
   * [Teste de conhecimento](fundamentos-tecnicos-da-aws/modulo-2-computacao-da-aws/teste-de-conhecimento.md)
-
-## Módulo 3: Rede da AWS
-
-* [Redes](modulo-3-rede-da-aws/redes.md)
-* [Amazon Virtual Private Cloud](modulo-3-rede-da-aws/amazon-virtual-private-cloud.md)
-* [Roteamento da Amazon VPC](modulo-3-rede-da-aws/roteamento-da-amazon-vpc.md)
-* [Segurança da Amazon VPC](modulo-3-rede-da-aws/seguranca-da-amazon-vpc.md)
-* [Teste de conhecimento](modulo-3-rede-da-aws/teste-de-conhecimento.md)
+* [Módulo 3: Rede da AWS](fundamentos-tecnicos-da-aws/modulo-3-rede-da-aws/README.md)
+  * [Redes](fundamentos-tecnicos-da-aws/modulo-3-rede-da-aws/redes.md)
+  * [Amazon Virtual Private Cloud](fundamentos-tecnicos-da-aws/modulo-3-rede-da-aws/amazon-virtual-private-cloud.md)
+  * [Roteamento da Amazon VPC](fundamentos-tecnicos-da-aws/modulo-3-rede-da-aws/roteamento-da-amazon-vpc.md)
+  * [Segurança da Amazon VPC](fundamentos-tecnicos-da-aws/modulo-3-rede-da-aws/seguranca-da-amazon-vpc.md)
+  * [Teste de conhecimento](fundamentos-tecnicos-da-aws/modulo-3-rede-da-aws/teste-de-conhecimento.md)
+* [Módulo 4: Armazenamento da AWS](fundamentos-tecnicos-da-aws/modulo-4-armazenamento-da-aws/README.md)
+  * [Tipos de Armazenamento](fundamentos-tecnicos-da-aws/modulo-4-armazenamento-da-aws/tipos-de-armazenamento.md)
+  * [Amazon EC2 Instance Storage e Amazon Elastic Block Store](fundamentos-tecnicos-da-aws/modulo-4-armazenamento-da-aws/amazon-ec2-instance-storage-e-amazon-elastic-block-store.md)
