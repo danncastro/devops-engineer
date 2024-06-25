@@ -67,7 +67,7 @@ Ela começa com um endereço IP inicial, seguido por uma barra (**"/")** e um n�
 
 Aqui está como funciona:
 
-<figure><img src="https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1719252000/eHRhLbLLbvc_I-Jch4WVhA/tincan/954352_1676568571_p1gpdis23dphj1i0b12fk1vub1t4o4_zip/assets/5kypGNUXvL2ne_Le_M-Fkd4PJszzy_HfE.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
 
 * `192.168.1.0/24`
 * Os primeiros 24 bits são fixos: `192.168.1.`

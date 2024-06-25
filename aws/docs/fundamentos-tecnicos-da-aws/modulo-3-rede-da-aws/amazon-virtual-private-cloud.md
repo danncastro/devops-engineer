@@ -12,17 +12,11 @@ description: >-
 
 Ao criar uma VPC, você precisa escolher três fatores principais:
 
-#### <mark style="color:blue;">**Nome da VPC**</mark>
 
-Identifica sua VPC de forma única.
 
-#### <mark style="color:blue;">**Região**</mark>
-
-A região onde a VPC ficará ativa. Cada VPC pode abranger várias zonas de disponibilidade dentro da região selecionada.
-
-#### <mark style="color:blue;">**Intervalo de IP em notação CIDR**</mark>
-
-Define o tamanho da rede. Cada VPC pode ter até quatro intervalos de IP `/16`.
+| Nome da VPC                        | Região                                                                                                                 | Intervalo de IP em notação CIDR                                                |
+| ---------------------------------- | ---------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| Identifica sua VPC de forma única. | A região onde a VPC ficará ativa. Cada VPC pode abranger várias zonas de disponibilidade dentro da região selecionada. | Define o tamanho da rede. Cada VPC pode ter até quatro intervalos de IP `/16`. |
 
 Com essas informações, a AWS provisiona a rede e os endereços IP correspondentes.
 
@@ -36,17 +30,9 @@ Após criar sua VPC, você precisa criar sub-redes dentro dela. Sub-redes são r
 
 Ao criar uma sub-rede, você deve especificar:
 
-#### <mark style="color:blue;">**A VPC onde a sub-rede será ativa**</mark>
-
-Por exemplo, VPC (10.0.0.0/16).
-
-#### <mark style="color:blue;">**Zona de disponibilidade**</mark>
-
-A zona específica onde a sub-rede estará ativa. Por exemplo, AZ1.
-
-#### <mark style="color:blue;">**Bloco CIDR para a sub-rede**</mark>
-
-Deve ser um subconjunto do bloco CIDR da VPC. Por exemplo, 10.0.0.0/24.
+| A VPC onde a sub-rede será ativa | Zona de disponibilidade                                           | Bloco CIDR para a sub-rede                                              |
+| -------------------------------- | ----------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| Por exemplo, VPC (10.0.0.0/16).  | A zona específica onde a sub-rede estará ativa. Por exemplo, AZ1. | Deve ser um subconjunto do bloco CIDR da VPC. Por exemplo, 10.0.0.0/24. |
 
 Quando você lança uma instância do EC2, ela é executada dentro de uma sub-rede, que está localizada na zona de disponibilidade escolhida.
 
@@ -74,12 +60,11 @@ Por exemplo, considere uma VPC com o intervalo de IP `10.0.0.0/22`. Essa VPC tem
 
 Os cinco endereços IP reservados são:
 
-Endereço de rede (primeiro endereço do bloco).
-
-1. Gateway padrão (segundo endereço do bloco).
-2. DNS da AWS (terceiro endereço do bloco).
-3. Endereço reservado para uso futuro (quarto endereço do bloco).
-4. Endereço de broadcast (último endereço do bloco).
+1. Endereço de rede (primeiro endereço do bloco).
+2. Gateway padrão (segundo endereço do bloco).
+3. DNS da AWS (terceiro endereço do bloco).
+4. Endereço reservado para uso futuro (quarto endereço do bloco).
+5. Endereço de broadcast (último endereço do bloco).
 
 Esses endereços reservados podem afetar o design da sua rede. Um ponto de partida comum para iniciantes é criar uma VPC com um intervalo de IP `/16` e sub-redes com intervalo de IP `/24`. Isso fornece uma grande quantidade de endereços IP para trabalhar nos níveis de VPC e sub-rede.
 
@@ -87,13 +72,15 @@ Esses endereços reservados podem afetar o design da sua rede. Um ponto de parti
 
 ### <mark style="color:red;">Gateways</mark>
 
-#### <mark style="color:blue;">**Gateway da Internet**</mark>
-
+{% tabs %}
+{% tab title="Gateway da Internet" %}
 Para permitir a conectividade com a Internet para sua VPC, você deve criar um **Internet Gateway**. Pense nele como um modem: assim como um modem conecta seu computador à Internet, o gateway da Internet conecta sua VPC à Internet. Diferente do modem residencial, que pode ficar inativo ou offline, um gateway da Internet é altamente disponível e escalável. Após a criação, você anexa o gateway da Internet à sua VPC.
+{% endtab %}
 
-#### <mark style="color:blue;">**Gateway Privado Virtual**</mark>
-
+{% tab title="Gateway Privado Virtual" %}
 Um **Virtual Private Gateway,** conecta sua VPC na AWS a outra rede privada. Depois de criar e anexar um gateway privado virtual a uma VPC, ele atua como a âncora do lado da AWS da conexão. Do outro lado, você precisará de um gateway do cliente conectado à outra rede privada. Esse gateway do cliente pode ser um dispositivo físico ou uma aplicação de software. Com ambos os gateways em funcionamento, você pode estabelecer uma conexão VPN criptografada entre as duas redes.
+{% endtab %}
+{% endtabs %}
 
 ***
 

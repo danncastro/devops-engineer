@@ -28,21 +28,9 @@ No contexto da infraestrutura tradicional, o processo de provisionamento de um s
 
 Ao escolher uma AMI na AWS, você pode configurar diversos aspectos, como:
 
-#### <mark style="color:blue;">**Sistema Operacional**</mark>
-
-A AMI já inclui uma imagem pré-configurada do sistema operacional de sua escolha.
-
-#### <mark style="color:blue;">**Mapeamentos de Armazenamento**</mark>
-
-Você pode especificar como os volumes de armazenamento serão conectados à instância EC2.
-
-#### <mark style="color:blue;">**Arquitetura**</mark>
-
-Você pode selecionar a arquitetura da instância, como ARM de 32 bits, 64 bits ou outros tipos compatíveis.
-
-#### <mark style="color:blue;">**Software Adicional**</mark>
-
-Algumas AMIs podem incluir software adicional pré-instalado, facilitando o setup inicial de sua aplicação.
+| Sistema Operacional                                                               | Mapeamentos de Armazenamento                                                             | Arquitetura                                                                                                | Software Adicional                                                                                         |
+| --------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| A AMI já inclui uma imagem pré-configurada do sistema operacional de sua escolha. | Você pode especificar como os volumes de armazenamento serão conectados à instância EC2. | Você pode selecionar a arquitetura da instância, como ARM de 32 bits, 64 bits ou outros tipos compatíveis. | Algumas AMIs podem incluir software adicional pré-instalado, facilitando o setup inicial de sua aplicação. |
 
 Essa abordagem permite uma rápida e consistente implementação de servidores na nuvem AWS, eliminando a necessidade de configurar manualmente cada componente do sistema operacional, o que é típico em ambientes tradicionais de infraestrutura física.
 

@@ -22,8 +22,9 @@ Cada região da AWS está associada a um nome geográfico e a um código de regi
 
 Aqui estão exemplos de códigos de região:
 
-* **us-east-1:** a primeira região criada na área leste dos EUA. O nome geográfico desta região é o Norte da Virgínia.
-* **ap-northeast-1:** a primeira região criada na região nordeste da Ásia-Pacífico. O nome geográfico desta região é Tóquio.
+| us-east-1                                                                                             | ap-northeast-1                                                                                         |
+| ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| A primeira região criada na área leste dos EUA. O nome geográfico desta região é o Norte da Virgínia. | A primeira região criada na região nordeste da Ásia-Pacífico. O nome geográfico desta região é Tóquio. |
 
 As regiões da AWS não dependem umas das outras. Os dados não são replicados de uma Região para outra, sem consentimento e autorização explícitos do cliente.
 
@@ -32,8 +33,6 @@ As regiões da AWS não dependem umas das outras. Os dados não são replicados 
 ### <mark style="color:red;">**Escolha a região certa da AWS**</mark>
 
 Quando você decidir qual região da AWS hospedar suas aplicações e workloads, considere quatro aspectos principais: _**latência, preço, disponibilidade do serviço e conformidade.**_
-
-
 
 {% tabs %}
 {% tab title="Latência" %}

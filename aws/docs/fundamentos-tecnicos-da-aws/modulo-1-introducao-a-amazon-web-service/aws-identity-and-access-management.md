@@ -120,9 +120,9 @@ As políticas do IAM são essenciais para controlar e gerenciar o acesso aos rec
 
 Quando um usuário, grupo ou função faz uma solicitação para um recurso da AWS, a AWS avalia todas as políticas associadas na seguinte ordem:
 
-* **Políticas de Usuário**: Primeiro, as políticas anexadas diretamente ao usuário são avaliadas.
-* **Políticas de Grupo**: Em seguida, as políticas associadas ao grupo ao qual o usuário pertence são avaliadas. O usuário herda todas as permissões dessas políticas.
-* **Políticas de Função**: Se a solicitação é feita por meio de uma função do IAM, as políticas associadas à função são avaliadas.
+| Políticas de Usuário                                                  | Políticas de Grupo                                                                                                                           | Políticas de Função                                                                                     |
+| --------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| Primeiro, as políticas anexadas diretamente ao usuário são avaliadas. | Em seguida, as políticas associadas ao grupo ao qual o usuário pertence são avaliadas. O usuário herda todas as permissões dessas políticas. | Se a solicitação é feita por meio de uma função do IAM, as políticas associadas à função são avaliadas. |
 
 #### <mark style="color:blue;">**Permissões Explícitas**</mark>
 
@@ -160,9 +160,9 @@ Define a versão da linguagem da política. Para garantir compatibilidade e util
 
 Representa uma ou mais declarações que definem as permissões. Cada declaração possui os seguintes elementos:
 
-* **Effect (Efeito)**: Especifica se a ação definida será permitida ("Allow") ou negada ("Deny").
-* **Action (Ação)**: Descreve as ações que são permitidas ou negadas. Pode ser uma ação específica, uma lista de ações ou até mesmo "\*", que indica todas as ações.
-* **Resource (Recurso)**: Indica quais recursos a declaração afeta. Pode ser um recurso específico identificado pelo seu Amazon Resource Name (ARN) ou "\*", que representa todos os recursos.
+| Effect (Efeito)                                                            | Action (Ação)                                                                                                                                   | Resource (Recurso)                                                                                                                                                   |
+| -------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Especifica se a ação definida será permitida ("Allow") ou negada ("Deny"). | Descreve as ações que são permitidas ou negadas. Pode ser uma ação específica, uma lista de ações ou até mesmo "\*", que indica todas as ações. | Indica quais recursos a declaração afeta. Pode ser um recurso específico identificado pelo seu Amazon Resource Name (ARN) ou "\*", que representa todos os recursos. |
 
 #### <mark style="color:blue;">Exemplo de Política de Administrador</mark>
 

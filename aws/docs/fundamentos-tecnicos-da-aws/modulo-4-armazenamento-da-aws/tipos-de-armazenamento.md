@@ -39,9 +39,9 @@ O armazenamento de arquivos é ideal para situações onde é necessário um ace
 
 O armazenamento de arquivos é comumente utilizado em:
 
-* **Grandes repositórios de conteúdo**: Onde uma grande quantidade de dados precisa ser organizada e acessível.
-* **Ambientes de desenvolvimento**: Onde múltiplos desenvolvedores precisam acessar e modificar os mesmos arquivos.
-* **Diretórios iniciais do usuário**: Para armazenar e gerenciar os dados pessoais de cada usuário em um sistema compartilhado.
+| Grandes repositórios de conteúdo                                        | Ambientes de desenvolvimento                                                    | Diretórios iniciais do usuário                                                            |
+| ----------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| Onde uma grande quantidade de dados precisa ser organizada e acessível. | Onde múltiplos desenvolvedores precisam acessar e modificar os mesmos arquivos. | Para armazenar e gerenciar os dados pessoais de cada usuário em um sistema compartilhado. |
 
 Essa abordagem de armazenamento permite uma gestão eficiente e organizada dos dados, facilitando o acesso e a colaboração entre diversos usuários e sistemas.
 
@@ -53,23 +53,25 @@ O armazenamento de blocos difere do armazenamento de arquivos ao tratar os dados
 
 #### <mark style="color:blue;">Funcionamento do Armazenamento em Blocos</mark>
 
-* **Divisão em Blocos**: Os arquivos são divididos em blocos, cada um com um endereço único.
-* **Recuperação Eficiente**: Quando os dados são solicitados, o sistema de armazenamento utiliza os endereços para organizar e recuperar os blocos na ordem correta, formando o arquivo completo.
-* **Alteração de Dados**: Para modificar um caractere em um arquivo, apenas o bloco que contém o caractere precisa ser alterado, não o arquivo inteiro. Isso economiza tempo e largura de banda.
+| Divisão em Blocos                                                   | Recuperação Eficiente                                                                                                                                                | Alteração de Dados                                                                                                                                                     |
+| ------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Os arquivos são divididos em blocos, cada um com um endereço único. | Quando os dados são solicitados, o sistema de armazenamento utiliza os endereços para organizar e recuperar os blocos na ordem correta, formando o arquivo completo. | Para modificar um caractere em um arquivo, apenas o bloco que contém o caractere precisa ser alterado, não o arquivo inteiro. Isso economiza tempo e largura de banda. |
 
 <figure><img src="https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1719288000/qv1ubG4XmDzlGeSEaz41BQ/tincan/954352_1676568571_p1gpdis23dphj1i0b12fk1vub1t4o4_zip/assets/cIRRR_XX7wFefVX6_0RsOlGBIbMKrVjc1.png" alt=""><figcaption></figcaption></figure>
 
 #### <mark style="color:blue;">**Benefícios do Armazenamento em Blocos**</mark>
 
-* **Baixa Latência**: Projetado para operações rápidas, o armazenamento em bloco é ideal para workloads que exigem alta performance.
-* **Eficiência**: Usa menos largura de banda devido à capacidade de acessar e modificar blocos específicos diretamente.
+| Baixa Latência                                                                                                 | Eficiência                                                                                            |
+| -------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| Projetado para operações rápidas, o armazenamento em bloco é ideal para workloads que exigem alta performance. | Usa menos largura de banda devido à capacidade de acessar e modificar blocos específicos diretamente. |
 
 #### <mark style="color:blue;">**Casos de Uso Comuns**</mark>
 
 O armazenamento de blocos é preferido em ambientes corporativos que demandam alta performance e baixa latência, como:
 
-* **Bancos de Dados**: Onde a rápida leitura e gravação de dados é crucial.
-* **Sistemas de Planejamento de Recursos Empresariais (ERP)**: Que necessitam de operações de armazenamento eficientes e rápidas.
+| Bancos de Dados                                      | Sistemas de Planejamento de Recursos Empresariais (ERP)            |
+| ---------------------------------------------------- | ------------------------------------------------------------------ |
+| Onde a rápida leitura e gravação de dados é crucial. | Que necessitam de operações de armazenamento eficientes e rápidas. |
 
 A granularidade e eficiência do armazenamento em blocos o tornam uma solução ideal para aplicações que exigem desempenho elevado e acesso rápido aos dados.
 
@@ -79,18 +81,19 @@ A granularidade e eficiência do armazenamento em blocos o tornam uma solução 
 
 O armazenamento de objetos trata cada unidade de dados como um único objeto. Diferentemente do armazenamento de arquivos, onde os dados são organizados em uma hierarquia de pastas e subpastas, o armazenamento de objetos utiliza uma estrutura plana. Cada objeto é identificado de forma única e armazenado com seus metadados.
 
-#### **Funcionamento do Armazenamento de Objetos**
+#### <mark style="color:blue;">**Funcionamento do Armazenamento de Objetos**</mark>
 
-* **Estrutura Plana**: Os objetos são armazenados em uma estrutura plana, o que significa que não há pastas ou subpastas. Cada objeto é identificado por um identificador exclusivo.
-* **Empacotamento de Dados**: Cada objeto inclui os dados, um identificador único e metadados adicionais. Esses componentes são empacotados juntos e armazenados.
-* **Atualização de Dados**: Para modificar um caractere em um objeto, todo o objeto precisa ser atualizado, o que é mais trabalhoso comparado ao armazenamento em blocos.
+| Estrutura Plana                                                                                                                                                | Empacotamento de Dados                                                                                                              | Atualização de Dados                                                                                                                          |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+|  Os objetos são armazenados em uma estrutura plana, o que significa que não há pastas ou subpastas. Cada objeto é identificado por um identificador exclusivo. | Cada objeto inclui os dados, um identificador único e metadados adicionais. Esses componentes são empacotados juntos e armazenados. | Para modificar um caractere em um objeto, todo o objeto precisa ser atualizado, o que é mais trabalhoso comparado ao armazenamento em blocos. |
 
 <figure><img src="https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1719288000/qv1ubG4XmDzlGeSEaz41BQ/tincan/954352_1676568571_p1gpdis23dphj1i0b12fk1vub1t4o4_zip/assets/P8yjYgmziZkVVdbk_PwD9kxga24sM5_H3.jpg" alt=""><figcaption></figcaption></figure>
 
 #### <mark style="color:blue;">**Benefícios do Armazenamento de Objetos**</mark>
 
-* **Escalabilidade**: Não há limite para o número de objetos que podem ser armazenados, tornando-o altamente escalável.
-* **Flexibilidade**: Capaz de armazenar qualquer tipo de dado, o armazenamento de objetos é ideal para grandes conjuntos de dados e arquivos não estruturados.
+| Escalabilidade                                                                                    | Flexibilidade                                                                                                                            |
+| ------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| Não há limite para o número de objetos que podem ser armazenados, tornando-o altamente escalável. | Capaz de armazenar qualquer tipo de dado, o armazenamento de objetos é ideal para grandes conjuntos de dados e arquivos não estruturados |
 
 #### <mark style="color:blue;">**Casos de Uso Comuns**</mark>
 
@@ -98,9 +101,9 @@ O armazenamento de objetos é particularmente útil em cenários onde grandes vo
 
 Exemplos incluem:
 
-* **Ativos de Mídia**: Como vídeos, músicas e imagens.
-* **Dados Não Estruturados**: Como documentos e arquivos de log.
-* **Ativos Estáticos**: Como fotos e backups.
+| Ativos de Mídia                 | Dados Não Estruturados             | Ativos Estáticos      |
+| ------------------------------- | ---------------------------------- | --------------------- |
+| Como vídeos, músicas e imagens. | Como documentos e arquivos de log. | Como fotos e backups. |
 
 A estrutura plana e a capacidade de gerenciar uma quantidade ilimitada de objetos, tornam o armazenamento de objetos uma solução robusta e flexível para diversas necessidades de armazenamento de dados.
 
@@ -114,24 +117,27 @@ Aqui estão as correspondências:
 
 #### <mark style="color:blue;">**Armazenamento em Bloco**</mark>
 
-* **Equivalente On-Premises**: Similar ao Direct-Attached Storage (DAS) ou a uma Storage Area Network (SAN).
-* **Características**: No DAS ou SAN, os dados são divididos em blocos que podem ser acessados rapidamente, proporcionando alta performance e baixa latência.
+| Equivalente On-Premises                                                       | Características                                                                                                                        |
+| ----------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| Similar ao Direct-Attached Storage (DAS) ou a uma Storage Area Network (SAN). | No DAS ou SAN, os dados são divididos em blocos que podem ser acessados rapidamente, proporcionando alta performance e baixa latência. |
 
 #### <mark style="color:blue;">**Armazenamento de Arquivos**</mark>
 
-* **Equivalente On-Premises**: Equiparável a um Network Attached Storage (NAS).
-* **Características**: Um NAS organiza arquivos em uma hierarquia de pastas e subpastas, permitindo acesso centralizado e compartilhamento fácil de arquivos entre múltiplos hosts.
+| Equivalente On-Premises                          | Características                                                                                                                                              |
+| ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Equiparável a um Network Attached Storage (NAS). | Um NAS organiza arquivos em uma hierarquia de pastas e subpastas, permitindo acesso centralizado e compartilhamento fácil de arquivos entre múltiplos hosts. |
 
 #### <mark style="color:blue;">**Armazenamento de Objetos**</mark>
 
-* **Equivalente On-Premises**: Embora menos comum em implementações on-premises, algumas soluções de armazenamento de objetos existem para lidar com grandes volumes de dados não estruturados.
-* **Características**: Armazenamento de objetos organiza dados em uma estrutura plana, com cada objeto possuindo um identificador único e metadados.
+| Equivalente On-Premises                                                                                                                                          | Características                                                                                                               |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| Embora menos comum em implementações on-premises, algumas soluções de armazenamento de objetos existem para lidar com grandes volumes de dados não estruturados. | Armazenamento de objetos organiza dados em uma estrutura plana, com cada objeto possuindo um identificador único e metadados. |
 
 #### <mark style="color:blue;">**Vantagens da Nuvem sobre o On-Premises**</mark>
 
-* **Flexibilidade**: Adicionar armazenamento em um datacenter tradicional é um processo rígido, envolvendo a compra, instalação e configuração de hardware. Na nuvem, você pode criar, excluir e modificar soluções de armazenamento em minutos.
-* **Escalabilidade**: As soluções de armazenamento na nuvem podem ser escaladas conforme a demanda, sem a necessidade de planejamento e investimento em capacidade adicional antecipadamente.
-* **Gestão Simplificada**: Com a nuvem, a gestão de armazenamento é simplificada, eliminando a necessidade de manutenção física e permitindo focar em outras prioridades de negócios.
+| Flexibilidade                                                                                                                                                                                                               | Escalabilidade                                                                                                                                                          | Gestão Simplificada                                                                                                                                        |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Adicionar armazenamento em um datacenter tradicional é um processo rígido, envolvendo a compra, instalação e configuração de hardware. Na nuvem, você pode criar, excluir e modificar soluções de armazenamento em minutos. | As soluções de armazenamento na nuvem podem ser escaladas conforme a demanda, sem a necessidade de planejamento e investimento em capacidade adicional antecipadamente. | Com a nuvem, a gestão de armazenamento é simplificada, eliminando a necessidade de manutenção física e permitindo focar em outras prioridades de negócios. |
 
 Ao entender essas correspondências, você pode apreciar como as soluções de armazenamento na nuvem replicam e ampliam as funcionalidades dos sistemas on-premises, proporcionando uma abordagem mais flexível e escalável para gerenciar dados.
 

@@ -68,7 +68,7 @@ Ao agendar e executar scripts da AWS CLI regularmente, você garante que seus re
 
 As chamadas de API para a AWS podem ser automatizadas usando SDKs (Software Development Kits) disponíveis para diversas linguagens de programação populares, como **C++, Go, Java, JavaScript, .NET, Node.js, PHP, Python e Ruby.** Estes SDKs são desenvolvidos pela AWS, são de código aberto e oferecem uma maneira conveniente de integrar seu código com os serviços da AWS.
 
-Por exemplo, se você está desenvolvendo uma aplicação em Python que precisa interagir com os serviços da AWS, pode utilizar o SDK da AWS para Python, conhecido como `boto3`. Aqui está um exemplo de como você pode utilizar o SDK para realizar uma chamada de API para descrever instâncias
+Por exemplo, se você está desenvolvendo uma aplicação em Python que precisa interagir com os serviços da AWS, pode utilizar o SDK da AWS para Python, conhecido como `boto3`. Aqui está um exemplo de como você pode utilizar o SDK para realizar uma chamada de API para descrever instâncias.
 
 ```python
 import boto3

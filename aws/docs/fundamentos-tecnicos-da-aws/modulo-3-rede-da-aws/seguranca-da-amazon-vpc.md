@@ -50,9 +50,9 @@ Você aprendeu anteriormente que sub-redes podem ser usadas para segregar tráfe
 
 Neste exemplo, três camadas são definidas e isoladas com regras de grupos de segurança:
 
-* **Camada Web**: Permite tráfego da Internet via HTTPS.
-* **Camada de Aplicação**: Permite tráfego da camada Web via HTTP.
-* **Camada de Banco de Dados**: Permite tráfego da camada de aplicação via MySQL.
+| Camada Web                             | Camada de Aplicação                     | Camada de Banco de Dados                          |
+| -------------------------------------- | --------------------------------------- | ------------------------------------------------- |
+| Permite tráfego da Internet via HTTPS. | Permite tráfego da camada Web via HTTP. | Permite tráfego da camada de aplicação via MySQL. |
 
 #### <mark style="color:blue;">**Vantagens dos Grupos de Segurança**</mark>
 

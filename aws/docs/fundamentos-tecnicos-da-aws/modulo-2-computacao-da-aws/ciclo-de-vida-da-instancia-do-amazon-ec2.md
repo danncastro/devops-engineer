@@ -21,8 +21,9 @@ As instâncias do Amazon EC2 são compostas por uma combinação de recursos ess
 
 A AWS oferece uma variedade de tipos de instância que diferem em termos de desempenho e capacidade. Algumas instâncias fornecem mais recursos do que outras. Para entender melhor as capacidades de uma instância específica, é necessário examinar seu tipo. Os tipos de instância são categorizados por um prefixo que identifica a família da instância e a geração, seguido pelo tamanho. Por exemplo, no caso do tipo de instância c5.large:
 
-* **c5**: Identifica a família de instâncias e sua geração. No exemplo, c5 indica que é da quinta geração de instâncias da família C, otimizada para computação genérica.
-* **large**: Indica o tamanho da instância dentro dessa família, especificando a quantidade de recursos disponíveis, como vCPUs, memória e outros recursos específicos da configuração.
+| c5                                                                                                                                                              | large                                                                                                                                                                      |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Identifica a família de instâncias e sua geração. No exemplo, c5 indica que é da quinta geração de instâncias da família C, otimizada para computação genérica. | Indica o tamanho da instância dentro dessa família, especificando a quantidade de recursos disponíveis, como vCPUs, memória e outros recursos específicos da configuração. |
 
 Essa estrutura de nomenclatura ajuda a escolher a instância mais apropriada com base nos requisitos de desempenho e capacidade da sua aplicação na AWS.
 
@@ -92,7 +93,7 @@ Utilizar a hibernação elimina a necessidade de criar scripts manuais para salv
 
 Uma das maneiras de reduzir custos com o Amazon EC2 é escolher a opção de definição de preço certa para a forma como suas aplicações são executadas. A AWS oferece três principais opções de compra para instâncias do EC2: instâncias sob demanda, reservadas e spot.
 
-<figure><img src="https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1718852400/t8NxEphJo2w8aY5YtIBeag/tincan/954352_1676568571_p1gpdis23dphj1i0b12fk1vub1t4o4_zip/assets/fP8txkHJa86HrjNt_Pe8sug5h3XktKqRE.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
