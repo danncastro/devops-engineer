@@ -30,3 +30,5 @@
   * [Tipos de Armazenamento](fundamentos-tecnicos-da-aws/modulo-4-armazenamento-da-aws/tipos-de-armazenamento.md)
   * [Amazon EC2 Instance Storage e Amazon Elastic Block Store](fundamentos-tecnicos-da-aws/modulo-4-armazenamento-da-aws/amazon-ec2-instance-storage-e-amazon-elastic-block-store.md)
   * [Armazenamento de objeto com o Amazon Simple Storage Service](fundamentos-tecnicos-da-aws/modulo-4-armazenamento-da-aws/armazenamento-de-objeto-com-o-amazon-simple-storage-service.md)
+  * [Escolha o serviço de armazenamento certo](fundamentos-tecnicos-da-aws/modulo-4-armazenamento-da-aws/escolha-o-servico-de-armazenamento-certo.md)
+  * [Teste de conhecimento](fundamentos-tecnicos-da-aws/modulo-4-armazenamento-da-aws/teste-de-conhecimento.md)
