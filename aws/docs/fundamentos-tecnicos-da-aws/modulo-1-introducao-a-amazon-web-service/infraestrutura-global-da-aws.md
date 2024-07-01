@@ -18,7 +18,7 @@ A AWS hospeda seus datacenters em diversas regiões geográficas ao redor do mun
 
 Cada região da AWS está associada a um nome geográfico e a um código de região.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Aqui estão exemplos de códigos de região:
 
@@ -56,7 +56,7 @@ Para empresas corporativas, é comum haver regulamentações que exigem que os d
 
 ## <mark style="color:red;">Zonas de disponibilidade</mark>
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Dentro de cada Região da AWS, existem clusters de Zonas de Disponibilidade (AZs). Cada AZ é composta por um ou mais datacenters equipados com redundância de energia, rede e conectividade. Esses datacenters são situados em locais discretos e não divulgados, mas são interligados por links de alta velocidade e baixa latência, garantindo alta disponibilidade e confiabilidade dos serviços hospedados.
 

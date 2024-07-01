@@ -32,3 +32,5 @@
   * [Armazenamento de objeto com o Amazon Simple Storage Service](fundamentos-tecnicos-da-aws/modulo-4-armazenamento-da-aws/armazenamento-de-objeto-com-o-amazon-simple-storage-service.md)
   * [Escolha o serviço de armazenamento certo](fundamentos-tecnicos-da-aws/modulo-4-armazenamento-da-aws/escolha-o-servico-de-armazenamento-certo.md)
   * [Teste de conhecimento](fundamentos-tecnicos-da-aws/modulo-4-armazenamento-da-aws/teste-de-conhecimento.md)
+* [Módulo 5: Banco de Dados](fundamentos-tecnicos-da-aws/modulo-5-banco-de-dados/README.md)
+  * [Banco de dados na AWS](fundamentos-tecnicos-da-aws/modulo-5-banco-de-dados/banco-de-dados-na-aws.md)
