@@ -34,3 +34,7 @@
   * [Teste de conhecimento](fundamentos-tecnicos-da-aws/modulo-4-armazenamento-da-aws/teste-de-conhecimento.md)
 * [Módulo 5: Banco de Dados](fundamentos-tecnicos-da-aws/modulo-5-banco-de-dados/README.md)
   * [Banco de dados na AWS](fundamentos-tecnicos-da-aws/modulo-5-banco-de-dados/banco-de-dados-na-aws.md)
+  * [Amazon Relational Database Service](fundamentos-tecnicos-da-aws/modulo-5-banco-de-dados/amazon-relational-database-service.md)
+  * [Amazon DynamoDB](fundamentos-tecnicos-da-aws/modulo-5-banco-de-dados/amazon-dynamodb.md)
+  * [Selecionar o serviço de banco de dados certo](fundamentos-tecnicos-da-aws/modulo-5-banco-de-dados/selecionar-o-servico-de-banco-de-dados-certo.md)
+  * [Teste de conhecimento](fundamentos-tecnicos-da-aws/modulo-5-banco-de-dados/teste-de-conhecimento.md)

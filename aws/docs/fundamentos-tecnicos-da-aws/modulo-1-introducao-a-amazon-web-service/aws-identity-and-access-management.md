@@ -94,8 +94,6 @@ Grupos podem ser organizados de acordo com as funções ou cargos dos usuários.
 
 Ao adicionar um novo usuário, você simplesmente o coloca no grupo apropriado, evitando a necessidade de configurar permissões individuais. Da mesma forma, quando um usuário muda de função, basta removê-lo de um grupo e adicioná-lo a outro para ajustar suas permissões.
 
-#### <mark style="color:blue;">**Características dos Grupos**</mark>
-
 * Um grupo pode ter muitos usuários, facilitando a gestão em grandes organizações.
 * Um usuário pode pertencer a vários grupos, permitindo que diferentes conjuntos de permissões sejam combinados conforme necessário.
 * No entanto, os grupos não podem ser aninhados dentro de outros grupos.

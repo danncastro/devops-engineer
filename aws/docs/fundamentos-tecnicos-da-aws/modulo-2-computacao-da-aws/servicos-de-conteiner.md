@@ -154,3 +154,5 @@ Se você já utiliza o Kubernetes e busca uma solução de orquestração avanç
 [Amazon ECS ContainerInstances](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ECS\_instances.html)
 
 [Curso Coursera: criando aplicações em contêineres na AWS](https://www.coursera.org/learn/containerized-apps-on-aws)
+
+***

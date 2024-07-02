@@ -6,23 +6,18 @@
 
 Quando se trata de configurar o acesso a qualquer conta na AWS, é essencial entender completamente dois conceitos fundamentais: autenticação e autorização.
 
-#### <mark style="color:blue;">Autenticação</mark>&#x20;
+| Autenticação                                                                                                                                                                                                                                                                                                                                                                                    |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| É o processo fundamental de verificação da identidade de um usuário ou sistema que tenta acessar recursos na AWS. Ao criar uma conta na AWS, você estabelece uma combinação de endereço de e-mail e senha para autenticar sua identidade. Quando um usuário fornece corretamente o e-mail e a senha associados à conta, o sistema verifica essas credenciais e concede acesso.                  |
+| O objetivo da autenticação é assegurar que o indivíduo ou sistema é realmente quem afirma ser. Nomes de usuário e senhas são os métodos mais comuns de autenticação, mas a AWS suporta também formas mais avançadas, como autenticação baseada em token ou dados biométricos como impressões digitais. Cada forma de autenticação visa responder à pergunta básica: "Você é quem você diz ser?" |
+| Essencialmente, a autenticação é o primeiro passo crítico para garantir a segurança dos recursos na nuvem, validando a identidade de quem busca acesso antes de permitir qualquer interação com os serviços da AWS.                                                                                                                                                                             |
 
-é o processo fundamental de verificação da identidade de um usuário ou sistema que tenta acessar recursos na AWS. Ao criar uma conta na AWS, você estabelece uma combinação de endereço de e-mail e senha para autenticar sua identidade. Quando um usuário fornece corretamente o e-mail e a senha associados à conta, o sistema verifica essas credenciais e concede acesso.
-
-O objetivo da autenticação é assegurar que o indivíduo ou sistema é realmente quem afirma ser. Nomes de usuário e senhas são os métodos mais comuns de autenticação, mas a AWS suporta também formas mais avançadas, como autenticação baseada em token ou dados biométricos como impressões digitais. Cada forma de autenticação visa responder à pergunta básica: "Você é quem você diz ser?"
-
-Essencialmente, a autenticação é o primeiro passo crítico para garantir a segurança dos recursos na nuvem, validando a identidade de quem busca acesso antes de permitir qualquer interação com os serviços da AWS.
-
-#### <mark style="color:blue;">Autorização</mark>
-
-Após a autenticação bem-sucedida e o acesso à conta da AWS, o próximo passo é compreender a autorização, que é fundamental para determinar quais ações um usuário pode realizar nos recursos e serviços da AWS.
-
-Autorização, neste contexto, refere-se ao processo de conceder permissões específicas aos usuários para acessar recursos e produtos da AWS. Ela define quais operações um usuário pode executar, como ler, editar, excluir ou criar recursos dentro da conta AWS.
-
-Por exemplo, após autenticar-se na sua conta da AWS com sucesso, a autorização define se você pode iniciar, parar ou modificar instâncias EC2, acessar e modificar dados em buckets S3, ou gerenciar configurações em serviços como RDS. “Quais ações você pode executar?”
-
-Em resumo, enquanto a autenticação valida quem você é, a autorização determina o que você pode fazer uma vez autenticado. Juntos, esses processos garantem que os recursos na AWS sejam acessados e gerenciados de maneira segura e de acordo com as permissões atribuídas a cada usuário ou sistema.
+| Autorização                                                                                                                                                                                                                                                                                           |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Após a autenticação bem-sucedida e o acesso à conta da AWS, o próximo passo é compreender a autorização, que é fundamental para determinar quais ações um usuário pode realizar nos recursos e serviços da AWS.                                                                                       |
+| Autorização, neste contexto, refere-se ao processo de conceder permissões específicas aos usuários para acessar recursos e produtos da AWS. Ela define quais operações um usuário pode executar, como ler, editar, excluir ou criar recursos dentro da conta AWS.                                     |
+| Por exemplo, após autenticar-se na sua conta da AWS com sucesso, a autorização define se você pode iniciar, parar ou modificar instâncias EC2, acessar e modificar dados em buckets S3, ou gerenciar configurações em serviços como RDS. “Quais ações você pode executar?”                            |
+| Em resumo, enquanto a autenticação valida quem você é, a autorização determina o que você pode fazer uma vez autenticado. Juntos, esses processos garantem que os recursos na AWS sejam acessados e gerenciados de maneira segura e de acordo com as permissões atribuídas a cada usuário ou sistema. |
 
 ***
 
@@ -81,21 +76,13 @@ Se você ainda não tem uma chave de acesso para seu usuário raiz da AWS, não 
 
 Quando você cria uma conta na AWS e faz login pela primeira vez, utiliza autenticação de fator único, que é simples e comum, exigindo apenas um método de autenticação, como um nome de usuário e senha. No entanto, senhas simples podem ser vulneráveis a ataques se forem fáceis de adivinhar ou decifrar por agentes maliciosos, usando engenharia social, bots ou scripts.
 
-Por exemplo, se a senha de um usuário como Bob, "IloveCats222", for baseada em informações facilmente acessíveis (Bob ama gatos e seu aniversário é em 22 de fevereiro), ela pode ser comprometida. Isso destaca a importância da autenticação de múltiplos fatores (MFA) para proteger contas contra acesso não autorizado.
+Por exemplo, se a senha de um usuário como Bob, "**IloveCats222**", for baseada em informações facilmente acessíveis (Bob ama gatos e seu aniversário é em 22 de fevereiro), ela pode ser comprometida. Isso destaca a importância da autenticação de múltiplos fatores (MFA) para proteger contas contra acesso não autorizado.
 
 A MFA exige dois ou mais métodos de autenticação para verificar a identidade de um usuário:
 
-<mark style="color:blue;">**Algo que você sabe**</mark>
-
-Como um nome de usuário e senha, ou um número PIN.
-
-<mark style="color:blue;">**Algo que você tem**</mark>
-
-Como uma senha única gerada por um dispositivo de hardware ou aplicativo móvel.
-
-<mark style="color:blue;">**Algo que você é**</mark>
-
-Como tecnologia de reconhecimento facial ou biometria.
+| Algo que você sabe                                 | Algo que você tem                                                               | Algo que você é                                        |
+| -------------------------------------------------- | ------------------------------------------------------------------------------- | ------------------------------------------------------ |
+| Como um nome de usuário e senha, ou um número PIN. | Como uma senha única gerada por um dispositivo de hardware ou aplicativo móvel. | Como tecnologia de reconhecimento facial ou biometria. |
 
 Ao combinar esses métodos, a MFA cria uma camada adicional de segurança. Mesmo que a primeira camada, como a senha de Bob, seja comprometida, a segunda camada, como um token gerado por um aplicativo MFA, adiciona proteção extra. Isso é crucial para proteger contas importantes, como a conta raiz da AWS, contra acessos não autorizados.
 
@@ -109,8 +96,9 @@ Quando você habilita a autenticação de múltiplos fatores (MFA) no seu usuár
 
 Ao ativar a MFA, você realiza o seguinte processo:
 
-1. **Primeira etapa de identificação**: Você insere seu e-mail e senha para autenticar sua identidade como de costume.
-2. **Segunda etapa de identificação**: Além das credenciais normais, você precisa fornecer um código numérico único que é gerado pelo dispositivo MFA (como um aplicativo de smartphone ou um token de hardware).
+| Primeira etapa de identificação                                                | Segunda etapa de identificação                                                                                                                                             |
+| ------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Você insere seu e-mail e senha para autenticar sua identidade como de costume. | Além das credenciais normais, você precisa fornecer um código numérico único que é gerado pelo dispositivo MFA (como um aplicativo de smartphone ou um token de hardware). |
 
 Essa combinação de informações verifica duas categorias de identificação ("algo que você conhece" e "algo que você tem"), fornecendo uma proteção adicional contra acesso não autorizado à sua conta raiz da AWS.
 

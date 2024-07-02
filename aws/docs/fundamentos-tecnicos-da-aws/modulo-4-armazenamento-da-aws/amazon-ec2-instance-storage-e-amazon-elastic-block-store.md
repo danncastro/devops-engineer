@@ -107,9 +107,7 @@ O Amazon Elastic Block Store (Amazon EBS) é altamente valioso quando há a nece
 
 #### <mark style="color:blue;">**2. Bancos de Dados**</mark>
 
-| Camada de Armazenamento                                                                                                     | Desempenho Consistente                                                                              | Snapshots                                                                                          |
-| --------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- |
-| O EBS é ideal para bancos de dados em execução no Amazon EC2 que dependem de leituras e gravações transacionais frequentes. | O EBS oferece desempenho consistente e baixa latência, essenciais para operações de banco de dados. | Permite criar snapshots regulares dos volumes de bancos de dados para backup e recuperação rápida. |
+<table><thead><tr><th width="249">Camada de Armazenamento</th><th>Desempenho Consistente</th><th>Snapshots</th></tr></thead><tbody><tr><td>O EBS é ideal para bancos de dados em execução no Amazon EC2 que dependem de leituras e gravações transacionais frequentes.</td><td>O EBS oferece desempenho consistente e baixa latência, essenciais para operações de banco de dados.</td><td>Permite criar snapshots regulares dos volumes de bancos de dados para backup e recuperação rápida.</td></tr></tbody></table>
 
 #### <mark style="color:blue;">**3. Aplicações Corporativas**</mark>
 
@@ -125,7 +123,7 @@ O Amazon Elastic Block Store (Amazon EBS) é altamente valioso quando há a nece
 
 #### <mark style="color:blue;">Benefícios do Amazon EBS</mark>
 
-| Persistência de Dados                                                                                             | Alta Disponibilidade                                                                                                                              | Gerenciamento de Volumes:                                                                                        |
+| Persistência de Dados                                                                                             | Alta Disponibilidade                                                                                                                              | Gerenciamento de Volumes                                                                                         |
 | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- |
 | Dados armazenados no EBS persistem além do ciclo de vida da instância EC2, oferecendo durabilidade a longo prazo. | Projetado para alta disponibilidade e replicação automática dentro da zona de disponibilidade, garantindo que os dados estejam sempre acessíveis. | Facilita a gestão de volumes, incluindo redimensionamento e snapshots, proporcionando flexibilidade e segurança. |
 
@@ -207,9 +205,13 @@ Os volumes do Amazon Elastic Block Store (EBS) são categorizados em duas princi
 
 #### <mark style="color:blue;">Escolhendo o Volume Certo</mark>
 
-| SSD IOPS Provisionadas (io1/io2)                                                                                                | SSD de Uso Geral (gp2/gp3)                                                                                         | HDD com Taxa de Transferência Otimizada (st1)                                                                | HDD Frio (sc1)                                                                                      |
-| ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------- |
-| Escolha este tipo de volume para aplicações que requerem alta performance e baixa latência, como bancos de dados transacionais. | Ideal para uma ampla gama de workloads, incluindo volumes de inicialização e ambientes de desenvolvimento e teste. | Adequado para workloads que necessitam de alta taxa de transferência, como processamento de big data e logs. | Melhor para dados que são acessados com menos frequência e não requerem alta taxa de transferência. |
+| SSD IOPS Provisionadas (io1/io2)                                                                                                | SSD de Uso Geral (gp2/gp3)                                                                                         |
+| ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| Escolha este tipo de volume para aplicações que requerem alta performance e baixa latência, como bancos de dados transacionais. | Ideal para uma ampla gama de workloads, incluindo volumes de inicialização e ambientes de desenvolvimento e teste. |
+
+| HDD com Taxa de Transferência Otimizada (st1)                                                                | HDD Frio (sc1)                                                                                      |
+| ------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------- |
+| Adequado para workloads que necessitam de alta taxa de transferência, como processamento de big data e logs. | Melhor para dados que são acessados com menos frequência e não requerem alta taxa de transferência. |
 
 Escolher o tipo de volume do EBS certo é crucial para otimizar o desempenho e o custo da sua infraestrutura na AWS.
 
@@ -237,7 +239,9 @@ O Amazon Elastic Block Store (EBS) oferece uma série de benefícios que o torna
 
 <mark style="color:green;">**Benefício**</mark><mark style="color:green;">:</mark> Garante a segurança dos dados sensíveis, atendendo a requisitos de conformidade e regulamentações de segurança.
 {% endtab %}
+{% endtabs %}
 
+{% tabs %}
 {% tab title="Flexibilidade" %}
 <mark style="color:purple;">**Descrição**</mark><mark style="color:purple;">:</mark> Os volumes do EBS oferecem suporte a alterações instantâneas, como modificar o tipo de volume, o tamanho do volume e a capacidade das operações de IOPS sem interromper a instância.
 
@@ -261,7 +265,7 @@ Os snapshots do Amazon EBS são uma ferramenta poderosa para fazer backups e cri
 
 #### <mark style="color:blue;">**Funcionamento dos Snapshots**</mark>
 
-| Backup Incremental:                                                                                                                                                                                                                                                | Redundância e Armazenamento no Amazon S3:                                                                                                                                                                                                                        | Gerenciamento Simples:                                                                                                                                                                                                                       |
+| Backup Incremental                                                                                                                                                                                                                                                 | Redundância e Armazenamento no Amazon S3:                                                                                                                                                                                                                        | Gerenciamento Simples                                                                                                                                                                                                                        |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <mark style="color:purple;">**Descrição**</mark><mark style="color:purple;">:</mark> Os snapshots do EBS são backups incrementais, o que significa que eles capturam apenas os blocos de dados que foram modificados desde o último snapshot.                      | <mark style="color:purple;">**Descrição**</mark><mark style="color:purple;">:</mark> Os snapshots do EBS são armazenados de forma redundante em várias zonas de disponibilidade usando o Amazon S3.                                                              | <mark style="color:purple;">**Descrição**</mark><mark style="color:purple;">:</mark> Os snapshots do EBS são gerenciados através do console do Amazon EBS, que faz parte do console do Amazon EC2.                                           |
 | <mark style="color:green;">**Benefício**</mark><mark style="color:green;">:</mark> Isso economiza espaço de armazenamento, já que apenas os blocos alterados são armazenados no Amazon S3, enquanto blocos não modificados são referenciados do snapshot anterior. | <mark style="color:green;">**Benefício**</mark><mark style="color:green;">:</mark> Garante alta durabilidade e disponibilidade dos backups. A AWS gerencia automaticamente a replicação e a redundância no Amazon S3, sem necessidade de intervenção do usuário. | <mark style="color:green;">**Benefício**</mark><mark style="color:green;">:</mark> Facilita a criação, cópia, restauração e exclusão de snapshots de maneira intuitiva e direta, sem a necessidade de interagir diretamente com o Amazon S3. |

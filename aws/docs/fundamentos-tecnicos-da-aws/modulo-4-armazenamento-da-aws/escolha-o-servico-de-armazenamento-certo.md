@@ -81,7 +81,9 @@ O Amazon EBS fornece armazenamento em bloco que pode ser provisionado e anexado 
 {% tab title="Provisionamento Antecipado" %}
 Você paga pelo armazenamento que provisiona, o que permite ajustar a capacidade conforme suas necessidades sem custos excessivos.
 {% endtab %}
+{% endtabs %}
 
+{% tabs %}
 {% tab title="Replicação e Disponibilidade" %}
 Os volumes do EBS são replicados automaticamente em múltiplos servidores dentro de uma única zona de disponibilidade, garantindo alta disponibilidade e durabilidade dos dados.
 {% endtab %}
@@ -115,7 +117,9 @@ O Amazon S3 armazena dados como objetos, cada um composto por dados, metadados e
 {% tab title="Modelo de Pagamento Sob Demanda" %}
 Você paga apenas pelo armazenamento e transferência de dados que utiliza, sem necessidade de provisionar antecipadamente capacidade de armazenamento. Isso proporciona flexibilidade para escalar de acordo com as necessidades de armazenamento.
 {% endtab %}
+{% endtabs %}
 
+{% tabs %}
 {% tab title="Alta Disponibilidade e Durabilidade" %}
 Os objetos armazenados no Amazon S3 são replicados automaticamente em várias zonas de disponibilidade dentro de uma região, garantindo alta disponibilidade e durabilidade dos dados.
 {% endtab %}
