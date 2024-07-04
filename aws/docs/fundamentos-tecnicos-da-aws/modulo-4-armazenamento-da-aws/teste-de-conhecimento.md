@@ -3,16 +3,24 @@
 ***
 
 {% tabs %}
-{% tab title="Pergunta 1" %}
+{% tab title="1º" %}
 <figure><img src="../../.gitbook/assets/image (58).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
-{% tab title="Pergunta 2" %}
+{% tab title="2º" %}
 <figure><img src="../../.gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
-{% tab title="Pergunta 3" %}
+{% tab title="3º" %}
 <figure><img src="../../.gitbook/assets/image (61).png" alt=""><figcaption></figcaption></figure>
+{% endtab %}
+
+{% tab title="4º" %}
+<figure><img src="../../.gitbook/assets/image (77).png" alt=""><figcaption></figcaption></figure>
+{% endtab %}
+
+{% tab title="5º" %}
+<figure><img src="../../.gitbook/assets/image (78).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 {% endtabs %}
 

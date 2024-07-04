@@ -3,13 +3,13 @@
 ***
 
 {% tabs %}
-{% tab title="Quest 1" %}
+{% tab title="1º" %}
 <figure><img src="../../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
 
 ***
 {% endtab %}
 
-{% tab title="Quest 2" %}
+{% tab title="2º" %}
 <figure><img src="../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
 
 ***

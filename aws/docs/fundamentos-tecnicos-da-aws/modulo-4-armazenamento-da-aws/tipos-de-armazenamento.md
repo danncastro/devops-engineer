@@ -39,9 +39,13 @@ O armazenamento de arquivos é ideal para situações onde é necessário um ace
 
 O armazenamento de arquivos é comumente utilizado em:
 
-| Grandes repositórios de conteúdo                                        | Ambientes de desenvolvimento                                                    | Diretórios iniciais do usuário                                                            |
-| ----------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
-| Onde uma grande quantidade de dados precisa ser organizada e acessível. | Onde múltiplos desenvolvedores precisam acessar e modificar os mesmos arquivos. | Para armazenar e gerenciar os dados pessoais de cada usuário em um sistema compartilhado. |
+| Grandes repositórios de conteúdo                                        |
+| ----------------------------------------------------------------------- |
+| Onde uma grande quantidade de dados precisa ser organizada e acessível. |
+
+| Ambientes de desenvolvimento                                                    | Diretórios iniciais do usuário                                                            |
+| ------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| Onde múltiplos desenvolvedores precisam acessar e modificar os mesmos arquivos. | Para armazenar e gerenciar os dados pessoais de cada usuário em um sistema compartilhado. |
 
 Essa abordagem de armazenamento permite uma gestão eficiente e organizada dos dados, facilitando o acesso e a colaboração entre diversos usuários e sistemas.
 

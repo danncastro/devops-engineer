@@ -192,9 +192,13 @@ Ao optar por um banco de dados relacional na AWS, você enfrentará a escolha en
 
 #### <mark style="color:blue;">**Por que escolher um Banco de Dados Gerenciado**</mark>
 
-| Economia de Tempo e Recursos                                                                                      | Escalabilidade e Disponibilidade                                                                                        | Segurança e Conformidade                                                                                                 |
-| ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| Automatiza tarefas operacionais rotineiras, liberando equipes para se concentrarem em inovação e desenvolvimento. | Garante alta disponibilidade e dimensionamento automático, fundamental para aplicações com demandas variáveis de carga. | Oferece configurações de segurança padronizadas e gerenciamento de patches, mantendo a conformidade com regulamentações. |
+| Economia de Tempo e Recursos                                                                                      |
+| ----------------------------------------------------------------------------------------------------------------- |
+| Automatiza tarefas operacionais rotineiras, liberando equipes para se concentrarem em inovação e desenvolvimento. |
+
+| Escalabilidade e Disponibilidade                                                                                        | Segurança e Conformidade                                                                                                 |
+| ----------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| Garante alta disponibilidade e dimensionamento automático, fundamental para aplicações com demandas variáveis de carga. | Oferece configurações de segurança padronizadas e gerenciamento de patches, mantendo a conformidade com regulamentações. |
 
 #### <mark style="color:blue;">**Casos de Uso**</mark>
 
@@ -240,9 +244,13 @@ Se você optar por hospedar seu banco de dados relacional no Amazon EC2, estará
 
 #### <mark style="color:blue;">**Benefícios e Considerações**</mark>
 
-| Flexibilidade de Configuração                                                                                                  | Controle Operacional                                                                                                       | Responsabilidade Compartilhada                                                                                         |
-| ------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| Permite ajustar a configuração da instância do EC2 e do banco de dados de acordo com as necessidades específicas da aplicação. | Você mantém controle total sobre o gerenciamento do banco de dados, incluindo otimizações de desempenho e personalizações. | A AWS cuida da camada física e de infraestrutura, enquanto você se concentra na administração do software e dos dados. |
+| Flexibilidade de Configuração                                                                                                  | Controle Operacional                                                                                                       |
+| ------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------- |
+| Permite ajustar a configuração da instância do EC2 e do banco de dados de acordo com as necessidades específicas da aplicação. | Você mantém controle total sobre o gerenciamento do banco de dados, incluindo otimizações de desempenho e personalizações. |
+
+| Responsabilidade Compartilhada                                                                                         |
+| ---------------------------------------------------------------------------------------------------------------------- |
+| A AWS cuida da camada física e de infraestrutura, enquanto você se concentra na administração do software e dos dados. |
 
 #### <mark style="color:blue;">**Por que escolher um Banco de Dados não Gerenciado**</mark>
 
