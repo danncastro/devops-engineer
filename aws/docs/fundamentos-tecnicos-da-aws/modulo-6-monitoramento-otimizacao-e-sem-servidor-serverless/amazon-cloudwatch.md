@@ -50,9 +50,9 @@ No Amazon CloudWatch, cada métrica é identificada por um carimbo de data/hora 
 
 #### <mark style="color:blue;">**Casos de Uso**</mark>
 
-| Performance de Aplicações                                                                       |
-| ----------------------------------------------------------------------------------------------- |
-| Monitorar a utilização de recursos de instâncias EC2 por InstanceId para ajustes de capacidade. |
+| Performance de Aplicações                                                                           |
+| --------------------------------------------------------------------------------------------------- |
+| Monitorar a utilização de recursos de instâncias EC2 por **InstanceId** para ajustes de capacidade. |
 
 | Ambientes Multi-AZ                                                                                                     | Segurança e Compliance                                                                                |
 | ---------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |

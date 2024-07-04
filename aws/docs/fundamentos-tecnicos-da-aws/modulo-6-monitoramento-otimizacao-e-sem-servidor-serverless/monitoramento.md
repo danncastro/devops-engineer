@@ -4,7 +4,7 @@
 
 ## <mark style="color:red;">**Objetivo do monitoramento**</mark>
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
 
 O monitoramento é essencial para operar eficientemente um site ou aplicação na AWS, como um diretório de funcionários. Ele permite responder a perguntas críticas como:
 
@@ -40,7 +40,7 @@ Os dados coletados através do monitoramento, como métricas e logs, são vitais
 
 ***
 
-### <mark style="color:red;">**Use de Métricas para Resolução de Problemas**</mark>
+### <mark style="color:red;">**Uso de Métricas para Resolução de Problemas**</mark>
 
 Os recursos da AWS que sustentam suas soluções geram uma variedade de dados que podem ser úteis para coletar. Cada ponto de dados gerado por um recurso é uma métrica. Ao longo do tempo, essas métricas coletadas e analisadas se transformam em estatísticas, como a média de utilização da CPU, exibindo picos.
 

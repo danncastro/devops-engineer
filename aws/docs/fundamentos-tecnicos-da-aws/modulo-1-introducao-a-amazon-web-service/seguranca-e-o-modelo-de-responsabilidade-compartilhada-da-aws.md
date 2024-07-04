@@ -8,7 +8,7 @@ description: >-
 
 Para descrever essa responsabilidade compartilhada, a AWS criou o modelo de responsabilidade compartilhada. A distinção de responsabilidade é comumente chamada de segurança DA nuvem versus segurança NA nuvem.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -20,7 +20,7 @@ O nível de responsabilidade da AWS varia conforme o serviço oferecido. A AWS c
 
 A tabela a seguir fornece informações sobre cada um, incluindo a responsabilidade da AWS.
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Observação:** os serviços de contêiner referem-se a contêineres de aplicação de abstração da AWS nos bastidores, e não aos serviços de contêiner do Docker. Isso permite que a AWS retire a responsabilidade de gerenciar a plataforma dos clientes.
@@ -36,7 +36,7 @@ O nível de responsabilidade do cliente varia conforme o serviço da AWS utiliza
 
 Para ajudar a entender essas responsabilidades, a AWS classifica seus serviços em três categorias principais. Essas categorias permitem que você determine claramente o seu papel na segurança ao usar cada produto da AWS:
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Para garantir a segurança adequada ao usar produtos da AWS, os clientes precisam considerar cuidadosamente os níveis de responsabilidade exigidos para proteger cada serviço. Isso envolve avaliar como o modelo de segurança compartilhado da AWS se alinha com os padrões de segurança internos e com as leis e regulamentos aplicáveis ao ambiente de TI da organização.
 

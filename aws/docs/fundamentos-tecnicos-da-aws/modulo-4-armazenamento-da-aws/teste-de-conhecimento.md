@@ -22,6 +22,18 @@
 {% tab title="5º" %}
 <figure><img src="../../.gitbook/assets/image (78).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
+
+{% tab title="6º" %}
+<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+{% endtab %}
+
+{% tab title="7º" %}
+<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+{% endtab %}
+
+{% tab title="8º" %}
+<figure><img src="../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
+{% endtab %}
 {% endtabs %}
 
 ***

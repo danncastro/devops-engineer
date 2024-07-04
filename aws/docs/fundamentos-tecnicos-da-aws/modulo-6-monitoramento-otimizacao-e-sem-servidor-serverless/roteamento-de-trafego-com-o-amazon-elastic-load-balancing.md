@@ -80,7 +80,7 @@ Garantir a integridade operacional de uma aplicação é crucial para manter sua
 
 Por exemplo, na aplicação "Diretório de Funcionários", que depende de um banco de dados e do Amazon S3, uma verificação de integridade ideal deveria testar todos esses elementos essenciais. Uma prática comum é criar uma página de monitoramento como "/monitor", que realiza chamadas ao banco de dados para verificar a conexão e obter dados, além de interagir com o Amazon S3 para validar o acesso aos arquivos necessários. Essa página de monitoramento é então configurada no balanceador de carga para ser verificada regularmente.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 <mark style="color:blue;">**Benefícios das Verificações de Integridade**</mark>
 
@@ -106,7 +106,7 @@ Implementar verificações de integridade robustas não apenas fortalece a dispo
 
 O serviço Elastic Load Balancing (ELB) da AWS é composto por três componentes principais que desempenham papéis cruciais na distribuição e gerenciamento do tráfego de aplicativos:
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 <details>
 
@@ -194,7 +194,7 @@ O NLB é ideal para aplicações que operam em camadas mais baixas do modelo OSI
 
 Para escolher entre os tipos de serviço do Elastic Load Balancer (ELB), é crucial entender as necessidades específicas da sua aplicação e como cada tipo de balancer atende a essas exigências:
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### <mark style="color:blue;">**Escolha do ELB**</mark>
 

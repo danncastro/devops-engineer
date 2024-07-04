@@ -46,3 +46,8 @@
   * [Amazon EC2 Auto Scaling](fundamentos-tecnicos-da-aws/modulo-6-monitoramento-otimizacao-e-sem-servidor-serverless/amazon-ec2-auto-scaling.md)
   * [Teste de conhecimento](fundamentos-tecnicos-da-aws/modulo-6-monitoramento-otimizacao-e-sem-servidor-serverless/teste-de-conhecimento.md)
   * [Arquitetura Final Otimizada](fundamentos-tecnicos-da-aws/modulo-6-monitoramento-otimizacao-e-sem-servidor-serverless/arquitetura-final-otimizada.md)
+
+## Laboratórios
+
+* [Online Course Supplement: Architecting on AWS](laboratorios/online-course-supplement-architecting-on-aws/README.md)
+  * [Tarefa 1 – Revisar e executar um modelo pré-configurado do CloudFormation](laboratorios/online-course-supplement-architecting-on-aws/tarefa-1-revisar-e-executar-um-modelo-pre-configurado-do-cloudformation.md)
