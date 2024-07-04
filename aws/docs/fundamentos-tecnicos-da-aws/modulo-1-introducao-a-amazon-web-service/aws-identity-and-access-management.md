@@ -205,7 +205,7 @@ As políticas do IAM permitem que você aplique o princípio do menor privilégi
 
 Ao criar uma política, cada um dos elementos mostrados na tabela é necessário na declaração de política.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
