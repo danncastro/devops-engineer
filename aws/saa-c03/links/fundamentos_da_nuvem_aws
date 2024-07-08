@@ -1,0 +1,88 @@
+# [GUIA DE CONCEITOS BÁSICOS](https://aws.amazon.com/pt/getting-started/cloud-essentials/)
+
+## O que é a AWS
+
+[Computação em nuvem com a AWS](https://aws.amazon.com/pt/what-is-aws/?pg=cloudessentials)
+[Uma lista completa dos serviços da AWS por categoria](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/amazon-web-services-cloud-platform.html?pg=cloudessentials)
+
+---
+
+## Computação em nuvem e on-premises
+
+[Deploy a LAMP Web App on Amazon Lightsail](https://aws.amazon.com/pt/getting-started/guides/deploy-lamp-lightsail/?nc1=h_ls)
+[Modelos de implantação de computação em nuvem](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/types-of-cloud-computing.html?pg=cloudessentials)
+
+---
+
+## IaaS, Paas e SaaS
+
+[Deploy a LAMP Web App on Amazon Lightsail](https://aws.amazon.com/pt/getting-started/guides/deploy-lamp-lightsail/?nc1=h_ls)
+[Implante uma aplicação Web App no AWS Elastic Beanstalk](https://community.aws/content/2dukTdDKgK5BmeYO2ISAT80M1Rx/deploy-webapp-eb-cdk)
+[Software como serviço (SaaS) na AWS](https://aws.amazon.com/pt/saas/)
+[Tipos de computação em nuvem](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/types-of-cloud-computing.html?pg=cloudessentials)
+
+---
+
+## Infraestrutura global
+
+[Maior infraestrutura global](https://aws.amazon.com/pt/about-aws/global-infrastructure/?pg=cloudessentials)
+[Regiões e zonas de disponibilidade](https://aws.amazon.com/pt/about-aws/global-infrastructure/regions_az/?pg=cloudessentials)
+[Lista de serviços da AWS por região](https://aws.amazon.com/pt/about-aws/global-infrastructure/regional-product-services/?pg=cloudessentials)
+
+---
+
+## Ferramentas do desenvolvedor
+
+[Console de Gerenciamento da AWS](https://aws.amazon.com/pt/getting-started/hands-on/getting-started-with-aws-management-console/)
+[AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html?pg=cloudessentials)
+[AWS CloudShell](https://aws.amazon.com/pt/cloudshell/?pg=cloudessentials)
+[AWS Cloud9](https://aws.amazon.com/pt/cloud9/?pg=cloudessentials)
+[Python SDK](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/index.html?pg=cloudessentials)
+[Ferramentas para criar com a AWS](https://aws.amazon.com/pt/developer/tools/)
+[Documentação: Console de Gerenciamento da AWS](https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/learn-whats-new.html)
+[AWS Command Line Interface](https://aws.amazon.com/pt/cli/?pg=cloudessentials)
+[Projeto da AWS CLI no GitHub](https://github.com/aws/aws-cli)
+
+---
+
+## Infraestrutura como código (IaC)
+
+[Get Started with AWS CDK](https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html)
+[Getting started with AWS CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/GettingStarted.html?pg=cloudessentials)
+[AWS CDK v2](https://docs.aws.amazon.com/cdk/v2/guide/home.html?pg=cloudessentials)
+[O que é o AWS CloudFormation?](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html)
+
+---
+
+## Infraestrutura do Well-Architected
+
+[Pilar Excelência operacional](https://docs.aws.amazon.com/wellarchitected/latest/operational-excellence-pillar/welcome.html?pg=cloudessentials)
+[Pilar Segurança](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/welcome.html?pg=cloudessentials)
+[Pilar Confiabilidade](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html?pg=cloudessentials)
+[Pilar Eficiência de performance](https://docs.aws.amazon.com/wellarchitected/latest/performance-efficiency-pillar/welcome.html?pg=cloudessentials)
+[Pilar Otimização de custos](https://docs.aws.amazon.com/wellarchitected/latest/cost-optimization-pillar/welcome.html?pg=cloudessentials)
+[Pilar Sustentabilidade](https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sustainability-pillar.html?pg=cloudessentials)
+[AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html?pg=cloudessentials)
+[Laboratórios práticos do AWS Well-Architected](https://www.wellarchitectedlabs.com/)
+[Ferramenta AWS Well-Architected](https://aws.amazon.com/pt/well-architected-tool/?pg=cloudessentials)
+
+---
+
+## Segurança
+
+[Aprendizado sobre segurança](https://aws.amazon.com/pt/security/security-learning/?pg=cloudessentials&cards-top.sort-by=item.additionalFields.sortDate&cards-top.sort-order=desc&awsf.Types=*all)
+[Modelo de responsabilidade compartilhada da AWS](https://aws.amazon.com/pt/compliance/shared-responsibility-model/?pg=cloudessentials)
+[Práticas recomendadas de segurança da AWS](https://docs.aws.amazon.com/whitepapers/latest/introduction-aws-security/security-of-the-aws-infrastructure.html)
+
+---
+
+## Perguntas frequentes
+
+[Amazon EC2](https://aws.amazon.com/pt/ec2/faqs/?saa=sec&sec=prep)
+[Amazon S3](https://aws.amazon.com/pt/s3/faqs/?saa=sec&sec=prep)
+[Amazon VPC](https://aws.amazon.com/pt/vpc/faqs/?saa=sec&sec=prep)
+[Amazon Route 53](https://aws.amazon.com/pt/route53/faqs/?saa=sec&sec=prep)
+[Amazon RDS](https://aws.amazon.com/pt/rds/faqs/?saa=sec&sec=prep)
+[Amazon SQS](https://aws.amazon.com/pt/sqs/faqs/?saa=sec&sec=prep)
+
+---

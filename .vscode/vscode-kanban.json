@@ -1,0 +1,233 @@
+{
+  "todo": [
+    {
+      "assignedTo": {
+        "name": "danncastro"
+      },
+      "category": "DevOps",
+      "creation_time": "2024-07-02T13:40:48.308Z",
+      "description": {
+        "content": "https://www.youtube.com/watch?v=WcPWWI1rta0",
+        "mime": "text/markdown"
+      },
+      "id": "3",
+      "references": [],
+      "title": "Linux: O mínimo que você precisa saber",
+      "prio": 50
+    },
+    {
+      "assignedTo": {
+        "name": "danncastro"
+      },
+      "category": "DevOps",
+      "creation_time": "2024-07-02T13:41:36.283Z",
+      "description": {
+        "content": "https://www.youtube.com/watch?v=kF7xiL4Nbg0",
+        "mime": "text/markdown"
+      },
+      "id": "4",
+      "references": [],
+      "title": "Guia definitivo de Docker para iniciantes",
+      "prio": 49
+    },
+    {
+      "assignedTo": {
+        "name": "danncastro"
+      },
+      "creation_time": "2024-07-02T13:43:01.152Z",
+      "description": {
+        "content": "https://www.youtube.com/watch?v=zyF-D5zYiR8",
+        "mime": "text/markdown"
+      },
+      "id": "5",
+      "prio": 48,
+      "references": [],
+      "title": "Seus primeiros passos na AWS"
+    },
+    {
+      "assignedTo": {
+        "name": "danncastro"
+      },
+      "category": "DevOps",
+      "creation_time": "2024-07-05T13:49:11.761Z",
+      "description": {
+        "content": "https://devops4devs.devopspro.com.br/aula/deploy-agil-e-seguro-na-aws/",
+        "mime": "text/markdown"
+      },
+      "id": "10",
+      "prio": 43,
+      "references": [],
+      "title": "Deploy ágil e seguro na AWS"
+    },
+    {
+      "assignedTo": {
+        "name": "danncastro"
+      },
+      "category": "DevOps",
+      "creation_time": "2024-07-05T14:10:22.549Z",
+      "description": {
+        "content": "https://devops4devs.devopspro.com.br/live/mentalidade-devops-aumente-a-produtividade/",
+        "mime": "text/markdown"
+      },
+      "id": "13",
+      "prio": 42,
+      "references": [],
+      "title": "Mentalidade DevOps: Aumente a Produtividade e Foque no que Realmente Importa"
+    },
+    {
+      "assignedTo": {
+        "name": "danncastro"
+      },
+      "category": "DevOps",
+      "creation_time": "2024-07-05T13:51:36.840Z",
+      "description": {
+        "content": "https://devops4devs.devopspro.com.br/aula/dv2-pipelines-inteligentes-com-github-actions/",
+        "mime": "text/markdown"
+      },
+      "id": "11",
+      "prio": 41,
+      "references": [],
+      "title": "Pipelines inteligentes com Github Actions"
+    },
+    {
+      "assignedTo": {
+        "name": "danncastro"
+      },
+      "category": "DevOps",
+      "creation_time": "2024-07-05T14:11:18.912Z",
+      "description": {
+        "content": "https://devops4devs.devopspro.com.br/live/forma-certa-de-implementar-observabilidade-com-ope/",
+        "mime": "text/markdown"
+      },
+      "id": "14",
+      "prio": 40,
+      "references": [],
+      "title": "A forma certa de implementar observabilidade com OpenTelemetry"
+    },
+    {
+      "assignedTo": {
+        "name": "danncastro"
+      },
+      "category": "DevOps",
+      "creation_time": "2024-07-05T13:51:52.744Z",
+      "description": {
+        "content": "https://devops4devs.devopspro.com.br/aula/monitoramento-e-visao-360/",
+        "mime": "text/markdown"
+      },
+      "id": "12",
+      "prio": 39,
+      "references": [],
+      "title": "Monitoramento e visão 360 da sua aplicação com Prometheus e Grafana"
+    },
+    {
+      "assignedTo": {
+        "name": "danncastro"
+      },
+      "category": "DevOps",
+      "creation_time": "2024-07-05T14:12:06.040Z",
+      "description": {
+        "content": "https://devops4devs.devopspro.com.br/live/sre-buscando-a-hyperconfiabilidade-com-google/",
+        "mime": "text/markdown"
+      },
+      "id": "15",
+      "prio": 38,
+      "references": [],
+      "title": "SRE: Buscando a hyperconfiabilidade com Google Gemini"
+    }
+  ],
+  "in-progress": [
+    {
+      "assignedTo": {
+        "name": "danncastro"
+      },
+      "category": "DevOps",
+      "creation_time": "2024-07-02T13:54:36.699Z",
+      "description": {
+        "content": "https://devops4devs.devopspro.com.br/live/devops4devs2-devcontainers-combinacao-perfeita-do-/",
+        "mime": "text/markdown"
+      },
+      "id": "8",
+      "prio": 44,
+      "references": [],
+      "title": "Kubernetes e KEDA: Escalabilidade orientada a eventos"
+    }
+  ],
+  "testing": [],
+  "done": [
+    {
+      "assignedTo": {
+        "name": "danncastro"
+      },
+      "category": "DevOps",
+      "creation_time": "2024-07-02T13:37:38.188Z",
+      "description": {
+        "content": "https://www.youtube.com/watch?v=EH8e_eIeAuw",
+        "mime": "text/markdown"
+      },
+      "id": "1",
+      "references": [],
+      "title": "Primeiros passos de um Dev com DevOps e Cloud",
+      "prio": 52
+    },
+    {
+      "assignedTo": {
+        "name": "danncastro"
+      },
+      "category": "DevOps",
+      "creation_time": "2024-07-02T13:39:27.658Z",
+      "description": {
+        "content": "https://www.youtube.com/watch?v=doQ5bxopC88",
+        "mime": "text/markdown"
+      },
+      "id": "2",
+      "references": [],
+      "title": "Como usar Linux e Windows na mesma máquina sem dual boot ou máquina virtual | WSL na prática",
+      "prio": 51
+    },
+    {
+      "assignedTo": {
+        "name": "danncastro"
+      },
+      "category": "DevOps",
+      "creation_time": "2024-07-02T13:53:18.179Z",
+      "description": {
+        "content": "https://devops4devs.devopspro.com.br/aula/transforme-seu-desenvolvimento-com-docker/",
+        "mime": "text/markdown"
+      },
+      "id": "7",
+      "prio": 47,
+      "references": [],
+      "title": "Transforme seu Desenvolvimento com Docker"
+    },
+    {
+      "assignedTo": {
+        "name": "danncastro"
+      },
+      "category": "DevOps",
+      "creation_time": "2024-07-02T13:49:50.820Z",
+      "description": {
+        "content": "https://devops4devs.devopspro.com.br/live/devcontainers-combinacao-perfeita-do-docker-e-vsco/",
+        "mime": "text/markdown"
+      },
+      "id": "6",
+      "prio": 46,
+      "references": [],
+      "title": "DevContainers: A combinação perfeita do Docker e VSCode"
+    },
+    {
+      "assignedTo": {
+        "name": "danncastro"
+      },
+      "category": "DevOps",
+      "creation_time": "2024-07-05T13:48:13.577Z",
+      "description": {
+        "content": "https://devops4devs.devopspro.com.br/aula/dv2-kubernetes-do-zero-ao-deploy/",
+        "mime": "text/markdown"
+      },
+      "id": "9",
+      "prio": 45,
+      "references": [],
+      "title": "Kubernetes: do zero ao deploy"
+    }
+  ]
+}
