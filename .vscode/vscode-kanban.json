@@ -49,21 +49,6 @@
         "name": "danncastro"
       },
       "category": "DevOps",
-      "creation_time": "2024-07-05T13:49:11.761Z",
-      "description": {
-        "content": "https://devops4devs.devopspro.com.br/aula/deploy-agil-e-seguro-na-aws/",
-        "mime": "text/markdown"
-      },
-      "id": "10",
-      "prio": 43,
-      "references": [],
-      "title": "Deploy ágil e seguro na AWS"
-    },
-    {
-      "assignedTo": {
-        "name": "danncastro"
-      },
-      "category": "DevOps",
       "creation_time": "2024-07-05T14:10:22.549Z",
       "description": {
         "content": "https://devops4devs.devopspro.com.br/live/mentalidade-devops-aumente-a-produtividade/",
@@ -135,23 +120,7 @@
       "title": "SRE: Buscando a hyperconfiabilidade com Google Gemini"
     }
   ],
-  "in-progress": [
-    {
-      "assignedTo": {
-        "name": "danncastro"
-      },
-      "category": "DevOps",
-      "creation_time": "2024-07-02T13:54:36.699Z",
-      "description": {
-        "content": "https://devops4devs.devopspro.com.br/live/devops4devs2-devcontainers-combinacao-perfeita-do-/",
-        "mime": "text/markdown"
-      },
-      "id": "8",
-      "prio": 44,
-      "references": [],
-      "title": "Kubernetes e KEDA: Escalabilidade orientada a eventos"
-    }
-  ],
+  "in-progress": [],
   "testing": [],
   "done": [
     {
@@ -228,6 +197,36 @@
       "prio": 45,
       "references": [],
       "title": "Kubernetes: do zero ao deploy"
+    },
+    {
+      "assignedTo": {
+        "name": "danncastro"
+      },
+      "category": "DevOps",
+      "creation_time": "2024-07-02T13:54:36.699Z",
+      "description": {
+        "content": "https://devops4devs.devopspro.com.br/live/devops4devs2-devcontainers-combinacao-perfeita-do-/",
+        "mime": "text/markdown"
+      },
+      "id": "8",
+      "prio": 44,
+      "references": [],
+      "title": "Kubernetes e KEDA: Escalabilidade orientada a eventos"
+    },
+    {
+      "assignedTo": {
+        "name": "danncastro"
+      },
+      "category": "DevOps",
+      "creation_time": "2024-07-05T13:49:11.761Z",
+      "description": {
+        "content": "https://devops4devs.devopspro.com.br/aula/deploy-agil-e-seguro-na-aws/",
+        "mime": "text/markdown"
+      },
+      "id": "10",
+      "prio": 43,
+      "references": [],
+      "title": "Deploy ágil e seguro na AWS"
     }
   ]
 }
