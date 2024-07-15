@@ -34,9 +34,7 @@
 {% tab title="8º" %}
 <figure><img src="../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
-{% endtabs %}
 
-{% tabs %}
 {% tab title="9º" %}
 <figure><img src="../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
@@ -64,9 +62,7 @@
 {% tab title="15º" %}
 <figure><img src="../../.gitbook/assets/image (85).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
-{% endtabs %}
 
-{% tabs %}
 {% tab title="16º" %}
 <figure><img src="../../.gitbook/assets/image (86).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
