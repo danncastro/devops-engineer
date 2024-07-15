@@ -68,10 +68,4 @@
 {% endtab %}
 {% endtabs %}
 
-{% tabs %}
-{% tab title="undefined" %}
-
-{% endtab %}
-{% endtabs %}
-
 ***
