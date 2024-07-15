@@ -17,7 +17,7 @@ Ao planejar a capacidade de servidores para uma aplicação local (on-premises),
 
 As instâncias do Amazon EC2 são compostas por uma combinação de recursos essenciais como processadores virtuais (vCPUs), memória, capacidade de rede e, em certos casos, armazenamento de instâncias e unidades de processamento gráfico (GPUs). Ao configurar uma instância do EC2, é crucial determinar as quantidades necessárias de cada um desses componentes de acordo com os requisitos da sua aplicação e carga de trabalho esperada.
 
-<figure><img src="../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 A AWS oferece uma variedade de tipos de instância que diferem em termos de desempenho e capacidade. Algumas instâncias fornecem mais recursos do que outras. Para entender melhor as capacidades de uma instância específica, é necessário examinar seu tipo. Os tipos de instância são categorizados por um prefixo que identifica a família da instância e a geração, seguido pelo tamanho. Por exemplo, no caso do tipo de instância c5.large:
 

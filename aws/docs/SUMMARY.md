@@ -51,3 +51,9 @@
 
 * [Online Course Supplement: Architecting on AWS](laboratorios/online-course-supplement-architecting-on-aws/README.md)
   * [Tarefa 1 – Revisar e executar um modelo pré-configurado do CloudFormation](laboratorios/online-course-supplement-architecting-on-aws/tarefa-1-revisar-e-executar-um-modelo-pre-configurado-do-cloudformation.md)
+  * [Tarefa 2 – Criar um banco de dados do Amazon RDS](laboratorios/online-course-supplement-architecting-on-aws/tarefa-2-criar-um-banco-de-dados-do-amazon-rds.md)
+  * [Tarefa 3 – Criar um ElastiCache for Memcached](laboratorios/online-course-supplement-architecting-on-aws/tarefa-3-criar-um-elasticache-for-memcached.md)
+  * [Tarefa 4 – Criar seu Amazon Elastic File System](laboratorios/online-course-supplement-architecting-on-aws/tarefa-4-criar-seu-amazon-elastic-file-system.md)
+  * [Tarefa 5 – Criar um Application Load Balancer](laboratorios/online-course-supplement-architecting-on-aws/tarefa-5-criar-um-application-load-balancer.md)
+  * [Tarefa 6 – Criar um modelo de execução usando o CloudFormation](laboratorios/online-course-supplement-architecting-on-aws/tarefa-6-criar-um-modelo-de-execucao-usando-o-cloudformation.md)
+  * [Tarefa 7 – Criar os servidores de aplicativos configurando um grupo do Auto Scaling e uma política d](laboratorios/online-course-supplement-architecting-on-aws/tarefa-7-criar-os-servidores-de-aplicativos-configurando-um-grupo-do-auto-scaling-e-uma-politica-d.md)

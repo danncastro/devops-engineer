@@ -8,13 +8,13 @@ Uma Lista de Controle de Acesso à Rede **(Network ACL)** é semelhante a um fir
 
 Veja um exemplo:
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 A Network ACL padrão, exemplificada na tabela acima, permite todo o tráfego entrar e sair da sub-rede. Isso é um bom ponto de partida para permitir que os dados fluam livremente pela sub-rede.
 
 No entanto, você pode querer restringir o tráfego em um nível mais granular. Por exemplo, para uma aplicação web, você pode configurar regras específicas para permitir apenas tráfego **HTTPS** e **RDP (Remote Desktop Protocol)** para servidores web:
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **Observação:** No exemplo acima da Network ACL, é permitida a porta **443** para entrada e o intervalo de saída de **1025-65535**. Isso ocorre porque o **HTTP usa a porta 443** para iniciar uma conexão e responde usando uma porta efêmera. As Network ACLs são **stateless (não mantêm o estado)**, portanto você precisa incluir as portas de saída que serão usadas pelo protocolo para resposta. Se essas portas não forem incluídas, o servidor pode responder, mas o tráfego não sairá da sub-rede.
@@ -28,7 +28,7 @@ As Network ACLs são configuradas inicialmente para permitir tráfego de entrada
 
 A próxima camada de segurança é para suas instâncias do EC2, onde você pode criar um firewall chamado grupo de segurança. A configuração padrão de um grupo de segurança bloqueia todo o tráfego de entrada e permite todo o tráfego de saída.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### <mark style="color:blue;">**Comportamento de Estado**</mark>
 
@@ -38,13 +38,13 @@ Os grupos de segurança são stateful, o que significa que eles lembram se uma c
 
 Se você quiser que sua instância do EC2 aceite tráfego da Internet, deve abrir portas de entrada específicas. Por exemplo, para um servidor web, você pode precisar aceitar solicitações HTTP e HTTPS. Abaixo está um exemplo de regras de entrada:
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### <mark style="color:blue;">**Segregação de Tráfego com Grupos de Segurança**</mark>
 
 Você aprendeu anteriormente que sub-redes podem ser usadas para segregar tráfego entre computadores na rede. Grupos de segurança podem ser usados da mesma maneira. Um padrão comum é organizar recursos em diferentes grupos e criar grupos de segurança para controlar a comunicação de rede entre eles.
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### <mark style="color:blue;">**Exemplo de Arquitetura**</mark>
 

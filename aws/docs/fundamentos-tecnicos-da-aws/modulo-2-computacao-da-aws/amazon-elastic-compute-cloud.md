@@ -4,7 +4,7 @@
 
 ## <mark style="color:red;">Amazon EC2</mark>
 
-<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 O Amazon EC2 é um serviço na nuvem que oferece capacidade computacional escalável e segura. Ele permite criar e gerenciar servidores virtuais conhecidos como instâncias do EC2. Apesar de ser frequentemente associado a servidores web, EC2 é versátil e pode suportar uma ampla variedade de cargas de trabalho.
 
@@ -48,11 +48,11 @@ Uma classe no desenvolvimento de software é algo que é modelado e definido, en
 
 Quando você inicia uma nova instância EC2, a AWS aloca uma máquina virtual que roda em um hipervisor. A AMI selecionada é então copiada para o volume raiz, que contém a imagem utilizada para inicializar o sistema da instância. Posteriormente, você obtém um servidor no qual pode conectar-se e instalar pacotes e software adicional. Por exemplo, você pode configurar um servidor web junto com o código-fonte da aplicação de diretório de funcionários.
 
-<figure><img src="../../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Uma grande vantagem das AMIs é a reutilização. Você pode escolher uma AMI baseada em Linux, configurar o servidor HTTP, pacotes de aplicação e qualquer software adicional necessário para executar sua aplicação. Se precisar criar uma segunda instância EC2 com as mesmas configurações, pode repetir o processo de criação e configuração, ou criar uma nova instância a partir da AMI original. Isso garantirá que sua nova instância tenha as mesmas configurações que a primeira, pois as definições da AMI são replicadas.
 
-<figure><img src="../../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -66,7 +66,7 @@ Você pode selecionar uma AMI nas seguintes categorias:
 * AMIs da comunidade fornecidas pela comunidade de usuários da AWS
 * Crie sua própria imagem personalizada com o EC2 Image Builder
 
-<figure><img src="../../.gitbook/assets/image (11) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Cada AMI no Console de Gerenciamento da AWS tem um ID de AMI, que é prefixado por “ami-”, seguido por um hash aleatório de números e letras. Os IDs são exclusivos para cada região da AWS.
 
