@@ -41,7 +41,7 @@ _**Observação**: você também pode pesquisar por "CloudFormation" na barra de
 
 <summary><mark style="color:purple;">Tarefa 1.2 – Obter e examinar o modelo do CloudFormation</mark></summary>
 
-1. Baixar o modelo do CloudFormation. _(_[_task.ym_](https://forums.rockylinux.org/t/error-no-matching-repo-to-modify-crb-oracle-linux-9-rocky-linux-9/8401/2)_l)_ &#x20;
+1. Baixar o modelo do CloudFormation. _(_[_task1.yml_](https://github.com/danncastro/aws-hands-on-labs/blob/main/architecting-on-aws/task1.yml)_)_ &#x20;
 2. Abra o arquivo baixado em um editor de texto (não em um processador de texto).
 3. Revise o modelo do CloudFormation.
 4. Preveja quais recursos são criado por esse modelo.
