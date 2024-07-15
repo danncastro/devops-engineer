@@ -58,7 +58,9 @@
 {% tab title="14º" %}
 <figure><img src="../../.gitbook/assets/image (83).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
+{% endtabs %}
 
+{% tabs %}
 {% tab title="15º" %}
 <figure><img src="../../.gitbook/assets/image (85).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
