@@ -59,3 +59,4 @@
   * [Tarefa 7 – Criar os servidores de aplicativos configurando um grupo do Auto Scaling e uma política](laboratorios/online-course-supplement-architecting-on-aws/tarefa-7-criar-os-servidores-de-aplicativos-configurando-um-grupo-do-auto-scaling-e-uma-politica.md)
 * [Cloud Quest](laboratorios/cloud-quest/README.md)
   * [Cloud Practitioner](laboratorios/cloud-quest/cloud-practitioner.md)
+  * [Questions](laboratorios/cloud-quest/questions.md)

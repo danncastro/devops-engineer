@@ -6,7 +6,7 @@
 
 A disponibilidade de um sistema é frequentemente expressa como uma porcentagem de tempo de atividade ao longo de um ano ou em termos de "noves", indicando o quanto o sistema está operacional. Veja na tabela exemplos de disponibilidade e seu equivalente em tempo de inatividade anual:
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### <mark style="color:blue;">**Como Aumentar a Disponibilidade**</mark>
 

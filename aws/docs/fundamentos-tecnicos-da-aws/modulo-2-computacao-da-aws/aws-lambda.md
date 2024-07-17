@@ -60,7 +60,7 @@ O Amazon ECS e o Amazon EKS permitem que você execute seus contêineres nos doi
 * Amazon EC2
 * AWS Fargate
 
-<figure><img src="../../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (20) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 O AWS Fargate é uma solução de computação sem servidor projetada especificamente para contêineres. Ele simplifica significativamente o gerenciamento de infraestrutura ao dimensionar automaticamente os recursos necessários para executar aplicações, permitindo que os desenvolvedores se concentrem no desenvolvimento de software.
 

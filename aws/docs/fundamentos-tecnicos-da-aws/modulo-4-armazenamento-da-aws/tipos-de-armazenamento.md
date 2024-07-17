@@ -16,8 +16,6 @@ O armazenamento de arquivos é um conceito familiar para muitos, especialmente s
 
 Por exemplo, se você possui centenas de fotos de gatos em seu laptop, pode criar uma pasta chamada "Fotos de Gatos" e colocar todas as imagens nessa pasta. Se essas imagens são usadas em uma aplicação, talvez queira colocar a pasta **"Fotos de Gatos"** dentro de outra pasta chamada **"Arquivos de Aplicações"**.
 
-<figure><img src="https://explore.skillbuilder.aws/files/a/w/aws_prod1_docebosaas_com/1719288000/qv1ubG4XmDzlGeSEaz41BQ/tincan/954352_1676568571_p1gpdis23dphj1i0b12fk1vub1t4o4_zip/assets/Bj0HlEgjqWjzzHUw_lCPr0zICA_gk-HiL.jpg" alt=""><figcaption></figcaption></figure>
-
 #### <mark style="color:blue;">**Estrutura e Metadados**</mark>
 
 Cada arquivo possui metadados, como:

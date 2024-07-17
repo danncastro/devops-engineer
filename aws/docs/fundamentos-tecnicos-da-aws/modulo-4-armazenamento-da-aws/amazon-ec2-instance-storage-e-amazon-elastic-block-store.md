@@ -44,7 +44,9 @@ O Amazon Elastic Block Store (Amazon EBS) é um serviço de armazenamento em ní
 
 #### <mark style="color:blue;">**Multiconexão de Volumes**</mark>
 
-* **Multiconexão**: Recentemente, a AWS introduziu a capacidade de conectar um volume do EBS a várias instâncias EC2 simultaneamente. Esse recurso é limitado a tipos específicos de instância e todas as instâncias devem estar na mesma zona de disponibilidade.
+| Multiconexão                                                                                                                                                                                                                                   |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Recentemente, a AWS introduziu a capacidade de conectar um volume do EBS a várias instâncias EC2 simultaneamente. Esse recurso é limitado a tipos específicos de instância e todas as instâncias devem estar na mesma zona de disponibilidade. |
 
 #### <mark style="color:blue;">**Comparação com Unidades Externas**</mark>
 
@@ -201,7 +203,7 @@ Os volumes do Amazon Elastic Block Store (EBS) são categorizados em duas princi
 
 #### <mark style="color:blue;">Gráfico de Comparação</mark>
 
-<figure><img src="../../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (43) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### <mark style="color:blue;">Escolhendo o Volume Certo</mark>
 

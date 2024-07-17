@@ -36,7 +36,7 @@ Pode haver notificações sobre atualizações de serviço, alertas de seguranç
 
 Abaixo está uma captura de tela que mostra a página de aterrissagem quando você faz login pela primeira vez no Console de Gerenciamento da AWS.
 
-<figure><img src="../../.gitbook/assets/image (33) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (33) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 No Console de Gerenciamento da AWS, os serviços são organizados em categorias como computação, armazenamento, banco de dados e análise, facilitando a navegação e o acesso aos recursos específicos que você precisa.
 
@@ -58,7 +58,7 @@ aws ec2 describe-instances
 
 Isso retornaria informações detalhadas sobre as instâncias EC2 em execução na sua conta AWS. Com essa capacidade, você pode automatizar a coleta de dados dos seus servidores, eliminando a necessidade de login manual no Console de Gerenciamento da AWS e o trabalho repetitivo de copiar e colar informações.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Ao agendar e executar scripts da AWS CLI regularmente, você garante que seus relatórios estejam sempre atualizados, mesmo com mudanças constantes nos detalhes dos servidores. Essa abordagem não só aumenta a eficiência operacional, mas também mantém a precisão e a consistência nos processos de gerenciamento de infraestrutura na nuvem.
 

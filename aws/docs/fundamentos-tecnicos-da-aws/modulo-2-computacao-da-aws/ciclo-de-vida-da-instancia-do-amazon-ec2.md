@@ -17,7 +17,7 @@ Ao planejar a capacidade de servidores para uma aplicação local (on-premises),
 
 As instâncias do Amazon EC2 são compostas por uma combinação de recursos essenciais como processadores virtuais (vCPUs), memória, capacidade de rede e, em certos casos, armazenamento de instâncias e unidades de processamento gráfico (GPUs). Ao configurar uma instância do EC2, é crucial determinar as quantidades necessárias de cada um desses componentes de acordo com os requisitos da sua aplicação e carga de trabalho esperada.
 
-<figure><img src="../../.gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 A AWS oferece uma variedade de tipos de instância que diferem em termos de desempenho e capacidade. Algumas instâncias fornecem mais recursos do que outras. Para entender melhor as capacidades de uma instância específica, é necessário examinar seu tipo. Os tipos de instância são categorizados por um prefixo que identifica a família da instância e a geração, seguido pelo tamanho. Por exemplo, no caso do tipo de instância c5.large:
 
@@ -33,7 +33,7 @@ Essa estrutura de nomenclatura ajuda a escolher a instância mais apropriada com
 
 No exemplo c5.large, a letra "c" indica que a instância pertence à família otimizada para computação. A AWS oferece diversas famílias de instâncias, cada uma projetada para atender a diferentes tipos de cargas de trabalho. Abaixo está uma tabela que descreve algumas famílias de instâncias e os casos de uso típicos para cada uma:
 
-<figure><img src="../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Cada família de instância possui características específicas que a tornam mais adequada para diferentes tipos de aplicações. Escolher a família correta é essencial para otimizar o desempenho e os custos da sua infraestrutura na AWS, alinhando-se às necessidades específicas da sua carga de trabalho.
 
@@ -59,7 +59,7 @@ Por exemplo, se sua aplicação depende de um único front-end e essa instância
 
 Para garantir alta disponibilidade, arquitete sua aplicação de forma que utilize pelo menos duas instâncias do EC2 em duas zonas de disponibilidade diferentes. Isso ajuda a mitigar falhas em uma zona específica, mantendo sua aplicação operacional mesmo se uma zona de disponibilidade falhar.
 
-<figure><img src="../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -67,7 +67,7 @@ Para garantir alta disponibilidade, arquitete sua aplicação de forma que utili
 
 Uma instância do EC2 faz a transição entre estados diferentes desde o momento em que você a cria até o término.
 
-<figure><img src="../../.gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (16) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Quando você executa uma instância, ela entra no estado **pendente**. Quando uma instância está pendente, o faturamento não foi iniciado. Nesse estágio, a instância está se preparando para entrar no estado em execução. Dependendo do local em que a AWS executa todas as ações necessárias para configurar uma instância, como copiar o conteúdo da AMI para o dispositivo raiz e alocar os componentes de rede necessários.
 2. Quando sua instância estiver **em execução**, ela estará pronta para uso. Este também é o estágio em que o faturamento começa. Assim que uma instância estiver em execução, você poderá executar outras ações na instância, como reinicializar, encerrar, parar e hibernar (stop-hibernate).
@@ -93,7 +93,7 @@ Utilizar a hibernação elimina a necessidade de criar scripts manuais para salv
 
 Uma das maneiras de reduzir custos com o Amazon EC2 é escolher a opção de definição de preço certa para a forma como suas aplicações são executadas. A AWS oferece três principais opções de compra para instâncias do EC2: instâncias sob demanda, reservadas e spot.
 
-<figure><img src="../../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (45) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

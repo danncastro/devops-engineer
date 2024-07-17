@@ -17,7 +17,7 @@ Para executar um servidor HTTP na AWS, você pode utilizar serviços que oferece
 
 Você pode fazer login no console e visualizar a lista completa do AWS Compute Services.
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
