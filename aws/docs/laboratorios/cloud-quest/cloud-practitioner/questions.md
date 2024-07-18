@@ -1,0 +1,191 @@
+# Questions
+
+***
+
+1. Which resource acts as a virtual firewall that controls the traffic for one or more instances?
+
+* [ ] Amazon Virtual Private Cloud (Amazon VPC)
+* [x] Security Groups
+* [ ] Network Access Control Lists (ACLs)
+
+> Os Security Groups atuam como firewalls virtuais que controlam o tráfego de entrada e saída para uma ou mais instâncias dentro de uma Amazon Virtual Private Cloud (VPC). Eles são recursos fundamentais para definir permissões de acesso e regras de tráfego, permitindo ou negando comunicações com base em protocolos, portas e endereços IP.
+
+2. How many Availability Zones, at least, make up an AWS Region?
+
+* [ ] One
+* [x] Two
+* [ ] Three
+* [ ] Ten
+
+> A quantidade mínima de Zonas de Disponibilidade (Availability Zones - AZs) que compõem uma Região da AWS é **duas**. Cada Região da AWS começa com pelo menos duas AZs, e algumas Regiões podem eventualmente expandir para três ou mais AZs conforme a demanda e o crescimento dos serviços naquela região.
+
+3. Which location option can be selected when launching an Amazon EC2 instance in an AWS Region?
+
+* [ ] Bucket
+* [x] Availability Zone
+* [ ] Transit Gateway
+* [ ] Container
+
+> Ao lançar uma instância EC2, você pode escolher em qual Zona de Disponibilidade (Availability Zone) dentro da Região deseja implantar a instância. As Availability Zones são locais físicos distintos dentro de uma Região da AWS, projetados para serem isolados uns dos outros em termos de falhas de infraestrutura.
+
+4. What is the best description of an AWS Region?
+
+* [ ] The physical location of a single AWS data center
+* [x] Multiple, isolated, and physically separate Availability Zones within a geographic area.
+* [ ] A combination of exactly two AWS Availabily Zones
+
+> Uma Região da AWS é composta por múltiplas Zonas de Disponibilidade (Availability Zones - AZs), que são áreas geográficas distintas e fisicamente separadas umas das outras dentro de uma mesma região geográfica. As AZs são projetadas para serem isoladas umas das outras em termos de falhas de infraestrutura, proporcionando alta disponibilidade e resiliência para os serviços hospedados na AWS.
+
+5. The default view for the AWS Management Console displays all resources in all Regions.
+
+* [ ] True
+* [x] False
+
+> O console de gerenciamento da AWS não exibe todos os recursos em todas as regiões por padrão. Quando você acessa o console pela primeira vez ou quando faz login, geralmente é apresentada uma visão inicial que pode variar, mas não inclui automaticamente todos os recursos de todas as regiões.
+>
+> Para visualizar recursos em uma região específica, você precisa selecionar a região desejada no console. Cada região da AWS é tratada separadamente em termos de recursos e configurações visíveis no console de gerenciamento.
+
+6. What does Amazon EC2 provide in the cloud that is secure and resizable?
+
+* [ ] Storage capacity
+* [ ] Databases tables
+* [x] Compute capacity
+* [ ] Backup volumes
+
+> Amazon EC2 (Elastic Compute Cloud) fornece capacidade de computação na nuvem que é segura e redimensionável. Isso significa que você pode provisionar e ajustar facilmente servidores virtuais (instâncias) de acordo com as necessidades da sua aplicação, modificando recursos como CPU, memória e armazenamento conforme necessário.
+
+7. EC2 Instance Connect can help users connect to an instance. What are the two components of the connection?
+
+* [ ] Linux/RDP
+* [x] Linux/SSH
+* [ ] Windows/RDP
+* [ ] Windows/SSH
+
+> EC2 Instance Connect ajuda os usuários a se conectarem a uma instância EC2.
+
+8. Which type of scaling is used when the number of EC2 instances is increased behind a load balancer?
+
+* [ ] Vertical
+* [x] Horizontal
+
+> Escalabilidade horizontal refere-se ao aumento do número de instâncias ou recursos distribuídos, como instâncias EC2, para lidar com um maior volume de tráfego ou carga de trabalho. Nesse contexto, adicionar mais instâncias EC2 (por exemplo, aumentar o tamanho do grupo de instâncias atrás de um balanceador de carga) é um exemplo de escalabilidade horizontal, o que permite distribuir melhor a carga e melhorar a disponibilidade do serviço.
+
+9. What is an example of an Amazon EC2 instance type?
+
+* [x] m5.large
+* [ ] ARM64
+* [ ] web\_server
+* [ ] Bucket
+
+> Os tipos de instância EC2, como "m5.large", representam diferentes combinações de CPU, memória, armazenamento e capacidades de rede para atender a diferentes requisitos de carga de trabalho. Cada tipo de instância é otimizado para um conjunto específico de casos de uso e requerimentos de desempenho.
+
+10. An Amazon EBS backed EC2 instance must be in a specific state to change its instance type. Which one?
+
+* [x] Stopped
+* [ ] Runing
+* [ ] Terminated
+* [ ] Imaged
+
+> Para realizar a alteração do tipo de instância, é necessário parar a instância primeiro. Somente quando a instância está parada é que você pode modificar seu tipo (instance type).
+
+11. What can connect a user to an Amazon EC2 Linux instance through an SSH client?
+
+* [ ] Instance ID
+* [x] Public IP address
+* [ ] Metadata
+
+> O ID da instância (Option 1) é usado para identificar a instância na AWS, mas não é usado diretamente para conectar-se via SSH. O metadados (Option 3) são informações sobre a instância que podem ser acessadas internamente pela instância, mas não são usadas diretamente para estabelecer uma conexão SSH do usuário.
+>
+> \
+> O endereço IP público da instância EC2 é necessário para estabelecer a conexão SSH a partir de um cliente SSH como o OpenSSH.
+
+12. What can be changed to scale an Amazon EC2 instance to the demands of workload?
+
+* [ ] Region
+* [ ] Availability Zone
+* [ ] DNS
+* [x] Type
+
+> O "tipo" (instance type) de uma instância EC2 pode ser modificado para aumentar ou diminuir a capacidade de CPU, memória e armazenamento conforme necessário para lidar com variações na carga de trabalho.
+
+13. What is 10.0.0.0/16 an exemple of?
+
+* [ ] &#x20;IP Address
+* [x] CIDR block
+* [ ] Security group rule
+* [ ] Instance ID
+
+> O CIDR (Classless Inter-Domain Routing) é um método para designar um intervalo de endereços IP que consiste em um endereço IP de rede seguido por uma barra (/) e um número que especifica quantos bits do endereço IP são destinados à rede.
+
+14. What is true about default virtual private clouds (VPCs)? (Select THREE)
+
+* [x] All instances deployed to a default VPC are private
+* [ ] All instances deployed to default VPC are public
+* [x] A default VPC is created in each AWS Region in an account
+* [x] Default VPC can be modified.
+
+15. What can be used to restrict access to specific Amazon EC2 instances? (Select TWO)
+
+* [ ] VPC route tables
+* [ ] VPC peering
+* [x] Security groups
+* [x] Private subnets
+
+> **Security groups**: São firewalls virtuais que controlam o tráfego de rede para uma ou mais instâncias. Você pode definir regras de entrada e saída para permitir ou negar tráfego com base no protocolo, na porta e no endereço IP.
+>
+> **Private subnets**: Sub-redes privadas dentro de um VPC que não têm uma rota direta para a internet. Ao colocar instâncias em sub-redes privadas e configurar corretamente as rotas e gateways, você pode restringir o acesso direto às instâncias apenas a partir de redes ou serviços específicos.
+
+16. EC2 Instance Connect requires a user-create and downloaded SSH key.
+
+* [ ] True
+* [x] False
+
+> EC2 Instance Connect não requer que o usuário crie ou baixe uma chave SSH. Em vez disso, ele usa chaves SSH gerenciadas pela AWS para autenticar e permitir que os usuários se conectem às instâncias EC2 de maneira segura, sem que os usuários precisem gerenciar suas próprias chaves SSH.
+
+17. NAT gateways allow instances in a private subnet to connect to the internet.
+
+* [x] True
+* [ ] False
+
+> NAT Gateways permitem que instâncias em sub-redes privadas se conectem à internet de forma segura, ao agirem como intermediários entre as instâncias na sub-rede privada e a internet pública. Isso é feito redirecionando o tráfego de saída da instância através do NAT Gateway, que possui um endereço IP público associado para comunicação externa.
+
+18. What can be configured when creating a new Amazon EC2 instance? (Select TWO).
+
+* [x] Instance type
+* [ ] S3 bucket
+* [ ] Database engine
+* [x] Security group
+
+> **Tipo de instância**: Define a capacidade computacional da instância, como quantidade de CPU, memória RAM e armazenamento temporário.
+>
+> **Grupo de segurança**: Define as regras de firewall virtual que controlam o tráfego de rede para a instância, especificando quais protocolos, portas e endereços IP são permitidos ou bloqueados.
+
+19. A company wants to allow users from the internet (0.0.0.0/0) to visit their website. Which traffic types should they add to their inbound security group rules? (Select TWO).
+
+* [ ] RDP
+* [x] HTTP
+* [ ] SSH
+* [x] HTTPS
+* [ ] IMAP
+
+> **HTTP (80)**: Usado para tráfego web não criptografado.
+>
+> **HTTPS (443)**: Usado para tráfego web criptografado usando SSL/TLS.
+
+20. &#x20;Which key-value pair can be used to describe an Amazon EC2 instance through custom content and metadata?
+
+* [ ] EBS
+* [ ] Definitions
+* [ ] Policies
+* [x] Tags
+
+> As tags são pares de chave-valor que você pode atribuir a recursos na AWS, como instâncias EC2, volumes EBS, snapshots, etc. Elas são usadas para categorizar e identificar recursos, além de permitir a aplicação de políticas e automatização de processos com base nessas tags.
+
+
+
+
+
+
+
+
+

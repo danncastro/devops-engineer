@@ -201,7 +201,7 @@ Configurar adequadamente esses componentes no Amazon EC2 Auto Scaling é fundame
 
 Os modelos de inicialização são essenciais para definir todas as configurações necessárias ao lançar instâncias do EC2, incluindo AMI, tipo de instância, grupo de segurança e volumes do EBS. Aqui estão os benefícios e maneiras de usar esses modelos:
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### <mark style="color:blue;">**Benefícios dos Modelos de Inicialização**</mark>
 

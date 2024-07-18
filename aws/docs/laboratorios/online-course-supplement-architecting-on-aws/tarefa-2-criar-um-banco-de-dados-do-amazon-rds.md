@@ -33,7 +33,7 @@ A solução de monitoramento existente pesquisa os dados a cada 10 minutos. A eq
 
 Crie uma instância de DB do Amazon Aurora e o grupo de sub-rede para dar suporte a ela.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 | Tarefas                                         |
 | ----------------------------------------------- |

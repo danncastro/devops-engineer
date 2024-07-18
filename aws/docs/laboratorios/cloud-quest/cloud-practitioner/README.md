@@ -48,7 +48,7 @@ Articule as características da plataforma de computação em nuvem da AWS. Desc
 
 <mark style="color:red;">**Concept:**</mark> The AWS Management Console is a web interface to access and manage the broad collection of service provided by Amazon Web Service (AWS).
 
-![](<../../.gitbook/assets/image (94).png>)
+![](<../../../.gitbook/assets/image (94).png>)
 
 <mark style="color:purple;">**Step 2**</mark>
 
@@ -58,7 +58,7 @@ Articule as características da plataforma de computação em nuvem da AWS. Desc
 
 <mark style="color:red;">**Concept:**</mark> Amazon Simple Storage Service(Amazon S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance. Customers of all sizes and industries can use Amazon S3 to store and protect any amount of data for a range of use cases, such as data lakes, websites, mobile application, backup and restore, archive, enterprise applications, IoT devices, and big data analystics.
 
-![](<../../.gitbook/assets/image (96).png>)
+![](<../../../.gitbook/assets/image (96).png>)
 
 <mark style="color:purple;">Step 3</mark>
 
@@ -75,7 +75,7 @@ Articule as características da plataforma de computação em nuvem da AWS. Desc
 
 <mark style="color:red;">**Concept**</mark><mark style="color:red;">:</mark> A bucket is a container for objects stored in Amazon S3. Every object is contained in a bucket. Amazon S3 offers a range of storage classes for the objects that you store. You choose a class depending on your use case scenario and performance access requirements. Amazon S3 provides storage classes for frequently accessed, infrequently accessedm and archive access objects.
 
-![](<../../.gitbook/assets/image (97).png>)
+![](<../../../.gitbook/assets/image (97).png>)
 
 <mark style="color:purple;">Step 4</mark>
 
@@ -88,7 +88,7 @@ Articule as características da plataforma de computação em nuvem da AWS. Desc
 
 <mark style="color:red;">**Concepts**</mark>: You can choose the geographical. AWS Region where Amazon S3 stores the buckets that you create. You might choose a Region to optimize latency, minimize costs, or address regulatory requirements. Objects stored in an AWS Region never leave the Region unless you explicitly transfer or replicate them to another Region. For example, objects stored in the Europe (ireland) Region never leave it. Howewer, Amazon S3 redundantly stores objects on multiple devices across a minimum of three Availability Zones in an AWS Region. An Availability Zones is one or more dicrete data centers with redundant power, networking, and connectivity in an AWS Region.
 
-![](<../../.gitbook/assets/image (98).png>)
+![](<../../../.gitbook/assets/image (98).png>)
 
 <mark style="color:purple;">Step 5</mark>
 
@@ -98,7 +98,7 @@ Articule as características da plataforma de computação em nuvem da AWS. Desc
 
 <mark style="color:red;">**Concept:**</mark> Using Amazon S3, you can upload objects up to 5GB in size with a single PUT operation. For larget objects, up to 5TB in size, use the mutipart upload API.
 
-![](<../../.gitbook/assets/image (99).png>)
+![](<../../../.gitbook/assets/image (99).png>)
 
 <mark style="color:purple;">Step 6</mark>
 
@@ -111,7 +111,7 @@ Articule as características da plataforma de computação em nuvem da AWS. Desc
 
 <mark style="color:red;">**Concept:**</mark> By default, all Amazon S3 resources(buckets, objects, and related subresources) are private. Only the resource owner can access them. The resource owner can optionally grant access permissions to others by writing an access policy.
 
-![](<../../.gitbook/assets/image (100).png>)
+![](<../../../.gitbook/assets/image (100).png>)
 
 <mark style="color:purple;">Step 7</mark>
 
@@ -151,7 +151,7 @@ Articule as características da plataforma de computação em nuvem da AWS. Desc
 
 <mark style="color:red;">**Concept**</mark>: To hosta static website on Amazon S3, configure you bucket for static website hosting, set permissions, and add in index document, Available options include redirects, logging, and error documents.
 
-![](<../../.gitbook/assets/image (103).png>)
+![](<../../../.gitbook/assets/image (103).png>)
 
 <mark style="color:purple;">Step 9</mark>
 
@@ -159,7 +159,7 @@ Articule as características da plataforma de computação em nuvem da AWS. Desc
 2. Click edit
 3. Go to the next step
 
-![](<../../.gitbook/assets/image (104).png>)
+![](<../../../.gitbook/assets/image (104).png>)
 
 <mark style="color:purple;">Step 10</mark>
 
@@ -175,7 +175,7 @@ A virtual-hosted-style URL looks like: https://bucket-name.s3.Region.amazonaws.c
 
 A path-style URL look like: https://s3.Region.amazonaws.com/bucket-name/keyname
 
-![](<../../.gitbook/assets/image (105).png>)
+![](<../../../.gitbook/assets/image (105).png>)
 
 <mark style="color:purple;">Step 11</mark>
 
@@ -190,14 +190,14 @@ A path-style URL look like: https://s3.Region.amazonaws.com/bucket-name/keyname
 3. Under bucket website endpoint, click the copy icon to copy the provided endpoint.
 4. Go to the next step
 
-![](<../../.gitbook/assets/image (106).png>)
+![](<../../../.gitbook/assets/image (106).png>)
 
 <mark style="color:purple;">Step 13</mark>
 
 1. To load the Beach Wave Conditions webpage, in a new browser tab(or window) address bar, paste the bucket website endpoint that you just copied, and then press Enter.
 2. Go to next step
 
-![](<../../.gitbook/assets/image (107).png>)
+![](<../../../.gitbook/assets/image (107).png>)
 
 Finishe.
 
@@ -205,7 +205,7 @@ Finishe.
 
 #### <mark style="color:blue;">DAP - Arquitetura da solicitação</mark>
 
-<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -235,7 +235,7 @@ Resuma os benefícios da infraestrutura da AWS. Descreva as regiões e zonas de 
 3. In the search results, under service, click EC2
 4. Go to the next step
 
-<img src="../../.gitbook/assets/image (4) (1).png" alt="" data-size="original">
+<img src="../../../.gitbook/assets/image (4) (1) (1).png" alt="" data-size="original">
 
 <mark style="color:purple;">**Step 2**</mark>
 
@@ -245,7 +245,7 @@ Resuma os benefícios da infraestrutura da AWS. Descreva as regiões e zonas de 
 
 <mark style="color:red;">**Concept:**</mark> An Amazon Elastic Compute Cloud (Amazon EC2) instance is a virtual server in the cloud.
 
-![](<../../.gitbook/assets/image (5) (1).png>)
+![](<../../../.gitbook/assets/image (5) (1) (1).png>)
 
 <mark style="color:purple;">**Step 3**</mark>
 
@@ -256,7 +256,7 @@ Resuma os benefícios da infraestrutura da AWS. Descreva as regiões e zonas de 
 
 <mark style="color:red;">**Concept:**</mark> An Amazon Machine Image (AMI) provides the information required to launch an instance. You must specify an AMI when you launch an instance. You can launch multiple instances from a single AMI when you need multiple instances with the same configuration. You can use different AMIs to launch instances when you need different configurations.
 
-![](<../../.gitbook/assets/image (6) (1).png>)
+![](<../../../.gitbook/assets/image (6) (1).png>)
 
 <mark style="color:purple;">**Step 4**</mark>
 
@@ -271,7 +271,7 @@ Resuma os benefícios da infraestrutura da AWS. Descreva as regiões e zonas de 
 
 <mark style="color:red;">**Concept:**</mark> When you launch an instance, the instance type that you specify determines the hardware of the host computer used for your instance. Each instance type offers different compute, memory, and storage capabilities and are grouped in instance families based on these capabilities.
 
-![](<../../.gitbook/assets/image (7) (1).png>)
+![](<../../../.gitbook/assets/image (7) (1).png>)
 
 <mark style="color:purple;">**Step 5**</mark>
 
@@ -281,7 +281,7 @@ Resuma os benefícios da infraestrutura da AWS. Descreva as regiões e zonas de 
 
 <mark style="color:red;">**Concept:**</mark> Amazon EC2 uses public key cryptography to encrypt and decrypt login information. Public key cryptography uses a public key to encrypt a piece of data, and then the recipient uses their private key to decrypt the data. The public and private keys are known as a key pair.
 
-![](<../../.gitbook/assets/image (8) (1).png>)
+![](<../../../.gitbook/assets/image (8) (1).png>)
 
 <mark style="color:purple;">**Step 6**</mark>
 
@@ -299,7 +299,7 @@ Resuma os benefícios da infraestrutura da AWS. Descreva as regiões e zonas de 
 
 A virtual Private Cloud (VPC) is a virtual network dedicated to your AWS account. While a VPC resides in an AWS Region, a subnet must reside within a single AZ.
 
-![](<../../.gitbook/assets/image (9) (1).png>)
+![](<../../../.gitbook/assets/image (9) (1).png>)
 
 <mark style="color:purple;">**Step 7**</mark>
 
@@ -311,7 +311,7 @@ A virtual Private Cloud (VPC) is a virtual network dedicated to your AWS account
 
 <mark style="color:red;">**Concept:**</mark> A security group acts as a virtual firewall that controls the traffic for one or more instances. When you launch an instance, you can specify one or more security groups is used. You can add rules to each security group that allows traffic to or from its associated instances.
 
-![](<../../.gitbook/assets/image (10) (1).png>)
+![](<../../../.gitbook/assets/image (10) (1).png>)
 
 <mark style="color:purple;">**Step 7**</mark>
 
@@ -324,7 +324,7 @@ A virtual Private Cloud (VPC) is a virtual network dedicated to your AWS account
 
 <mark style="color:red;">**Concepts:**</mark> When you launch an instance, the root device volume contains the image used to boot instance
 
-![](<../../.gitbook/assets/image (11) (1).png>)
+![](<../../../.gitbook/assets/image (11) (1).png>)
 
 <mark style="color:purple;">**Step 8**</mark>
 
@@ -335,7 +335,7 @@ A virtual Private Cloud (VPC) is a virtual network dedicated to your AWS account
 
 2. Go to the next step
 
-![](<../../.gitbook/assets/image (12) (1).png>)
+![](<../../../.gitbook/assets/image (12) (1).png>)
 
 <mark style="color:purple;">**Step 9**</mark>
 
@@ -346,14 +346,14 @@ A virtual Private Cloud (VPC) is a virtual network dedicated to your AWS account
 
 <mark style="color:red;">**Concept**</mark>: When you launch an instance in Amazon EC2, you have the options of passing user data to the instance that can be used to perform common automated configuration task and even run scripts after the instance starts.
 
-![](<../../.gitbook/assets/image (13) (1).png>)
+![](<../../../.gitbook/assets/image (13) (1).png>)
 
 <mark style="color:purple;">**Step 10**</mark>
 
 1. Review the User data content
 2. Go to next step
 
-![](<../../.gitbook/assets/image (14) (1).png>)
+![](<../../../.gitbook/assets/image (14) (1).png>)
 
 <mark style="color:purple;">**Step 11**</mark>
 
@@ -367,7 +367,7 @@ A virtual Private Cloud (VPC) is a virtual network dedicated to your AWS account
 
 <mark style="color:red;">**Concept:**</mark> It's always a good idea to review the instance launch details that you have configured before you deploy the instance.
 
-![](<../../.gitbook/assets/image (15) (1).png>)
+![](<../../../.gitbook/assets/image (15) (1).png>)
 
 <mark style="color:purple;">**Step 12**</mark>
 
@@ -375,7 +375,7 @@ A virtual Private Cloud (VPC) is a virtual network dedicated to your AWS account
 2. Scroll down to the bottom of the page.
 3. Go to the next step
 
-![](<../../.gitbook/assets/image (16) (1).png>)
+![](<../../../.gitbook/assets/image (16) (1).png>)
 
 <mark style="color:purple;">**Step 13**</mark>
 
@@ -385,7 +385,7 @@ A virtual Private Cloud (VPC) is a virtual network dedicated to your AWS account
 
 2. Go to the next step.
 
-![](<../../.gitbook/assets/image (17) (1).png>)
+![](<../../../.gitbook/assets/image (17) (1).png>)
 
 <mark style="color:purple;">**Step 14**</mark>
 
@@ -399,7 +399,7 @@ A virtual Private Cloud (VPC) is a virtual network dedicated to your AWS account
 
 <mark style="color:red;">**Concept:**</mark> An instance enters the pending state when it launches for the firt time. It changes to a running state when it is ready for use.
 
-![](<../../.gitbook/assets/image (19).png>)
+![](<../../../.gitbook/assets/image (19).png>)
 
 <mark style="color:purple;">**Step 15**</mark>
 
@@ -411,7 +411,7 @@ A virtual Private Cloud (VPC) is a virtual network dedicated to your AWS account
 * If you see a connection timeout message when opening the webpage, check that the address begins with http and not https.
 * The public DNS and the security group are used to access the instance details that appear on the webpag.
 
-<img src="../../.gitbook/assets/image (20).png" alt="" data-size="original">
+<img src="../../../.gitbook/assets/image (20).png" alt="" data-size="original">
 
 Finished.
 
@@ -419,7 +419,7 @@ Finished.
 
 #### <mark style="color:blue;">DAP - Arquitetura da solicitação</mark>
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -454,7 +454,7 @@ Descreva famílias de instâncias e tipos de instâncias do Amazon EC2. Descreva
 3. In the search results, under Services, click EC2.
 4. Go to next step
 
-![](<../../.gitbook/assets/image (22).png>)
+![](<../../../.gitbook/assets/image (22).png>)
 
 <mark style="color:purple;">**Step 2**</mark>
 
@@ -463,7 +463,7 @@ Descreva famílias de instâncias e tipos de instâncias do Amazon EC2. Descreva
 
 <mark style="color:red;">**Concepts:**</mark> Amazon Elastic Compute Cloud (Amazon EC2) instances provide virtual compute capacity in the cloud. With a choice of processor, storage, networking, operating system, and purchase model the service offers a broad and deep solution.
 
-![](<../../.gitbook/assets/image (23).png>)
+![](<../../../.gitbook/assets/image (23).png>)
 
 <mark style="color:purple;">**Step 3**</mark>
 
@@ -474,7 +474,7 @@ Descreva famílias de instâncias e tipos de instâncias do Amazon EC2. Descreva
 
 <mark style="color:red;">**Concepts**</mark>: Information about the instance (such as its public IP, private IP, and public DNS) is displyaed in the instance summary section by selecting the EC2 instance.
 
-![](<../../.gitbook/assets/image (24).png>)
+![](<../../../.gitbook/assets/image (24).png>)
 
 <mark style="color:purple;">**Step 4**</mark>
 
@@ -483,7 +483,7 @@ Descreva famílias de instâncias e tipos de instâncias do Amazon EC2. Descreva
 
 <mark style="color:red;">**Concept:**</mark> Amazon EC2 provides a wide selection of instance types that belong to instance families that are optimized to fit different use cases.
 
-![](<../../.gitbook/assets/image (25).png>)
+![](<../../../.gitbook/assets/image (25).png>)
 
 <mark style="color:purple;">**Step 5**</mark>
 
@@ -498,7 +498,7 @@ Descreva famílias de instâncias e tipos de instâncias do Amazon EC2. Descreva
 
 <mark style="color:red;">Concept:</mark> Each instance type includes one or more instance sizes, so you can scale your resources to the requirements of your target workload.
 
-![](<../../.gitbook/assets/image (26).png>)
+![](<../../../.gitbook/assets/image (26).png>)
 
 <mark style="color:purple;">**Step 6**</mark>
 
@@ -509,7 +509,7 @@ Descreva famílias de instâncias e tipos de instâncias do Amazon EC2. Descreva
 
 <mark style="color:red;">**Concept:**</mark> Using the Amazon EC2 console, you can filter instance attributes such as instance types, instance family, and instance size. You can search using keyworkds, atribute names, or expressions.
 
-![](<../../.gitbook/assets/image (27).png>)
+![](<../../../.gitbook/assets/image (27).png>)
 
 <mark style="color:purple;">**Step 7**</mark>
 
@@ -522,7 +522,7 @@ Descreva famílias de instâncias e tipos de instâncias do Amazon EC2. Descreva
 
 <mark style="color:red;">**Concept:**</mark> Instance metadata is data about your instance that you can use to configure or manage the running instance. Instance metadata is divided into categories; for exemple, host name, events, and securiy groups.
 
-![](<../../.gitbook/assets/image (28).png>)
+![](<../../../.gitbook/assets/image (28).png>)
 
 <mark style="color:purple;">**Step 8**</mark>
 
@@ -535,7 +535,7 @@ Descreva famílias de instâncias e tipos de instâncias do Amazon EC2. Descreva
 
 <mark style="color:red;">**Concept:**</mark> When creeating a new insntace, you can enable the instance metadata service (IMDS) through the Advanced details sections. This way, you can display attibute details by using the instance's public IP.
 
-![](<../../.gitbook/assets/image (29).png>)
+![](<../../../.gitbook/assets/image (29).png>)
 
 <mark style="color:purple;">**Step 9**</mark>
 
@@ -544,7 +544,7 @@ Descreva famílias de instâncias e tipos de instâncias do Amazon EC2. Descreva
 
 <mark style="color:red;">**Concept:**</mark> You have the flexibility to connect to an EC2 instance by using Amazon EC2 Instance Connect, Session Manager (a capability of AWS Systems Manager), or an SSH client.
 
-![](<../../.gitbook/assets/image (30).png>)
+![](<../../../.gitbook/assets/image (30).png>)
 
 <mark style="color:purple;">**Step 10**</mark>
 
@@ -555,7 +555,7 @@ Descreva famílias de instâncias e tipos de instâncias do Amazon EC2. Descreva
 
 <mark style="color:red;">**Concept:**</mark> EC2 Instance Connect provides an efficient and secure way to connect to your Linux instances. EC2 Instance Connect uses AWS Identity and Access Management (IAM) policies and principals to control SSH access to you instances, removing the need to share and manage SSH keys.
 
-![](<../../.gitbook/assets/image (31).png>)
+![](<../../../.gitbook/assets/image (31).png>)
 
 <mark style="color:purple;">**Step 11**</mark>
 
@@ -565,7 +565,7 @@ Descreva famílias de instâncias e tipos de instâncias do Amazon EC2. Descreva
 
 <mark style="color:red;">**Concept:**</mark> Using Session Manager, you can manage your EC2 instances through an interactive one-click, browser-based shell or through the AWS Command Line Interface (AWS CLI). After the session begins, you can run bash commands as you would through any other connection type.
 
-![](<../../.gitbook/assets/image (32).png>)
+![](<../../../.gitbook/assets/image (32).png>)
 
 <mark style="color:purple;">**Step 12**</mark>
 
@@ -575,7 +575,7 @@ Descreva famílias de instâncias e tipos de instâncias do Amazon EC2. Descreva
 
 <mark style="color:red;">**Concept:**</mark> You can connect to your instance by using an SSH client on your local device through your instance key pair. Your device might have an SSH client by default or you might need to install an SSH client.
 
-![](<../../.gitbook/assets/image (33).png>)
+![](<../../../.gitbook/assets/image (33).png>)
 
 <mark style="color:purple;">**Step 13**</mark>
 
@@ -584,7 +584,7 @@ Descreva famílias de instâncias e tipos de instâncias do Amazon EC2. Descreva
 
 <mark style="color:red;">**Concept:**</mark> Session Manager provides secure and auditable node management without the need to open inbound ports, maintain bastion hosts, or manage SSH keys. Session Manager also allows you to comply with corporate policies that require controlled access to managed nodes, strict security practicesm and fully auditable logs with node access details, while providing end users with simple onde-click cross-platform access to your managed nodes.
 
-![](<../../.gitbook/assets/image (34).png>)
+![](<../../../.gitbook/assets/image (34).png>)
 
 <mark style="color:purple;">**Step 14**</mark>
 
@@ -599,7 +599,7 @@ Descreva famílias de instâncias e tipos de instâncias do Amazon EC2. Descreva
 
 <mark style="color:red;">**Concept:**</mark> After you are connected to the instance, you can control the instance by using AWS CLI command. The command prompt behaves as if you are connected locally.
 
-![](<../../.gitbook/assets/image (35).png>)
+![](<../../../.gitbook/assets/image (35).png>)
 
 <mark style="color:purple;">**Step 15**</mark>
 
@@ -610,7 +610,7 @@ Descreva famílias de instâncias e tipos de instâncias do Amazon EC2. Descreva
 2. Close the terminal tab to return to the instances page in the Amazon EC2 console.
 3. Go to the next step.
 
-![](<../../.gitbook/assets/image (36).png>)
+![](<../../../.gitbook/assets/image (36).png>)
 
 <mark style="color:purple;">**Step 16**</mark>
 
@@ -621,7 +621,7 @@ Descreva famílias de instâncias e tipos de instâncias do Amazon EC2. Descreva
 
 <mark style="color:red;">**Concept:**</mark> You can use the Actions dropdown menu to control the instance state and modify instance attributes.
 
-![](<../../.gitbook/assets/image (37).png>)
+![](<../../../.gitbook/assets/image (37).png>)
 
 <mark style="color:purple;">**Step 17**</mark>
 
@@ -631,7 +631,7 @@ Descreva famílias de instâncias e tipos de instâncias do Amazon EC2. Descreva
 
 <mark style="color:red;">**Concept**</mark>**:** You can also use instance metadata to access user data that you specified when launching your instance.
 
-![](<../../.gitbook/assets/image (38).png>)
+![](<../../../.gitbook/assets/image (38).png>)
 
 <mark style="color:purple;">**Step 18**</mark>
 
@@ -642,7 +642,7 @@ Descreva famílias de instâncias e tipos de instâncias do Amazon EC2. Descreva
 
 <mark style="color:red;">**Concept:**</mark> Using the instance state dropdown menu, you can place an instance into different states of activity. You can start and stop an instance if it has an Amazon Elastic Block Store (Amazon EBS) volume as its root device.
 
-![](<../../.gitbook/assets/image (39).png>)
+![](<../../../.gitbook/assets/image (39).png>)
 
 <mark style="color:purple;">**Step 19**</mark>
 
@@ -651,7 +651,7 @@ Descreva famílias de instâncias e tipos de instâncias do Amazon EC2. Descreva
 
 <mark style="color:red;">**Concept:**</mark> Afteran instance stops, CPU usage and data transfer charges cease, but storage charges for any attached Amazon EBS volumes continue.
 
-![](<../../.gitbook/assets/image (40).png>)
+![](<../../../.gitbook/assets/image (40).png>)
 
 <mark style="color:purple;">**Step 20**</mark>
 
@@ -664,7 +664,7 @@ Descreva famílias de instâncias e tipos de instâncias do Amazon EC2. Descreva
 
 <mark style="color:red;">**Concept:**</mark> Each time you start a stopped instance, AWS charges a minimum of one minutes for the use of per-second billing instances. After one minute, AWS charges only for the seconds that you use.
 
-![](<../../.gitbook/assets/image (41).png>)
+![](<../../../.gitbook/assets/image (41).png>)
 
 <mark style="color:purple;">**Step 21**</mark>
 
@@ -678,7 +678,7 @@ Descreva famílias de instâncias e tipos de instâncias do Amazon EC2. Descreva
 
 <mark style="color:red;">**Concept:**</mark> You must stop your Amazon EBS-backend instance before you can change its instance type. Plan for downtime while your instance is stopped. Stopping the instance and changing its instance type might take a few minutes, and restarting your instance might take a variable amount of time depending on your application's startup scripts.
 
-![](<../../.gitbook/assets/image (42).png>)
+![](<../../../.gitbook/assets/image (42).png>)
 
 <mark style="color:purple;">**Step 22**</mark>
 
@@ -686,7 +686,7 @@ Descreva famílias de instâncias e tipos de instâncias do Amazon EC2. Descreva
 2. Choose Start Instance.
 3. Go to the next step
 
-![](<../../.gitbook/assets/image (43).png>)
+![](<../../../.gitbook/assets/image (43).png>)
 
 <mark style="color:purple;">**Step 23**</mark>
 
@@ -696,7 +696,7 @@ Descreva famílias de instâncias e tipos de instâncias do Amazon EC2. Descreva
 
 2. Go to the next step.
 
-![](<../../.gitbook/assets/image (44).png>)
+![](<../../../.gitbook/assets/image (44).png>)
 
 Finished.
 
@@ -704,9 +704,7 @@ Finished.
 
 #### <mark style="color:blue;">DAP - Arquitetura da solução</mark>
 
-<figure><img src="../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
-
-***
+<figure><img src="../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -716,11 +714,11 @@ Finished.
 | ----------------- | ------------------------------------------------------------------------------------------------------------ |
 | Conceitos de rede | Ajude o banco a configurar um ambiente de rede seguro que permita a comunicação entre recursos e a internet. |
 
-<figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
 <details>
 
-<summary><mark style="color:purple;">Configuração de rede segura com Amazon VPCs</mark></summary>
+<summary><mark style="color:purple;">Configurando trafico de redes de forma segura no Amazon VPCs</mark></summary>
 
 Defina os principais recursos de VPCs, sub-redes, gateways de internet e tabelas de rotas. Descreva os benefícios de usar Amazon VPCs. Declare os conceitos básicos de notação de bloco CIDR e endereçamento IP.&#x20;
 
@@ -742,14 +740,14 @@ Defina os principais recursos de VPCs, sub-redes, gateways de internet e tabelas
 
 <mark style="color:red;">**Concept:**</mark> AWS launched its very first Amazon Elastic Compute Cloud (Amazon EC2) instance in August, 2006.
 
-![](<../../.gitbook/assets/image (22).png>)
+![](<../../../.gitbook/assets/image (22).png>)
 
 <mark style="color:purple;">**Step 2**</mark>
 
 1. In the left navigation pane, click instances.
 2. Go to the next step
 
-![](../../.gitbook/assets/image.png)
+![](<../../../.gitbook/assets/image (5).png>)
 
 <mark style="color:purple;">**Step 3**</mark>
 
@@ -757,7 +755,7 @@ Defina os principais recursos de VPCs, sub-redes, gateways de internet e tabelas
 2. On the Details tab, under Public IPv4 address, click the copy icon to copy the provided addredd.
 3. Go to the next step
 
-![](<../../.gitbook/assets/image (1).png>)
+![](<../../../.gitbook/assets/image (1) (1).png>)
 
 <mark style="color:purple;">**Step 4**</mark>
 
@@ -768,7 +766,7 @@ Defina os principais recursos de VPCs, sub-redes, gateways de internet e tabelas
 2. To solve this issue return to the previous browser (the Instances page in the Amazon EC2 console).
 3. Go to the next step
 
-![](<../../.gitbook/assets/image (2).png>)
+![](<../../../.gitbook/assets/image (2) (1).png>)
 
 <mark style="color:purple;">**Step 5**</mark>
 
@@ -779,7 +777,7 @@ Defina os principais recursos de VPCs, sub-redes, gateways de internet e tabelas
 
 <mark style="color:red;">**Concepts**</mark>: Using Amazon Virtual Private Cloud (Amazon VCP), you can launch AWS resources into a virtual network closely resembles a traditional network that you'd operate in you own data center, with the benefits of using the scalable infrastructure of AWS.
 
-![](<../../.gitbook/assets/image (3).png>)
+![](<../../../.gitbook/assets/image (3) (1).png>)
 
 <mark style="color:purple;">**Step 6**</mark>
 
@@ -788,7 +786,7 @@ Defina os principais recursos de VPCs, sub-redes, gateways de internet e tabelas
 
 <mark style="color:red;">**Concepts**</mark>: A subnet is a range of IP addresses in your VPC. You can launch AWS resources into a specified subnet. Each subnet must reside entirely within one Availability Zone and cannot span zones.
 
-![](<../../.gitbook/assets/image (4).png>)
+![](<../../../.gitbook/assets/image (4) (1).png>)
 
 <mark style="color:purple;">**Step 7**</mark>
 
@@ -798,7 +796,7 @@ Defina os principais recursos de VPCs, sub-redes, gateways de internet e tabelas
 
 <mark style="color:red;">**Concepts**</mark>: A route table contains a set of rules, called routes, that are used to determine where network traffic from your subnet or gateway is directed. Use a public subnet for internet-connected resources and a private subnet for resources not connected to the Internet.
 
-![](<../../.gitbook/assets/image (5).png>)
+![](<../../../.gitbook/assets/image (5) (1).png>)
 
 <mark style="color:purple;">**Step 8**</mark>
 
@@ -813,7 +811,7 @@ Defina os principais recursos de VPCs, sub-redes, gateways de internet e tabelas
 
 <mark style="color:red;">**Concepts**</mark>: The CIDR naming convention 0.0.0.0/0 represents all IPv4 address (::/0 for IPv6).
 
-![](<../../.gitbook/assets/image (6).png>)
+![](<../../../.gitbook/assets/image (6).png>)
 
 <mark style="color:purple;">**Step 9**</mark>
 
@@ -822,7 +820,7 @@ Defina os principais recursos de VPCs, sub-redes, gateways de internet e tabelas
 
 <mark style="color:red;">**Concepts**</mark>: A NAT gateway is a network address translation (NAT) service. With a NAT gateway, instances in a private subnet can connect to services outside your VPC. External services cannot initiate a connection with those instances.
 
-![](<../../.gitbook/assets/image (7).png>)
+![](<../../../.gitbook/assets/image (7).png>)
 
 <mark style="color:purple;">**Step 10**</mark>
 
@@ -838,7 +836,7 @@ Defina os principais recursos de VPCs, sub-redes, gateways de internet e tabelas
 * Provide a target in your VPC route tables for internet-routable traffic.
 * Perform network address translation (NAT) for instances that have been assigned public IPv4 addresses.
 
-![](<../../.gitbook/assets/image (8).png>)
+![](<../../../.gitbook/assets/image (8).png>)
 
 <mark style="color:purple;">**Step 11**</mark>
 
@@ -854,7 +852,7 @@ Defina os principais recursos de VPCs, sub-redes, gateways de internet e tabelas
 
 <mark style="color:red;">**Concepts**</mark>: An internet gateway supports IPv4 and IPv6 traffic. It does not cause availability risks or bandwidth constraints on your network traffic. There's no additional charge for having an internet gateway in you account.
 
-![](<../../.gitbook/assets/image (9).png>)
+![](<../../../.gitbook/assets/image (9).png>)
 
 <mark style="color:purple;">**Step 12**</mark>
 
@@ -864,7 +862,7 @@ Defina os principais recursos de VPCs, sub-redes, gateways de internet e tabelas
 4. Under Security groups, click WebServerSecurityGroup
 5. Go to the next step
 
-![](<../../.gitbook/assets/image (10).png>)
+![](<../../../.gitbook/assets/image (10).png>)
 
 <mark style="color:purple;">**Step 13**</mark>
 
@@ -873,7 +871,7 @@ Defina os principais recursos de VPCs, sub-redes, gateways de internet e tabelas
 
 <mark style="color:red;">**Concepts**</mark>: For each security group, you can add rules that control the traffic based on protocols and port numbers. Separate sets of rules exist for inbound traffic and outbound traffic.
 
-![](<../../.gitbook/assets/image (11).png>)
+![](<../../../.gitbook/assets/image (11).png>)
 
 <mark style="color:purple;">**Step 14**</mark>
 
@@ -882,7 +880,7 @@ Defina os principais recursos de VPCs, sub-redes, gateways de internet e tabelas
 
 <mark style="color:red;">**Concepts**</mark>: When you create a VPC, it comes with a default security group. You can create additional security groups for each VPC.
 
-![](<../../.gitbook/assets/image (12).png>)
+![](<../../../.gitbook/assets/image (12).png>)
 
 <mark style="color:purple;">**Step 15**</mark>
 
@@ -896,7 +894,7 @@ Defina os principais recursos de VPCs, sub-redes, gateways de internet e tabelas
 
 <mark style="color:red;">**Concepts**</mark>: You can create a security group and add rules that reflect the role of the instance that is associated with the security group. For example, an instnace that is configured as a web server needs security group rules that allow inbound HTTP and HTTPS access. Likewise, a database instance needs rules that allow access for the type of database, such as access over port 3306 for MySQL.
 
-![](<../../.gitbook/assets/image (13).png>)
+![](<../../../.gitbook/assets/image (13).png>)
 
 <mark style="color:purple;">**Step 16**</mark>
 
@@ -907,14 +905,14 @@ Defina os principais recursos de VPCs, sub-redes, gateways de internet e tabelas
 
 <mark style="color:red;">**Concepts**</mark>: Security groups are stateful. For example, if you send request from an instance, the response traffic for that request is allowed to reach the instance regardless of the inbound security group rules. Responses to allowed inbound traffic are allowed to leave the instance, regardless of the outbound rules.
 
-![](<../../.gitbook/assets/image (14).png>)
+![](<../../../.gitbook/assets/image (14).png>)
 
 <mark style="color:purple;">**Step 17**</mark>
 
 1. In the left navigation pane, click Instances.
 2. Go to the next step.
 
-![](<../../.gitbook/assets/image (15).png>)
+![](<../../../.gitbook/assets/image (15).png>)
 
 <mark style="color:purple;">**Step 18**</mark>
 
@@ -926,7 +924,7 @@ Defina os principais recursos de VPCs, sub-redes, gateways de internet e tabelas
 3. Under Publick IPv4 address, click the copy icon to copy the provided address.
 4. Go to the next step
 
-![](<../../.gitbook/assets/image (118).png>)
+![](<../../../.gitbook/assets/image (118).png>)
 
 <mark style="color:purple;">**Step 19**</mark>
 
@@ -949,13 +947,13 @@ Defina os principais recursos de VPCs, sub-redes, gateways de internet e tabelas
 * Security groups associated with your VPC must allow traffic to/from the internet.
 * Any instances in the VPC must have a public IP or Elastic IP address assigned.
 
-![](<../../.gitbook/assets/image (119).png>)
+![](<../../../.gitbook/assets/image (119).png>)
 
 Finished.
 
 </details>
 
-
+***
 
 
 
@@ -988,15 +986,15 @@ Finished.
 
 <summary><mark style="color:purple;">Challenges</mark></summary>
 
-<img src="../../.gitbook/assets/image (109).png" alt="" data-size="original">![](<../../.gitbook/assets/image (117).png>)
+<img src="../../../.gitbook/assets/image (109).png" alt="" data-size="original">![](<../../../.gitbook/assets/image (117).png>)![](<../../../.gitbook/assets/image (4).png>)
 
 </details>
 
 <details>
 
-<summary><mark style="color:purple;">Services Cards</mark></summary>
+<summary><mark style="color:purple;">Services Cards Resources</mark></summary>
 
-![](<../../.gitbook/assets/image (114).png>)![](<../../.gitbook/assets/image (115).png>)![](<../../.gitbook/assets/image (116).png>)
+![](<../../../.gitbook/assets/image (114).png>)![](<../../../.gitbook/assets/image (115).png>)![](<../../../.gitbook/assets/image (116).png>)![](../../../.gitbook/assets/image.png)![](<../../../.gitbook/assets/image (1).png>)![](<../../../.gitbook/assets/image (2).png>)![](<../../../.gitbook/assets/image (3).png>)
 
 </details>
 
