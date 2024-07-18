@@ -31,7 +31,7 @@ A equipe de SysOps está animada para a nova configuração do EFS e ansiosa par
 
 Nesta tarefa, você criará o Application Load Balancer e um grupo de destino.
 
-<figure><img src="../../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 | Tarefas                               |
 | ------------------------------------- |

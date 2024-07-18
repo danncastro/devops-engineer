@@ -199,13 +199,19 @@ A path-style URL look like: https://s3.Region.amazonaws.com/bucket-name/keyname
 
 ![](<../../../.gitbook/assets/image (107).png>)
 
-Finishe.
+***
+
+DIY Activities
+
+* [x] Rename index.html to waves.html
+
+![](<../../../.gitbook/assets/image (17).png>)
 
 </details>
 
 #### <mark style="color:blue;">DAP - Arquitetura da solicitação</mark>
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -219,7 +225,7 @@ Finishe.
 
 <summary><mark style="color:purple;">Implementar servidores de alta disponibilidade com Amazon EC2</mark></summary>
 
-Resuma os benefícios da infraestrutura da AWS. Descreva as regiões e zonas de disponibilidade da AWS.&#x20;
+![](<../../../.gitbook/assets/image (18).png>)Resuma os benefícios da infraestrutura da AWS. Descreva as regiões e zonas de disponibilidade da AWS.&#x20;
 
 1. Implante instâncias do Amazon EC2 em várias zonas de disponibilidade.
 
@@ -235,7 +241,7 @@ Resuma os benefícios da infraestrutura da AWS. Descreva as regiões e zonas de 
 3. In the search results, under service, click EC2
 4. Go to the next step
 
-<img src="../../../.gitbook/assets/image (4) (1) (1).png" alt="" data-size="original">
+<img src="../../../.gitbook/assets/image (4) (1) (1) (1).png" alt="" data-size="original">
 
 <mark style="color:purple;">**Step 2**</mark>
 
@@ -245,7 +251,7 @@ Resuma os benefícios da infraestrutura da AWS. Descreva as regiões e zonas de 
 
 <mark style="color:red;">**Concept:**</mark> An Amazon Elastic Compute Cloud (Amazon EC2) instance is a virtual server in the cloud.
 
-![](<../../../.gitbook/assets/image (5) (1) (1).png>)
+![](<../../../.gitbook/assets/image (5) (1) (1) (1).png>)
 
 <mark style="color:purple;">**Step 3**</mark>
 
@@ -256,7 +262,7 @@ Resuma os benefícios da infraestrutura da AWS. Descreva as regiões e zonas de 
 
 <mark style="color:red;">**Concept:**</mark> An Amazon Machine Image (AMI) provides the information required to launch an instance. You must specify an AMI when you launch an instance. You can launch multiple instances from a single AMI when you need multiple instances with the same configuration. You can use different AMIs to launch instances when you need different configurations.
 
-![](<../../../.gitbook/assets/image (6) (1).png>)
+![](<../../../.gitbook/assets/image (6) (1) (1).png>)
 
 <mark style="color:purple;">**Step 4**</mark>
 
@@ -271,7 +277,7 @@ Resuma os benefícios da infraestrutura da AWS. Descreva as regiões e zonas de 
 
 <mark style="color:red;">**Concept:**</mark> When you launch an instance, the instance type that you specify determines the hardware of the host computer used for your instance. Each instance type offers different compute, memory, and storage capabilities and are grouped in instance families based on these capabilities.
 
-![](<../../../.gitbook/assets/image (7) (1).png>)
+![](<../../../.gitbook/assets/image (7) (1) (1).png>)
 
 <mark style="color:purple;">**Step 5**</mark>
 
@@ -281,7 +287,7 @@ Resuma os benefícios da infraestrutura da AWS. Descreva as regiões e zonas de 
 
 <mark style="color:red;">**Concept:**</mark> Amazon EC2 uses public key cryptography to encrypt and decrypt login information. Public key cryptography uses a public key to encrypt a piece of data, and then the recipient uses their private key to decrypt the data. The public and private keys are known as a key pair.
 
-![](<../../../.gitbook/assets/image (8) (1).png>)
+![](<../../../.gitbook/assets/image (8) (1) (1).png>)
 
 <mark style="color:purple;">**Step 6**</mark>
 
@@ -299,7 +305,7 @@ Resuma os benefícios da infraestrutura da AWS. Descreva as regiões e zonas de 
 
 A virtual Private Cloud (VPC) is a virtual network dedicated to your AWS account. While a VPC resides in an AWS Region, a subnet must reside within a single AZ.
 
-![](<../../../.gitbook/assets/image (9) (1).png>)
+![](<../../../.gitbook/assets/image (9) (1) (1).png>)
 
 <mark style="color:purple;">**Step 7**</mark>
 
@@ -311,7 +317,7 @@ A virtual Private Cloud (VPC) is a virtual network dedicated to your AWS account
 
 <mark style="color:red;">**Concept:**</mark> A security group acts as a virtual firewall that controls the traffic for one or more instances. When you launch an instance, you can specify one or more security groups is used. You can add rules to each security group that allows traffic to or from its associated instances.
 
-![](<../../../.gitbook/assets/image (10) (1).png>)
+![](<../../../.gitbook/assets/image (10) (1) (1).png>)
 
 <mark style="color:purple;">**Step 7**</mark>
 
@@ -324,7 +330,7 @@ A virtual Private Cloud (VPC) is a virtual network dedicated to your AWS account
 
 <mark style="color:red;">**Concepts:**</mark> When you launch an instance, the root device volume contains the image used to boot instance
 
-![](<../../../.gitbook/assets/image (11) (1).png>)
+![](<../../../.gitbook/assets/image (11) (1) (1).png>)
 
 <mark style="color:purple;">**Step 8**</mark>
 
@@ -335,7 +341,7 @@ A virtual Private Cloud (VPC) is a virtual network dedicated to your AWS account
 
 2. Go to the next step
 
-![](<../../../.gitbook/assets/image (12) (1).png>)
+![](<../../../.gitbook/assets/image (12) (1) (1).png>)
 
 <mark style="color:purple;">**Step 9**</mark>
 
@@ -346,14 +352,14 @@ A virtual Private Cloud (VPC) is a virtual network dedicated to your AWS account
 
 <mark style="color:red;">**Concept**</mark>: When you launch an instance in Amazon EC2, you have the options of passing user data to the instance that can be used to perform common automated configuration task and even run scripts after the instance starts.
 
-![](<../../../.gitbook/assets/image (13) (1).png>)
+![](<../../../.gitbook/assets/image (13) (1) (1).png>)
 
 <mark style="color:purple;">**Step 10**</mark>
 
 1. Review the User data content
 2. Go to next step
 
-![](<../../../.gitbook/assets/image (14) (1).png>)
+![](<../../../.gitbook/assets/image (14) (1) (1).png>)
 
 <mark style="color:purple;">**Step 11**</mark>
 
@@ -367,7 +373,7 @@ A virtual Private Cloud (VPC) is a virtual network dedicated to your AWS account
 
 <mark style="color:red;">**Concept:**</mark> It's always a good idea to review the instance launch details that you have configured before you deploy the instance.
 
-![](<../../../.gitbook/assets/image (15) (1).png>)
+![](<../../../.gitbook/assets/image (15) (1) (1).png>)
 
 <mark style="color:purple;">**Step 12**</mark>
 
@@ -375,7 +381,7 @@ A virtual Private Cloud (VPC) is a virtual network dedicated to your AWS account
 2. Scroll down to the bottom of the page.
 3. Go to the next step
 
-![](<../../../.gitbook/assets/image (16) (1).png>)
+![](<../../../.gitbook/assets/image (16) (1) (1).png>)
 
 <mark style="color:purple;">**Step 13**</mark>
 
@@ -385,7 +391,7 @@ A virtual Private Cloud (VPC) is a virtual network dedicated to your AWS account
 
 2. Go to the next step.
 
-![](<../../../.gitbook/assets/image (17) (1).png>)
+![](<../../../.gitbook/assets/image (17) (1) (1).png>)
 
 <mark style="color:purple;">**Step 14**</mark>
 
@@ -399,7 +405,7 @@ A virtual Private Cloud (VPC) is a virtual network dedicated to your AWS account
 
 <mark style="color:red;">**Concept:**</mark> An instance enters the pending state when it launches for the firt time. It changes to a running state when it is ready for use.
 
-![](<../../../.gitbook/assets/image (19).png>)
+![](<../../../.gitbook/assets/image (19) (1).png>)
 
 <mark style="color:purple;">**Step 15**</mark>
 
@@ -411,15 +417,23 @@ A virtual Private Cloud (VPC) is a virtual network dedicated to your AWS account
 * If you see a connection timeout message when opening the webpage, check that the address begins with http and not https.
 * The public DNS and the security group are used to access the instance details that appear on the webpag.
 
-<img src="../../../.gitbook/assets/image (20).png" alt="" data-size="original">
+<img src="../../../.gitbook/assets/image (20) (1).png" alt="" data-size="original">.
 
-Finished.
+***
+
+DIY Activities
+
+* [x] Launch a second Amazon EC2 instance in a different Availability Zone of the same AWS Region.
+
+<img src="../../../.gitbook/assets/image (19).png" alt="" data-size="original">
+
+![](<../../../.gitbook/assets/image (20).png>)<img src="../../../.gitbook/assets/image (21).png" alt="" data-size="original">
 
 </details>
 
 #### <mark style="color:blue;">DAP - Arquitetura da solicitação</mark>
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -454,7 +468,7 @@ Descreva famílias de instâncias e tipos de instâncias do Amazon EC2. Descreva
 3. In the search results, under Services, click EC2.
 4. Go to next step
 
-![](<../../../.gitbook/assets/image (22).png>)
+![](<../../../.gitbook/assets/image (22) (1).png>)
 
 <mark style="color:purple;">**Step 2**</mark>
 
@@ -463,7 +477,7 @@ Descreva famílias de instâncias e tipos de instâncias do Amazon EC2. Descreva
 
 <mark style="color:red;">**Concepts:**</mark> Amazon Elastic Compute Cloud (Amazon EC2) instances provide virtual compute capacity in the cloud. With a choice of processor, storage, networking, operating system, and purchase model the service offers a broad and deep solution.
 
-![](<../../../.gitbook/assets/image (23).png>)
+![](<../../../.gitbook/assets/image (23) (1).png>)
 
 <mark style="color:purple;">**Step 3**</mark>
 
@@ -474,7 +488,7 @@ Descreva famílias de instâncias e tipos de instâncias do Amazon EC2. Descreva
 
 <mark style="color:red;">**Concepts**</mark>: Information about the instance (such as its public IP, private IP, and public DNS) is displyaed in the instance summary section by selecting the EC2 instance.
 
-![](<../../../.gitbook/assets/image (24).png>)
+![](<../../../.gitbook/assets/image (24) (1).png>)
 
 <mark style="color:purple;">**Step 4**</mark>
 
@@ -483,7 +497,7 @@ Descreva famílias de instâncias e tipos de instâncias do Amazon EC2. Descreva
 
 <mark style="color:red;">**Concept:**</mark> Amazon EC2 provides a wide selection of instance types that belong to instance families that are optimized to fit different use cases.
 
-![](<../../../.gitbook/assets/image (25).png>)
+![](<../../../.gitbook/assets/image (25) (1).png>)
 
 <mark style="color:purple;">**Step 5**</mark>
 
@@ -498,7 +512,7 @@ Descreva famílias de instâncias e tipos de instâncias do Amazon EC2. Descreva
 
 <mark style="color:red;">Concept:</mark> Each instance type includes one or more instance sizes, so you can scale your resources to the requirements of your target workload.
 
-![](<../../../.gitbook/assets/image (26).png>)
+![](<../../../.gitbook/assets/image (26) (1).png>)
 
 <mark style="color:purple;">**Step 6**</mark>
 
@@ -509,7 +523,7 @@ Descreva famílias de instâncias e tipos de instâncias do Amazon EC2. Descreva
 
 <mark style="color:red;">**Concept:**</mark> Using the Amazon EC2 console, you can filter instance attributes such as instance types, instance family, and instance size. You can search using keyworkds, atribute names, or expressions.
 
-![](<../../../.gitbook/assets/image (27).png>)
+![](<../../../.gitbook/assets/image (27) (1).png>)
 
 <mark style="color:purple;">**Step 7**</mark>
 
@@ -522,7 +536,7 @@ Descreva famílias de instâncias e tipos de instâncias do Amazon EC2. Descreva
 
 <mark style="color:red;">**Concept:**</mark> Instance metadata is data about your instance that you can use to configure or manage the running instance. Instance metadata is divided into categories; for exemple, host name, events, and securiy groups.
 
-![](<../../../.gitbook/assets/image (28).png>)
+![](<../../../.gitbook/assets/image (28) (1).png>)
 
 <mark style="color:purple;">**Step 8**</mark>
 
@@ -535,7 +549,7 @@ Descreva famílias de instâncias e tipos de instâncias do Amazon EC2. Descreva
 
 <mark style="color:red;">**Concept:**</mark> When creeating a new insntace, you can enable the instance metadata service (IMDS) through the Advanced details sections. This way, you can display attibute details by using the instance's public IP.
 
-![](<../../../.gitbook/assets/image (29).png>)
+![](<../../../.gitbook/assets/image (29) (1).png>)
 
 <mark style="color:purple;">**Step 9**</mark>
 
@@ -544,7 +558,7 @@ Descreva famílias de instâncias e tipos de instâncias do Amazon EC2. Descreva
 
 <mark style="color:red;">**Concept:**</mark> You have the flexibility to connect to an EC2 instance by using Amazon EC2 Instance Connect, Session Manager (a capability of AWS Systems Manager), or an SSH client.
 
-![](<../../../.gitbook/assets/image (30).png>)
+![](<../../../.gitbook/assets/image (30) (1).png>)
 
 <mark style="color:purple;">**Step 10**</mark>
 
@@ -704,7 +718,7 @@ Finished.
 
 #### <mark style="color:blue;">DAP - Arquitetura da solução</mark>
 
-<figure><img src="../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -714,7 +728,7 @@ Finished.
 | ----------------- | ------------------------------------------------------------------------------------------------------------ |
 | Conceitos de rede | Ajude o banco a configurar um ambiente de rede seguro que permita a comunicação entre recursos e a internet. |
 
-<figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
 
 <details>
 
@@ -724,10 +738,10 @@ Defina os principais recursos de VPCs, sub-redes, gateways de internet e tabelas
 
 1. Explique como o tráfego VPC é roteado e protegido usando gateways, listas de controle de acesso à rede e grupos de segurança.
 
-* [ ] Explore the components that comprise a virtual private cloud (VPC)
-* [ ] Configure a route table attached to a subnet within a VPC.
-* [ ] Configure an internet gateway inside a VPC.
-* [ ] Configure inbound rules within a security group to control access.
+* [x] Explore the components that comprise a virtual private cloud (VPC)
+* [x] Configure a route table attached to a subnet within a VPC.
+* [x] Configure an internet gateway inside a VPC.
+* [x] Configure inbound rules within a security group to control access.
 
 ***
 
@@ -740,14 +754,14 @@ Defina os principais recursos de VPCs, sub-redes, gateways de internet e tabelas
 
 <mark style="color:red;">**Concept:**</mark> AWS launched its very first Amazon Elastic Compute Cloud (Amazon EC2) instance in August, 2006.
 
-![](<../../../.gitbook/assets/image (22).png>)
+![](<../../../.gitbook/assets/image (22) (1).png>)
 
 <mark style="color:purple;">**Step 2**</mark>
 
 1. In the left navigation pane, click instances.
 2. Go to the next step
 
-![](<../../../.gitbook/assets/image (5).png>)
+![](<../../../.gitbook/assets/image (5) (1).png>)
 
 <mark style="color:purple;">**Step 3**</mark>
 
@@ -755,7 +769,7 @@ Defina os principais recursos de VPCs, sub-redes, gateways de internet e tabelas
 2. On the Details tab, under Public IPv4 address, click the copy icon to copy the provided addredd.
 3. Go to the next step
 
-![](<../../../.gitbook/assets/image (1) (1).png>)
+![](<../../../.gitbook/assets/image (1) (1) (1).png>)
 
 <mark style="color:purple;">**Step 4**</mark>
 
@@ -766,7 +780,7 @@ Defina os principais recursos de VPCs, sub-redes, gateways de internet e tabelas
 2. To solve this issue return to the previous browser (the Instances page in the Amazon EC2 console).
 3. Go to the next step
 
-![](<../../../.gitbook/assets/image (2) (1).png>)
+![](<../../../.gitbook/assets/image (2) (1) (1).png>)
 
 <mark style="color:purple;">**Step 5**</mark>
 
@@ -777,7 +791,7 @@ Defina os principais recursos de VPCs, sub-redes, gateways de internet e tabelas
 
 <mark style="color:red;">**Concepts**</mark>: Using Amazon Virtual Private Cloud (Amazon VCP), you can launch AWS resources into a virtual network closely resembles a traditional network that you'd operate in you own data center, with the benefits of using the scalable infrastructure of AWS.
 
-![](<../../../.gitbook/assets/image (3) (1).png>)
+![](<../../../.gitbook/assets/image (3) (1) (1).png>)
 
 <mark style="color:purple;">**Step 6**</mark>
 
@@ -786,7 +800,7 @@ Defina os principais recursos de VPCs, sub-redes, gateways de internet e tabelas
 
 <mark style="color:red;">**Concepts**</mark>: A subnet is a range of IP addresses in your VPC. You can launch AWS resources into a specified subnet. Each subnet must reside entirely within one Availability Zone and cannot span zones.
 
-![](<../../../.gitbook/assets/image (4) (1).png>)
+![](<../../../.gitbook/assets/image (4) (1) (1).png>)
 
 <mark style="color:purple;">**Step 7**</mark>
 
@@ -796,7 +810,7 @@ Defina os principais recursos de VPCs, sub-redes, gateways de internet e tabelas
 
 <mark style="color:red;">**Concepts**</mark>: A route table contains a set of rules, called routes, that are used to determine where network traffic from your subnet or gateway is directed. Use a public subnet for internet-connected resources and a private subnet for resources not connected to the Internet.
 
-![](<../../../.gitbook/assets/image (5) (1).png>)
+![](<../../../.gitbook/assets/image (5) (1) (1).png>)
 
 <mark style="color:purple;">**Step 8**</mark>
 
@@ -811,7 +825,7 @@ Defina os principais recursos de VPCs, sub-redes, gateways de internet e tabelas
 
 <mark style="color:red;">**Concepts**</mark>: The CIDR naming convention 0.0.0.0/0 represents all IPv4 address (::/0 for IPv6).
 
-![](<../../../.gitbook/assets/image (6).png>)
+![](<../../../.gitbook/assets/image (6) (1).png>)
 
 <mark style="color:purple;">**Step 9**</mark>
 
@@ -820,7 +834,7 @@ Defina os principais recursos de VPCs, sub-redes, gateways de internet e tabelas
 
 <mark style="color:red;">**Concepts**</mark>: A NAT gateway is a network address translation (NAT) service. With a NAT gateway, instances in a private subnet can connect to services outside your VPC. External services cannot initiate a connection with those instances.
 
-![](<../../../.gitbook/assets/image (7).png>)
+![](<../../../.gitbook/assets/image (7) (1).png>)
 
 <mark style="color:purple;">**Step 10**</mark>
 
@@ -836,7 +850,7 @@ Defina os principais recursos de VPCs, sub-redes, gateways de internet e tabelas
 * Provide a target in your VPC route tables for internet-routable traffic.
 * Perform network address translation (NAT) for instances that have been assigned public IPv4 addresses.
 
-![](<../../../.gitbook/assets/image (8).png>)
+![](<../../../.gitbook/assets/image (8) (1).png>)
 
 <mark style="color:purple;">**Step 11**</mark>
 
@@ -852,7 +866,7 @@ Defina os principais recursos de VPCs, sub-redes, gateways de internet e tabelas
 
 <mark style="color:red;">**Concepts**</mark>: An internet gateway supports IPv4 and IPv6 traffic. It does not cause availability risks or bandwidth constraints on your network traffic. There's no additional charge for having an internet gateway in you account.
 
-![](<../../../.gitbook/assets/image (9).png>)
+![](<../../../.gitbook/assets/image (9) (1).png>)
 
 <mark style="color:purple;">**Step 12**</mark>
 
@@ -862,7 +876,7 @@ Defina os principais recursos de VPCs, sub-redes, gateways de internet e tabelas
 4. Under Security groups, click WebServerSecurityGroup
 5. Go to the next step
 
-![](<../../../.gitbook/assets/image (10).png>)
+![](<../../../.gitbook/assets/image (10) (1).png>)
 
 <mark style="color:purple;">**Step 13**</mark>
 
@@ -871,7 +885,7 @@ Defina os principais recursos de VPCs, sub-redes, gateways de internet e tabelas
 
 <mark style="color:red;">**Concepts**</mark>: For each security group, you can add rules that control the traffic based on protocols and port numbers. Separate sets of rules exist for inbound traffic and outbound traffic.
 
-![](<../../../.gitbook/assets/image (11).png>)
+![](<../../../.gitbook/assets/image (11) (1).png>)
 
 <mark style="color:purple;">**Step 14**</mark>
 
@@ -880,7 +894,7 @@ Defina os principais recursos de VPCs, sub-redes, gateways de internet e tabelas
 
 <mark style="color:red;">**Concepts**</mark>: When you create a VPC, it comes with a default security group. You can create additional security groups for each VPC.
 
-![](<../../../.gitbook/assets/image (12).png>)
+![](<../../../.gitbook/assets/image (12) (1).png>)
 
 <mark style="color:purple;">**Step 15**</mark>
 
@@ -894,7 +908,7 @@ Defina os principais recursos de VPCs, sub-redes, gateways de internet e tabelas
 
 <mark style="color:red;">**Concepts**</mark>: You can create a security group and add rules that reflect the role of the instance that is associated with the security group. For example, an instnace that is configured as a web server needs security group rules that allow inbound HTTP and HTTPS access. Likewise, a database instance needs rules that allow access for the type of database, such as access over port 3306 for MySQL.
 
-![](<../../../.gitbook/assets/image (13).png>)
+![](<../../../.gitbook/assets/image (13) (1).png>)
 
 <mark style="color:purple;">**Step 16**</mark>
 
@@ -905,14 +919,14 @@ Defina os principais recursos de VPCs, sub-redes, gateways de internet e tabelas
 
 <mark style="color:red;">**Concepts**</mark>: Security groups are stateful. For example, if you send request from an instance, the response traffic for that request is allowed to reach the instance regardless of the inbound security group rules. Responses to allowed inbound traffic are allowed to leave the instance, regardless of the outbound rules.
 
-![](<../../../.gitbook/assets/image (14).png>)
+![](<../../../.gitbook/assets/image (14) (1).png>)
 
 <mark style="color:purple;">**Step 17**</mark>
 
 1. In the left navigation pane, click Instances.
 2. Go to the next step.
 
-![](<../../../.gitbook/assets/image (15).png>)
+![](<../../../.gitbook/assets/image (15) (1).png>)
 
 <mark style="color:purple;">**Step 18**</mark>
 
@@ -955,12 +969,213 @@ Finished.
 
 ***
 
+### <mark style="color:red;">Databases in Practice</mark>
+
+| Título da tarefa          | Solicitação de negócios                                                                            |
+| ------------------------- | -------------------------------------------------------------------------------------------------- |
+| Bases de dados na prática | Melhore as operações, o desempenho e a disponibilidade do banco de dados relacional da seguradora. |
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+<details>
+
+<summary><mark style="color:purple;">Gerenciamento de banco de dados com Amazon RDS</mark></summary>
+
+Revise os recursos, benefícios e tipos de banco de dados disponíveis com o Amazon RDS. Descreva o dimensionamento vertical e horizontal no Amazon RDS. Use réplicas de leitura do Amazon RDS para aumentar o desempenho do banco de dados.&#x20;
+
+1. Implemente implantações multi-AZ do Amazon RDS para aumentar a disponibilidade.
+
+* [x] Launch an Amazon RDS instance.
+* [x] Configure a Multi-AZ deploymnet
+* [x] Configure Amazon RDS backups.
+
+***
+
+<mark style="color:purple;">**Step 1**</mark>
+
+1. In the top navigation bar search box, type: RDS
+2. In the search results, under Services, click RDS.
+3. Go to the next step
+
+![](<../../../.gitbook/assets/image (1).png>)
+
+<mark style="color:purple;">**Step 2**</mark>
+
+1. In the left navigation pane, click Databases.
+2. In the Databases section, click Create database.
+3. Go to the next step
+
+<mark style="color:red;">**Concept:**</mark> Amazon Relational Database Service (Amazon RDS) is a managed service. This  means that your database administrator can focus on innovating instead of patching and updating their database and infrastructure.
+
+Amazon RDS is optmized for memory, performance, and input/output. With Amazon RDS, you only pay for the resources that you actually consume.
+
+![](<../../../.gitbook/assets/image (2).png>)
+
+<mark style="color:purple;">**Step 3**</mark>
+
+1. To fine-tune your configuration, for Choose a database creation method, choose Standard create.
+2. For Engine type, choose MariaDB.
+3. Go to the next step.
+
+<mark style="color:red;">**Concept:**</mark> AWS offers several familiar database (DB) engines. Amazon Aurora, a lightning fast database solution at AWS, is up to five times faster than MySQL and three times faster than PostgreSQL. Aurora databases are highly secure, available, and durable.
+
+&#x20;![](<../../../.gitbook/assets/image (3).png>)
+
+<mark style="color:purple;">**Step 4**</mark>
+
+1. For Engine Version, keep the default MariaDB version provided.
+
+* The default version might be different from what is displayed in the screenshot example.
+
+2. For Templates, choose Dev/Test.
+3. Go to the next step
+
+<mark style="color:red;">**Concept:**</mark> Amazon RDS provides three templates for you deployment: Production, Dev/Test, and Free Tier. Use Free Tier if you wish to learn or deploy a quick proof of concept. Use Production only when deploying a production-level system
+
+![](<../../../.gitbook/assets/image (4).png>)
+
+<mark style="color:purple;">**Step 5**</mark>
+
+1. For DB instance identifier, type: my-database
+
+* This is the name of your DB instance.
+
+2. For Master username, keep the default username of admin.
+3. For Credentials management, choose Self managed
+4. For Master password, type: ILoveLearning!123
+5. For Confirm password, type the password again.
+6. Go to the next step
+
+<mark style="color:red;">**Concept:**</mark> You DB instance identifier is the name that you see when you search for your instance in the console. You can connect this database with the credentials that you provide here.
+
+![](<../../../.gitbook/assets/image (5).png>)
+
+<mark style="color:purple;">**Step 6**</mark>
+
+1. Scroll down to instance configuration
+2. For DB Instance class, choose Burstable classes.
+3. On the dropdown menu below that, choose db.t3.xlarge
+
+* Only t3 db classes are supoported in this lab.
+
+4. For Storage type, on the dropdown menu, choose General Purpose SSD (gp2).
+5. For Allocated storage, type: 20
+6. Go to the next step
+
+<mark style="color:red;">**Concept:**</mark> Amazaon RDS supports the most demanding database applications. You can choose between two SSD-backed storage options. One is optimized for high performance OLTP applications, and the other is optimize for cost-effective, general-purpose use.
+
+![](<../../../.gitbook/assets/image (6).png>)
+
+<mark style="color:purple;">**Step 7**</mark>
+
+1. For Storage autoscaling, chick the expand arrow.
+2. Review the default option of Enable storage autoscaling.
+3. For Maximum storage threshold, review the default threshold of 1000GB.
+4. Under Availability & durability, for multi-AZ deployment, choose Create a standby instance.
+5. Go to the next step
+
+<mark style="color:red;">**Concept:**</mark> Using the MySQL, MariaDB, Oracle, and PostgreSQL engines, you can scale up to 64 TB of storage. SQL Server supports up too 16 TB. Storage scaling is on the fly, with zero downtime.
+
+![](<../../../.gitbook/assets/image (7).png>)
+
+<mark style="color:purple;">**Step 8**</mark>
+
+1. In the Connectivity section, for Virtual private cloud (VPC), keep the default value of Default VPC.
+2. For DB subnet group, keep the default setting.
+3. For Public access, keep the default setting.
+4. For VPC security group (firewall), keep the default setting.
+5. Go to the next step
+
+<mark style="color:red;">**Concept:**</mark> Amazon RDS helps you control network access to you database. You can also run your RDS DB instances in a virtual private cloud (VPC). This way, you can isolate your DB instances and connect to you existing IT infraestructure through an industry standard encrypted IPsec VPN.
+
+![](<../../../.gitbook/assets/image (8).png>)
+
+<mark style="color:purple;">**Step 9**</mark>
+
+1. In the Monitoring section, for Performance insights, clear the check box to deselect Turn on Performance Insights.
+2. For Additional configuration, click the expand arrow.
+3. For Enhanced Monitoring, clear the check box to deselect Enable Enhanced monitoring.
+
+* If either Performance Insights or Enhanced monitoring are enabled, you'll get a permissions error when trying to create the database.
+
+4. Scroll down to the Additional configuration section.
+5. Go to the next step.
+
+![](<../../../.gitbook/assets/image (9).png>)
+
+<mark style="color:purple;">**Step 10**</mark>
+
+1. In the Additional configuration section, for Additional configuration, click de expand arrow.
+2. For Initial database name, type: my\_database
+3. For DB parameter group and Option group, review the default options.
+4. Under Backup, review the default options.
+5. Go to the next step
+
+<mark style="color:red;">**Concept:**</mark> In order for AWS to sucessfully provision an RDS DB instance for you, you must first specify an initial database name. if you failt to spacify an initial database, your instance can still be provisioned, but it might not work properly.
+
+![](<../../../.gitbook/assets/image (10).png>)
+
+<mark style="color:purple;">**Step 11**</mark>
+
+1. In the Additional configuration section, for Encryption, review the default option of Enable encryption.
+2. Go to the next step
+
+![](<../../../.gitbook/assets/image (12).png>)
+
+<mark style="color:purple;">**Step 12**</mark>
+
+1. For Maintenance, clear the check box to deselect Enable auto minor version upgrade.
+2. For Maintenance window, review the default selection of No preference
+3. Scroll down and click Create database (not shown).
+4. Go to the next step.
+
+![](<../../../.gitbook/assets/image (13).png>)
+
+<mark style="color:purple;">**Step 13**</mark>
+
+* Expect about 15-20 minutes to create your RDS instance. It's a great time to get a cup of coffe or a snack!
+* You may see a pop-up window. Please close it.
+
+1. When you return, in the Databases section, click the refresh icon.
+2. Under Status, review to ensure that the DB status is Available.
+3. Click my-database.
+4. Go to the next step
+
+![](<../../../.gitbook/assets/image (14).png>)
+
+<mark style="color:purple;">**Step 14**</mark>
+
+1. Click Actions to expand the dropdown menu.
+2. Review the different options.
+
+* The options, such as Create read replica, can be used to manage your existing DB instance.
+
+3. Go to the next step.
+
+![](<../../../.gitbook/assets/image (15).png>)
+
+***
+
+DIY Activities
+
+* [x] Create a read replica of your primary database using a db.t3.xlarge instance
+
+![](<../../../.gitbook/assets/image (16).png>)
+
+***
+
+</details>
+
+***
+
+
+
+
+
 
 
 |                                                                      |                                                                                                                                                              |
 | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| <ol start="4"><li></li></ol>                                         |                                                                                                                                                              |
-| <ol start="5"><li>Bases de dados na prática</li></ol>                | Melhore as operações, o desempenho e a disponibilidade do banco de dados relacional da seguradora.                                                           |
 | <ol start="6"><li>Conectando VPCs</li></ol>                          | A equipe de marketing da cidade quer Amazon VPCs separadas para cada departamento que permita a comunicação entre Amazon VPCs.                               |
 | <ol start="7"><li>Primeiro banco de dados NoSQL</li></ol>            | Ajude o serviço de streaming de entretenimento da ilha a implementar um banco de dados NoSQL para desenvolver novos recursos.                                |
 | <ol start="8"><li>Sistemas de arquivos na nuvem</li></ol>            | Ajude a agência de modelos de animais de estimação da cidade a compartilhar dados de arquivos sem provisionar ou gerenciar armazenamento.                    |
@@ -969,24 +1184,21 @@ Finished.
 | <ol start="11"><li>Conceitos Básicos de Segurança</li></ol>          | Ajude a melhorar a segurança na bolsa de valores da cidade garantindo que os engenheiros de suporte possam executar somente ações autorizadas.               |
 | <ol start="12"><li>Economia da Nuvem</li></ol>                       | A loja de pranchas de surfe da cidade precisa de uma estimativa de custo de uma arquitetura com uso variável de recursos.                                    |
 
-| Objetivos de aprendizado                                                                                                                                                                                                                                                                                                                               |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| <ol start="3"><li></li></ol>                                                                                                                                                                                                                                                                                                                           |
-| <ol start="4"><li></li></ol>                                                                                                                                                                                                                                                                                                                           |
-| <ol start="5"><li>Revise os recursos, benefícios e tipos de banco de dados disponíveis com o Amazon RDS. Descreva o dimensionamento vertical e horizontal no Amazon RDS. Use réplicas de leitura do Amazon RDS para aumentar o desempenho do banco de dados. Implemente implantações multi-AZ do Amazon RDS para aumentar a disponibilidade.</li></ol> |
-| <ol start="6"><li>Resuma como o peering de VPC funciona com o Amazon VPC. Explique as etapas para estabelecer uma conexão de peering de VPC. Crie uma conexão de peering entre dois Amazon VPCs. Estabeleça uma conexão de peering entre Amazon VPCs usando uma sub-rede específica.</li></ol>                                                         |
-| <ol start="7"><li>Resuma os diferentes usos de bancos de dados comuns criados para propósitos específicos. Descreva os recursos e benefícios do Amazon DynamoDB. Interaja com os elementos e atributos de um banco de dados Amazon DynamoDB. Configure um banco de dados NoSQL com o Amazon DynamoDB.</li></ol>                                        |
-| <ol start="8"><li>Resuma as diferentes opções de armazenamento disponíveis na AWS. Resuma os principais recursos e benefícios do Amazon EFS. Identifique casos de uso comercial para o Amazon EFS. Configure endpoints do Amazon EFS para acessar o armazenamento centralizado.</li></ol>                                                              |
-| <ol start="9"><li>Descreva os recursos de autocura e dimensionamento oferecidos pelos grupos de Auto Scaling. Crie um grupo de Auto Scaling com limites de recursos rígidos. Configure um grupo de Auto Scaling para responder a um evento baseado em tempo.</li></ol>                                                                                 |
-| <ol start="10"><li>Descreva os princípios para arquitetar aplicativos de alta disponibilidade. Resuma os benefícios de usar um AWS Application Load Balancer (ALB). Use grupos de Auto Scaling com balanceamento de carga e monitoramento de integridade.</li></ol>                                                                                    |
-| <ol start="11"><li>Descreva o processo de criação e as diferenças entre usuários, funções e grupos do AWS IAM. Revise a estrutura e os componentes das Políticas do AWS IAM. Resuma o Modelo de Responsabilidade Compartilhada da AWS e os programas de conformidade.</li></ol>                                                                        |
-| <ol start="12"><li>Descreva como as estimativas de preços são obtidas. Use a Calculadora de Preços da AWS para estimar o preço de uma arquitetura da AWS.</li></ol>                                                                                                                                                                                    |
+| Objetivos de aprendizado                                                                                                                                                                                                                                                                                        |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <ol start="6"><li>Resuma como o peering de VPC funciona com o Amazon VPC. Explique as etapas para estabelecer uma conexão de peering de VPC. Crie uma conexão de peering entre dois Amazon VPCs. Estabeleça uma conexão de peering entre Amazon VPCs usando uma sub-rede específica.</li></ol>                  |
+| <ol start="7"><li>Resuma os diferentes usos de bancos de dados comuns criados para propósitos específicos. Descreva os recursos e benefícios do Amazon DynamoDB. Interaja com os elementos e atributos de um banco de dados Amazon DynamoDB. Configure um banco de dados NoSQL com o Amazon DynamoDB.</li></ol> |
+| <ol start="8"><li>Resuma as diferentes opções de armazenamento disponíveis na AWS. Resuma os principais recursos e benefícios do Amazon EFS. Identifique casos de uso comercial para o Amazon EFS. Configure endpoints do Amazon EFS para acessar o armazenamento centralizado.</li></ol>                       |
+| <ol start="9"><li>Descreva os recursos de autocura e dimensionamento oferecidos pelos grupos de Auto Scaling. Crie um grupo de Auto Scaling com limites de recursos rígidos. Configure um grupo de Auto Scaling para responder a um evento baseado em tempo.</li></ol>                                          |
+| <ol start="10"><li>Descreva os princípios para arquitetar aplicativos de alta disponibilidade. Resuma os benefícios de usar um AWS Application Load Balancer (ALB). Use grupos de Auto Scaling com balanceamento de carga e monitoramento de integridade.</li></ol>                                             |
+| <ol start="11"><li>Descreva o processo de criação e as diferenças entre usuários, funções e grupos do AWS IAM. Revise a estrutura e os componentes das Políticas do AWS IAM. Resuma o Modelo de Responsabilidade Compartilhada da AWS e os programas de conformidade.</li></ol>                                 |
+| <ol start="12"><li>Descreva como as estimativas de preços são obtidas. Use a Calculadora de Preços da AWS para estimar o preço de uma arquitetura da AWS.</li></ol>                                                                                                                                             |
 
 <details>
 
 <summary><mark style="color:purple;">Challenges</mark></summary>
 
-<img src="../../../.gitbook/assets/image (109).png" alt="" data-size="original">![](<../../../.gitbook/assets/image (117).png>)![](<../../../.gitbook/assets/image (4).png>)
+<img src="../../../.gitbook/assets/image (109).png" alt="" data-size="original">![](<../../../.gitbook/assets/image (117).png>)![](<../../../.gitbook/assets/image (4) (1).png>)
 
 </details>
 
@@ -994,7 +1206,7 @@ Finished.
 
 <summary><mark style="color:purple;">Services Cards Resources</mark></summary>
 
-![](<../../../.gitbook/assets/image (114).png>)![](<../../../.gitbook/assets/image (115).png>)![](<../../../.gitbook/assets/image (116).png>)![](../../../.gitbook/assets/image.png)![](<../../../.gitbook/assets/image (1).png>)![](<../../../.gitbook/assets/image (2).png>)![](<../../../.gitbook/assets/image (3).png>)
+![](<../../../.gitbook/assets/image (114).png>)![](<../../../.gitbook/assets/image (115).png>)![](<../../../.gitbook/assets/image (116).png>)![](<../../../.gitbook/assets/image (30).png>)![](<../../../.gitbook/assets/image (1) (1).png>)![](<../../../.gitbook/assets/image (2) (1).png>)![](<../../../.gitbook/assets/image (3) (1).png>)![](<../../../.gitbook/assets/image (22).png>)![](<../../../.gitbook/assets/image (23).png>)![](<../../../.gitbook/assets/image (24).png>)![](<../../../.gitbook/assets/image (25).png>)![](<../../../.gitbook/assets/image (26).png>)![](<../../../.gitbook/assets/image (27).png>)![](<../../../.gitbook/assets/image (28).png>)![](<../../../.gitbook/assets/image (29).png>)
 
 </details>
 

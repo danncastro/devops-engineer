@@ -33,7 +33,7 @@ O usuário raiz da AWS possui dois conjuntos de credenciais associados a ele. O 
 
 As chaves de acesso consistem em duas partes:
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Assim como uma combinação de nome de usuário e senha, o ID da chave de acesso e a chave de acesso secreta são essenciais para autenticar suas solicitações ao utilizar a AWS CLI ou a API da AWS. É crucial que essas chaves sejam gerenciadas com segurança semelhante à aplicada ao endereço de e-mail e senha da conta raiz.
 
@@ -110,7 +110,7 @@ Habilitar a MFA na conta raiz é fortemente recomendado pela AWS como uma práti
 
 A AWS oferece suporte a uma variedade de mecanismos de MFA, como dispositivos virtuais com MFA, dispositivos de hardware e chaves de segurança Universal 2nd Factor (U2F). Para obter instruções sobre como configurar cada método, confira a seção Resources (Recursos).
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
