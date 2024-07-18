@@ -87,7 +87,7 @@ Esses serviços oferecem funcionalidades avançadas de orquestração, facilitan
 
 O Amazon ECS é um serviço robusto para gerenciar contêineres, permitindo criar e administrar contêineres em clusters de instâncias EC2. Para utilizar o ECS, é necessário instalar o agente de contêiner em suas instâncias EC2, que facilita a comunicação com o serviço ECS para gerenciar o cluster.
 
-<figure><img src="../../.gitbook/assets/image (17) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (17) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Uma vez que as instâncias de contêiner estão em execução, você pode realizar várias ações, como iniciar, parar e monitorar contêineres, dimensionar horizontalmente e verticalmente, agendar a distribuição de contêineres no cluster, além de configurar permissões e garantir requisitos de disponibilidade.
 
