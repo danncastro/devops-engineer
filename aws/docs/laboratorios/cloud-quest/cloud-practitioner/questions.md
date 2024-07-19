@@ -181,11 +181,98 @@
 
 > As tags são pares de chave-valor que você pode atribuir a recursos na AWS, como instâncias EC2, volumes EBS, snapshots, etc. Elas são usadas para categorizar e identificar recursos, além de permitir a aplicação de políticas e automatização de processos com base nessas tags.
 
+21. By default, Amazon RDS will retain a backup of a DB instance for a period of 7 days.
 
+* [x] True
+* [ ] False
 
+> Por padrão, o Amazon RDS (Relational Database Service) retém backups automáticos de uma instância de banco de dados por um período de 7 dias. Durante esse período, você pode restaurar o banco de dados para qualquer momento durante o período de retenção de backup de 7 dias.
 
+22. Which functions does Amazon RDS perform on the bhalf of users? (Select THREE)
 
+* [x] Provision the infrastructure capacity
+* [x] Install the database software
+* [x] Automate data backups
+* [ ] Create database users
 
+> Provisionar a capacidade de infraestrutura: Amazon RDS gerencia a configuração e a escalabilidade da infraestrutura subjacente necessária para executar o banco de dados.
+>
+> Instalar o software do banco de dados: Amazon RDS gerencia a instalação e a configuração inicial do software do banco de dados escolhido.
+>
+> Automatizar backups de dados: Amazon RDS fornece backups automáticos e recuperação de falhas para garantir a durabilidade dos dados.
 
+23. What should users do if their Amazon RDS queries seem to be running slowly? (Select THREE)
 
+* [x] Enable enhanced monitoring on the database instance
+* [x] Review the slow query logs for MariaDB or MySQL
+* [ ] Review the client-side SQL Server traces.
+* [x] Modify the DB instance to run as a Multi-AZ deployment
 
+> Habilitar o monitoramento aprimorado na instância do banco de dados: Isso permite monitorar métricas detalhadas de desempenho que podem ajudar a identificar gargalos.
+>
+> Revisar os logs de consultas lentas para MariaDB ou MySQL: Esses logs registram consultas que estão levando mais tempo para serem executadas, ajudando a identificar problemas de desempenho específicos.
+>
+> Modificar a instância do banco de dados para executar como um deployment Multi-AZ (disponibilidade em várias zonas): Embora isso não seja diretamente relacionado à melhoria de desempenho, pode melhorar a resiliência e disponibilidade do banco de dados, o que pode ser um fator importante em cenários de alto tráfego.
+
+24. What happens if a weekly maintenance window is not specified when creating an RDS DB instance?
+
+* [x] A 30-minute window will be assigned by default
+* [ ] The DB instance will not start
+* [ ] A maintenance window will not be created
+* [ ] A read replica instance will automatically be created.
+
+25. Which database engines does Amazon RDS support? (Select THREE)
+
+* [ ] DB2
+* [x] Oracle
+* [x] PostgreSQL
+* [x] MySQL
+
+26. &#x20;What is an Amazon S3 bucket?
+
+* [ ] An optional organization folder (objects can also be stored at the root of an Amazon S3 infrastructure)
+* [ ] A container for objects stored in Amazon S3 (every object is contained in a bucket)
+* [ ] An alias for a folder within Amazon S3
+
+> Um bucket do Amazon S3 é um recipiente de nível superior para armazenar objetos, onde cada objeto é armazenado dentro de um bucket específico. Não é um alias para uma pasta dentro do Amazon S3; ao contrário, os objetos podem ser armazenados diretamente no nível raiz de um bucket.
+
+27. Which format are Amazon S3 bucket policies and IAM policies written in?
+
+* [x] JSON
+* [ ] HTML
+* [ ] CSV
+* [ ] XML
+
+> JSON é o formato padrão usado para definir políticas tanto para buckets do Amazon S3 quanto para políticas IAM na AWS. É um formato de texto simples que é fácil de ler e escrever, além de ser amplamente suportado por ferramentas e APIs da AWS.
+
+28. How can an Amazon S3 bucket owner grant public access to a bucket when configuring it fot website hosting?
+
+* [ ] S3 buckets are publicly accessible by default
+* [ ] Enabling website hosting on an S3 bucket enables public access by default
+* [x] The S3 bucket owner can create a bucket policy.
+
+> Ao criar uma política de bucket, o proprietário pode especificar as condições sob as quais o conteúdo do bucket é acessível publicamente. Isso inclui permitir acesso de leitura a todos (por exemplo, definindo uma política que permite o princípio `*` ou um endereço IP específico).
+
+29. Which AWS service provides object storage and is built to store and retrieve any amount of data from anywhere on the internet?
+
+* [ ] Amazon Elastic Block Store (Amazon EBS)
+* [ ] Amazon Simple Notification Service (Amazon SNS)
+* [x] Amazon Simple Storage Service (Amazon S3)
+* [ ] Amazon Elastic Compute Cloud (Amazon EC2)
+
+> O Amazon S3 é um serviço de armazenamento de objetos altamente escalável, durável e seguro, projetado para armazenar e recuperar grandes quantidades de dados de forma eficiente pela internet
+
+30. What can be included when creating an Amazon Machine Image (AMI)? (Select THREE)
+
+* [x] Installed software
+* [x] Operating System
+* [ ] Public IP address
+* [x] EBS snapshots
+
+>
+>
+> **Software instalado**: A AMI pode capturar o estado atual do software instalado na instância EC2.
+>
+> **Sistema operacional**: A AMI inclui a imagem do sistema operacional da instância EC2.
+>
+> **Snapshots de EBS**: Você pode incluir snapshots de volumes EBS associados à instância EC2 na AMI, capturando assim os dados persistentes armazenados nesses volumes.
