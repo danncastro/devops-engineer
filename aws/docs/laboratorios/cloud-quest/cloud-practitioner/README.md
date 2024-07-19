@@ -1168,7 +1168,23 @@ DIY Activities
 
 ***
 
+### <mark style="color:red;">Connecting VPCs</mark>
 
+| Título da tarefa | Solicitação de negócios                                                                                                        |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| Conectando VPCs  | A equipe de marketing da cidade quer Amazon VPCs separadas para cada departamento que permita a comunicação entre Amazon VPCs. |
+
+
+
+<details>
+
+<summary><mark style="color:purple;">Estabelecendo conexão de peering de VPC</mark></summary>
+
+Resuma como o peering de VPC funciona com o Amazon VPC. Explique as etapas para estabelecer uma conexão de peering de VPC. Crie uma conexão de peering entre dois Amazon VPCs.&#x20;
+
+1. Estabeleça uma conexão de peering entre Amazon VPCs usando uma sub-rede específica.
+
+</details>
 
 
 
@@ -1176,7 +1192,6 @@ DIY Activities
 
 |                                                                      |                                                                                                                                                              |
 | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| <ol start="6"><li>Conectando VPCs</li></ol>                          | A equipe de marketing da cidade quer Amazon VPCs separadas para cada departamento que permita a comunicação entre Amazon VPCs.                               |
 | <ol start="7"><li>Primeiro banco de dados NoSQL</li></ol>            | Ajude o serviço de streaming de entretenimento da ilha a implementar um banco de dados NoSQL para desenvolver novos recursos.                                |
 | <ol start="8"><li>Sistemas de arquivos na nuvem</li></ol>            | Ajude a agência de modelos de animais de estimação da cidade a compartilhar dados de arquivos sem provisionar ou gerenciar armazenamento.                    |
 | <ol start="9"><li>Aplicações de autocura e dimensionamento</li></ol> | Ajude o café de jogos da cidade a implementar servidores de recuperação automática, restringindo os clientes a uma capacidade de provisionamento específica. |
@@ -1186,7 +1201,7 @@ DIY Activities
 
 | Objetivos de aprendizado                                                                                                                                                                                                                                                                                        |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <ol start="6"><li>Resuma como o peering de VPC funciona com o Amazon VPC. Explique as etapas para estabelecer uma conexão de peering de VPC. Crie uma conexão de peering entre dois Amazon VPCs. Estabeleça uma conexão de peering entre Amazon VPCs usando uma sub-rede específica.</li></ol>                  |
+| <ol start="6"><li></li></ol>                                                                                                                                                                                                                                                                                    |
 | <ol start="7"><li>Resuma os diferentes usos de bancos de dados comuns criados para propósitos específicos. Descreva os recursos e benefícios do Amazon DynamoDB. Interaja com os elementos e atributos de um banco de dados Amazon DynamoDB. Configure um banco de dados NoSQL com o Amazon DynamoDB.</li></ol> |
 | <ol start="8"><li>Resuma as diferentes opções de armazenamento disponíveis na AWS. Resuma os principais recursos e benefícios do Amazon EFS. Identifique casos de uso comercial para o Amazon EFS. Configure endpoints do Amazon EFS para acessar o armazenamento centralizado.</li></ol>                       |
 | <ol start="9"><li>Descreva os recursos de autocura e dimensionamento oferecidos pelos grupos de Auto Scaling. Crie um grupo de Auto Scaling com limites de recursos rígidos. Configure um grupo de Auto Scaling para responder a um evento baseado em tempo.</li></ol>                                          |
