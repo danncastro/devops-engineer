@@ -269,10 +269,47 @@
 * [ ] Public IP address
 * [x] EBS snapshots
 
->
->
 > **Software instalado**: A AMI pode capturar o estado atual do software instalado na instância EC2.
 >
 > **Sistema operacional**: A AMI inclui a imagem do sistema operacional da instância EC2.
 >
 > **Snapshots de EBS**: Você pode incluir snapshots de volumes EBS associados à instância EC2 na AMI, capturando assim os dados persistentes armazenados nesses volumes.
+
+31. Virtual private cloud (VPC) peering connections can route traffic by using private IPv4 or IPv6 addresses.
+
+* [x] True
+* [ ] False
+
+> As conexões de VPC peering podem rotear tráfego usando endereços IPv4 ou IPv6 privados. Isso permite que instâncias em VPCs diferentes se comuniquem usando endereços IP privados, desde que exista uma conexão de peering configurada entre os VPCs correspondentes.
+
+32. What is true about virtual private cloud (VPC) peering connections? (Select TWO)
+
+* [x] There is no single point of failure for communication
+* [x] There is no bandwidth bottleneck
+* [ ] VPC peering connections require a public subnet.
+
+> **Não há um único ponto de falha para a comunicação:** As conexões de peering de VPC são estabelecidas entre VPCs em uma única região da AWS e não possuem um único ponto de falha, desde que a infraestrutura de rede subjacente esteja funcionando corretamente.
+>
+> **Não há gargalo de largura de banda:** As conexões de peering de VPC aproveitam a rede da AWS para rotear o tráfego entre as VPCs, garantindo que a largura de banda seja escalável conforme necessário, sem restrições de gargalo de tráfego.\
+> **As conexões de peering de VPC exigem uma sub-red pública:** É incorreta, pois as conexões de peering de VPC não requerem uma sub-rede pública; elas podem ser estabelecidas entre VPCs que estão em sub-redes privadas.
+
+33. Virtual private clouds (VPCs) can be peered across AWS Region.
+
+* [x] True
+* [ ] False
+
+> Com o AWS VPC Peering, é possível estabelecer conexões entre VPCs diferentes, independentemente da região em que estão localizadas.
+
+34. When peering relationships are stablished betewen virtual private clouds (VPCs) across different AWS Regions, traffic always stays on the global AWS backbone and never traverses the public internet.
+
+* [x] True
+* [ ] False
+
+35. A virtual private cloud (VPC) peering connection can be established only between two VPCs.
+
+* [x] True
+* [ ] False
+
+> A conexão de peering de Virtual Private Cloud (VPC) pode ser estabelecida apenas entre duas VPCs. Isso significa que uma conexão de peering conecta diretamente dois VPCs e não pode ser expandida para conectar mais de dois VPCs ao mesmo tempo.
+
+36.
