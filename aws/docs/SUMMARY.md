@@ -62,5 +62,5 @@
     * [Cloud Computing Essentials](laboratorios/cloud-quest/cloud-practitioner/cloud-computing-essentials.md)
     * [Cloud First Steps](laboratorios/cloud-quest/cloud-practitioner/cloud-first-steps.md)
     * [Computing Solutions](laboratorios/cloud-quest/cloud-practitioner/computing-solutions.md)
-    * [Page](laboratorios/cloud-quest/cloud-practitioner/page.md)
+    * [Networking Concepts](laboratorios/cloud-quest/cloud-practitioner/networking-concepts.md)
     * [Questions](laboratorios/cloud-quest/cloud-practitioner/questions.md)
