@@ -12,7 +12,7 @@
 
 ***
 
-### <mark style="color:red;">Descrição da tarefa</mark>
+## <mark style="color:red;">Descrição da tarefa</mark>
 
 Articule as características da plataforma de computação em nuvem da AWS. Descreva os principais benefícios do uso de produtos e serviços da AWS.&#x20;
 
