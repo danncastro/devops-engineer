@@ -35,7 +35,7 @@ Articule as características da plataforma de computação em nuvem da AWS. Desc
 
 The AWS Management Console is a web interface to access and manage the broad collection of service provided by Amazon Web Service (AWS).
 
-![](<../../../.gitbook/assets/image (94).png>)
+<figure><img src="../../../.gitbook/assets/image (94).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -49,7 +49,7 @@ The AWS Management Console is a web interface to access and manage the broad col
 
 Amazon Simple Storage Service(Amazon S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance. Customers of all sizes and industries can use Amazon S3 to store and protect any amount of data for a range of use cases, such as data lakes, websites, mobile application, backup and restore, archive, enterprise applications, IoT devices, and big data analystics.
 
-![](<../../../.gitbook/assets/image (96).png>)
+<figure><img src="../../../.gitbook/assets/image (96).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -101,7 +101,7 @@ You can choose the geographical. AWS Region where Amazon S3 stores the buckets t
 
 Using Amazon S3, you can upload objects up to 5GB in size with a single PUT operation. For larget objects, up to 5TB in size, use the mutipart upload API.
 
-![](<../../../.gitbook/assets/image (99).png>)
+<figure><img src="../../../.gitbook/assets/image (99).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
