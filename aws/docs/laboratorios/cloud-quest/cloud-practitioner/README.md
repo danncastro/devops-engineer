@@ -1601,7 +1601,7 @@ DIY Activite
 
 <summary><mark style="color:purple;">Challenges</mark></summary>
 
-<img src="../../../.gitbook/assets/image (109).png" alt="" data-size="original">![](<../../../.gitbook/assets/image (117).png>)![](<../../../.gitbook/assets/image (4) (1).png>)
+<img src="../../../.gitbook/assets/image (109).png" alt="" data-size="original">![](<../../../.gitbook/assets/image (117).png>)![](<../../../.gitbook/assets/image (4) (1).png>)![](<../../../.gitbook/assets/image (175).png>)
 
 </details>
 
@@ -1609,7 +1609,9 @@ DIY Activite
 
 <summary><mark style="color:purple;">Services Cards Resources</mark></summary>
 
-![](<../../../.gitbook/assets/image (114).png>)![](<../../../.gitbook/assets/image (115).png>)![](<../../../.gitbook/assets/image (116).png>)![](<../../../.gitbook/assets/image (30).png>)![](<../../../.gitbook/assets/image (1) (1).png>)![](<../../../.gitbook/assets/image (2) (1).png>)![](<../../../.gitbook/assets/image (3) (1).png>)![](<../../../.gitbook/assets/image (22).png>)![](<../../../.gitbook/assets/image (23).png>)![](<../../../.gitbook/assets/image (24).png>)![](<../../../.gitbook/assets/image (25).png>)![](<../../../.gitbook/assets/image (26).png>)![](<../../../.gitbook/assets/image (27).png>)![](<../../../.gitbook/assets/image (28).png>)![](<../../../.gitbook/assets/image (29).png>)![](<../../../.gitbook/assets/image (159).png>)
+![](<../../../.gitbook/assets/image (114).png>)![](<../../../.gitbook/assets/image (115).png>)![](<../../../.gitbook/assets/image (116).png>)![](<../../../.gitbook/assets/image (30).png>)![](<../../../.gitbook/assets/image (1) (1).png>)![](<../../../.gitbook/assets/image (2) (1).png>)![](<../../../.gitbook/assets/image (3) (1).png>)![](<../../../.gitbook/assets/image (22).png>)![](<../../../.gitbook/assets/image (23).png>)![](<../../../.gitbook/assets/image (24).png>)![](<../../../.gitbook/assets/image (25).png>)![](<../../../.gitbook/assets/image (26).png>)![](<../../../.gitbook/assets/image (27).png>)![](<../../../.gitbook/assets/image (28).png>)![](<../../../.gitbook/assets/image (29).png>)![](<../../../.gitbook/assets/image (159).png>)![](<../../../.gitbook/assets/image (166).png>)![](<../../../.gitbook/assets/image (167).png>)![](<../../../.gitbook/assets/image (168).png>)![](<../../../.gitbook/assets/image (169).png>)![](<../../../.gitbook/assets/image (170).png>)![](<../../../.gitbook/assets/image (171).png>)
+
+![](<../../../.gitbook/assets/image (172).png>)![](<../../../.gitbook/assets/image (173).png>)![](<../../../.gitbook/assets/image (174).png>)
 
 </details>
 
