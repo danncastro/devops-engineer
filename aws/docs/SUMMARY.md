@@ -61,3 +61,4 @@
   * [Cloud Practitioner](laboratorios/cloud-quest/cloud-practitioner/README.md)
     * [Questions](laboratorios/cloud-quest/cloud-practitioner/questions.md)
     * [Cloud Computing Essentials](laboratorios/cloud-quest/cloud-practitioner/cloud-computing-essentials.md)
+    * [Cloud First Steps](laboratorios/cloud-quest/cloud-practitioner/cloud-first-steps.md)
