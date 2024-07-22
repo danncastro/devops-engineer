@@ -34,7 +34,7 @@
 * [x] Multiple, isolated, and physically separate Availability Zones within a geographic area.
 * [ ] A combination of exactly two AWS Availabily Zones
 
-> Uma Região da AWS é composta por múltiplas Zonas de Disponibilidade (Availability Zones - AZs), que são áreas geográficas distintas e fisicamente separadas umas das outras dentro de uma mesma região geográfica. As AZs são projetadas para serem isoladas umas das outras em termos de falhas de infraestrutura, proporcionando alta disponibilidade e resiliência para os serviços hospedados na AWS.
+> Uma Região da AWS é composta por mwwwwwwwwwwwwwwúltiplas Zonas de Disponibilidade (Availability Zones - AZs), que são áreas geográficas distintas e fisicamente separadas umas das outras dentro de uma mesma região geográfica. As AZs são projetadas para serem isoladas umas das outras em termos de falhas de infraestrutura, proporcionando alta disponibilidade e resiliência para os serviços hospedados na AWS.
 
 5. The default view for the AWS Management Console displays all resources in all Regions.
 
@@ -312,4 +312,60 @@
 
 > A conexão de peering de Virtual Private Cloud (VPC) pode ser estabelecida apenas entre duas VPCs. Isso significa que uma conexão de peering conecta diretamente dois VPCs e não pode ser expandida para conectar mais de dois VPCs ao mesmo tempo.
 
-36.
+36. &#x20;Which type of deployment model is used in cloud computing? (Select THREE)
+
+* [x] Cloud
+* [ ] Partner
+* [x] Hybrid
+* [x] On premises
+
+> **Nuvem (Cloud)**: Refere-se à implantação de serviços ou recursos em um provedor de serviços de nuvem pública, como AWS, Azure, Google Cloud, etc.
+>
+> **Híbrido (Hybrid)**: Este modelo combina serviços de nuvem pública com recursos de infraestrutura local (on premises), permitindo integração e portabilidade de dados e aplicações entre ambos.
+>
+> **No local (On premises)**: Refere-se à infraestrutura tradicional de TI, onde os recursos são mantidos e gerenciados internamente pela organização, sem usar serviços de nuvem pública.
+
+37. &#x20;Which AWS service provides resizable compute capacity in the cloud, designed to help developers with web-scale computing?
+
+* [x] Amazon Elastic Compute Cloud (Amazon EC2)
+* [ ] Amazon Simple Storage Service (Amazon S3)
+* [ ] Amazon SageMaker
+
+> O Amazon EC2 permite que os usuários obtenham e configurem capacidade de computação virtual conforme necessário, proporcionando flexibilidade para escalar recursos de computação de acordo com os requisitos específicos de aplicativos e cargas de trabalho.
+
+38. A developer would like to set up a simple, low-cost, static website that delivers HTML, JavaScript, images, video, and other files to visitors. Which action should the developer take?
+
+* [x] Create an Amazon S3 bucket, and then enable static website hosting
+* [ ] Set up an Amazon EC2 instance, and then install WordPress on the instance
+* [ ] Use Amazon Lightsail to launch and manage a web server
+* [ ] Launch AWS Elastic Beanstalk to configure a web application
+
+> **Amazon S3 (Simple Storage Service)** é um serviço de armazenamento de objetos na AWS, projetado para armazenar e recuperar qualquer quantidade de dados de forma segura e escalável.
+>
+> Ao criar um bucket no Amazon S3, é possível configurá-lo para hospedagem de site estático. Isso significa que o S3 pode servir diretamente os arquivos HTML, JavaScript, imagens, vídeos, etc., para os visitantes do site.
+>
+> Esta abordagem é altamente escalável e de baixo custo, pois o Amazon S3 oferece preços competitivos e é dimensionado automaticamente para atender a demandas variáveis de tráfego.
+
+39. The AWS Management Console is recommended for uploading files larger than 160 GB to Amazon S3
+
+* [ ] True
+* [x] False
+
+> O AWS Management Console não é recomendado para fazer upload de arquivos tão grandes quanto 160 GB para o Amazon S3 devido a limitações práticas de tamanho de arquivo e à possibilidade de interrupções na conexão durante um upload tão extenso.
+>
+> Para uploads de arquivos grandes, especialmente acima de alguns gigabytes, é recomendado usar ferramentas como o AWS CLI (Command Line Interface), SDKs (Software Development Kits), ou até mesmo serviços de transferência como o AWS Transfer Family.
+>
+> Essas ferramentas são mais robustas e oferecem recursos como a capacidade de retomar uploads após interrupções e uma melhor gestão de erros.
+
+40. &#x20;What is the maximum number of objects that an Amazon S3 bucket can store?
+
+* [ ] 1 million
+* [ ] 100 billion
+* [ ] 1 trillion
+* [x] There is no limit
+
+> Amazon S3 é altamente escalável e projetado para armazenar uma quantidade praticamente ilimitada de objetos.
+>
+> Não há um limite específico no número total de objetos que um bucket do Amazon S3 pode conter.
+>
+> No entanto, existem limites relacionados ao tamanho individual de cada objeto e ao tamanho total do bucket, mas não há um limite absoluto no número de objetos
