@@ -63,4 +63,5 @@
     * [Cloud First Steps](laboratorios/cloud-quest/cloud-practitioner/cloud-first-steps.md)
     * [Computing Solutions](laboratorios/cloud-quest/cloud-practitioner/computing-solutions.md)
     * [Networking Concepts](laboratorios/cloud-quest/cloud-practitioner/networking-concepts.md)
+    * [First NoSQL Database](laboratorios/cloud-quest/cloud-practitioner/first-nosql-database.md)
     * [Questions](laboratorios/cloud-quest/cloud-practitioner/questions.md)
