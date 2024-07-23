@@ -188,7 +188,7 @@
 
 > Por padrão, o Amazon RDS (Relational Database Service) retém backups automáticos de uma instância de banco de dados por um período de 7 dias. Durante esse período, você pode restaurar o banco de dados para qualquer momento durante o período de retenção de backup de 7 dias.
 
-22. Which functions does Amazon RDS perform on the bhalf of users? (Select THREE)
+22. Which functions does Amazon RDS perform on the behalf of users? (Select THREE)
 
 * [x] Provision the infrastructure capacity
 * [x] Install the database software
@@ -369,3 +369,67 @@
 > Não há um limite específico no número total de objetos que um bucket do Amazon S3 pode conter.
 >
 > No entanto, existem limites relacionados ao tamanho individual de cada objeto e ao tamanho total do bucket, mas não há um limite absoluto no número de objetos
+
+41. Which statements about the scan operation in Amazon DynamoDB are correct? (Select TWO)
+
+* [x] A scan consumes the same amount of read capacity when a filter expression is present.
+* [ ] A scan consumes more read capacity when a filter expression is presentwdas
+* [x] A filter expression is applied after a scan finishes but before the results are returned
+
+42. &#x20;A company's data archietects designed thir database schema to make the most common and import database queries as fast and as inexpensive as possible. Which AWS service is best suited to achieve their goal?
+
+* [ ] Amazon RDS
+* [x] Amazon DynamoDB
+* [ ] Amazon Redshift
+* [ ] Amazon Neptune
+
+> Amazon DynamoDB é um banco de dados NoSQL totalmente gerenciado que é otimizado para consultas rápidas e escalabilidade automática. Ele é especialmente projetado para lidar com cargas de trabalho de leitura intensiva e fornece latências consistentemente baixas, independentemente do volume de dados. Além disso, permite ajustar a capacidade de leitura e gravação com base nas necessidades específicas da aplicação, o que ajuda a controlar os custos operacionais.
+
+43. &#x20;Which statements about pagination are correct? (Select TWO)
+
+* [x] Which pagination, the query results are divided into "pages" of data that are 1 MB in size (or less)
+* [ ] The NextEvaluatedKey from a query responde should be used as the ExclusiveStartKey for the next query request.
+* [x] The LastEvaluatedKey from a query response should be used as the ExclusiveStartKey for the next query request
+
+44. After a write operation In Amazon DynamoDB, a read request might not reflect the latest data unless another read request is invoked after a short time. Which consistency type is this?
+
+* [ ] Strongly consistent reads
+* [x] Eventually consistent reads
+* [ ] Nearly real-time consistency
+
+45. Which AWS service is a key-value and document database that delivers single-digit millisecond performance at any scale?
+
+* [ ] Amazon RDS
+* [ ] Amazon Route 53
+* [x] Amazon DynamoDB
+* [ ] Amazon Aurora
+
+46. What are the basic components of Amazon DynamoDB?
+
+* [ ] Collection, document, filed, and view
+* [ ] Tables, primary keys, and sequences
+* [x] Tables, items, and attributes
+
+47. Which statements about the query operation in Amazon DynamoDB are correct? (Select TWO)
+
+* [x] &#x20;In a query operation, users must provide the name and a value of the partition key. The sort key is optional.
+* [ ] In a query operation, users must provide the name and a value of the partition key as well as the sort key
+* [ ] A filter expression cannot contain partition key or sort key attributes.
+* [x] A filter expression can contain partition key or sort key attributes
+
+48. Which statements about secondary indexes are correct? (Select THREE)
+
+* [x] A local secondary index is an index that has the same partition key as the base table, but a different sort key.
+* [ ] A local secondary index is an index that has the same partition and sort key as the base table
+* [x] A global secondary index is an index with a partition key and a sort key that can be different from those on the base table
+* [x] A global secondary index has its own provisioned throughput settings for read and write capacity
+
+49. A security group was configured with a rule to allow HTTPS traffic to an instance. What will happen if an HTTP connection is attempted?
+
+* [ ] The security group will allow the incoming connection but will deny the outgoing connection
+* [x] Unless there is a rule explicitly allowing HTTP, the security group will deny the connection
+* [ ] The security group  will allow the connection because HTTPS implies HTTP as well.
+
+> A razão para isso é que o HTTPS (Hypertext Transfer Protocol Secure) e o HTTP (Hypertext Transfer Protocol) são protocolos diferentes, mesmo que o HTTPS implique uma camada de segurança adicional sobre o HTTP, eles são tratados separadamente pelas regras do grupo de segurança.
+
+50. &#x20;

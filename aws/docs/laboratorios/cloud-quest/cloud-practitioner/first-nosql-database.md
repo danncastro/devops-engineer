@@ -329,8 +329,8 @@ A operação de Scan retorna um ou mais itens e seus atributos acessando cada it
 
 ## <mark style="color:red;">DIY Activite</mark>
 
-* [ ] Crie um novo item de usuário com um ID único.
-* [ ] Adicione um novo atributo chamado "rating" com um tipo de dado Número.
+* [x] Crie um novo item de usuário com um ID único.
+* [x] Adicione um novo atributo chamado "rating" com um tipo de dado Número.
 
 <figure><img src="../../../.gitbook/assets/image (203).png" alt=""><figcaption></figcaption></figure>
 
