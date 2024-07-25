@@ -1,14 +1,24 @@
 # Networking Concepts
 
-***
-
-## <mark style="color:red;">Configurando Amazon VPCs para trafego de redes</mark>
-
 | Título da tarefa  | Solicitação de negócios                                                                                      |
 | ----------------- | ------------------------------------------------------------------------------------------------------------ |
 | Conceitos de rede | Ajude o banco a configurar um ambiente de rede seguro que permita a comunicação entre recursos e a internet. |
 
 <figure><img src="../../../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
+
+<details>
+
+<summary><mark style="color:purple;">Contexto</mark></summary>
+
+
+
+</details>
+
+***
+
+## <mark style="color:red;">Amazon VPC</mark>
+
+
 
 ***
 
@@ -20,10 +30,10 @@ Defina os principais recursos de VPCs, sub-redes, gateways de internet e tabelas
 * Declare os conceitos básicos de notação de bloco CIDR e endereçamento IP.&#x20;
 * Explique como o tráfego VPC é roteado e protegido usando gateways, listas de controle de acesso à rede e grupos de segurança.
 
-1. Explore the components that comprise a virtual private cloud (VPC)
-2. Configure a route table attached to a subnet within a VPC.
-3. Configure an internet gateway inside a VPC.
-4. Configure inbound rules within a security group to control access.
+1. **Explore the components that comprise a virtual private cloud (VPC)**
+2. **Configure a route table attached to a subnet within a VPC.**
+3. **Configure an internet gateway inside a VPC.**
+4. **Configure inbound rules within a security group to control access.**
 
 ***
 

@@ -1,14 +1,24 @@
 # Cloud Computing Essentials
 
-***
-
-## <mark style="color:red;">Migrar Website para nuvem Amazon S3</mark>
-
 | Título da tarefa                         | Solicitação de negócios                                                                                                         |
 | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | Noções básicas sobre computação em nuvem | O portal da cidade precisa migrar a página de previsão do tamanho das ondas da praia para a AWS para melhorar a confiabilidade. |
 
 <figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+<details>
+
+<summary><mark style="color:purple;">Contexto</mark></summary>
+
+
+
+</details>
+
+***
+
+## <mark style="color:red;">Amazon S3</mark>
+
+
 
 ***
 

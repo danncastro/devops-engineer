@@ -1,14 +1,26 @@
 # Cloud First Steps
 
-***
-
-## <mark style="color:red;">Implementando Servidores Amazon EC2</mark>
-
 | Título da tarefa          | Solicitação de negócios                                                                                                                |
 | ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
 | Primeiros passos na nuvem | O sistema de estabilização da ilha está falhando e precisa de maior confiabilidade e disponibilidade para seus módulos computacionais. |
 
 <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+<details>
+
+<summary><mark style="color:purple;">Contexto</mark></summary>
+
+
+
+</details>
+
+***
+
+## <mark style="color:red;">Amazon EC2</mark>
+
+
+
+***
 
 ## <mark style="color:red;">Descrição da tarefa</mark>
 
@@ -16,8 +28,8 @@ Resuma os benefícios da infraestrutura da AWS. Descreva as regiões e zonas de 
 
 * Implante instâncias do Amazon EC2 em várias zonas de disponibilidade.
 
-1. Launch two EC2 instances into separate AZs in same Region
-2. Configure a user data scropt to display the instance in a browser
+1. **Launch two EC2 instances into separate AZs in same Region**
+2. **Configure a user data scropt to display the instance in a browser**
 
 ***
 

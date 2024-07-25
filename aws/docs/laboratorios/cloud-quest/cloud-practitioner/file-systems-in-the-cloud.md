@@ -14,7 +14,7 @@ description: >-
 
 <details>
 
-<summary><mark style="color:purple;">Contexto com cliente</mark></summary>
+<summary><mark style="color:purple;">Contexto</mark></summary>
 
 <mark style="background-color:blue;">Client</mark><mark style="background-color:yellow;">:</mark> Hi there. Thanks for coming by to help us out. This is an important time for the city's only pet modeling agency.
 
@@ -80,10 +80,10 @@ Resuma as diferentes opções de armazenamento disponíveis na AWS.&#x20;
 * Identifique casos de uso comercial para o Amazon EFS.&#x20;
 * Configure endpoints do Amazon EFS para acessar o armazenamento centralizado.
 
-1. Launch and configure an Amazon EFS file system
-2. Mount the file system to an Amazon EC2 instance.
-3. Connect a second EC2 instance to the same file system
-4. Share files between the two EC2 instances.
+1. **Launch and configure an Amazon EFS file system**
+2. **Mount the file system to an Amazon EC2 instance.**
+3. **Connect a second EC2 instance to the same file system**
+4. **Share files between the two EC2 instances.**
 
 ***
 

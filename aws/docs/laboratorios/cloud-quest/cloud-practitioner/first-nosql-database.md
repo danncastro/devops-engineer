@@ -1,14 +1,18 @@
 # First NoSQL Database
 
-***
-
-## <mark style="color:red;">Implementando banco NoSQL</mark>
-
 | Título da tarefa              | Solicitação de negócios                                                                                                       |
 | ----------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
 | Primeiro banco de dados NoSQL | Ajude o serviço de streaming de entretenimento da ilha a implementar um banco de dados NoSQL para desenvolver novos recursos. |
 
 <figure><img src="../../../.gitbook/assets/image (176).png" alt=""><figcaption></figcaption></figure>
+
+<details>
+
+<summary><mark style="color:purple;">Contexto</mark></summary>
+
+
+
+</details>
 
 ***
 
@@ -36,9 +40,9 @@ Resuma os diferentes usos de bancos de dados comuns criados para propósitos esp
 * Interaja com os elementos e atributos de um banco de dados Amazon DynamoDB.&#x20;
 * Configure um banco de dados NoSQL com o Amazon DynamoDB.
 
-1. Criar um banco de dados NoSQL como uma tabela Amazon DynamoDB
-2. Adicionar registros com um esquema dinâmico à tabela DynamoDB
-3. Consultar a tabela DynamoDB.
+1. **Criar um banco de dados NoSQL como uma tabela Amazon DynamoDB**
+2. **Adicionar registros com um esquema dinâmico à tabela DynamoDB**
+3. **Consultar a tabela DynamoDB.**
 
 ***
 
@@ -54,6 +58,8 @@ Amazon DynamoDB é serverless. Não há servidores para provisionar, atualizar o
 
 <figure><img src="../../../.gitbook/assets/image (177).png" alt=""><figcaption></figcaption></figure>
 
+***
+
 ### <mark style="color:purple;">Step 2</mark>
 
 1. Na página inicial do console do Amazon DynamoDB, clique em `Criar tabela`.
@@ -64,6 +70,8 @@ Amazon DynamoDB é serverless. Não há servidores para provisionar, atualizar o
 DynamoDB suporta modelos de dados chave-valor e de documentos. Portanto, DynamoDB possui um esquema flexível. Cada linha pode ter qualquer número de colunas a qualquer momento. Dessa forma, você pode adaptar rapidamente as tabelas conforme as necessidades do seu negócio mudam, sem precisar redefinir o esquema da tabela como faria em bancos de dados relacionais.
 
 <figure><img src="../../../.gitbook/assets/image (178).png" alt=""><figcaption></figcaption></figure>
+
+***
 
 ### <mark style="color:purple;">Step 3</mark>
 
@@ -87,6 +95,8 @@ Ao criar uma tabela, além do nome da tabela, você deve especificar a chave pri
 
 <figure><img src="../../../.gitbook/assets/image (179).png" alt=""><figcaption></figcaption></figure>
 
+***
+
 ### <mark style="color:purple;">Step 4</mark>
 
 1. Na seção Configurações, mantenha as configurações padrão.
@@ -98,6 +108,8 @@ Ao criar uma tabela, além do nome da tabela, você deve especificar a chave pri
 Se sua tabela possui uma chave primária simples (apenas chave de partição), o DynamoDB armazena e recupera cada item com base no valor da sua chave de partição.
 
 <figure><img src="../../../.gitbook/assets/image (181).png" alt=""><figcaption></figcaption></figure>
+
+***
 
 ### <mark style="color:purple;">Step 5</mark>
 
@@ -114,6 +126,8 @@ Amazon DynamoDB armazena dados em partições. Uma partição é uma alocação 
 
 <figure><img src="../../../.gitbook/assets/image (182).png" alt=""><figcaption></figcaption></figure>
 
+***
+
 ### <mark style="color:purple;">Step 6</mark>
 
 1. Clique em `Ações` para expandir o menu suspenso.
@@ -125,6 +139,8 @@ Amazon DynamoDB armazena dados em partições. Uma partição é uma alocação 
 Uma chave composta utiliza tanto uma chave de partição quanto uma chave de ordenação. Em uma tabela que possui uma chave de partição e uma chave de ordenação, é possível que dois itens tenham o mesmo valor de chave de partição. No entanto, esses dois itens devem ter valores diferentes para a chave de ordenação.
 
 <figure><img src="../../../.gitbook/assets/image (183).png" alt=""><figcaption></figcaption></figure>
+
+***
 
 ### <mark style="color:purple;">Step 7</mark>
 
@@ -141,6 +157,8 @@ Para escrever um item na tabela, o DynamoDB utiliza o valor da chave de partiç�
 
 <figure><img src="../../../.gitbook/assets/image (184).png" alt=""><figcaption></figcaption></figure>
 
+***
+
 ### <mark style="color:purple;">Step 8</mark>
 
 1. Para adicionar outro atributo, clique em `Adicionar novo atributo` para expandir o menu suspenso.
@@ -153,6 +171,8 @@ Para ler um item da tabela, você deve especificar o valor da chave de partiçã
 
 <figure><img src="../../../.gitbook/assets/image (185).png" alt=""><figcaption></figcaption></figure>
 
+***
+
 ### <mark style="color:purple;">Step 9</mark>
 
 1. Para Nome do atributo, na nova caixa de texto, digite: `videoId`
@@ -160,6 +180,8 @@ Para ler um item da tabela, você deve especificar o valor da chave de partiçã
 3. Vá para o próximo passo.
 
 <figure><img src="../../../.gitbook/assets/image (186).png" alt=""><figcaption></figcaption></figure>
+
+***
 
 ### <mark style="color:purple;">Step 10</mark>
 
@@ -173,6 +195,8 @@ Você cria itens no DynamoDB. Itens são registros com atributos que armazenam d
 
 <figure><img src="../../../.gitbook/assets/image (187).png" alt=""><figcaption></figcaption></figure>
 
+***
+
 ### <mark style="color:purple;">Step 11</mark>
 
 1. Para Nome do atributo, digite: `preferredLanguage`
@@ -180,6 +204,8 @@ Você cria itens no DynamoDB. Itens são registros com atributos que armazenam d
 3. Vá para o próximo passo.
 
 <figure><img src="../../../.gitbook/assets/image (188).png" alt=""><figcaption></figcaption></figure>
+
+***
 
 ### <mark style="color:purple;">Step 12</mark>
 
@@ -193,12 +219,16 @@ DynamoDB também pode armazenar atributos mais complexos, como uma lista.
 
 <figure><img src="../../../.gitbook/assets/image (189).png" alt=""><figcaption></figcaption></figure>
 
+***
+
 ### <mark style="color:purple;">Step 13</mark>
 
 1. Para Nome do atributo, digite: `supportedDeviceTypes`
 2. Vá para o próximo passo.
 
 <figure><img src="../../../.gitbook/assets/image (190).png" alt=""><figcaption></figcaption></figure>
+
+***
 
 ### <mark style="color:purple;">Step 14</mark>
 
@@ -208,6 +238,8 @@ DynamoDB também pode armazenar atributos mais complexos, como uma lista.
 
 <figure><img src="../../../.gitbook/assets/image (191).png" alt=""><figcaption></figcaption></figure>
 
+***
+
 ### <mark style="color:purple;">Step 15</mark>
 
 1. Para Nome do atributo, ao lado de `supportedDeviceTypes`, clique no sinal de mais `(+)`.
@@ -215,6 +247,8 @@ DynamoDB também pode armazenar atributos mais complexos, como uma lista.
 3. Vá para o próximo passo.
 
 <figure><img src="../../../.gitbook/assets/image (192).png" alt=""><figcaption></figcaption></figure>
+
+***
 
 ### <mark style="color:purple;">Step 16</mark>
 
@@ -224,6 +258,8 @@ DynamoDB também pode armazenar atributos mais complexos, como uma lista.
 
 <figure><img src="../../../.gitbook/assets/image (193).png" alt=""><figcaption></figcaption></figure>
 
+***
+
 ### <mark style="color:purple;">Step 17</mark>
 
 1. Para Valor, na nova caixa de texto, digite: `Amazon Fire Tablet`
@@ -231,6 +267,8 @@ DynamoDB também pode armazenar atributos mais complexos, como uma lista.
 3. Vá para o próximo passo
 
 <figure><img src="../../../.gitbook/assets/image (194).png" alt=""><figcaption></figcaption></figure>
+
+***
 
 ### <mark style="color:purple;">Step 18</mark>
 
@@ -247,6 +285,8 @@ Depois de criar um registro, você ainda pode editá-lo, incluindo o conteúdo d
 
 <figure><img src="../../../.gitbook/assets/image (195).png" alt=""><figcaption></figcaption></figure>
 
+***
+
 ### <mark style="color:purple;">Step 19</mark>
 
 1. Clique em `Adicionar novo atributo.`
@@ -259,6 +299,8 @@ DynamoDB é sem esquema, você pode adicionar atributos à tabela para qualquer 
 
 <figure><img src="../../../.gitbook/assets/image (196).png" alt=""><figcaption></figcaption></figure>
 
+***
+
 ### <mark style="color:purple;">Step 20</mark>
 
 1. Para Nome do atributo, digite: `lastStopTime`
@@ -269,6 +311,8 @@ DynamoDB é sem esquema, você pode adicionar atributos à tabela para qualquer 
 #### <mark style="color:blue;">Concept</mark>
 
 <figure><img src="../../../.gitbook/assets/image (197).png" alt=""><figcaption></figcaption></figure>
+
+***
 
 ### <mark style="color:purple;">Step 21</mark>
 
@@ -286,12 +330,16 @@ A operação de consulta (Query) no DynamoDB encontra itens com base nos valores
 
 <figure><img src="../../../.gitbook/assets/image (198).png" alt=""><figcaption></figcaption></figure>
 
+***
+
 ### <mark style="color:purple;">Step 22</mark>
 
 1. Na seção de itens retornados, revise o registro retornado.
 2. Vá para o próximo passo.
 
 <figure><img src="../../../.gitbook/assets/image (199).png" alt=""><figcaption></figcaption></figure>
+
+***
 
 ### <mark style="color:purple;">Step 23</mark>
 
@@ -308,6 +356,8 @@ A operação de consulta (Query) no DynamoDB encontra itens com base nos valores
 Ao executar uma operação de consulta (Query), a tabela procura por uma correspondência exata para a chave de partição e utiliza a chave de ordenação (se fornecida) como uma maneira de limitar ainda mais os resultados.
 
 <figure><img src="../../../.gitbook/assets/image (200).png" alt=""><figcaption></figcaption></figure>
+
+***
 
 ### <mark style="color:purple;">Step 24</mark>
 

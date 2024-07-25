@@ -1,14 +1,24 @@
 # Computing Solutions
 
-***
-
-## <mark style="color:red;">Gerenciando familias de instancia.</mark>
-
 | Título da tarefa       | Solicitação de negócios                                                                                                                            |
 | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Soluções de Computação | O servidor da escola que executa a solução de agendamento precisa de mais memória. Auxilie no dimensionamento vertical da instância do Amazon EC2. |
 
 <figure><img src="../../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
+
+<details>
+
+<summary><mark style="color:purple;">Contexto</mark></summary>
+
+
+
+</details>
+
+***
+
+### <mark style="color:red;">Familly Amazon EC2</mark>
+
+
 
 ***
 
@@ -19,11 +29,11 @@ Descreva famílias de instâncias e tipos de instâncias do Amazon EC2.&#x20;
 * Descreva o dimensionamento horizontal e vertical.
 * Reconhecer opções para conectar-se a instâncias do Amazon EC2.
 
-1. Explore Amazon EC2 instance types.
-2. Filter EC2 instances based on their attributes.
-3. Connect to an EC2 instance using Amazon EC2 Session Manager
-4. View EC2 instance metadata using the instance public IP address.
-5. Start and stop an EC2 instance by using the Amazon EC2 console.
+1. **Explore Amazon EC2 instance types.**
+2. **Filter EC2 instances based on their attributes.**
+3. **Connect to an EC2 instance using Amazon EC2 Session Manager**
+4. **View EC2 instance metadata using the instance public IP address.**
+5. **Start and stop an EC2 instance by using the Amazon EC2 console.**
 
 ***
 
