@@ -64,4 +64,5 @@
     * [Computing Solutions](laboratorios/cloud-quest/cloud-practitioner/computing-solutions.md)
     * [Networking Concepts](laboratorios/cloud-quest/cloud-practitioner/networking-concepts.md)
     * [First NoSQL Database](laboratorios/cloud-quest/cloud-practitioner/first-nosql-database.md)
+    * [File Systems in the Cloud](laboratorios/cloud-quest/cloud-practitioner/file-systems-in-the-cloud.md)
     * [Questions](laboratorios/cloud-quest/cloud-practitioner/questions.md)
