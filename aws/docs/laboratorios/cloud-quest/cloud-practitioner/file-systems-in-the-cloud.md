@@ -118,7 +118,92 @@ Using Amazon EFS, you can grow and shrink your file systems automatically as you
 
 1. In the Instances section, review the names of the three existing instances
 
-* You can safely ignore the instances type if it differs from the example sreenshot
+* You can safely ignore the instances type if it differs from the example screenshot and any others in the tab.
+
+2. To review all of the details, scroll to the right
+3. Go to the next step
+
+#### <mark style="color:blue;">Concept</mark>
+
+Amazon EFS creates a shared storage file system that is available concurrently to multiple instances in Amazon Elastic Compute Cloud (Amazon EC2).
+
+<figure><img src="../../../.gitbook/assets/image (214).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+### <mark style="color:purple;">Step 4</mark>
+
+1. Under Availability Zone, review the Availability Zone for each instance.
+2. In the left navigation pane, scroll down to Network & Security.
+3. Click Security Groups.
+4. Go to the next step.
+
+#### <mark style="color:blue;">Concept</mark>
+
+After creating the EFS file system, you create mount targets on each subnet. The mount target enables communication from Amazon EC2 instances on the subnet. Amazon EFS uses the Network File System (NFSv4) protocol. EC2 instances that connect to the file system are NFS clients.
+
+<figure><img src="../../../.gitbook/assets/image (215).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+### <mark style="color:purple;">Step 5</mark>
+
+1. In the Security Groups section, review the Web\_Server\_SG security group.
+
+* The webserver security group is already linked to the web servers.
+
+2. Click Create security group.
+3. Go to the next step.
+
+#### <mark style="color:blue;">Concept</mark>
+
+When you create an Amazon EFS mount target, you must attach a security group. The security group determines which EC2 instances can access the file system as NFS clients.
+
+<figure><img src="../../../.gitbook/assets/image (216).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+### <mark style="color:purple;">Step 6</mark>
+
+1. For Security group name, type: PetModels-EFS-1-SG
+2. For Description, type: Restrict access to web servers only.
+3. For VPC, on the dropdown menu, choose PetModels.
+
+* You might need to remove the existing VPC by clicking X.
+
+4. In the inbound rules section, click Add rule.
+5. Go to the next step
+
+#### <mark style="color:blue;">Concept</mark>
+
+Security groups are linked to a single VPC. You can assign a security group to one or more EC2 instances, but each instance must be in the same VPC as the security group.
+
+<figure><img src="../../../.gitbook/assets/image (217).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+### <mark style="color:purple;">Step 7</mark>
+
+1. To configure the new rule, for Type, choose NFS.
+2. Unser Source, click the search field.
+3. In the dropdown menu, choose the webserver security group.
+4. Go to the next step.
+
+#### <mark style="color:blue;">Concept</mark>
+
+EFS file systems require an inbound NFS rule. By selecting a security group as the incoming source, any EC2 instances linked to the security group you select will have NFS client access to the file system.
+
+<figure><img src="../../../.gitbook/assets/image (218).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+
+
+
+
+
+
+
 
 
 
