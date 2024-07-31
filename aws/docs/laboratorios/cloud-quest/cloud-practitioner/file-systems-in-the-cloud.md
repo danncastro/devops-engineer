@@ -118,7 +118,7 @@ Using Amazon EFS, you can grow and shrink your file systems automatically as you
 
 1. In the Instances section, review the names of the three existing instances
 
-
+* You can safely ignore the instances type if it differs from the example sreenshot
 
 
 
