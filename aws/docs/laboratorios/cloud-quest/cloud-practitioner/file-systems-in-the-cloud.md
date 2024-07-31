@@ -89,6 +89,41 @@ Resuma as diferentes opções de armazenamento disponíveis na AWS.&#x20;
 
 ### <mark style="color:purple;">Step 1</mark>
 
+1. In the top navigation bar search box, type: EC2
+2. In the search results, under Services, click EC2
+3. Go to the next step.
+
+#### <mark style="color:blue;">Concept</mark>
+
+Amazon Elastic File System (Amazon EFS) provides a serverless, set-and-forget elastic file system that you can use to share file data without provisioning or managing storage.
+
+<figure><img src="../../../.gitbook/assets/image (212).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+### <mark style="color:purple;">Step 2</mark>
+
+1. In the left navigation pane, click Instances.
+2. Go to the next step
+
+#### <mark style="color:blue;">Concept</mark>
+
+Using Amazon EFS, you can grow and shrink your file systems automatically as you add and remove files, removing the need to provision and manage capacity to accommodate growth.
+
+<figure><img src="../../../.gitbook/assets/image (213).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+### <mark style="color:purple;">Step 3</mark>
+
+1. In the Instances section, review the names of the three existing instances
+
+
+
+
+
+
+
 ***
 
 ## <mark style="color:red;">DIY Activite</mark>

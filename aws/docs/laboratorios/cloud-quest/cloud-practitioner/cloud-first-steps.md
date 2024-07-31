@@ -18,7 +18,15 @@
 
 ## <mark style="color:red;">Amazon EC2</mark>
 
+**Overview**: This solution improves the reliability and availability of the island's stabilization system by moving its computational system by moving its computational module to the AWS global infrastructure
 
+The computational modulo can move to the cloud by using the compute capacity of Amazon Elastic Compute Cloud (Amazon EC2) instances.
+
+An AWS Region is a physical location around the world where data centers are clustered. Each Region consists of two or more Availability Zones (AZs) with a 99.99% service-level agreement (SLA) commitment.
+
+Amazon Elastic Block Store (Amazon EBS) is an efficient, high-performance, block-storage service dedigned for use with Amazon EC2.
+
+**Global Infrastructure Benefits:** To imrpove availability, the computational module runs on EC2 instances deployed in separate AZs within the Region. An AZ is one or more discrete data centers with redundant power, networking, and connectivity in a AWS Region.
 
 ***
 
