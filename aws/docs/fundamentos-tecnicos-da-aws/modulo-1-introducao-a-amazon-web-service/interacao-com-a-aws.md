@@ -36,7 +36,7 @@ Pode haver notificações sobre atualizações de serviço, alertas de seguranç
 
 Abaixo está uma captura de tela que mostra a página de aterrissagem quando você faz login pela primeira vez no Console de Gerenciamento da AWS.
 
-<figure><img src="../../.gitbook/assets/image (33) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (33) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 No Console de Gerenciamento da AWS, os serviços são organizados em categorias como computação, armazenamento, banco de dados e análise, facilitando a navegação e o acesso aos recursos específicos que você precisa.
 

@@ -4,7 +4,7 @@
 
 ## <mark style="color:red;">**Objetivo do monitoramento**</mark>
 
-<figure><img src="../../.gitbook/assets/image (35) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (35) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 O monitoramento é essencial para operar eficientemente um site ou aplicação na AWS, como um diretório de funcionários. Ele permite responder a perguntas críticas como:
 

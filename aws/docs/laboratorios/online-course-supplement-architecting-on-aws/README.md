@@ -80,6 +80,6 @@ O Amazon EFS oferece armazenamento de arquivos para suas instâncias do Amazon E
 
 ### <mark style="color:red;">**Tarefas do laboratório**</mark>
 
-<figure><img src="../../.gitbook/assets/image (30) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (30) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***

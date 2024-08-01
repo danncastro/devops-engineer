@@ -19,7 +19,7 @@ Seu engenheiro de nuvem transferiu a solicitação de informações para um mode
 
 Você vai projetar e implementar uma implantação altamente disponível e dimensionável da pilha de aplicativos do WordPress. Use um modelo do CloudFormation para implantar os recursos de rede necessários para dar suporte ao aplicativo.
 
-<figure><img src="../../.gitbook/assets/image (31) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (31) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 | Tarefas                                                                                          |
 | ------------------------------------------------------------------------------------------------ |
@@ -101,13 +101,13 @@ _**Observação**: a pilha agora entrará no status CREATE\_IN\_PROGRESS._
 {% tab title="VERIFICAÇÃO DE SAÍDAS" %}
 Você deve ver uma lista de saídas na guia **Outputs** (Saídas). Examine os pares de chave-valor nesta seção. Esses valores podem ser úteis em tarefas posteriores do laboratório.
 
-<figure><img src="../../.gitbook/assets/image (33) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (33) (1) (1).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="VERIFICAÇÃO DOS RECURSOS" %}
 Procure na guia **Resources** (Recursos) para revisar os recursos que foram implantados na pilha.
 
-<figure><img src="../../.gitbook/assets/image (34) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (34) (1) (1).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="Diagrama da arquitetura" %}

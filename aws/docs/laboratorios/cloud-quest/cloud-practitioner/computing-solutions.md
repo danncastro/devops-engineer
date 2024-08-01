@@ -166,7 +166,7 @@ When creeating a new insntace, you can enable the instance metadata service (IMD
 
 You have the flexibility to connect to an EC2 instance by using Amazon EC2 Instance Connect, Session Manager (a capability of AWS Systems Manager), or an SSH client.
 
-<figure><img src="../../../.gitbook/assets/image (30) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (30) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -181,7 +181,7 @@ You have the flexibility to connect to an EC2 instance by using Amazon EC2 Insta
 
 EC2 Instance Connect provides an efficient and secure way to connect to your Linux instances. EC2 Instance Connect uses AWS Identity and Access Management (IAM) policies and principals to control SSH access to you instances, removing the need to share and manage SSH keys.
 
-<figure><img src="../../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (31) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -195,7 +195,7 @@ EC2 Instance Connect provides an efficient and secure way to connect to your Lin
 
 Using Session Manager, you can manage your EC2 instances through an interactive one-click, browser-based shell or through the AWS Command Line Interface (AWS CLI). After the session begins, you can run bash commands as you would through any other connection type.
 
-<figure><img src="../../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (32) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -209,7 +209,7 @@ Using Session Manager, you can manage your EC2 instances through an interactive 
 
 You can connect to your instance by using an SSH client on your local device through your instance key pair. Your device might have an SSH client by default or you might need to install an SSH client.
 
-<figure><img src="../../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (33) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -222,7 +222,7 @@ You can connect to your instance by using an SSH client on your local device thr
 
 Session Manager provides secure and auditable node management without the need to open inbound ports, maintain bastion hosts, or manage SSH keys. Session Manager also allows you to comply with corporate policies that require controlled access to managed nodes, strict security practicesm and fully auditable logs with node access details, while providing end users with simple onde-click cross-platform access to your managed nodes.
 
-<figure><img src="../../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (34) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -241,7 +241,7 @@ Session Manager provides secure and auditable node management without the need t
 
 After you are connected to the instance, you can control the instance by using AWS CLI command. The command prompt behaves as if you are connected locally.
 
-<figure><img src="../../../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (35) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -254,7 +254,7 @@ After you are connected to the instance, you can control the instance by using A
 2. Close the terminal tab to return to the instances page in the Amazon EC2 console.
 3. Go to the next step.
 
-<figure><img src="../../../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (36) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -269,7 +269,7 @@ After you are connected to the instance, you can control the instance by using A
 
 You can use the Actions dropdown menu to control the instance state and modify instance attributes.
 
-<figure><img src="../../../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (37) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -283,7 +283,7 @@ You can use the Actions dropdown menu to control the instance state and modify i
 
 You can also use instance metadata to access user data that you specified when launching your instance.
 
-<figure><img src="../../../.gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (38) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

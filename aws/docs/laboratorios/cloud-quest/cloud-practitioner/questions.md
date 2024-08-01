@@ -432,4 +432,101 @@
 
 > A razão para isso é que o HTTPS (Hypertext Transfer Protocol Secure) e o HTTP (Hypertext Transfer Protocol) são protocolos diferentes, mesmo que o HTTPS implique uma camada de segurança adicional sobre o HTTP, eles são tratados separadamente pelas regras do grupo de segurança.
 
-50. &#x20;
+50. &#x20;Which AWS service allows two Linux applications, running in different AZs, to share a common file system?
+
+* [x] Amazon Elastic File System (Amazon EFS)
+* [ ] Amazon Elastc Block Storage (Amazon EBS)
+* [ ] Amazon Simple Storage Service (Amazon S3)
+
+> O Amazon EFS é um sistema de arquivos baseado em NFS que pode ser montado em várias instâncias EC2 em diferentes AZs, permitindo o acesso simultâneo aos arquivos de várias instâncias.
+>
+> Os outros serviços mencionados são:
+>
+> **Amazon Elastic Block Store (Amazon EBS)**: Fornece volumes de armazenamento em bloco que são conectados a instâncias EC2 e não podem ser compartilhados entre instâncias em diferentes AZs.
+>
+> **Amazon Simple Storage Service (Amazon S3)**: Oferece armazenamento de objetos e é ideal para armazenar dados, mas não fornece um sistema de arquivos montável como o EFS.
+
+51. Which protocol does Amazon File System (Amazon EFS) support?
+
+* [ ] Service Message Blocks (SMB)
+* [ ] File Transfer Protocol (FTP)
+* [x] Network File System (NFS)
+
+> O NFS é um protocolo de sistema de arquivos em rede que permite que instâncias EC2 acessem o sistema de arquivos de forma semelhante a um sistema de arquivos local, facilitando a troca de arquivos entre instâncias e suportando acesso simultâneo a partir de múltiplas instâncias.
+>
+> Os outros protocolos mencionados são:
+>
+> **Service Message Blocks (SMB)**: Utilizado por sistemas Windows para compartilhamento de arquivos em rede. O EFS não suporta SMB nativamente.
+>
+> **File Transfer Protocol (FTP)**: Um protocolo para transferência de arquivos entre sistemas em uma rede. O EFS não usa FTP para acessar arquivos.
+
+52. Which AWS services can access a file system in Amazon Elastic File System (Amazon EFS)? (Select THREE).
+
+* [ ] Amazon Relational Database Service (Amazon RDS)
+* [x] Amazon Compute Cloud (Amazon EC2)
+* [x] AWS Lambda
+* [x] Amazon Sagemaker
+
+> **Amazon EC2**: Instâncias EC2 podem montar e acessar o sistema de arquivos do EFS como se fosse um sistema de arquivos local.
+>
+> **AWS Lambda**: Funções Lambda podem montar um sistema de arquivos do EFS para acessar dados durante a execução da função, permitindo que você use o armazenamento persistente do EFS.
+>
+> **Amazon SageMaker**: O Amazon SageMaker pode acessar o sistema de arquivos do EFS para carregar e salvar dados de treinamento e modelos, facilitando a integração com dados armazenados no EFS.
+>
+> O **Amazon RDS** não pode acessar diretamente um sistema de arquivos do EFS. RDS é um serviço de banco de dados gerenciado e não possui suporte nativo para montar e usar sistemas de arquivos como o EFS.
+
+53. Which resource provides an IP address for an NFSv4 endpoint on which a file system in Amazon Elastic File System (Amazon EFS) can be mounted?
+
+* [ ] An access point
+* [ ] A file share
+* [x] A mount target
+* [ ] A resource policy
+
+> **Mount Target**: Fornece um ponto de acesso na VPC (Virtual Private Cloud) com um IP específico que pode ser utilizado pelas instâncias EC2 para montar o sistema de arquivos EFS. Cada mount target está associado a uma sub-rede dentro da VPC e tem um endereço IP que as instâncias EC2 usam para acessar o EFS.
+>
+> **Access Point**: Um ponto de acesso (access point) no EFS fornece uma maneira de configurar acesso específico a diretórios dentro do sistema de arquivos, mas não fornece diretamente o IP para montar o sistema de arquivos.
+>
+> **File Share**: Este termo geralmente se refere a um conceito mais amplo de compartilhamento de arquivos e não se aplica diretamente ao conceito de montar um sistema de arquivos EFS.
+>
+> **Resource Policy**: Políticas de recursos são usadas para definir permissões e controle de acesso, mas não fornecem endereços IP para montar o sistema de arquivos.
+
+54. A company's data engineers have multiple subnets in an Availability Zone in their virtual private cloud (VPC). Where would they create a mount target when deploying a new Amazon Elastic File System (Amazon EFS) file system?
+
+* [ ] In one of the subnets
+* [x] In all of the subnets
+* [ ] In all public subnets
+* [ ] In all private subnets
+
+> **Em um dos subnets**: Criar um mount target em apenas uma subnet limita o acesso ao sistema de arquivos apenas para as instâncias nessa subnet específica. Isso pode não ser suficiente se as instâncias em outras subnets também precisarem acessar o EFS.
+>
+> **Em todos os subnets**: Criar mount targets em todos os subnets relevantes dentro da Zona de Disponibilidade garante que todas as instâncias nessas subnets possam acessar o sistema de arquivos EFS.
+>
+> **Em todas as subnets públicas**: Isso não é necessário a menos que você precise especificamente que o sistema de arquivos esteja acessível a partir de subnets públicas. Normalmente, você criaria mount targets em subnets privadas para acesso interno.
+>
+> **Em todas as subnets privadas**: Isso é semelhante a criar mount targets em todos os subnets, mas focado apenas em subnets privadas, se sua arquitetura usar apenas subnets privadas para as instâncias.
+
+55. Which statements about the query operation in Amazon DynamoDB are correct?(Select TWO.)
+
+* [x] In a query operation, users must provide the name and a value of the partition key. The sort key is optional
+* [ ] In a query operation, users must provide the name and a value of the partition key as well as the sort key
+* [ ] A filter expression cannot contain partition key or sort key attributes
+* [x] A filter expression can contain partition key or sort key attributes.
+
+>
+>
+> **Em uma operação de consulta, os usuários devem fornecer o nome e um valor da chave de partição. A chave de ordenação é opcional.**
+>
+> * Quando você realiza uma operação de consulta no DynamoDB, é necessário fornecer o nome e o valor da chave de partição. A chave de ordenação é opcional; se você quiser consultar todos os itens que têm a mesma chave de partição, você pode omitir a chave de ordenação, mas se quiser restringir ainda mais os resultados, pode especificar a chave de ordenação.
+>
+> **Uma expressão de filtro pode conter atributos de chave de partição ou chave de ordenação.**
+>
+> * Embora a expressão de filtro não possa ser usada para restringir a consulta baseada apenas na chave de partição ou chave de ordenação (essas são usadas para buscar os dados), você pode usar uma expressão de filtro para refinar ainda mais os resultados retornados pela consulta, incluindo atributos da chave de partição ou chave de ordenação. No entanto, vale notar que a expressão de filtro é aplicada após a consulta inicial, então, os itens que não correspondem à expressão de filtro ainda são lidos e retornados pela consulta, mas não estarão nos resultados finais.
+
+56. Amazon S3 bucket policy sizes have a 20 KB limit.
+
+* [x] True
+* [ ] False
+
+> A política de um bucket do Amazon S3 tem um limite de tamanho de 20 KB. Isso significa que o tamanho total de uma política de bucket, incluindo todos os blocos e declarações, não pode exceder 20 KB. Se a política exceder esse limite, você precisará simplificar ou dividir a política em várias partes.
+
+57.

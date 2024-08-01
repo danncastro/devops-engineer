@@ -282,8 +282,8 @@ An instance enters the pending state when it launches for the firt time. It chan
 
 * [x] Launch a second Amazon EC2 instance in a different Availability Zone of the same AWS Region.
 
-<figure><img src="../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (19) (2).png" alt=""><figcaption></figcaption></figure>
 
-![](<../../../.gitbook/assets/image (20).png>)<img src="../../../.gitbook/assets/image (21).png" alt="" data-size="original">
+![](<../../../.gitbook/assets/image (20) (2).png>)<img src="../../../.gitbook/assets/image (21) (2).png" alt="" data-size="original">
 
 ***

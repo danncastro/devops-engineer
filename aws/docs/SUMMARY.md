@@ -67,4 +67,5 @@
     * [Connecting VPCs](laboratorios/cloud-quest/cloud-practitioner/connecting-vpcs.md)
     * [First NoSQL Database](laboratorios/cloud-quest/cloud-practitioner/first-nosql-database.md)
     * [File Systems in the Cloud](laboratorios/cloud-quest/cloud-practitioner/file-systems-in-the-cloud.md)
+    * [Auto-Healing and Scaling Applications](laboratorios/cloud-quest/cloud-practitioner/auto-healing-and-scaling-applications.md)
     * [Questions](laboratorios/cloud-quest/cloud-practitioner/questions.md)

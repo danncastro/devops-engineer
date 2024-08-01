@@ -266,7 +266,7 @@ A path-style URL look like: https://s3.Region.amazonaws.com/bucket-name/keyname
 
 * [x] Rename index.html to waves.html
 
-<figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (17) (2).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

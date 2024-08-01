@@ -4,7 +4,7 @@
 | ------------------------- | -------------------------------------------------------------------------------------------------- |
 | Bases de dados na prática | Melhore as operações, o desempenho e a disponibilidade do banco de dados relacional da seguradora. |
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (120).png" alt=""><figcaption></figcaption></figure>
 
 <details>
 
@@ -42,7 +42,7 @@ Revise os recursos, benefícios e tipos de banco de dados disponíveis com o Ama
 2. In the search results, under Services, click RDS.
 3. Go to the next step
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -58,7 +58,7 @@ Amazon Relational Database Service (Amazon RDS) is a managed service. This  mean
 
 Amazon RDS is optmized for memory, performance, and input/output. With Amazon RDS, you only pay for the resources that you actually consume.
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -74,7 +74,7 @@ AWS offers several familiar database (DB) engines. Amazon Aurora, a lightning fa
 
 &#x20;
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (2).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -91,7 +91,7 @@ AWS offers several familiar database (DB) engines. Amazon Aurora, a lightning fa
 
 Amazon RDS provides three templates for you deployment: Production, Dev/Test, and Free Tier. Use Free Tier if you wish to learn or deploy a quick proof of concept. Use Production only when deploying a production-level system
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (2).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -111,7 +111,7 @@ Amazon RDS provides three templates for you deployment: Production, Dev/Test, an
 
 You DB instance identifier is the name that you see when you search for your instance in the console. You can connect this database with the credentials that you provide here.
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (2).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -131,7 +131,7 @@ You DB instance identifier is the name that you see when you search for your ins
 
 Amazaon RDS supports the most demanding database applications. You can choose between two SSD-backed storage options. One is optimized for high performance OLTP applications, and the other is optimize for cost-effective, general-purpose use.
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (2).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -147,7 +147,7 @@ Amazaon RDS supports the most demanding database applications. You can choose be
 
 Using the MySQL, MariaDB, Oracle, and PostgreSQL engines, you can scale up to 64 TB of storage. SQL Server supports up too 16 TB. Storage scaling is on the fly, with zero downtime.
 
-<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (2).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -163,7 +163,7 @@ Using the MySQL, MariaDB, Oracle, and PostgreSQL engines, you can scale up to 64
 
 Amazon RDS helps you control network access to you database. You can also run your RDS DB instances in a virtual private cloud (VPC). This way, you can isolate your DB instances and connect to you existing IT infraestructure through an industry standard encrypted IPsec VPN.
 
-<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (2).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -178,7 +178,7 @@ Amazon RDS helps you control network access to you database. You can also run yo
 4. Scroll down to the Additional configuration section.
 5. Go to the next step.
 
-<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (2).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -194,7 +194,7 @@ Amazon RDS helps you control network access to you database. You can also run yo
 
 In order for AWS to sucessfully provision an RDS DB instance for you, you must first specify an initial database name. if you failt to spacify an initial database, your instance can still be provisioned, but it might not work properly.
 
-<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10) (2).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -203,7 +203,7 @@ In order for AWS to sucessfully provision an RDS DB instance for you, you must f
 1. In the Additional configuration section, for Encryption, review the default option of Enable encryption.
 2. Go to the next step
 
-<figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12) (2).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -214,7 +214,7 @@ In order for AWS to sucessfully provision an RDS DB instance for you, you must f
 3. Scroll down and click Create database (not shown).
 4. Go to the next step.
 
-<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (2).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -228,7 +228,7 @@ In order for AWS to sucessfully provision an RDS DB instance for you, you must f
 3. Click my-database.
 4. Go to the next step
 
-<figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (14) (2).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -241,7 +241,7 @@ In order for AWS to sucessfully provision an RDS DB instance for you, you must f
 
 3. Go to the next step.
 
-<figure><img src="../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (15) (2).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -249,6 +249,6 @@ In order for AWS to sucessfully provision an RDS DB instance for you, you must f
 
 * [x] Create a read replica of your primary database using a db.t3.xlarge instance
 
-<figure><img src="../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (16) (2).png" alt=""><figcaption></figcaption></figure>
 
 ***
