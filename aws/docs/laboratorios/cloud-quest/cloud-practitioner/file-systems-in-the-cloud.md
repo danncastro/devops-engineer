@@ -203,7 +203,7 @@ EFS file systems require an inbound NFS rule. By selecting a security group as t
 2. Click Create security group.
 3. Go to the next step.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -216,7 +216,7 @@ EFS file systems require an inbound NFS rule. By selecting a security group as t
 
 After the Amazon EFS security group is created, you are prepared to create the file system.
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -230,7 +230,7 @@ After the Amazon EFS security group is created, you are prepared to create the f
 
 Amazon EFS is built to scale on demand, up to petabytes of storage capacity, without disrupting applications.
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -243,7 +243,7 @@ Amazon EFS is built to scale on demand, up to petabytes of storage capacity, wit
 
 To create Amazon EFS resources, such as a file system and access points, a user must have AWS identity and Access Management (IAM) permissions for the corresponding API action and resource.
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -258,7 +258,7 @@ To create Amazon EFS resources, such as a file system and access points, a user 
 
 You can choose to use Standard or One Zone storage classes in Amazon EFS. Standard stores data within and across multiple Availability Zones (AZs). One Zone stores data redundantly within a single AZ, at a lower price than Standard, for workloads that don't require multi-AZ resilience.
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -274,7 +274,7 @@ You can choose to use Standard or One Zone storage classes in Amazon EFS. Standa
 
 You can disable automatic backups and lifecycle management to reduce costs until you are in production.
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -284,7 +284,7 @@ You can disable automatic backups and lifecycle management to reduce costs until
 2. Click Next.
 3. Go to the next step
 
-<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -299,7 +299,7 @@ You can disable automatic backups and lifecycle management to reduce costs until
 
 For simplucity during testing, you can start with a single mount target in a sinble Availability Zone.
 
-<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -313,7 +313,7 @@ For simplucity during testing, you can start with a single mount target in a sin
 
 By attaching your custom security group to the mount target, you control where the source of incoming traffic to the file system can originate.
 
-<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -322,7 +322,7 @@ By attaching your custom security group to the mount target, you control where t
 1. In the File system policy step, click next.
 2. Go to the next step
 
-<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -334,7 +334,7 @@ By attaching your custom security group to the mount target, you control where t
 2. Click Create
 3. Go to the next step
 
-<figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -348,7 +348,7 @@ By attaching your custom security group to the mount target, you control where t
 
 After the new file system is available, you can use automatically created commands to mount the file system.
 
-<figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -357,7 +357,7 @@ After the new file system is available, you can use automatically created comman
 1. Click Attach
 2. Go to the next step
 
-<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -376,7 +376,7 @@ The Amazon EFS client (amazon-efs-utils) is an open-source collection of Amazon 
 
 The Amazon EFS client includes a mount helper and tooling that helps you perform encryption of data in transit for Amazon EFS file systems.
 
-<figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -390,7 +390,7 @@ The Amazon EFS client includes a mount helper and tooling that helps you perform
 
 After you have copied the mount command, you can connect to your Amazon EC2 instance and mount the file system.
 
-<figure><img src="../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -399,7 +399,7 @@ After you have copied the mount command, you can connect to your Amazon EC2 inst
 1. In the left navigation pane, click Instances.
 2. Go to the next step
 
-<figure><img src="../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -415,7 +415,7 @@ To connect to an instance, Amazon EC2 supports SSH, Session Manager (a capabilit
 
 Session Manager is a fully managed AWS System Manager capability. With Session Manager, you can manage your Amazon Elastic Compute Cloud (Amazon EC2) instances, edge services, and on-premises servers and virtual machines (VMs).
 
-<figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -432,7 +432,7 @@ Session Manager is a fully managed AWS System Manager capability. With Session M
 
 Session Manager provides secure and auditable node management without the need to open inbound ports, maintain bastion hosts, or manage SSH keys. Session Manager also allows you to comply with corporate policies that require controlled access to managed nodes, strict security practices, and fully auditable logs with node access details, while providing end users with simple one-click cross-platform access to your managed nodes.
 
-<figure><img src="../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -446,7 +446,7 @@ Session Manager provides secure and auditable node management without the need t
 
 The Amazon EFS client is available in the Amazon Linux package repositories. You can build and install the package on other Linux repositories. Installing the utilities makes the mount commands quicker to process and troubleshoot.
 
-<figure><img src="../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -455,7 +455,7 @@ The Amazon EFS client is available in the Amazon Linux package repositories. You
 1. Review the packages installed from the yum command in the previous step.
 2. Go to the next step
 
-<figure><img src="../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -482,7 +482,7 @@ The Amazon EFS client is available in the Amazon Linux package repositories. You
 8. To view the log file contents, run: cat efs-1-setup.log
 9. Go to the next step.
 
-<figure><img src="../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -496,7 +496,7 @@ The Amazon EFS client is available in the Amazon Linux package repositories. You
 
 After successfully mounting the new file system, you are ready to add more mount points for other subnets in other Availability Zones within the same VPC.
 
-<figure><img src="../../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -509,7 +509,7 @@ After successfully mounting the new file system, you are ready to add more mount
 
 You can mount a file system on compute instances in your virtual private cloud (VPC), including Amazon EC2, Amazon Elastic Container Service (Amazon ECS), and AWS Lambda.
 
-<figure><img src="../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (23) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -523,7 +523,7 @@ You can mount a file system on compute instances in your virtual private cloud (
 
 Using the Network tab in the console, you can display and manage your mount targets.
 
-<figure><img src="../../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (24) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -536,7 +536,7 @@ Using the Network tab in the console, you can display and manage your mount targ
 
 For Amazon EFS file systems that use Standard storage classes, you can create a mount target in each Availability Zone in an AWS Region.
 
-<figure><img src="../../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (25) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -550,7 +550,7 @@ For Amazon EFS file systems that use Standard storage classes, you can create a 
 
 You can create mount targets for a file system by using the AWS Management Console, AWS CLI, or by programmatically using AWS SDKs. When using the console, you can create mount targets when you first create file system or after the file system is created.
 
-<figure><img src="../../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (26) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -567,7 +567,7 @@ You can create mount targets for a file system by using the AWS Management Conso
 
 In most cases, you will assign the same security group to each mount target.
 
-<figure><img src="../../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (27) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

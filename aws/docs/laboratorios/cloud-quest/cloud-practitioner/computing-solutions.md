@@ -4,7 +4,7 @@
 | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Soluções de Computação | O servidor da escola que executa a solução de agendamento precisa de mais memória. Auxilie no dimensionamento vertical da instância do Amazon EC2. |
 
-<figure><img src="../../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (21) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <details>
 
@@ -44,7 +44,7 @@ Descreva famílias de instâncias e tipos de instâncias do Amazon EC2.&#x20;
 3. In the search results, under Services, click EC2.
 4. Go to next step
 
-<figure><img src="../../../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (22) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -57,7 +57,7 @@ Descreva famílias de instâncias e tipos de instâncias do Amazon EC2.&#x20;
 
 Amazon Elastic Compute Cloud (Amazon EC2) instances provide virtual compute capacity in the cloud. With a choice of processor, storage, networking, operating system, and purchase model the service offers a broad and deep solution.
 
-<figure><img src="../../../.gitbook/assets/image (23) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (23) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -72,7 +72,7 @@ Amazon Elastic Compute Cloud (Amazon EC2) instances provide virtual compute capa
 
 Information about the instance (such as its public IP, private IP, and public DNS) is displyaed in the instance summary section by selecting the EC2 instance.
 
-<figure><img src="../../../.gitbook/assets/image (24) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (24) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -85,7 +85,7 @@ Information about the instance (such as its public IP, private IP, and public DN
 
 Amazon EC2 provides a wide selection of instance types that belong to instance families that are optimized to fit different use cases.
 
-<figure><img src="../../../.gitbook/assets/image (25) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (25) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -104,7 +104,7 @@ Amazon EC2 provides a wide selection of instance types that belong to instance f
 
 Each instance type includes one or more instance sizes, so you can scale your resources to the requirements of your target workload.
 
-<figure><img src="../../../.gitbook/assets/image (26) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (26) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -119,7 +119,7 @@ Each instance type includes one or more instance sizes, so you can scale your re
 
 Using the Amazon EC2 console, you can filter instance attributes such as instance types, instance family, and instance size. You can search using keyworkds, atribute names, or expressions.
 
-<figure><img src="../../../.gitbook/assets/image (27) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (27) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

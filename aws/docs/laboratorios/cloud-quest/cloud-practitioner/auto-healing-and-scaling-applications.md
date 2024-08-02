@@ -212,200 +212,331 @@ You can use launch templates to store launch parameters so that you do not have 
 
 ### <mark style="color:purple;">Step 10</mark>
 
-
+1. In the Launch template name and description section, for Launch template name, type: GameServerTemplate
+2. For Template version description, type: Regular customer game server template
+3. For Auto Scaling guidance, choose the check box to select Provide guidance to help me....
+4. Go to the next step
 
 #### <mark style="color:blue;">Concept</mark>
+
+You can create up to 5,000 launch templates per Region and 10,000 version per launch template.
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### <mark style="color:purple;">Step 11</mark>
 
+1. Scroll down to Application and OS Images.
+2. Click the My AMIs tab.
+3. Choose Owned by me.
+4. For Amazon Machine Image (AMI), on the dropdown menu, choose GameServer.
+5. Go to the next step.
 
-
-#### <mark style="color:blue;">Concept</mark>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### <mark style="color:purple;">Step 12</mark>
 
-
+1. Scroll down to Instance type.
+2. For Instance type, choose t2.nano.
+3. Click Create new key pair.
+4. Go to the next step.
 
 #### <mark style="color:blue;">Concept</mark>
+
+For each launch template, you can create one or more numbered launch template versions. The first version specifies the instance type, AMI ID, subnet, and key pair to use to launch the instance.
+
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### <mark style="color:purple;">Step 13</mark>
 
-
+1. In the pop-up box, for Key pair name, type: GameServerKeyPair
+2. For Key pair type, choose RSA.
+3. For Private key file format, choose .pem.
+4. Click Create key pair.
+5. After you are prompted to download (not shown), save the GameServeKeyPair file.
+6. Go to the next step.
 
 #### <mark style="color:blue;">Concept</mark>
+
+For the private key file format, if you plan to access your EC2 instance through Windows or the Putty program, you will choose the .ppk file format. If you use a unix-based (Linux, MacOS) shell with OpenSSH. You will choose the .pem file format.
+
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### <mark style="color:purple;">Step 14</mark>
 
+1. Click Network settings to expand the section.
+2. For Firewall (security groups), choose Select existing security group.
+3. For Security groups, choose WebServerSecurityGroup.
+4. Go to the next step.
 
-
-#### <mark style="color:blue;">Concept</mark>
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### <mark style="color:purple;">Step 15</mark>
 
-
+1. Scroll down to the bottom of page.
+2. In the Summary section, review the details.
+3. Click Create launch template.
+4. Go to the next step.
 
 #### <mark style="color:blue;">Concept</mark>
+
+For resource tags, specify tags by providing key and value combinations. You can tag the instance, the volumes, Sport Instance requests, or all three. For network interfaces, you can specify ip to two network interfaces for the instance.
+
+<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### <mark style="color:purple;">Step 16</mark>
 
-
+1. Scroll down to the bottom of the page.
+2. Click View launch templates.
+3. Go to the next step.
 
 #### <mark style="color:blue;">Concept</mark>
+
+This launch template can be used to configure the auto scaling and healing properties of your system. When a server goes down, this information is used to create a new instance.
+
+<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### <mark style="color:purple;">Step 17</mark>
 
-
+1. In the left navigation pane, click Auto Scaling Groups.
+2. On the Auto Scaling Groups home page, click Create Auto Scaling group.
+3. Go to the next step.
 
 #### <mark style="color:blue;">Concept</mark>
+
+Using AWS Auto Scaling, you can build scaling plans that automate how groups of different resources respond to changes in demand. You can optimize for balance between availability and costs. AWS Auto Scaling automatically creates all of the scaling policies, and it sets targets for you based on your preference.
+
+<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### <mark style="color:purple;">Step 18</mark>
 
-
+1. In the Choose launch template or configuration step, for Auto Scaling group name, type: RegularCustomerGameServer
+2. For Launch template, choose GameServerTemplate.
+3. Go to the next step.
 
 #### <mark style="color:blue;">Concept</mark>
+
+Note the properties that were proviously specified in the launch template default for the Auto Scaling group. Information, such as instance type, has already been selected for you.
+
+<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### <mark style="color:purple;">Step 19</mark>
 
-
+1. Scroll down to the bottom of the page.
+2. Click Next.
+3. Go to the next step.
 
 #### <mark style="color:blue;">Concept</mark>
+
+If you host an application on multiple EC2 instances, you can launch instances across multiple instance types and purchase options (Sport and On-Demand Instances) by choosing Combine purchase options and instance types. This is an advanced feature in which your team can optimize costs using different deployment strategies.
+
+<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### <mark style="color:purple;">Step 20</mark>
 
+1. In the Choose instance launch options step, for VPC, choose the VPC name that ends with auto-healing-and-scaling/GameServerVPC.
+2. For Availability Zones and subnets, choose both subnet names that contain game-server-netSubnet.
+3. Go to the next step.
 
-
-#### <mark style="color:blue;">Concept</mark>
+<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### <mark style="color:purple;">Step 21</mark>
 
+1. Scroll down to the bottom of the page.
+2. Click Next.
+3. Go to the next step.
 
-
-#### <mark style="color:blue;">Concept</mark>
+<figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### <mark style="color:purple;">Step 22</mark>
 
+1. In the Configure advanced options step, for Load balancing, choose No load balancer.
 
+* Keep all other default values for VPC Lattice integration options.
+
+2. Scroll down to Health checks.
+3. Go to the next step.
 
 #### <mark style="color:blue;">Concept</mark>
+
+Amazon EC2 Auto Scaling can determine the health status of an instance by using one or more of the following.
+
+* Status checks provided by Amazon EC2 to identify hardware and software issues that might impair an instance
+* Health checks provided by a load balancer, which can include custom health checks
+
+<figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### <mark style="color:purple;">Step 23</mark>
 
+1. For health check grace period, type: 240
+2. Click Next.
+3. Go to the next step.
 
-
-#### <mark style="color:blue;">Concept</mark>
+<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### <mark style="color:purple;">Step 24</mark>
 
-
+1. In the Configure group size and scaling policies step, for Desired capacity, type: 2
+2. For Min desired capacity, type: 2
+3. For Max desired capacity, type: 4
+4. For Automatic scaling, choose Target tracking scaling policy.
+5. Go to the next step.
 
 #### <mark style="color:blue;">Concept</mark>
+
+With target tracking scalling policies, you select a scaling metric (for example, CPU utilization) and set a target value. Amazon EC2 Auto Scaling creates and manages the Amazon CloudWatch alarms that invoke the scaling policy. It calculates the scaling adjustment based on the metric and the target value.
+
+<figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### <mark style="color:purple;">Step 25</mark>
 
+1. Scroll down to Automatic scaling.
+2. For Scaling policy name, type: CPU Utilization
+3. For Metric type, choose Average CPU utilization.
+4. For Target value, type: 70
+5. Scroll down to the bottom of the page, and then click Next (not shown).
+6. Go to the next step.
 
-
-#### <mark style="color:blue;">Concept</mark>
+<figure><img src="../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### <mark style="color:purple;">Step 26</mark>
 
-
+1. In the Add notifications step, click Skip to review.
+2. Go to the next step.
 
 #### <mark style="color:blue;">Concept</mark>
+
+You can be notified when Amazon EC2 Auto Scaling is launching or terminating the EC2 instances in your Auto Scaling group. You can manage notifications by using Amazon Simple Notification Service (Amazon SNS).
+
+<figure><img src="../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### <mark style="color:purple;">Step 27</mark>
 
+1. In the Review step, scroll down to review your configuration settings.
+2. Click Create Auto Scaling group.
+3. Go to the next step.
 
-
-#### <mark style="color:blue;">Concept</mark>
+<figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### <mark style="color:purple;">Step 28</mark>
 
-
+1. In the Auto Scaling groups section, click RegularCustomerGameServer.
+2. Go to the next step.
 
 #### <mark style="color:blue;">Concept</mark>
+
+After you create a scaling policy, Amazon EC2 Auto Scaling starts evaluating the policy against the metrics that you selected.
+
+<figure><img src="../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### <mark style="color:purple;">Step 29</mark>
 
-
+1. Click the Activity tab.
+2. In the Activity history section, review to see that two instances are created to meet the "desired and actual capacity."
+3. Go to the next step.
 
 #### <mark style="color:blue;">Concept</mark>
+
+You can see the history of your scaling group. If additional conditions are added to you scaling group, you can view which condition has caused the system to scale.
+
+<figure><img src="../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### <mark style="color:purple;">Step 30</mark>
 
-
+1. Click the Automatic scaling tab.
+2. Scroll down to Scheduled actions.
+3. Go to the next step.
 
 #### <mark style="color:blue;">Concept</mark>
+
+Scheduled scaling helps you to set up your own scaling schedule according to predictable load changes. For example, let's say that the traffic to your web app starts to increase every week based on a predictable factor. You can configure your system to preempt this event.
+
+<figure><img src="../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### <mark style="color:purple;">Step 31</mark>
 
+1. Click Create scheduled action.
+2. Go to the next step.
 
+<figure><img src="../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
-#### <mark style="color:blue;">Concept</mark>
-
-
+***
 
 ### <mark style="color:purple;">Step 32</mark>
 
-
+1. In the pop-up box, for Name, type: SecondWaveOfRegulars
+2. For Desired capacity, type: 3
+3. For Min, type: 3
+4. For Max, type: 4
+5. For Recurrence, choose Every week.
+6. For Specific start time, choose a future date, and then type 20:00 in the next text box.
+7. Click Create.
+8. Go to the next step.
 
 #### <mark style="color:blue;">Concept</mark>
 
+By default, the times that you set are in Coordinated Universal Time (UTC). When specifying a recurring schedule with a cron expression, using the AWS CLI or an SDK, you can change the time zone to correspond to your local time zone or a time zone from another part of your network.
 
+<figure><img src="../../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+
+***
 
 ### <mark style="color:purple;">Step 33</mark>
 
+1. In the Scheduled actions section, review the new scheduled action.
+2. Go to the next step.
 
-
-#### <mark style="color:blue;">Concept</mark>
-
-
+<figure><img src="../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ## <mark style="color:red;">DIY Activite</mark>
 
-* [ ] Configure an auto scaling policy to scale down to 0 resources at 01:00 AM every day.
+* [x] Configure an auto scaling policy to scale down to 0 resources at 01:00 AM every day.
+
+<figure><img src="../../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
 ***

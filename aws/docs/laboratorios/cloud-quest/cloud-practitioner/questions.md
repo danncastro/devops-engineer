@@ -529,4 +529,91 @@
 
 > A política de um bucket do Amazon S3 tem um limite de tamanho de 20 KB. Isso significa que o tamanho total de uma política de bucket, incluindo todos os blocos e declarações, não pode exceder 20 KB. Se a política exceder esse limite, você precisará simplificar ou dividir a política em várias partes.
 
-57.
+57. What are the three primary management functions of Amazon EC2 Auto Scaling? (Select THREE)
+
+* [x] Monitor the health of running instances.
+* [ ] Block traffic to unsecured instances.
+* [x] Replace impaired instances automatically
+* [x] Balance capacity across Availability Zones.
+
+> **Monitorar a saúde das instâncias em execução**: O Auto Scaling monitora a saúde das instâncias EC2 em seu grupo. Se uma instância for considerada não saudável, o Auto Scaling pode substituir a instância automaticamente.
+>
+> **Substituir instâncias comprometidas automaticamente**: Se uma instância se tornar não saudável ou apresentar problemas, o Auto Scaling pode automaticamente substituir a instância comprometida por uma nova, garantindo que o número desejado de instâncias esteja em execução.
+>
+> **Equilibrar a capacidade entre Zonas de Disponibilidade**: O Auto Scaling pode distribuir automaticamente as instâncias entre várias Zonas de Disponibilidade para melhorar a disponibilidade e a tolerância a falhas.
+>
+> A opção **"Bloquear o tráfego para instâncias não seguras"** não é uma função direta do EC2 Auto Scaling. Isso geralmente é tratado por outras medidas de segurança, como grupos de segurança e listas de controle de acesso.
+
+58. Which types of AWS Auto Scaling are valid?(Select THREE)
+
+* [x] Scheduled
+* [x] Dynamic
+* [x] Predictive
+* [ ] Spot
+* [ ] On-Demand
+
+> **Scheduled**: O Auto Scaling programado permite que você configure escalonamentos automáticos em horários específicos, com base em um cronograma. Por exemplo, você pode configurar o Auto Scaling para aumentar a capacidade durante as horas de pico e reduzir durante os períodos de baixa demanda.
+>
+> **Dynamic**: O Auto Scaling dinâmico ajusta automaticamente a capacidade com base em condições de demanda em tempo real, como a carga de CPU ou a utilização da memória. Ele responde a métricas e políticas definidas para escalar para cima ou para baixo conforme necessário.
+>
+> **Predictive**: O Auto Scaling preditivo usa modelos de aprendizado de máquina para prever a demanda futura e ajustar a capacidade com base nessas previsões. Ele tenta antecipar picos e quedas de demanda para otimizar a escalabilidade antes que a demanda real ocorra.
+>
+>
+>
+> As opções **Spot** e **On-Demand** não são tipos de Auto Scaling, mas sim tipos de instâncias EC2. As instâncias Spot são baseadas em lances e podem ser interrompidas com pouco aviso, enquanto as instâncias On-Demand são pagas por hora ou por segundo e não têm compromissos de longo prazo.
+
+59. Which statement regarding Amazon EC2 instances is true?
+
+* [x] An AMI is a template used for launching new instances with identical configurations.
+* [ ] A new EC2 instance, created from an AMI, must be of the exact same instance type as the instance that the AMI was created from.
+* [ ] The size of an EC2 instance cannot be increased after it is created
+* [ ] An Auto Scaling group is automatically created when an AMI is built.
+
+> **Uma AMI é um template usado para iniciar novas instâncias com configurações idênticas.**
+>
+> * **Verdadeiro.** Uma Amazon Machine Image (AMI) é um template que contém a configuração do sistema operacional, aplicativos e configurações necessárias para iniciar novas instâncias EC2 com a mesma configuração.
+>
+>
+>
+> **Uma nova instância EC2, criada a partir de uma AMI, deve ser do mesmo tipo de instância exato que a instância da qual a AMI foi criada.**
+>
+> * **Falso.** Quando você cria uma instância a partir de uma AMI, você pode escolher qualquer tipo de instância disponível. Não é necessário que a nova instância seja do mesmo tipo que a instância original.
+>
+>
+>
+> **O tamanho de uma instância EC2 não pode ser aumentado após ser criada.**
+>
+> * **Falso.** Você pode alterar o tipo de instância (tamanho) de uma instância EC2 existente, desde que pare a instância antes de alterar o tipo e a instância esteja em um estado que permita o redimensionamento.
+>
+>
+>
+> **Um grupo de Auto Scaling é criado automaticamente quando uma AMI é construída.**
+>
+> * **Falso.** A criação de um grupo de Auto Scaling é uma ação separada e não ocorre automaticamente quando uma AMI é criada. Você precisa criar e configurar um grupo de Auto Scaling separadamente, se necessário.
+
+60. &#x20;By default, a user-created Amazon Machine Image (AMI) is available in all AWS Regions.
+
+* [ ] True
+* [x] False
+
+> Por padrão, uma Amazon Machine Image (AMI) criada pelo usuário está disponível apenas na região onde foi criada. Se você deseja tornar a AMI disponível em outras regiões, você precisa copiar a AMI para essas regiões específicas. Isso pode ser feito manualmente através do Console de Gerenciamento da AWS, da AWS CLI ou usando a AWS SDK.
+>
+> A disponibilidade de uma AMI em todas as regiões não é automática e requer uma ação explícita para copiar a imagem para outras regiões.
+
+61. Which metrics can be tracked in a scaling policy? (Select THREE)
+
+* [x] Average CPU utilization
+* [x] Average network in
+* [x] Average network out
+* [ ] Maximum memory usage
+
+> Em uma política de escalonamento no Amazon EC2 Auto Scaling, você pode acompanhar várias métricas para determinar quando escalar para cima ou para baixo. As métricas que podem ser rastreadas em uma política de escalonamento incluem:
+>
+> 1. **Average CPU utilization**: Utilização média da CPU é uma métrica comum usada para decidir quando adicionar ou remover instâncias. Se a utilização da CPU média ultrapassar um limite definido, o Auto Scaling pode adicionar mais instâncias.
+> 2. **Average network in**: A média de dados recebidos pela instância pode ser usada para escalar com base no tráfego de entrada. Se a média de dados recebidos exceder um limite, pode ser um sinal de que mais capacidade é necessária.
+> 3. **Average network out**: A média de dados enviados pela instância pode ser monitorada para determinar a necessidade de escalabilidade com base no tráfego de saída. Se a média de dados enviados for alta, o Auto Scaling pode adicionar mais instâncias para lidar com a carga.
+>
+>
+>
+> A **Maximum memory usage** (uso máximo de memória) não é uma métrica disponível diretamente para políticas de escalonamento no Auto Scaling do EC2, pois o Amazon EC2 Auto Scaling não fornece métricas de uso de memória nativamente. Para monitorar o uso de memória, você precisaria usar uma solução personalizada, como a coleta de métricas de memória com o CloudWatch Agent e a configuração de alarmes com base nessas métricas.
+

@@ -4,7 +4,7 @@
 | ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
 | Primeiros passos na nuvem | O sistema de estabilização da ilha está falhando e precisa de maior confiabilidade e disponibilidade para seus módulos computacionais. |
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <details>
 
@@ -48,7 +48,7 @@ Resuma os benefícios da infraestrutura da AWS. Descreva as regiões e zonas de 
 3. In the search results, under service, click EC2
 4. Go to the next step
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -62,7 +62,7 @@ Resuma os benefícios da infraestrutura da AWS. Descreva as regiões e zonas de 
 
 An Amazon Elastic Compute Cloud (Amazon EC2) instance is a virtual server in the cloud.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -77,7 +77,7 @@ An Amazon Elastic Compute Cloud (Amazon EC2) instance is a virtual server in the
 
 An Amazon Machine Image (AMI) provides the information required to launch an instance. You must specify an AMI when you launch an instance. You can launch multiple instances from a single AMI when you need multiple instances with the same configuration. You can use different AMIs to launch instances when you need different configurations.
 
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -96,7 +96,7 @@ An Amazon Machine Image (AMI) provides the information required to launch an ins
 
 When you launch an instance, the instance type that you specify determines the hardware of the host computer used for your instance. Each instance type offers different compute, memory, and storage capabilities and are grouped in instance families based on these capabilities.
 
-<figure><img src="../../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -110,7 +110,7 @@ When you launch an instance, the instance type that you specify determines the h
 
 Amazon EC2 uses public key cryptography to encrypt and decrypt login information. Public key cryptography uses a public key to encrypt a piece of data, and then the recipient uses their private key to decrypt the data. The public and private keys are known as a key pair.
 
-<figure><img src="../../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -132,7 +132,7 @@ Amazon EC2 is hosted in multiple locations worldwide. These locations are compos
 
 A virtual Private Cloud (VPC) is a virtual network dedicated to your AWS account. While a VPC resides in an AWS Region, a subnet must reside within a single AZ.
 
-<figure><img src="../../../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -148,7 +148,7 @@ A virtual Private Cloud (VPC) is a virtual network dedicated to your AWS account
 
 A security group acts as a virtual firewall that controls the traffic for one or more instances. When you launch an instance, you can specify one or more security groups is used. You can add rules to each security group that allows traffic to or from its associated instances.
 
-<figure><img src="../../../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -165,7 +165,7 @@ A security group acts as a virtual firewall that controls the traffic for one or
 
 When you launch an instance, the root device volume contains the image used to boot instance
 
-<figure><img src="../../../.gitbook/assets/image (11) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -178,7 +178,7 @@ When you launch an instance, the root device volume contains the image used to b
 
 2. Go to the next step
 
-<figure><img src="../../../.gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -193,7 +193,7 @@ When you launch an instance, the root device volume contains the image used to b
 
 When you launch an instance in Amazon EC2, you have the options of passing user data to the instance that can be used to perform common automated configuration task and even run scripts after the instance starts.
 
-<figure><img src="../../../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -202,7 +202,7 @@ When you launch an instance in Amazon EC2, you have the options of passing user 
 1. Review the User data content
 2. Go to next step
 
-<figure><img src="../../../.gitbook/assets/image (14) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (14) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -220,7 +220,7 @@ When you launch an instance in Amazon EC2, you have the options of passing user 
 
 It's always a good idea to review the instance launch details that you have configured before you deploy the instance.
 
-<figure><img src="../../../.gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (15) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -230,7 +230,7 @@ It's always a good idea to review the instance launch details that you have conf
 2. Scroll down to the bottom of the page.
 3. Go to the next step
 
-<figure><img src="../../../.gitbook/assets/image (16) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (16) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -242,7 +242,7 @@ It's always a good idea to review the instance launch details that you have conf
 
 2. Go to the next step.
 
-<figure><img src="../../../.gitbook/assets/image (17) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (17) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -260,7 +260,7 @@ It's always a good idea to review the instance launch details that you have conf
 
 An instance enters the pending state when it launches for the firt time. It changes to a running state when it is ready for use.
 
-<figure><img src="../../../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (19) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -274,7 +274,7 @@ An instance enters the pending state when it launches for the firt time. It chan
 * If you see a connection timeout message when opening the webpage, check that the address begins with http and not https.
 * The public DNS and the security group are used to access the instance details that appear on the webpag.
 
-<figure><img src="../../../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (20) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

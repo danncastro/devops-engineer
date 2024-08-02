@@ -201,7 +201,7 @@ Configurar adequadamente esses componentes no Amazon EC2 Auto Scaling é fundame
 
 Os modelos de inicialização são essenciais para definir todas as configurações necessárias ao lançar instâncias do EC2, incluindo AMI, tipo de instância, grupo de segurança e volumes do EBS. Aqui estão os benefícios e maneiras de usar esses modelos:
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### <mark style="color:blue;">**Benefícios dos Modelos de Inicialização**</mark>
 
@@ -245,7 +245,7 @@ Os grupos do EC2 Auto Scaling são fundamentais para configurar e gerenciar a es
 | <mark style="color:red;">**Máximo**</mark>**:** Estabelece o número máximo de instâncias que podem ser escaladas pelo Auto Scaling, limitando os custos e garantindo que não haja escalonamento excessivo.                                     |
 | <mark style="color:green;">**Capacidade Desejada**</mark>**:** Define o número ideal de instâncias que devem estar em execução. O Auto Scaling ajusta automaticamente a quantidade de instâncias para corresponder a essa capacidade desejada. |
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### <mark style="color:blue;">**Casos de Uso**</mark>
 
@@ -275,7 +275,7 @@ Configurar corretamente os grupos do EC2 Auto Scaling é fundamental para otimiz
 
 O EC2 Auto Scaling oferece alta disponibilidade configurando dinamicamente a capacidade de instâncias do EC2 com base em três configurações essenciais: mínimo, máximo e desejado. Definir todos os três valores iguais, por exemplo, quatro, garante que o Auto Scaling mantenha constantemente quatro instâncias ativas. Se uma instância falhar, o Auto Scaling automaticamente a substituirá, assegurando que a capacidade mínima seja sempre mantida.
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### <mark style="color:blue;">**Casos de Uso**</mark>
 

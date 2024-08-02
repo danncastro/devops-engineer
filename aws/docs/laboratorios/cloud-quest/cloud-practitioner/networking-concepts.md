@@ -4,7 +4,7 @@
 | ----------------- | ------------------------------------------------------------------------------------------------------------ |
 | Conceitos de rede | Ajude o banco a configurar um ambiente de rede seguro que permita a comunicação entre recursos e a internet. |
 
-<figure><img src="../../../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (17) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <details>
 
@@ -48,7 +48,7 @@ Defina os principais recursos de VPCs, sub-redes, gateways de internet e tabelas
 
 AWS launched its very first Amazon Elastic Compute Cloud (Amazon EC2) instance in August, 2006.
 
-<figure><img src="../../../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (22) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -57,7 +57,7 @@ AWS launched its very first Amazon Elastic Compute Cloud (Amazon EC2) instance i
 1. In the left navigation pane, click instances.
 2. Go to the next step
 
-<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -67,7 +67,7 @@ AWS launched its very first Amazon Elastic Compute Cloud (Amazon EC2) instance i
 2. On the Details tab, under Public IPv4 address, click the copy icon to copy the provided addredd.
 3. Go to the next step
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -80,7 +80,7 @@ AWS launched its very first Amazon Elastic Compute Cloud (Amazon EC2) instance i
 2. To solve this issue return to the previous browser (the Instances page in the Amazon EC2 console).
 3. Go to the next step
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -95,7 +95,7 @@ AWS launched its very first Amazon Elastic Compute Cloud (Amazon EC2) instance i
 
 Using Amazon Virtual Private Cloud (Amazon VCP), you can launch AWS resources into a virtual network closely resembles a traditional network that you'd operate in you own data center, with the benefits of using the scalable infrastructure of AWS.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -108,7 +108,7 @@ Using Amazon Virtual Private Cloud (Amazon VCP), you can launch AWS resources in
 
 A subnet is a range of IP addresses in your VPC. You can launch AWS resources into a specified subnet. Each subnet must reside entirely within one Availability Zone and cannot span zones.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -122,7 +122,7 @@ A subnet is a range of IP addresses in your VPC. You can launch AWS resources in
 
 A route table contains a set of rules, called routes, that are used to determine where network traffic from your subnet or gateway is directed. Use a public subnet for internet-connected resources and a private subnet for resources not connected to the Internet.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -141,7 +141,7 @@ A route table contains a set of rules, called routes, that are used to determine
 
 The CIDR naming convention 0.0.0.0/0 represents all IPv4 address (::/0 for IPv6).
 
-<figure><img src="../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -154,7 +154,7 @@ The CIDR naming convention 0.0.0.0/0 represents all IPv4 address (::/0 for IPv6)
 
 A NAT gateway is a network address translation (NAT) service. With a NAT gateway, instances in a private subnet can connect to services outside your VPC. External services cannot initiate a connection with those instances.
 
-<figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -174,7 +174,7 @@ An internet gateway serves two purposes:
 * Provide a target in your VPC route tables for internet-routable traffic.
 * Perform network address translation (NAT) for instances that have been assigned public IPv4 addresses.
 
-<figure><img src="../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -194,7 +194,7 @@ An internet gateway serves two purposes:
 
 An internet gateway supports IPv4 and IPv6 traffic. It does not cause availability risks or bandwidth constraints on your network traffic. There's no additional charge for having an internet gateway in you account.
 
-<figure><img src="../../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -206,7 +206,7 @@ An internet gateway supports IPv4 and IPv6 traffic. It does not cause availabili
 4. Under Security groups, click WebServerSecurityGroup
 5. Go to the next step
 
-<figure><img src="../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -219,7 +219,7 @@ An internet gateway supports IPv4 and IPv6 traffic. It does not cause availabili
 
 For each security group, you can add rules that control the traffic based on protocols and port numbers. Separate sets of rules exist for inbound traffic and outbound traffic.
 
-<figure><img src="../../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -232,7 +232,7 @@ For each security group, you can add rules that control the traffic based on pro
 
 When you create a VPC, it comes with a default security group. You can create additional security groups for each VPC.
 
-<figure><img src="../../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -250,7 +250,7 @@ When you create a VPC, it comes with a default security group. You can create ad
 
 You can create a security group and add rules that reflect the role of the instance that is associated with the security group. For example, an instnace that is configured as a web server needs security group rules that allow inbound HTTP and HTTPS access. Likewise, a database instance needs rules that allow access for the type of database, such as access over port 3306 for MySQL.
 
-<figure><img src="../../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -265,7 +265,7 @@ You can create a security group and add rules that reflect the role of the insta
 
 Security groups are stateful. For example, if you send request from an instance, the response traffic for that request is allowed to reach the instance regardless of the inbound security group rules. Responses to allowed inbound traffic are allowed to leave the instance, regardless of the outbound rules.
 
-<figure><img src="../../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (14) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -274,7 +274,7 @@ Security groups are stateful. For example, if you send request from an instance,
 1. In the left navigation pane, click Instances.
 2. Go to the next step.
 
-<figure><img src="../../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
