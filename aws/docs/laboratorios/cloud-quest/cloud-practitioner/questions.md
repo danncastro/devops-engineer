@@ -13,11 +13,11 @@
 2. How many Availability Zones, at least, make up an AWS Region?
 
 * [ ] One
-* [x] Two
-* [ ] Three
+* [ ] Two
+* [x] Three
 * [ ] Ten
 
-> A quantidade mínima de Zonas de Disponibilidade (Availability Zones - AZs) que compõem uma Região da AWS é **duas**. Cada Região da AWS começa com pelo menos duas AZs, e algumas Regiões podem eventualmente expandir para três ou mais AZs conforme a demanda e o crescimento dos serviços naquela região.
+>
 
 3. Which location option can be selected when launching an Amazon EC2 instance in an AWS Region?
 
@@ -82,7 +82,7 @@
 10. An Amazon EBS backed EC2 instance must be in a specific state to change its instance type. Which one?
 
 * [x] Stopped
-* [ ] Runing
+* [ ] Running
 * [ ] Terminated
 * [ ] Imaged
 
@@ -747,4 +747,154 @@
 >
 > **Resource**: Define quais recursos a política se aplica, como buckets S3, instâncias EC2 ou tabelas DynamoDB.
 
-72.
+72. Which Amazon EC2 pricing model adjusts based on supply and demand of EC2 instances?
+
+* [ ] On-Demand instances
+* [ ] Reserved Instances
+* [x] Spot Instances
+* [ ] Convertible Reserved Instances
+
+> O modelo de preços **Spot Instances** do Amazon EC2 ajusta o custo com base na oferta e na demanda de instâncias EC2. Com as Spot Instances, você pode aproveitar a capacidade não utilizada da AWS a preços reduzidos, que são definidos por um leilão em tempo real. O preço das Spot Instances varia conforme a demanda e a oferta de capacidade em uma região específica. Você pode definir um preço máximo que está disposto a pagar, e se o preço Spot atual estiver abaixo desse valor e a capacidade estiver disponível, sua instância será executada.
+>
+>
+>
+> As outras opções têm os seguintes modelos de preços:
+>
+> **On-Demand instances**: Você paga por hora ou por segundo de uso, sem compromisso de longo prazo, e o custo não varia com base na oferta e demanda.
+>
+> **Reserved Instances**: Você paga uma taxa fixa para uma instância por um período de um ou três anos, com a opção de um pagamento único ou em parcelas. O custo é previsível e não depende de oferta e demanda.
+>
+> **Convertible Reserved Instances**: Semelhante às Reserved Instances, mas com a flexibilidade de trocar o tipo de instância, a família e a região. O custo é fixo, baseado em um compromisso de longo prazo.
+
+73. What is true about Amazon S3 pricing? (Select TWO)
+
+* [ ] Charges occur per bucket.
+* [ ] Charges occur per object
+* [x] Charges occur per gibibyte (GiB)
+* [x] Charges occur per GET, PUT, COPY, POST, and LIST request
+* [ ] Charges occur per connection
+
+> **Charges occur per gibibyte (GiB)**: A cobrança do Amazon S3 é baseada na quantidade de dados armazenados em gigabytes (GiB). O custo é calculado com base no volume total de dados armazenados.
+>
+> **Charges occur per GET, PUT, COPY, POST, and LIST request**: Além do armazenamento, o Amazon S3 cobra pelas operações realizadas, como GET, PUT, COPY, POST e LIST. Cada tipo de solicitação tem um custo associado.
+>
+>
+>
+> As outras opções estão incorretas por estas razões:
+>
+> **Charges occur per bucket**: O Amazon S3 não cobra especificamente por bucket, mas sim pelo armazenamento e pelas solicitações realizadas.
+>
+> **Charges occur per object**: Embora o armazenamento e as operações possam ser calculados com base no número de objetos, a cobrança principal é baseada no volume total de armazenamento e nas solicitações feitas, não por objeto individualmente.
+>
+> **Charges occur per connection**: O Amazon S3 não cobra por conex
+
+74. Which AWS pricing model offers lower prices on compute and machine learning across any AWS Region?
+
+* [ ] Pay-as-you-go
+* [ ] On-demand
+* [ ] Dedicated hosts
+* [ ] Saving Plans
+
+> **Savings Plans** é o modelo de preços da AWS que oferece preços reduzidos para computação e aprendizado de máquina em qualquer região da AWS. Os Savings Plans permitem que você se comprometa com uma certa quantidade de uso de computação ou recursos de aprendizado de máquina por um período de um ou três anos em troca de um desconto significativo em relação às tarifas padrão.
+>
+>
+>
+> Aqui estão os detalhes dos outros modelos de preços mencionados:
+>
+> **Pay-as-you-go**: Este modelo oferece preços padrão e flexíveis baseados no uso real dos recursos, sem compromisso de longo prazo. É o modelo mais básico e não oferece descontos adicionais.
+>
+> **On-demand**: Esse modelo permite pagar pelo uso dos recursos sem compromisso de longo prazo. Os preços são baseados na utilização real e não oferecem descontos em comparação com os preços padrão.
+>
+> **Dedicated hosts**: Este modelo permite que você use servidores dedicados para instâncias EC2, o que pode ser útil para atender a requisitos de conformidade e licenciamento. No entanto, não oferece necessariamente preços reduzidos em comparação com os modelos de preço padrão.
+>
+>
+>
+> Os **Savings Plans** são a melhor opção para obter preços mais baixos em uma ampla gama de serviços e regiões, oferecendo flexibilidade em comparação com o modelo de instância reservada.
+
+75. Windows and Linux Amazon EC2 instances have Free Tier eligible instance types.
+
+* [x] True
+* [ ] False
+
+76. Which AWS Pricing Calculator path can be used to generate an estimate for the Amazon EC2 instances with an hourly snapshot requirement?
+
+* [ ] Quick
+* [ ] Express
+* [ ] Detailed
+* [ ] Advanced
+
+>
+
+77. Which resource automates the creation, retention, and deletion of Amazon Elastic Block Store (Amazon EBS) snapshots and AMIs backed by Amazon EBS?
+
+* [x] Amazon Data Lifecycle Manager
+* [ ] Amazon S3 Intelligent Tiering
+* [ ] AWS Config
+* [ ] AWS Systems Manager
+
+> **Amazon Data Lifecycle Manager** é o recurso da AWS que automatiza a criação, retenção e exclusão de snapshots do Amazon Elastic Block Store (Amazon EBS) e de AMIs (Amazon Machine Images) que são baseadas em volumes do EBS. Ele permite que você defina políticas para gerenciar esses recursos, garantindo que os snapshots e AMIs sejam criados e excluídos de acordo com suas necessidades de backup e retenção.
+>
+>
+>
+> Os outros recursos mencionados têm os seguintes papéis:
+>
+> **Amazon S3 Intelligent Tiering**: Otimiza o custo de armazenamento de dados no Amazon S3 ao mover automaticamente os dados entre diferentes classes de armazenamento com base no padrão de acesso.
+>
+> **AWS Config**: Monitora e registra as configurações dos recursos da AWS, e avalia as configurações para conformidade com as políticas definidas, mas não gerencia diretamente a criação e retenção de snapshots ou AMIs.
+>
+> **AWS Systems Manager**: Fornece ferramentas para gerenciar e automatizar a administração de instâncias e recursos, como automação de tarefas, mas não é específico para a criação e gerenciamento de snapshots e AMIs.
+
+78. A customer has two m5.xlarge Amazon EC2 instances, each with 40 GB of storage attached. One instance is running while the other is stopped. Which statement is true?
+
+* [ ] The customer will be charged for the one running instance and for 40 GB of storage.
+* [ ] The customer will be charged for the one running instance and for 80 GB of storage.
+* [ ] The customer will be charged for the two instances and for 80 GB of storage
+
+>
+
+79. &#x20;Which source does AWS Pricing Calculator use to create estimates?
+
+* [x] AWS Price List API
+* [ ] Public Amazon S3 bucket
+* [ ] AWS Cost Explorer console
+* [ ] Customer pricing contract
+
+> O **AWS Price List API** é a fonte que o AWS Pricing Calculator utiliza para criar estimativas. Este API fornece informações detalhadas sobre os preços dos serviços da AWS, permitindo que o AWS Pricing Calculator acesse dados atualizados sobre os custos dos serviços para criar estimativas precisas para os clientes.
+>
+>
+>
+> Aqui está o papel das outras opções:
+>
+> **Public Amazon S3 bucket**: Não é utilizado diretamente para gerar estimativas no AWS Pricing Calculator. O S3 bucket público pode conter documentos e informações sobre preços, mas não é a fonte principal de dados para o cálculo de estimativas.
+>
+> **AWS Cost Explorer console**: Ferramenta que permite visualizar e analisar os custos e uso dos serviços AWS. Não é utilizado para gerar estimativas, mas para analisar os custos atuais e históricos.
+>
+> **Customer pricing contract**: Refere-se a contratos personalizados e descontos acordados entre a AWS e um cliente específico. O AWS Pricing Calculator utiliza a lista de preços padrão da AWS e não se baseia em contratos individuais para estimativas padrão.
+
+80. What is true about Amazon EC2 pricing?
+
+* [ ] All storage attached to an instance is included in the hourly instance price
+* [x] When an instance is stopped, charges for the instance stop but any attached Amazon EBS storage continues to be billed
+* [ ] All instances are charged their hourly rate whether they are running or stopped
+* [ ] A stopped instance is still charged, but at a lower rate.
+
+> **Quando uma instância está parada, as cobranças pela instância param, mas qualquer armazenamento Amazon EBS anexado continua a ser cobrado**: As cobranças pela instância EC2 cessam quando a instância está parada, mas o armazenamento associado (volumes EBS) continua a ser cobrado. O armazenamento EBS é cobrado separadamente e continua a gerar custos enquanto o volume estiver provisionado, independentemente do estado da instância EC2.
+>
+>
+>
+> As outras opções são incorretas por estas razões:
+>
+> **All storage attached to an instance is included in the hourly instance price**: O armazenamento EBS não está incluído no preço da instância EC2. O armazenamento EBS é cobrado separadamente com base no volume e na quantidade de dados armazenados.
+>
+> **All instances are charged their hourly rate whether they are running or stopped**: As instâncias EC2 são cobradas por hora apenas quando estão em execução. Quando estão paradas, não há cobrança pelo tempo de execução da instância, mas o armazenamento EBS continua a gerar custos.
+>
+> **A stopped instance is still charged, but at a lower rate**: Isso não é correto. Instâncias EC2 paradas não são cobradas pelo tempo de execução, mas o armazenamento EBS continua a ser cobrado. Não há um "preço reduzido" para instâncias paradas; a cobrança ocorre apenas pelo armazenamento EBS e outras características que continuam a ser provisionadas.
+
+81. There is no charge for inbound data from the internet into AWS.
+
+* [x] True
+* [ ] False
+
+> Não há cobrança para dados que entram na AWS a partir da Internet. O tráfego de entrada para a AWS, também conhecido como inbound data, é gratuito. No entanto, a AWS cobra pelo tráfego de saída, que é o dado que sai da AWS para a Internet ou para outras regiões da AWS. Portanto, enquanto você não paga por dados que entram na AWS, você é cobrado pelos dados que saem.
+
+82.

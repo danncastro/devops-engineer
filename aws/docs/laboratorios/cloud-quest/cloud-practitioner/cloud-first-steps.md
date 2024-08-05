@@ -4,7 +4,7 @@
 | ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
 | Primeiros passos na nuvem | O sistema de estabilização da ilha está falhando e precisa de maior confiabilidade e disponibilidade para seus módulos computacionais. |
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <details>
 
@@ -48,7 +48,7 @@ Resuma os benefícios da infraestrutura da AWS. Descreva as regiões e zonas de 
 3. In the search results, under service, click EC2
 4. Go to the next step
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -62,7 +62,7 @@ Resuma os benefícios da infraestrutura da AWS. Descreva as regiões e zonas de 
 
 An Amazon Elastic Compute Cloud (Amazon EC2) instance is a virtual server in the cloud.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

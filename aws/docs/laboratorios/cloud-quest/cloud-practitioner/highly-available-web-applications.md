@@ -376,7 +376,7 @@ The security groups that you associate with your load balancer determine your ru
 2. Click Save changes.
 3. Go to the next step.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -390,7 +390,7 @@ The security groups that you associate with your load balancer determine your ru
 
 To test access to your application through the load balancer, you can copy the DNS name into a browser tab (or window).
 
-<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -408,7 +408,7 @@ To test access to your application through the load balancer, you can copy the D
 
 Use the DNS name to get quick feedback and view your application. If you don't see your application, be sure to check the rules in the security group that you associated with the load balancer.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -428,7 +428,7 @@ and press Enter.
 
 The default load balancer health check validates only the root path of an HTTP server. Applications generally will implement a much more robust application health check to validate server configuration and external access. You can manually verify that health checks are active on your load balancer.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -444,7 +444,7 @@ The default load balancer health check validates only the root path of an HTTP s
 
 You can modify load balancer health check settings to match your performance requirements.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

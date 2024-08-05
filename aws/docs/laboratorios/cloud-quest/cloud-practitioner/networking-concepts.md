@@ -57,7 +57,7 @@ AWS launched its very first Amazon Elastic Compute Cloud (Amazon EC2) instance i
 1. In the left navigation pane, click instances.
 2. Go to the next step
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -67,7 +67,7 @@ AWS launched its very first Amazon Elastic Compute Cloud (Amazon EC2) instance i
 2. On the Details tab, under Public IPv4 address, click the copy icon to copy the provided addredd.
 3. Go to the next step
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -80,7 +80,7 @@ AWS launched its very first Amazon Elastic Compute Cloud (Amazon EC2) instance i
 2. To solve this issue return to the previous browser (the Instances page in the Amazon EC2 console).
 3. Go to the next step
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -95,7 +95,7 @@ AWS launched its very first Amazon Elastic Compute Cloud (Amazon EC2) instance i
 
 Using Amazon Virtual Private Cloud (Amazon VCP), you can launch AWS resources into a virtual network closely resembles a traditional network that you'd operate in you own data center, with the benefits of using the scalable infrastructure of AWS.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -108,7 +108,7 @@ Using Amazon Virtual Private Cloud (Amazon VCP), you can launch AWS resources in
 
 A subnet is a range of IP addresses in your VPC. You can launch AWS resources into a specified subnet. Each subnet must reside entirely within one Availability Zone and cannot span zones.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -122,7 +122,7 @@ A subnet is a range of IP addresses in your VPC. You can launch AWS resources in
 
 A route table contains a set of rules, called routes, that are used to determine where network traffic from your subnet or gateway is directed. Use a public subnet for internet-connected resources and a private subnet for resources not connected to the Internet.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

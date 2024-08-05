@@ -216,7 +216,7 @@ EFS file systems require an inbound NFS rule. By selecting a security group as t
 
 After the Amazon EFS security group is created, you are prepared to create the file system.
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -230,7 +230,7 @@ After the Amazon EFS security group is created, you are prepared to create the f
 
 Amazon EFS is built to scale on demand, up to petabytes of storage capacity, without disrupting applications.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -243,7 +243,7 @@ Amazon EFS is built to scale on demand, up to petabytes of storage capacity, wit
 
 To create Amazon EFS resources, such as a file system and access points, a user must have AWS identity and Access Management (IAM) permissions for the corresponding API action and resource.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -258,7 +258,7 @@ To create Amazon EFS resources, such as a file system and access points, a user 
 
 You can choose to use Standard or One Zone storage classes in Amazon EFS. Standard stores data within and across multiple Availability Zones (AZs). One Zone stores data redundantly within a single AZ, at a lower price than Standard, for workloads that don't require multi-AZ resilience.
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

@@ -10,7 +10,7 @@ description: >-
 | ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | Conceitos Básicos de Segurança | Ajude a melhorar a segurança na bolsa de valores da cidade garantindo que os engenheiros de suporte possam executar somente ações autorizadas. |
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 <details>
 
@@ -86,7 +86,7 @@ Descreva o processo de criação e as diferenças entre usuários, funções e g
 
 You can use AWS Identity and Access Management (IAM) to manage secure acess to AWS services and resources. IAM is a feature of your AWS account, offered at no additional charge. You are charged only for the use of other AWS services by your users.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -100,7 +100,7 @@ You can use AWS Identity and Access Management (IAM) to manage secure acess to A
 
 A collection of users will often need a similar set of permissions. An IAM group can be used to define permissions for multiple users. When IAM users are added to a group, they inherit all the permissions attachd to the group.
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -114,7 +114,7 @@ A collection of users will often need a similar set of permissions. An IAM group
 
 A user group can contain many users, and a user can belong to multiple user groups. User groups can't be nested; they can contain only users, not other user groups. There is no default user group that automatically includes all users in the AWS account. If you want a user group like that, you must create it and assign each new user to it.
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -129,7 +129,7 @@ A user group can contain many users, and a user can belong to multiple user grou
 
 A policy is an object in AWS that, when associated with an identiy or resource, defines their permissions. AWS evaluates policies every time an IAM principal (user or role) makes a request.
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -143,7 +143,7 @@ A policy is an object in AWS that, when associated with an identiy or resource, 
 
 An IAM user is an entity that you create in AWS to represent the person or application that uses it to interact with AWS. A user in AWS consists of a name and credentials. An IAM user with administrator permissions is not the same thing as the AWS account root user.
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
