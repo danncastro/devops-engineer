@@ -34,7 +34,7 @@ O sistema de arquivos elástico:
 
 Nesta tarefa, você vai criar e configurar um Amazon EFS personalizado.
 
-<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 | Tarefas                       |
 | ----------------------------- |

@@ -4,7 +4,7 @@
 | ---------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Soluções de Computação | O servidor da escola que executa a solução de agendamento precisa de mais memória. Auxilie no dimensionamento vertical da instância do Amazon EC2. |
 
-<figure><img src="../../../.gitbook/assets/image (21) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (21) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <details>
 
@@ -44,7 +44,7 @@ Descreva famílias de instâncias e tipos de instâncias do Amazon EC2.&#x20;
 3. In the search results, under Services, click EC2.
 4. Go to next step
 
-<figure><img src="../../../.gitbook/assets/image (22) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (22) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -57,7 +57,7 @@ Descreva famílias de instâncias e tipos de instâncias do Amazon EC2.&#x20;
 
 Amazon Elastic Compute Cloud (Amazon EC2) instances provide virtual compute capacity in the cloud. With a choice of processor, storage, networking, operating system, and purchase model the service offers a broad and deep solution.
 
-<figure><img src="../../../.gitbook/assets/image (23) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (23) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -72,7 +72,7 @@ Amazon Elastic Compute Cloud (Amazon EC2) instances provide virtual compute capa
 
 Information about the instance (such as its public IP, private IP, and public DNS) is displyaed in the instance summary section by selecting the EC2 instance.
 
-<figure><img src="../../../.gitbook/assets/image (24) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (24) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -85,7 +85,7 @@ Information about the instance (such as its public IP, private IP, and public DN
 
 Amazon EC2 provides a wide selection of instance types that belong to instance families that are optimized to fit different use cases.
 
-<figure><img src="../../../.gitbook/assets/image (25) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (25) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -104,7 +104,7 @@ Amazon EC2 provides a wide selection of instance types that belong to instance f
 
 Each instance type includes one or more instance sizes, so you can scale your resources to the requirements of your target workload.
 
-<figure><img src="../../../.gitbook/assets/image (26) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (26) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -119,7 +119,7 @@ Each instance type includes one or more instance sizes, so you can scale your re
 
 Using the Amazon EC2 console, you can filter instance attributes such as instance types, instance family, and instance size. You can search using keyworkds, atribute names, or expressions.
 
-<figure><img src="../../../.gitbook/assets/image (27) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (27) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -136,7 +136,7 @@ Using the Amazon EC2 console, you can filter instance attributes such as instanc
 
 Instance metadata is data about your instance that you can use to configure or manage the running instance. Instance metadata is divided into categories; for exemple, host name, events, and securiy groups.
 
-<figure><img src="../../../.gitbook/assets/image (28) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (28) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -153,7 +153,7 @@ Instance metadata is data about your instance that you can use to configure or m
 
 When creeating a new insntace, you can enable the instance metadata service (IMDS) through the Advanced details sections. This way, you can display attibute details by using the instance's public IP.
 
-![](<../../../.gitbook/assets/image (29) (1) (1).png>)
+![](<../../../.gitbook/assets/image (29) (1) (1) (1).png>)
 
 ***
 
@@ -166,7 +166,7 @@ When creeating a new insntace, you can enable the instance metadata service (IMD
 
 You have the flexibility to connect to an EC2 instance by using Amazon EC2 Instance Connect, Session Manager (a capability of AWS Systems Manager), or an SSH client.
 
-<figure><img src="../../../.gitbook/assets/image (30) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (30) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -181,7 +181,7 @@ You have the flexibility to connect to an EC2 instance by using Amazon EC2 Insta
 
 EC2 Instance Connect provides an efficient and secure way to connect to your Linux instances. EC2 Instance Connect uses AWS Identity and Access Management (IAM) policies and principals to control SSH access to you instances, removing the need to share and manage SSH keys.
 
-<figure><img src="../../../.gitbook/assets/image (31) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (31) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -195,7 +195,7 @@ EC2 Instance Connect provides an efficient and secure way to connect to your Lin
 
 Using Session Manager, you can manage your EC2 instances through an interactive one-click, browser-based shell or through the AWS Command Line Interface (AWS CLI). After the session begins, you can run bash commands as you would through any other connection type.
 
-<figure><img src="../../../.gitbook/assets/image (32) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (32) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -209,7 +209,7 @@ Using Session Manager, you can manage your EC2 instances through an interactive 
 
 You can connect to your instance by using an SSH client on your local device through your instance key pair. Your device might have an SSH client by default or you might need to install an SSH client.
 
-<figure><img src="../../../.gitbook/assets/image (33) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (33) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -222,7 +222,7 @@ You can connect to your instance by using an SSH client on your local device thr
 
 Session Manager provides secure and auditable node management without the need to open inbound ports, maintain bastion hosts, or manage SSH keys. Session Manager also allows you to comply with corporate policies that require controlled access to managed nodes, strict security practicesm and fully auditable logs with node access details, while providing end users with simple onde-click cross-platform access to your managed nodes.
 
-<figure><img src="../../../.gitbook/assets/image (34) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (34) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -241,7 +241,7 @@ Session Manager provides secure and auditable node management without the need t
 
 After you are connected to the instance, you can control the instance by using AWS CLI command. The command prompt behaves as if you are connected locally.
 
-<figure><img src="../../../.gitbook/assets/image (35) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (35) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -254,7 +254,7 @@ After you are connected to the instance, you can control the instance by using A
 2. Close the terminal tab to return to the instances page in the Amazon EC2 console.
 3. Go to the next step.
 
-<figure><img src="../../../.gitbook/assets/image (36) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (36) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -269,7 +269,7 @@ After you are connected to the instance, you can control the instance by using A
 
 You can use the Actions dropdown menu to control the instance state and modify instance attributes.
 
-<figure><img src="../../../.gitbook/assets/image (37) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (37) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -283,7 +283,7 @@ You can use the Actions dropdown menu to control the instance state and modify i
 
 You can also use instance metadata to access user data that you specified when launching your instance.
 
-<figure><img src="../../../.gitbook/assets/image (38) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (38) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -298,7 +298,7 @@ You can also use instance metadata to access user data that you specified when l
 
 Using the instance state dropdown menu, you can place an instance into different states of activity. You can start and stop an instance if it has an Amazon Elastic Block Store (Amazon EBS) volume as its root device.
 
-<figure><img src="../../../.gitbook/assets/image (39) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (39) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -311,7 +311,7 @@ Using the instance state dropdown menu, you can place an instance into different
 
 Afteran instance stops, CPU usage and data transfer charges cease, but storage charges for any attached Amazon EBS volumes continue.
 
-<figure><img src="../../../.gitbook/assets/image (40) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (40) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

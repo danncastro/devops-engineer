@@ -221,7 +221,7 @@ You can use launch templates to store launch parameters so that you do not have 
 
 You can create up to 5,000 launch templates per Region and 10,000 version per launch template.
 
-<figure><img src="../../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (27) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -233,7 +233,7 @@ You can create up to 5,000 launch templates per Region and 10,000 version per la
 4. For Amazon Machine Image (AMI), on the dropdown menu, choose GameServer.
 5. Go to the next step.
 
-<figure><img src="../../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (28) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -248,7 +248,7 @@ You can create up to 5,000 launch templates per Region and 10,000 version per la
 
 For each launch template, you can create one or more numbered launch template versions. The first version specifies the instance type, AMI ID, subnet, and key pair to use to launch the instance.
 
-<figure><img src="../../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (29) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -265,7 +265,7 @@ For each launch template, you can create one or more numbered launch template ve
 
 For the private key file format, if you plan to access your EC2 instance through Windows or the Putty program, you will choose the .ppk file format. If you use a unix-based (Linux, MacOS) shell with OpenSSH. You will choose the .pem file format.
 
-<figure><img src="../../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (30) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -276,7 +276,7 @@ For the private key file format, if you plan to access your EC2 instance through
 3. For Security groups, choose WebServerSecurityGroup.
 4. Go to the next step.
 
-<figure><img src="../../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (31) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -291,7 +291,7 @@ For the private key file format, if you plan to access your EC2 instance through
 
 For resource tags, specify tags by providing key and value combinations. You can tag the instance, the volumes, Sport Instance requests, or all three. For network interfaces, you can specify ip to two network interfaces for the instance.
 
-<figure><img src="../../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (32) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -305,7 +305,7 @@ For resource tags, specify tags by providing key and value combinations. You can
 
 This launch template can be used to configure the auto scaling and healing properties of your system. When a server goes down, this information is used to create a new instance.
 
-<figure><img src="../../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (33) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -319,7 +319,7 @@ This launch template can be used to configure the auto scaling and healing prope
 
 Using AWS Auto Scaling, you can build scaling plans that automate how groups of different resources respond to changes in demand. You can optimize for balance between availability and costs. AWS Auto Scaling automatically creates all of the scaling policies, and it sets targets for you based on your preference.
 
-<figure><img src="../../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (34) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -333,7 +333,7 @@ Using AWS Auto Scaling, you can build scaling plans that automate how groups of 
 
 Note the properties that were proviously specified in the launch template default for the Auto Scaling group. Information, such as instance type, has already been selected for you.
 
-<figure><img src="../../../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (35) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -347,7 +347,7 @@ Note the properties that were proviously specified in the launch template defaul
 
 If you host an application on multiple EC2 instances, you can launch instances across multiple instance types and purchase options (Sport and On-Demand Instances) by choosing Combine purchase options and instance types. This is an advanced feature in which your team can optimize costs using different deployment strategies.
 
-<figure><img src="../../../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (36) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -357,7 +357,7 @@ If you host an application on multiple EC2 instances, you can launch instances a
 2. For Availability Zones and subnets, choose both subnet names that contain game-server-netSubnet.
 3. Go to the next step.
 
-<figure><img src="../../../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (37) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -367,7 +367,7 @@ If you host an application on multiple EC2 instances, you can launch instances a
 2. Click Next.
 3. Go to the next step.
 
-<figure><img src="../../../.gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (38) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -387,7 +387,7 @@ Amazon EC2 Auto Scaling can determine the health status of an instance by using 
 * Status checks provided by Amazon EC2 to identify hardware and software issues that might impair an instance
 * Health checks provided by a load balancer, which can include custom health checks
 
-<figure><img src="../../../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (39) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -397,7 +397,7 @@ Amazon EC2 Auto Scaling can determine the health status of an instance by using 
 2. Click Next.
 3. Go to the next step.
 
-<figure><img src="../../../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (40) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

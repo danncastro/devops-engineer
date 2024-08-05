@@ -32,7 +32,7 @@ Um banco de dados relacional organiza dados em tabelas, onde cada tabela é comp
 
 Na tabela de livros, cada linha pode conter o ISBN, título, autor e formato do livro, cada um em sua própria coluna. A tabela de livros compartilha um atributo com as outras tabelas, como o autor, criando um relacionamento entre elas.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### <mark style="color:blue;">**Esquema Lógico**</mark>
 

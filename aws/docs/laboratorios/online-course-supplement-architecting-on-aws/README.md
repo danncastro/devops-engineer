@@ -38,7 +38,7 @@ Você precisa criar uma arquitetura para dar suporte a este aplicativo. Sua solu
 
 ### <mark style="color:red;">**Diagrama da arquitetura**</mark>
 
-<figure><img src="../../.gitbook/assets/image (29) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (29) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% tabs %}
 {% tab title="1 - Amazon VPC" %}
@@ -80,6 +80,6 @@ O Amazon EFS oferece armazenamento de arquivos para suas instâncias do Amazon E
 
 ### <mark style="color:red;">**Tarefas do laboratório**</mark>
 
-<figure><img src="../../.gitbook/assets/image (30) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (30) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***

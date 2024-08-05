@@ -617,3 +617,134 @@
 >
 > A **Maximum memory usage** (uso máximo de memória) não é uma métrica disponível diretamente para políticas de escalonamento no Auto Scaling do EC2, pois o Amazon EC2 Auto Scaling não fornece métricas de uso de memória nativamente. Para monitorar o uso de memória, você precisaria usar uma solução personalizada, como a coleta de métricas de memória com o CloudWatch Agent e a configuração de alarmes com base nessas métricas.
 
+62. Which statement regarding auto scaling and load balancing is true?
+
+* [ ] An Auto Scaling group can use only are Availability Zone at a time
+* [ ] Auto Scaling groups must be used independently of load balancer.
+* [x] A load balancer will route traffic to all targets, no matter which Availability Zone the targets are in
+* [ ] Load balancers must use the same security group as the instances behind it.
+
+> **Um Auto Scaling group pode usar várias Zonas de Disponibilidade ao mesmo tempo** para melhorar a disponibilidade e a resiliência. A escolha de uma única Zona de Disponibilidade não é uma limitação para o Auto Scaling group.
+>
+> **Auto Scaling groups não precisam ser usados independentemente de um balanceador de carga.** Normalmente, um balanceador de carga é usado em conjunto com um Auto Scaling group para distribuir o tráfego de entrada entre as instâncias em execução e garantir alta disponibilidade.
+>
+> **Os balanceadores de carga não precisam usar o mesmo grupo de segurança que as instâncias que estão por trás deles.** No entanto, é importante que as regras de segurança estejam configuradas corretamente para permitir que o tráfego passe entre o balanceador de carga e as instâncias.
+
+63. &#x20;A user causes a Auto Scaling group to drop below the defined minimum by manually terminating an instance. What is the outcome?
+
+* [ ] Nothing.
+* [ ] The entire Auto Scaling group is shut down
+* [ ] A new minimum number is set.
+* [x] A new instance is launched to meet the minimum requirement.
+
+> Quando um usuário termina manualmente uma instância em um Auto Scaling group e isso faz com que o número de instâncias caia abaixo do número mínimo definido, o Auto Scaling group detecta que a quantidade de instâncias está abaixo do mínimo e automaticamente lança uma nova instância para atender ao limite mínimo configurado. O Auto Scaling está projetado para garantir que o número de instâncias esteja sempre dentro dos limites configurados (mínimo e máximo).
+
+64. &#x20;When a load balancer detects an unhealthy target, it stops routing traffic to that target even when the target becomes healthy again.
+
+* [ ] True
+* [x] False
+
+> Quando um balanceador de carga detecta um alvo (target) como não saudável, ele para de direcionar o tráfego para esse alvo. No entanto, se o alvo se tornar saudável novamente, o balanceador de carga começará a rotear tráfego para ele novamente, conforme a configuração de verificação de integridade (health checks). O balanceador de carga monitora continuamente o estado dos alvos e recomeça a distribuição de tráfego para alvos que recuperaram a saúde.
+
+65. What do Application Load Balancers use to verify that traffic should be sent to a target?
+
+* [ ] Security group
+* [x] Health check
+* [ ] Scaling policy
+* [ ] Subnet
+
+> Os Application Load Balancers (ALBs) usam verificações de integridade (health checks) para determinar se o tráfego deve ser direcionado para um alvo específico. As verificações de integridade são realizadas periodicamente para garantir que os alvos estejam funcionando corretamente e possam lidar com o tráfego. Se um alvo não passar nas verificações de integridade, o balanceador de carga para de enviar tráfego para ele até que ele se recupere e passe novamente nas verificações.
+
+66. &#x20;Which targets for an Application Load Balancer are valid? (Select THREE)
+
+* [x] Instance
+* [x] Lambda function
+* [ ] Database
+* [x] IP address
+
+> **Instance**: Você pode registrar instâncias EC2 como alvos para um ALB.
+>
+> **Lambda function**: O ALB pode invocar funções Lambda diretamente como alvos, permitindo que você utilize funções Lambda para processar solicitações.
+>
+> **IP address**: O ALB pode direcionar o tráfego para endereços IP específicos, o que é útil para direcionar o tráfego para recursos fora da AWS ou para instâncias em uma VPC privada.
+>
+>
+>
+> **Database** não é um alvo válido para um ALB. O ALB é projetado para distribuir tráfego para aplicações e serviços, mas não para bancos de dados diretamente.
+
+67. Which statements about the root user in an AWS account are true? (Select THREE)
+
+* [x] The root user should not be used for everyday tasks.
+* [x] The root user should be used to create an IAM admin account
+* [ ] The root user has no permissions by default
+* [x] The root user has all permissions by default.
+
+> **O usuário root não deve ser usado para tarefas diárias.**: Por motivos de segurança, é recomendável que o usuário root seja usado apenas para tarefas administrativas essenciais e não para atividades do dia a dia. Para operações diárias, você deve criar e usar contas IAM com permissões específicas e mínimas necessárias.
+>
+> **O usuário root deve ser usado para criar uma conta IAM admin.**: Para configurar a conta inicial de administração e definir permissões detalhadas, o usuário root deve ser usado. Após isso, você pode criar usuários IAM com permissões administrativas que podem ser usadas para gerenciar a conta AWS.
+>
+> **O usuário root tem todas as permissões por padrão.**: O usuário root é o único usuário com acesso total a todos os recursos e operações na conta AWS. Ele não está limitado por permissões específicas como os usuários IAM.
+>
+>
+>
+> **O usuário root não tem permissões por padrão** é incorreta porque o usuário root tem todas as permissões por padrão e não precisa de permissões adicionais para acessar qualquer recurso na conta AWS.
+
+68. The Principal element is used in a resource-bases JSON policy to specify the principal that is allowed or denied access to a resource. What is an example of a principal that can be specifed? (Select THREE)
+
+* [x] IAM user
+* [x] IAM role
+* [ ] S3 Bucket
+* [x] AWS Services
+
+> **IAM user**: Um usuário IAM pode ser especificado como um principal em uma política baseada em recursos. Isso permite que você defina permissões específicas para um usuário em relação a um recurso.
+>
+> **IAM role**: Um papel IAM também pode ser especificado como um principal. Isso é útil quando você deseja permitir que um papel assuma um recurso específico ou tenha acesso a um recurso.
+>
+> **AWS Services**: Serviços da AWS podem ser especificados como principais em políticas baseadas em recursos. Por exemplo, você pode permitir que um serviço como o Amazon EC2 acesse um recurso do Amazon S3.
+>
+>
+>
+> **S3 Bucket** não é um exemplo de principal, pois um bucket S3 é um recurso, não um principal que pode ser especificado em uma política. Em uma política baseada em recursos, você define quais principais têm acesso a um recurso específico, mas o bucket em si não é considerado um principal.
+
+69. Which statements best describe the shared responsibility model for AWS security? (Select TWO)
+
+* [x] AWS is responsible for the security of the underlying cloud infrastructure
+* [ ] AWS is responsible for securing workloads that customers deploy on AWS
+* [ ] Customers are responsible for the security of the underlying cloud infrastructure.
+* [x] Customers are responsible for securing workloads that they deploy on AWS
+
+> **AWS é responsável pela segurança da infraestrutura subjacente da nuvem**: A AWS gerencia a segurança da infraestrutura que suporta seus serviços de nuvem, incluindo hardware, software, redes e instalações físicas.
+>
+> **Os clientes são responsáveis por garantir a segurança das cargas de trabalho que eles implantam na AWS**: Os clientes devem gerenciar e proteger suas próprias aplicações, dados e configurações nos serviços da AWS. Isso inclui a configuração de segurança, o gerenciamento de identidades e permissões, e a proteção de dados.
+>
+>
+>
+> **AWS é responsável por garantir a segurança das cargas de trabalho que os clientes implantam na AWS** não está correta porque a segurança das cargas de trabalho é uma responsabilidade do cliente.
+>
+> **Os clientes são responsáveis pela segurança da infraestrutura subjacente da nuvem** também está incorreto porque a responsabilidade pela segurança da infraestrutura subjacente é da AWS, não dos clientes.
+
+70. AWS identity and Access Management (IAM) users can belong to multiple groups, but IAM user groups cannot be nested.
+
+* [x] True
+* [ ] False
+
+> Os usuários do AWS Identity and Access Management (IAM) podem pertencer a vários grupos, mas os grupos IAM não podem ser aninhados. Isso significa que você não pode criar um grupo de IAM e adicionar outro grupo como membro desse grupo. Cada grupo é independente e pode conter apenas usuários do IAM, sem suporte para hierarquia ou aninhamento de grupos.
+
+71. Which option designates the API calls to allow or deny in an IAM policy?
+
+* [ ] Principal
+* [ ] Effect
+* [ ] Resource
+* [x] Action
+
+> **Action**: Este elemento em uma política IAM especifica quais ações são permitidas ou negadas. As ações podem ser operações específicas em um serviço AWS, como `s3:GetObject` para permitir que um usuário leia objetos de um bucket S3 ou `ec2:StartInstances` para permitir que um usuário inicie instâncias EC2.
+>
+>
+>
+> **Principal**: Define quem está autorizado ou negado, como um usuário, grupo, papel ou serviço.
+>
+> **Effect**: Especifica se a política permite (`Allow`) ou nega (`Deny`) o acesso às ações definidas.
+>
+> **Resource**: Define quais recursos a política se aplica, como buckets S3, instâncias EC2 ou tabelas DynamoDB.
+
+72.

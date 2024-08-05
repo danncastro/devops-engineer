@@ -10,7 +10,7 @@ description: >-
 | ---------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
 | Noções básicas sobre computação em nuvem | O portal da cidade precisa migrar a página de previsão do tamanho das ondas da praia para a AWS para melhorar a confiabilidade. |
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <details>
 

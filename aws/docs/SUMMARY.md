@@ -69,6 +69,6 @@
     * [File Systems in the Cloud](laboratorios/cloud-quest/cloud-practitioner/file-systems-in-the-cloud.md)
     * [Auto-Healing and Scaling Applications](laboratorios/cloud-quest/cloud-practitioner/auto-healing-and-scaling-applications.md)
     * [Highly Available Web Applications](laboratorios/cloud-quest/cloud-practitioner/highly-available-web-applications.md)
-    * [Page](laboratorios/cloud-quest/cloud-practitioner/page.md)
-    * [Page 1](laboratorios/cloud-quest/cloud-practitioner/page-1.md)
+    * [Core Security Concepts](laboratorios/cloud-quest/cloud-practitioner/core-security-concepts.md)
+    * [Cloud Economics](laboratorios/cloud-quest/cloud-practitioner/cloud-economics.md)
     * [Questions](laboratorios/cloud-quest/cloud-practitioner/questions.md)

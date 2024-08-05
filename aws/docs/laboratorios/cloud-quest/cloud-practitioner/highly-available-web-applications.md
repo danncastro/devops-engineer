@@ -366,7 +366,7 @@ The security groups that you associate with your load balancer determine your ru
 1. For Security groups, click the X icon to deselect the TravelAgencyWebServer security group.
 2. Go to the next step.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -376,7 +376,7 @@ The security groups that you associate with your load balancer determine your ru
 2. Click Save changes.
 3. Go to the next step.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -390,7 +390,7 @@ The security groups that you associate with your load balancer determine your ru
 
 To test access to your application through the load balancer, you can copy the DNS name into a browser tab (or window).
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -408,7 +408,7 @@ To test access to your application through the load balancer, you can copy the D
 
 Use the DNS name to get quick feedback and view your application. If you don't see your application, be sure to check the rules in the security group that you associated with the load balancer.
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -428,7 +428,7 @@ and press Enter.
 
 The default load balancer health check validates only the root path of an HTTP server. Applications generally will implement a much more robust application health check to validate server configuration and external access. You can manually verify that health checks are active on your load balancer.
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -444,7 +444,7 @@ The default load balancer health check validates only the root path of an HTTP s
 
 You can modify load balancer health check settings to match your performance requirements.
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -458,7 +458,7 @@ You can modify load balancer health check settings to match your performance req
 
 After your target is registered, it must pass one health check to be considered healthy. After each health check is completed, the load balancer node closes the connection that was established for the health check.
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -474,7 +474,7 @@ After your target is registered, it must pass one health check to be considered 
 
 The default settings allow 150 seconds to pass (30 second intervals \* 5 unhealthy checks) before marking an instance unhealthy. The new values will cause unhealthy instances to be marked unhealthy after 10 seconds (2 failed checks, 5 seconds apart).
 
-<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -493,7 +493,7 @@ The default settings allow 150 seconds to pass (30 second intervals \* 5 unhealt
 
 After you have created an internet-facing load balancer, you can now run your applications in a private subnet. You can add or remove subnets associated with the Auto Scaling group.
 
-<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -511,7 +511,7 @@ After you have created an internet-facing load balancer, you can now run your ap
 
 If you add or remove a subnet, you are defining where the Auto Scaling group resources can reside.
 
-<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -530,7 +530,7 @@ If you add or remove a subnet, you are defining where the Auto Scaling group res
 
 Changing the subnet will not automatically cause instances to rebuild in the Auto Scaling group. Terminating the instance reduces the number of instances below the minimum for the Auto Scaling group and invokes a new instance launch in the private subnet.
 
-<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -550,7 +550,7 @@ Changing the subnet will not automatically cause instances to rebuild in the Aut
 
 If you terminate an instance within an Auto Scaling group, which results in lowering the number of running instances below the Auto Scaling minimum requirement, a new instance is alunched automatically.
 
-<figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -569,7 +569,7 @@ If you terminate an instance within an Auto Scaling group, which results in lowe
 
 You can review Auto Scaling group operations, in Activity history.
 
-<figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -583,7 +583,7 @@ You can review Auto Scaling group operations, in Activity history.
 
 Each item in Activity history list an Auto Scaling action and the cause of the action.
 
-<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -600,7 +600,7 @@ Each item in Activity history list an Auto Scaling action and the cause of the a
 
 Be sure to get verification, by the load balancer, that your new instances are running and considered healthy
 
-<figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -618,7 +618,7 @@ Be sure to get verification, by the load balancer, that your new instances are r
 
 To take advantage of the safety and reliability of geographic redundancy, span your Auto Scaling group across multiple Availability Zones within a Region. Attach a load balancer to distribute incoming traffic across those Availability Zones.
 
-<figure><img src="../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -635,7 +635,7 @@ To take advantage of the safety and reliability of geographic redundancy, span y
 
 When one Availability Zone becomes unhealthy or unavailable, Amazon EC2 Auto Scaling launches a new instance in an unaffected Availability Zone. Auto Scaling attepmpts to launch new instances in the Availability Zone with the fewest instances.
 
-<figure><img src="../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -653,7 +653,7 @@ When one Availability Zone becomes unhealthy or unavailable, Amazon EC2 Auto Sca
 
 The desired capacity is the initial capacity of the Auto Scaling group after this operation completes, and it's the capacity that the Auto Scaling group attempts to maintain. Desired capacity is what auto scaling changes based on instance performance or other alarm-based actions the you configure.
 
-<figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -670,7 +670,7 @@ The desired capacity is the initial capacity of the Auto Scaling group after thi
 
 By changing desired capacity manually, you can test your Auto Scaling group behavior. Increasing the desired capacity, while not exceeding the maximum capacity, will launch new instances to meet the desired capacity value.
 
-<figure><img src="../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -689,7 +689,7 @@ By changing desired capacity manually, you can test your Auto Scaling group beha
 
 You can review Activity history to verify your expected results.
 
-<figure><img src="../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -703,7 +703,7 @@ You can review Activity history to verify your expected results.
 
 The load balancer can use connection draining to complete in-flight requests made to instances that are deregistering, or unhealthy, before stopping traffic flow from the load balancer.
 
-<figure><img src="../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -719,7 +719,7 @@ The load balancer can use connection draining to complete in-flight requests mad
 
 When auto scaling launches a new instance, you can verify the subnet ID to ensure that your instance was deployed to the correct subnet.
 
-<figure><img src="../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -737,7 +737,7 @@ When auto scaling launches a new instance, you can verify the subnet ID to ensur
 
 After an instance has been deployed to a new subnet, you can check the health of the new instance.
 
-<figure><img src="../../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -745,12 +745,12 @@ After an instance has been deployed to a new subnet, you can check the health of
 
 * [x] Configure an Auto Scaling group to include a new EC2 instance in a third Availability Zone.
 
-<figure><img src="../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (23) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (24) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (25) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (26) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
