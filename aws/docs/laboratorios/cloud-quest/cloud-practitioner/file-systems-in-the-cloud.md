@@ -203,7 +203,7 @@ EFS file systems require an inbound NFS rule. By selecting a security group as t
 2. Click Create security group.
 3. Go to the next step.
 
-<figure><img src="../../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -584,7 +584,7 @@ In most cases, you will assign the same security group to each mount target.
 
 Each mount target installs an elastic network interface (ENI) into the chosen subnet. An ENI is a logical networking component in a VPC that represents a virtual network card. The ENI automatically receives an IP address from the VPC.
 
-<figure><img src="../../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (28) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -598,7 +598,7 @@ Each mount target installs an elastic network interface (ENI) into the chosen su
 
 After creating an additional mount target, you can mount the file system on instances in the specified subnet.
 
-<figure><img src="../../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (29) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -607,7 +607,7 @@ After creating an additional mount target, you can mount the file system on inst
 1. In the left navigation pane, click Instances.
 2. Go to the next step.
 
-<figure><img src="../../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (30) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -617,7 +617,7 @@ After creating an additional mount target, you can mount the file system on inst
 2. Click Connect.
 3. Go to the next step.
 
-<figure><img src="../../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (31) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -627,7 +627,7 @@ After creating an additional mount target, you can mount the file system on inst
 2. Click Connect.
 3. Go to the next step.
 
-<figure><img src="../../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (32) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -637,7 +637,7 @@ After creating an additional mount target, you can mount the file system on inst
 2. In the terminal, run: sudo yum install -y amazon-efs-utils
 3. Go to the next step.
 
-<figure><img src="../../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (33) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -672,7 +672,7 @@ After creating an additional mount target, you can mount the file system on inst
 
 You can use Amazon EC2 user data to bootstrap files systems to new instances when they launch.
 
-<figure><img src="../../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (34) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -681,8 +681,8 @@ You can use Amazon EC2 user data to bootstrap files systems to new instances whe
 * [x] Mount an Amazon EFS endpoint to a third EC2 instance.
 * [x] Test that the files are accessible from the EC2 instance.
 
-<figure><img src="../../../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (35) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (38) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***

@@ -93,7 +93,7 @@ Utilizar a hibernação elimina a necessidade de criar scripts manuais para salv
 
 Uma das maneiras de reduzir custos com o Amazon EC2 é escolher a opção de definição de preço certa para a forma como suas aplicações são executadas. A AWS oferece três principais opções de compra para instâncias do EC2: instâncias sob demanda, reservadas e spot.
 
-<figure><img src="../../.gitbook/assets/image (45) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (45) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

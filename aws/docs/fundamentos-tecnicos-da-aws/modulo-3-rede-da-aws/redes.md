@@ -67,7 +67,7 @@ Ela começa com um endereço IP inicial, seguido por uma barra (**"/")** e um n�
 
 Aqui está como funciona:
 
-<figure><img src="../../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (46) (1).png" alt=""><figcaption></figcaption></figure>
 
 * `192.168.1.0/24`
 * Os primeiros 24 bits são fixos: `192.168.1.`

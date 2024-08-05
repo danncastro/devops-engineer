@@ -4,7 +4,7 @@
 | -------------------------------------- | --------------------------------------------------------------------------------------------- |
 | Aplicações Web de Alta Disponibilidade | Ajude a agência de viagens a criar uma arquitetura de aplicativo web de alta disponibilidade. |
 
-<figure><img src="../../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
 
 <details>
 
@@ -363,109 +363,297 @@ The security groups that you associate with your load balancer determine your ru
 
 ### <mark style="color:purple;">Step 22</mark>
 
-#### <mark style="color:blue;">Concept</mark>
+1. For Security groups, click the X icon to deselect the TravelAgencyWebServer security group.
+2. Go to the next step.
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### <mark style="color:purple;">Step 23</mark>
 
-#### <mark style="color:blue;">Concept</mark>
+1. Choose TravelAgencyLoadBalancer.
+2. Click Save changes.
+3. Go to the next step.
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### <mark style="color:purple;">Step 24</mark>
 
+1. In the success alert, review the message.
+2. For the Application Load Balancer, under DNS name, click the copy icon to copy the provided name.
+3. Go to the next step.
+
 #### <mark style="color:blue;">Concept</mark>
+
+To test access to your application through the load balancer, you can copy the DNS name into a browser tab (or window).
+
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### <mark style="color:purple;">Step 25</mark>
 
+1. In a new browser tab (or window) address bar, paste the DNS name that you just copied, and then add http:// to the beginning and press Enter.
+
+* The website is hosted only with HTTP.
+* The final address should look similar to what is displayed in the screenshot example.
+* Congratulations! You have moved the travel agency website behind an Application Load Balancer.
+
+2. Go to the next step.
+
 #### <mark style="color:blue;">Concept</mark>
+
+Use the DNS name to get quick feedback and view your application. If you don't see your application, be sure to check the rules in the security group that you associated with the load balancer.
+
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### <mark style="color:purple;">Step 26</mark>
 
+1. In the same browser tab, at the end of the address that you just edited, type: /health
+
+and press Enter.
+
+2. Review the short message that loads, stating that the instance is healthy.
+
+* Keep this browser tab open for additional health checks later.
+
+3. Go to the next step.
+
 #### <mark style="color:blue;">Concept</mark>
+
+The default load balancer health check validates only the root path of an HTTP server. Applications generally will implement a much more robust application health check to validate server configuration and external access. You can manually verify that health checks are active on your load balancer.
+
+<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### <mark style="color:purple;">Step 27</mark>
 
+1. In the previous browser tab, in the left navigation pane, click Target Groups.
+2. In the Target groups section, choose the check box to select TravelAgencyWebServers-1.
+3. Click the Health checks tab.
+4. In the Health check settings section, click Edit.
+5. Go to the next step.
+
 #### <mark style="color:blue;">Concept</mark>
+
+You can modify load balancer health check settings to match your performance requirements.
+
+<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### <mark style="color:purple;">Step 28</mark>
 
+1. For Health check path, type: /health
+2. Click to expand Advanced health check settings.
+3. Go to the next step.
+
 #### <mark style="color:blue;">Concept</mark>
+
+After your target is registered, it must pass one health check to be considered healthy. After each health check is completed, the load balancer node closes the connection that was established for the health check.
+
+<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### <mark style="color:purple;">Step 29</mark>
 
+1. For Unhealthy threshold, type: 2
+2. For Timeout, type: 2
+3. For Interval, type: 5
+4. Click Save changes.
+5. Go to the next step.
+
 #### <mark style="color:blue;">Concept</mark>
+
+The default settings allow 150 seconds to pass (30 second intervals \* 5 unhealthy checks) before marking an instance unhealthy. The new values will cause unhealthy instances to be marked unhealthy after 10 seconds (2 failed checks, 5 seconds apart).
+
+<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### <mark style="color:purple;">Step 30</mark>
 
+1. In the left navigation pane, click Auto Scaling Groups.
+2. In the Auto Scaling groups section, choose the check box to select TravelAgencyWebServers.
+
+* The bottom window might be empty if the check box is already chosen. If so, to refresh the page so that the bottom window appears, clear the check box to deselect it, and then choose the check box again.
+
+3. Scroll down to Network.
+4. Click Edit.
+5. Go to the next step.
+
 #### <mark style="color:blue;">Concept</mark>
+
+After you have created an internet-facing load balancer, you can now run your applications in a private subnet. You can add or remove subnets associated with the Auto Scaling group.
+
+<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### <mark style="color:purple;">Step 31</mark>
 
+1. For Subnets, choose the lab/TravelAgencyVpc/PrivateSubnet1 subnet.
+
+* This should be the only subnet selected.
+
+2. For any other subnet that might be selected, click to deselect it.
+3. Click Update.
+4. Go to the next step.
+
 #### <mark style="color:blue;">Concept</mark>
+
+If you add or remove a subnet, you are defining where the Auto Scaling group resources can reside.
+
+<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### <mark style="color:purple;">Step 32</mark>
 
+1. In the left navigation pane, click Instances.
+2. In the Instances section, choose the check box to select lab/TravelAgencyWebServers.
+3. Click the Networking tab.
+4. Under Subnet ID, review to see that the old instance is in the subnet, lab/TravelAgencyVpc/PublicSubnet1.
+5. At the top of the page, click Instance state to expand the dropdown menu.
+6. Choose Terminate instance.
+7. In the pop-up box (not shown), click Terminate.
+8. Go to the next step.
+
 #### <mark style="color:blue;">Concept</mark>
+
+Changing the subnet will not automatically cause instances to rebuild in the Auto Scaling group. Terminating the instance reduces the number of instances below the minimum for the Auto Scaling group and invokes a new instance launch in the private subnet.
+
+<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### <mark style="color:purple;">Step 33</mark>
 
+1. After a few minutes, in the Instances section, click the refresh icon.
+
+* The Instances list should show that a new instance was created.
+
+2. Choose the check box to select the new instance.
+3. Click the Networking tab.
+4. Under Subnet ID, review to see that the new instance is in the subnet, lab/TravelAgencyVpc/PrivateSubnet1.
+5. Under Instance ID, review the new instance's unique ID.
+6. Go to the next step.
+
 #### <mark style="color:blue;">Concept</mark>
+
+If you terminate an instance within an Auto Scaling group, which results in lowering the number of running instances below the Auto Scaling minimum requirement, a new instance is alunched automatically.
+
+<figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### <mark style="color:purple;">Step 34</mark>
 
+1. In the left navigation pane, click Auto Scaling Groups.
+2. In the Auto Scaling groups section, choose the check box to select TravelAgencyWebServers.
+
+* The bottom window might be empty if the check box is already chosen. If so, to refresh the page so that the bottom window appears, clear the check box to deselect it, and then choose the check box again.
+
+3. Click on the Activity tab.
+4. Scroll down to Activity history.
+5. Go to the next step.
+
 #### <mark style="color:blue;">Concept</mark>
+
+You can review Auto Scaling group operations, in Activity history.
+
+<figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### <mark style="color:purple;">Step 35</mark>
 
+1. In the Activity history section, review to see that the old instance was terminated.
+2. Review to see that the Auto Scaling group responded by creating a new instance.
+3. Go to the next step.
+
 #### <mark style="color:blue;">Concept</mark>
+
+Each item in Activity history list an Auto Scaling action and the cause of the action.
+
+<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### <mark style="color:purple;">Step 36</mark>
 
+1. In the other browser tab, to refresh the health check page, click the refresh icon.
+2. Review the message.
+
+* In the message, Instance i-XXXXXX is healthy, the Instance ID value should be the value of the new instance.
+
+3. Go to the next step.
+
 #### <mark style="color:blue;">Concept</mark>
+
+Be sure to get verification, by the load balancer, that your new instances are running and considered healthy
+
+<figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### <mark style="color:purple;">Step 37</mark>
 
+1. In the previous browser tab, in the left navigation pane, click Auto Scaling Groups.
+2. In the Auto Scaling groups section, choose the check box to select TravelAgencyWebServers.
+
+* The bottom window might be empty if the check box is already chosen. If so, to refresh the page so that the bottom window appears, clear the check box to deselect it, and then choose the check box again.
+
+3. In the Network section, click Edit.
+4. Go to the next step.
+
 #### <mark style="color:blue;">Concept</mark>
+
+To take advantage of the safety and reliability of geographic redundancy, span your Auto Scaling group across multiple Availability Zones within a Region. Attach a load balancer to distribute incoming traffic across those Availability Zones.
+
+<figure><img src="../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### <mark style="color:purple;">Step 38</mark>
 
+1. For Subnets, choose the subnet, lab/TravelAgencyVpc/PrivateSubnet2.
+
+* Both lab/TravelAgencyVpc/PrivateSubnet1 and lab/TravelAgencyVpc/PrivateSubnet2 should now be selected.
+
+2. Click Update.
+3. Go to the next step.
+
 #### <mark style="color:blue;">Concept</mark>
+
+When one Availability Zone becomes unhealthy or unavailable, Amazon EC2 Auto Scaling launches a new instance in an unaffected Availability Zone. Auto Scaling attepmpts to launch new instances in the Availability Zone with the fewest instances.
+
+<figure><img src="../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### <mark style="color:purple;">Step 39</mark>
 
+1. In the left navigation pane, click Auto Scaling Groups.
+2. In the Auto Scaling groups section, choose the check box to select TravelAgencyWebServers.
+
+* The bottom window might be empty if the check box is already chosen. If so, to refresh the page so that the bottom window appears, clear the check box to deselect it, and then choose the check box again.
+
+3. On the Details tab, click Edit.
+4. Go to the next step.
+
 #### <mark style="color:blue;">Concept</mark>
+
+The desired capacity is the initial capacity of the Auto Scaling group after this operation completes, and it's the capacity that the Auto Scaling group attempts to maintain. Desired capacity is what auto scaling changes based on instance performance or other alarm-based actions the you configure.
+
+<figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -473,42 +661,96 @@ The security groups that you associate with your load balancer determine your ru
 
 ### <mark style="color:purple;">Step 40</mark>
 
+1. In the pop-up box, for Desired capacity, type: 2
+2. For Max desired capacity, type: 2
+3. Click Update.
+4. Go to the next step.
+
 #### <mark style="color:blue;">Concept</mark>
+
+By changing desired capacity manually, you can test your Auto Scaling group behavior. Increasing the desired capacity, while not exceeding the maximum capacity, will launch new instances to meet the desired capacity value.
+
+<figure><img src="../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### <mark style="color:purple;">Step 41</mark>
 
+1. In the left navigation pane, click Auto Scaling Groups.
+2. In the Auto Scaling groups section, choose the check box to select TravelAgencyWebServers.
+
+* The bottom window might be empty if the check box is already chosen. If so, to refresh the page so that the bottom window appears, clear the check box to deselect it, and then choose the check box again.
+
+3. Click the Activity tab.
+4. Scroll down to Activity history.
+5. Go to the next step.
+
 #### <mark style="color:blue;">Concept</mark>
+
+You can review Activity history to verify your expected results.
+
+<figure><img src="../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### <mark style="color:purple;">Step 42</mark>
 
+1. In the Activity history section, review to see that a new instance is launching.
+2. Under Description, review the new instance ID.
+3. Go to the next step.
+
 #### <mark style="color:blue;">Concept</mark>
+
+The load balancer can use connection draining to complete in-flight requests made to instances that are deregistering, or unhealthy, before stopping traffic flow from the load balancer.
+
+<figure><img src="../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### <mark style="color:purple;">Step 43</mark>
 
+1. In the left navigation pane, click Instances.
+2. In the Instances section, choose the check box to select the instance that corresponds with the new instance ID that you reviewed in the previous step.
+3. Click the Networking tab.
+4. Under Subnet ID, review to see that the new instance is in the subnet, lab/TravelAgencyVpc/PrivateSubnet2.
+5. Go to the next step.
+
 #### <mark style="color:blue;">Concept</mark>
+
+When auto scaling launches a new instance, you can verify the subnet ID to ensure that your instance was deployed to the correct subnet.
+
+<figure><img src="../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### <mark style="color:purple;">Step 44</mark>
 
+1. In the other browser tab, to refresh the health check page, click the refresh icon.
+2. Review the message.
+
+* The page should load with the message, Instance i-XXXX is healthy. The Instance ID value should be the value of the new instance.
+* Congratulations! You successfully migrated the travel agency website to a highly available architecture.
+
+3. Go to the next step.
+
 #### <mark style="color:blue;">Concept</mark>
 
-***
+After an instance has been deployed to a new subnet, you can check the health of the new instance.
 
-### <mark style="color:purple;">Step 45</mark>
-
-#### <mark style="color:blue;">Concept</mark>
+<figure><img src="../../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ## <mark style="color:red;">DIY Activite</mark>
 
-* [ ] Configure an Auto Scaling group to include a new EC2 instance in a third Availability Zone.
+* [x] Configure an Auto Scaling group to include a new EC2 instance in a third Availability Zone.
+
+<figure><img src="../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
 
 ***

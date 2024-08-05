@@ -203,7 +203,7 @@ Os volumes do Amazon Elastic Block Store (EBS) são categorizados em duas princi
 
 #### <mark style="color:blue;">Gráfico de Comparação</mark>
 
-<figure><img src="../../.gitbook/assets/image (43) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (43) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### <mark style="color:blue;">Escolhendo o Volume Certo</mark>
 
