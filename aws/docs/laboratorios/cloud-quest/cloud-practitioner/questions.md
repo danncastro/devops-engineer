@@ -205,14 +205,18 @@
 
 * [x] Enable enhanced monitoring on the database instance
 * [x] Review the slow query logs for MariaDB or MySQL
-* [ ] Review the client-side SQL Server traces.
-* [x] Modify the DB instance to run as a Multi-AZ deployment
+* [x] Review the client-side SQL Server traces.
+* [ ] Modify the DB instance to run as a Multi-AZ deployment
 
-> Habilitar o monitoramento aprimorado na instância do banco de dados: Isso permite monitorar métricas detalhadas de desempenho que podem ajudar a identificar gargalos.
+> **Enable enhanced monitoring on the database instance**: Ativar o monitoramento aprimorado (Enhanced Monitoring) pode fornecer métricas detalhadas e em tempo real sobre o desempenho da instância de banco de dados, o que pode ajudar a identificar problemas de recursos e desempenho que estão afetando a execução das consultas.
 >
-> Revisar os logs de consultas lentas para MariaDB ou MySQL: Esses logs registram consultas que estão levando mais tempo para serem executadas, ajudando a identificar problemas de desempenho específicos.
+> **Review the slow query logs for MariaDB or MySQL**: Revisar os logs de consultas lentas para MariaDB ou MySQL pode ajudar a identificar quais consultas estão demorando mais do que o esperado e fornecer insights sobre possíveis melhorias ou otimizações.
 >
-> Modificar a instância do banco de dados para executar como um deployment Multi-AZ (disponibilidade em várias zonas): Embora isso não seja diretamente relacionado à melhoria de desempenho, pode melhorar a resiliência e disponibilidade do banco de dados, o que pode ser um fator importante em cenários de alto tráfego.
+> **Review the client-side SQL Server traces**: Para instâncias SQL Server, revisar os rastreamentos (traces) do lado do cliente pode fornecer informações detalhadas sobre o desempenho das consultas e ajudar a diagnosticar problemas.
+>
+>
+>
+> A opção **Modify the DB instance to run as a Multi-AZ deployment** não é diretamente relevante para a otimização do desempenho das consultas. O deployment Multi-AZ é mais voltado para alta disponibilidade e recuperação de desastres, e não para melhorar o desempenho das consultas.
 
 24. What happens if a weekly maintenance window is not specified when creating an RDS DB instance?
 

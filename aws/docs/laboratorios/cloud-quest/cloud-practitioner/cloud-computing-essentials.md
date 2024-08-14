@@ -1,7 +1,7 @@
 ---
 description: >-
-  Migrate an existing website to static website hosting on Amazon S3 to improve
-  reliability
+  Migrar um site existente para hospedagem de site estático no Amazon S3 para
+  melhorar a confiabilidade.
 ---
 
 # Cloud Computing Essentials
@@ -24,50 +24,49 @@ description: >-
 
 ## <mark style="color:red;">Amazon S3</mark>
 
-**Overview:** Amazon Simple Storage Service (Amazon S3) can be used to store any type of data, and retrieve any amount of data from anywhere.
+**Overview:** O Amazon Simple Storage Service (Amazon S3) pode ser usado para armazenar qualquer tipo de dado e recuperar qualquer quantidade de dados de qualquer lugar.
 
-In Amazon S3, any type of file, and any metadata that describes that file, is called an object. Objects are stored in S3 containers, called buckets.
+No Amazon S3, qualquer tipo de arquivo e qualquer metadado que descreva esse arquivo é chamado de objeto. Objetos são armazenados em contêineres do S3, chamados de buckets.
 
-This solution uses an S3 bucket to host a static website. In Amazon S3, the static website can sustain any conceivable level of traffic, at a very modest cost, without the need to set up, monitor, scale, or manage any web servers.
+Esta solução utiliza um bucket S3 para hospedar um site estático. No Amazon S3, o site estático pode suportar qualquer nível de tráfego concebível, a um custo muito modesto, sem a necessidade de configurar, monitorar, escalar ou gerenciar qualquer servidor web.
 
-**More Features:** Along with an HTML file, files that support webpage functionality, such as client-side scripts and style sheets, are uploaded to the S3 bucket. Any S3 buckets can be configured to host a static website.
+**Mais Recursos:** Juntamente com um arquivo HTML, arquivos que suportam a funcionalidade da página da web, como scripts do lado do cliente e folhas de estilo, são carregados no bucket S3. Qualquer bucket S3 pode ser configurado para hospedar um site estático.
 
-When an S3 bucket is configured for website hosting, the bucket is assigned a URL. When requests are made to this URL, Amazon S3 returns the HTML file, known as the root object, that was set for the bucket.
+Quando um bucket S3 é configurado para hospedagem de site, o bucket recebe uma URL. Quando solicitações são feitas a essa URL, o Amazon S3 retorna o arquivo HTML, conhecido como objeto raiz, que foi definido para o bucket.
 
-For others to access the S3 bucket, or specific objects in it, permissions must be configured to allow that access. A bucket policy can be created to configure these permissions.
+Para que outros acessem o bucket S3 ou objetos específicos nele, as permissões devem ser configuradas para permitir esse acesso. Uma política de bucket pode ser criada para configurar essas permissões.
 
-**Access Management:** A bucket policy defines who can access the bucket and what type of operations can be performed. Bucket policies are written in JSON format.
+**Gerenciamento de Acesso:** Uma política de bucket define quem pode acessar o bucket e que tipo de operações podem ser realizadas. Políticas de bucket são escritas no formato JSON.
 
-JSON is a human-and-computer readable format used to store and retrieve data. JSON is used by many applications and throughout AWS.
-
-City resisdents visit the city web portal for beach wave information, which invokes a GET request from the portal to the URL of the static webpage the portal to the URL of the static webpage. The initial root object is named index.html
-
-Rename index.html in the S3 bucket to waver.html, and then update the S3 bucket settings to use the renamed root object
+JSON é um formato legível por humanos e por computadores usado para armazenar e recuperar dados. JSON é usado por muitas aplicações e em toda a AWS."
 
 ***
 
 ## <mark style="color:red;">Descrição da tarefa</mark>
 
-Articule as características da plataforma de computação em nuvem da AWS. Descreva os principais benefícios do uso de produtos e serviços da AWS.&#x20;
+Articule as características da plataforma de computação em nuvem da AWS.&#x20;
 
+* Descreva os principais benefícios do uso de produtos e serviços da AWS.&#x20;
 * Compare e contraste os serviços de nuvem da AWS com a infraestrutura On-Premises.&#x20;
 * Implemente a hospedagem de uma página da Web estática usando o Amazon S3.
+* Os residentes da cidade visitam o portal da cidade para obter informações sobre as ondas da praia, o que aciona uma solicitação **GET** do portal para a URL da página estática. O objeto raiz inicial é chamado de **index.html**.
 
-1. **Review a bucket policy to secure a bucket in Amazon S3.**
-2. **Enable static website hosting on the S3 Bucket**
-3. **Test access to the webpage hosted on Amazon S3**
+1. Renomeie **index.html** no bucket **S3** para **waver.html** e, em seguida, atualize as configurações do bucket S3 para usar o objeto raiz renomeado.
+2. Revise a política de bucket para proteger um bucket no Amazon S3.
+3. Ative a hospedagem de site estático no bucket S3.
+4. Teste o acesso à página da web hospedada no Amazon S3.
 
 ***
 
 ### <mark style="color:purple;">**Step 1**</mark>
 
-1. In the top navigation bar search box, type: S3
-2. In the search results, under services, click S3.
-3. Go to the next step
+1. Na caixa de busca da barra de navegação superior, digite: **`S3`**
+2. Nos resultados da busca, sob serviços, clique em **`S3`**
+3. Vá para o próximo passo.
 
-#### <mark style="color:blue;">**Concept**</mark>
+#### <mark style="color:blue;">Conceito</mark>
 
-The AWS Management Console is a web interface to access and manage the broad collection of service provided by Amazon Web Service (AWS).
+O AWS Management Console é uma interface web para acessar e gerenciar a ampla coleção de serviços fornecidos pela Amazon Web Services (AWS).
 
 <figure><img src="../../../.gitbook/assets/image (94).png" alt=""><figcaption></figcaption></figure>
 
@@ -75,13 +74,13 @@ The AWS Management Console is a web interface to access and manage the broad col
 
 ### <mark style="color:purple;">**Step 2**</mark>
 
-1. On the General purpose buckets lab tab, click the bucket name that starts with website-bucket-.
-2. The bucket name that starts with website-bucket- contains code required for this lab.
-3. Go to the next step
+1. Na aba de buckets de uso geral do laboratório, clique no nome do bucket que começa com **`website-bucket-`**.
+2. O bucket que começa com **`website-bucket-`** contém o código necessário para este laboratório.
+3. Vá para o próximo passo.
 
-#### <mark style="color:blue;">**Concept**</mark>&#x20;
+#### <mark style="color:blue;">Conceito</mark>
 
-Amazon Simple Storage Service(Amazon S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance. Customers of all sizes and industries can use Amazon S3 to store and protect any amount of data for a range of use cases, such as data lakes, websites, mobile application, backup and restore, archive, enterprise applications, IoT devices, and big data analystics.
+O Amazon Simple Storage Service (Amazon S3) é um serviço de armazenamento de objetos que oferece escalabilidade líder no setor, disponibilidade de dados, segurança e desempenho. Clientes de todos os tamanhos e indústrias podem usar o Amazon S3 para armazenar e proteger qualquer quantidade de dados para uma variedade de casos de uso, como data lakes, websites, mobile application, backup and restore, arquivamento, aplicativos corporativos, IoT devices, and big data analystics.
 
 <figure><img src="../../../.gitbook/assets/image (96).png" alt=""><figcaption></figcaption></figure>
 
@@ -89,20 +88,20 @@ Amazon Simple Storage Service(Amazon S3) is an object storage service that offer
 
 ### <mark style="color:purple;">Step 3</mark>
 
-1. On the Objects tab, review the objects in the bucket
+1. Na aba **Objetos**, revise os objetos no bucket
 
-* Five files should be displayed
-* These files contain the contents of the static webpage
-* Local files can be loaded into this S3 bucket by using the Upload button.
+* Cinco arquivos devem ser exibidos.
+* Esses arquivos contêm o conteúdo da página estática.
+* Arquivos locais podem ser carregados neste bucket S3 usando o botão **Upload**.
 
-2. choose the check box to select text.html.
-3. Click Actions to expand the dropdown menu
-4. Choose Rename object
-5. Go to the next step
+2. Marque a caixa de seleção para selecionar `text.html`.
+3. Clique em Ações para expandir o **menu suspenso**.
+4. Escolha **Renomear** objeto.
+5. Vá para o próximo passo.
 
-#### <mark style="color:blue;">**Concept**</mark>
+#### <mark style="color:blue;">Conceito</mark>
 
-A bucket is a container for objects stored in Amazon S3. Every object is contained in a bucket. Amazon S3 offers a range of storage classes for the objects that you store. You choose a class depending on your use case scenario and performance access requirements. Amazon S3 provides storage classes for frequently accessed, infrequently accessedm and archive access objects.
+Um bucket é um contêiner para objetos armazenados no Amazon S3. Cada objeto está contido em um bucket. O Amazon S3 oferece uma variedade de classes de armazenamento para os objetos que você armazena. Você escolhe uma classe dependendo do seu cenário de uso e dos requisitos de desempenho de acesso. O Amazon S3 fornece classes de armazenamento para objetos de acesso frequente, acesso infrequente e arquivamento.
 
 <figure><img src="../../../.gitbook/assets/image (97).png" alt=""><figcaption></figcaption></figure>
 
@@ -110,16 +109,16 @@ A bucket is a container for objects stored in Amazon S3. Every object is contain
 
 ### <mark style="color:purple;">Step 4</mark>
 
-1. Fpr new object name, type: error.html
+1. Para o novo nome do objeto, digite: `error.html`
 
-* This file contains the code for the error page, which opens whenever something goes wrong.
+* Este arquivo contém o código para a página de erro, que abre sempre que algo dá errado.
 
-2. Click save changes.
-3. Go to the next step
+2. Clique em **salvar alterações.**
+3. Vá para o próximo passo.
 
-#### <mark style="color:blue;">**Concepts**</mark>
+#### <mark style="color:blue;">Conceito</mark>
 
-You can choose the geographical. AWS Region where Amazon S3 stores the buckets that you create. You might choose a Region to optimize latency, minimize costs, or address regulatory requirements. Objects stored in an AWS Region never leave the Region unless you explicitly transfer or replicate them to another Region. For example, objects stored in the Europe (ireland) Region never leave it. Howewer, Amazon S3 redundantly stores objects on multiple devices across a minimum of three Availability Zones in an AWS Region. An Availability Zones is one or more dicrete data centers with redundant power, networking, and connectivity in an AWS Region.
+Você pode escolher a região geográfica da AWS onde o Amazon S3 armazena os buckets que você cria. Você pode escolher uma região para otimizar a latência, minimizar custos ou atender a requisitos regulatórios. Objetos armazenados em uma região da AWS nunca saem da região, a menos que você os transfira ou replique explicitamente para outra região. Por exemplo, objetos armazenados na região da Europa (Irlanda) nunca a deixam. No entanto, o Amazon S3 armazena redundantemente objetos em vários dispositivos em, **no mínimo, três Zonas de Disponibilidade** em uma região da AWS. Uma Zona de Disponibilidade é um ou mais data centers discretos com energia, rede e conectividade redundantes em uma região da AWS.
 
 <figure><img src="../../../.gitbook/assets/image (98).png" alt=""><figcaption></figcaption></figure>
 
@@ -127,13 +126,13 @@ You can choose the geographical. AWS Region where Amazon S3 stores the buckets t
 
 ### <mark style="color:purple;">Step 5</mark>
 
-1. In the success alert, review the message.
-2. Click the Permissions tab.
-3. Go to the next step
+1. Na mensagem de alerta de sucesso, reveja a mensagem
+2. Clique na aba **Permissões**
+3. Vá para o próximo passo.
 
-#### <mark style="color:blue;">**Concept**</mark>
+#### <mark style="color:blue;">Conceito</mark>
 
-Using Amazon S3, you can upload objects up to 5GB in size with a single PUT operation. For larget objects, up to 5TB in size, use the mutipart upload API.
+Usando o Amazon S3, você pode carregar objetos de até 5 GB de tamanho com uma única operação PUT. Para objetos maiores, com até 5 TB de tamanho, use a API de upload multipart.
 
 <figure><img src="../../../.gitbook/assets/image (99).png" alt=""><figcaption></figcaption></figure>
 
@@ -141,16 +140,16 @@ Using Amazon S3, you can upload objects up to 5GB in size with a single PUT oper
 
 ### <mark style="color:purple;">Step 6</mark>
 
-1. In the block public access(bucket settings) section, review to ensure that blick all public access is set to Off.
+1. Na seção bloquear acesso público (configurações do bucket), verifique se a opção **bloquear todo o acesso público** está **desativada**.
 
-* Turning off "blick all public access" is necessary for static web hosting through your S3 bucket.
+* Desativar **'bloquear todo o acesso público'** é necessário para a hospedagem de sites estáticos por meio do seu bucket S3.
 
-2. Scroll down to Bucket policy
-3. Go to the step
+2. Role para baixo até **Política de Bucket**.
+3. Vá para o próximo passo.
 
-#### <mark style="color:blue;">**Concept**</mark>
+#### <mark style="color:blue;">Conceito</mark>
 
-By default, all Amazon S3 resources(buckets, objects, and related subresources) are private. Only the resource owner can access them. The resource owner can optionally grant access permissions to others by writing an access policy.
+Por padrão, todos os recursos do Amazon S3 (buckets, objetos e sub-recursos relacionados) são privados. Apenas o proprietário do recurso pode acessá-los. O proprietário do recurso pode, opcionalmente, conceder permissões de acesso a outros escrevendo uma política de acesso.
 
 <figure><img src="../../../.gitbook/assets/image (100).png" alt=""><figcaption></figcaption></figure>
 
@@ -158,20 +157,20 @@ By default, all Amazon S3 resources(buckets, objects, and related subresources) 
 
 ### <mark style="color:purple;">Step 7</mark>
 
-1. In the bucket policy editor window, review the policy
+1. Na janela do editor de política do bucket, revise a política.
 
-* This policy allows public access to the S3 bucket
-* Effect says this policy will Allow acess.
-* Principal defines who has access, In this case, \* represents anyone.
-* Action defines what users can do to objects in the bucket. In this case, users can only retrieve data with GetObject.
-* Resources specifiles that this policy applies to only this bucket.
-* Generally, to safeguard against unintentional data exposure, we recommend strict S3 bucket permissions in production.
-* Scroll up to the top of the page.
-* Go to the next step
+* Esta **política** permite o acesso público ao bucket S3.
+* O **efeito** indica que esta política permitirá o acesso.
+* O **principal** define quem tem acesso. Neste caso, **\*** representa qualquer pessoa.
+* A ação define o que os usuários podem fazer com os objetos no bucket. Neste caso, os usuários só podem recuperar dados com GetObject.
+* Os recursos especificam que esta política se aplica apenas a este bucket.
+* Geralmente, para evitar a exposição acidental de dados, recomendamos permissões restritas para buckets S3 em produção.
+* Role até o topo da página.
+* Vá para o próximo passo.
 
-#### <mark style="color:blue;">**Concept**</mark>
+#### <mark style="color:blue;">Conceito</mark>
 
-You can grant permissions to your Amazon S3 resources through bucket policies and user policies. Both options use JSON-based access policy language. An Amazon Resource Name(ARN) uniquely identifies AWS resources.
+Você pode conceder permissões aos seus recursos do Amazon S3 por meio de **políticas de bucket** e **políticas de usuário**. Ambas as opções utilizam uma linguagem de política de acesso baseada em JSON. Um **Amazon Resource Name (ARN)** identifica exclusivamente os recursos da AWS.
 
 ```json
 {
@@ -189,16 +188,18 @@ You can grant permissions to your Amazon S3 resources through bucket policies an
 }
 ```
 
+<figure><img src="../../../.gitbook/assets/image (251).png" alt=""><figcaption></figcaption></figure>
+
 ***
 
 ### <mark style="color:purple;">Step 8</mark>
 
-1. Click the Properties tab.
-2. Go to the next step
+1. Clique na aba **Propriedades**.
+2. Vá para o próximo passo.
 
-#### <mark style="color:blue;">**Concept**</mark>
+#### <mark style="color:blue;">Conceito</mark>
 
-To hosta static website on Amazon S3, configure you bucket for static website hosting, set permissions, and add in index document, Available options include redirects, logging, and error documents.
+Para hospedar um site estático no Amazon S3, configure seu bucket para hospedagem de site estático, defina permissões e adicione um documento de índice. As opções disponíveis incluem redirecionamentos, registros e documentos de erro.
 
 <figure><img src="../../../.gitbook/assets/image (103).png" alt=""><figcaption></figcaption></figure>
 
@@ -206,9 +207,9 @@ To hosta static website on Amazon S3, configure you bucket for static website ho
 
 ### <mark style="color:purple;">Step 9</mark>
 
-1. Scroll down to Static website hosting.
-2. Click edit
-3. Go to the next step
+1. Role para baixo até Hospedagem de site estático.
+2. Clique em editar.
+3. Vá para o próximo passo.
 
 <figure><img src="../../../.gitbook/assets/image (104).png" alt=""><figcaption></figcaption></figure>
 
@@ -216,19 +217,19 @@ To hosta static website on Amazon S3, configure you bucket for static website ho
 
 ### <mark style="color:purple;">Step 10</mark>
 
-1. For static website hosting, choose Enable.
-2. For hosting type, choose host a static website
-3. For index document, type: index.html
-4. For error document, type: error.html
-5. Go to the next step
+1. Para hospedagem de site estático, escolha `Habilitar`.
+2. Para tipo de hospedagem, escolha `hospedar um site estático`.
+3. Para o documento de índice, digite: `index.html`
+4. Para o documento de erro, digite: `error.html`
+5. Vá para o próximo passo.
 
-#### <mark style="color:blue;">**Concept**</mark>
+#### <mark style="color:blue;">Conceito</mark>
 
-Amazon S3 supports virtual-hosted-style URL's and path-style URL's.
+O Amazon S3 suporta URLs no estilo de hospedagem virtual e no estilo de caminho.
 
-A virtual-hosted-style URL looks like: https://bucket-name.s3.Region.amazonaws.com/key
+Uma URL no estilo de hospedagem virtual se parece com: [https://bucket-name.s3.Region.amazonaws.com/key](https://bucket-name.s3.region.amazonaws.com/key)
 
-A path-style URL look like: https://s3.Region.amazonaws.com/bucket-name/keyname
+Uma URL no estilo de caminho se parece com[https://s3.Region.amazonaws.com/bucket-name/keyname](https://s3.region.amazonaws.com/bucket-name/keyname)
 
 <figure><img src="../../../.gitbook/assets/image (105).png" alt=""><figcaption></figcaption></figure>
 
@@ -236,18 +237,20 @@ A path-style URL look like: https://s3.Region.amazonaws.com/bucket-name/keyname
 
 ### <mark style="color:purple;">Step 11</mark>
 
-1. Scroll down to the bottom of the page.
-2. Click Save changes
-3. Go to the next step
+1. Role para baixo até o final da página.
+2. Clique em **`Salvar alterações.`**
+3. Vá para o próximo passo.
+
+<figure><img src="../../../.gitbook/assets/image (252).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ### <mark style="color:purple;">Step 12</mark>
 
-1. Croll down to static website hosting.
-2. Review to ensure that hosting type is set to bucket hosting.
-3. Under bucket website endpoint, click the copy icon to copy the provided endpoint.
-4. Go to the next step
+1. Role para baixo até **`hospedagem de site estático`**.
+2. Revise para garantir que o tipo de hospedagem esteja definido como **`hospedagem de bucket`**.
+3. Sob o endpoint do site do bucket, clique no ícone de **`copiar`** para copiar o endpoint fornecido.
+4. Vá para o próximo passo.
 
 <figure><img src="../../../.gitbook/assets/image (106).png" alt=""><figcaption></figcaption></figure>
 
@@ -255,8 +258,8 @@ A path-style URL look like: https://s3.Region.amazonaws.com/bucket-name/keyname
 
 ### <mark style="color:purple;">Step 13</mark>
 
-1. To load the Beach Wave Conditions webpage, in a new browser tab(or window) address bar, paste the bucket website endpoint that you just copied, and then press Enter.
-2. Go to next step
+1. Para carregar a página de Condições das Ondas da Praia, em uma nova aba (ou janela) do navegador, cole o endpoint do site do bucket que você acabou de copiar na barra de endereços e pressione **`Enter.`**
+2. Vá para o próximo passo.
 
 <figure><img src="../../../.gitbook/assets/image (107).png" alt=""><figcaption></figcaption></figure>
 
@@ -264,10 +267,8 @@ A path-style URL look like: https://s3.Region.amazonaws.com/bucket-name/keyname
 
 ## DIY Activities
 
-* [x] Rename index.html to waves.html
+* [x] Renomeie **`index.html`** para **`waves.html`**.
 
 <figure><img src="../../../.gitbook/assets/image (17) (2).png" alt=""><figcaption></figcaption></figure>
-
-***
 
 ***
