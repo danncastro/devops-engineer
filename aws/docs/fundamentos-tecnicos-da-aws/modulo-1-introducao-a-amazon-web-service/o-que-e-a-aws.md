@@ -11,13 +11,17 @@ description: >-
 
 ## <mark style="color:red;">**On-premises e computação em nuvem**</mark>
 
-A computação em nuvem revolucionou a maneira como empresas gerenciam seus recursos de TI, substituindo a necessidade de datacenters físicos por serviços hospedados online. Antes da nuvem, empresas precisavam manter hardware próprio, o que era caro e demandava recursos significativos. Com a popularização da Internet, a demanda por esses recursos cresceu, tornando muitas operações ineficientes e caras.
+**Computação em nuvem** transformou a gestão de recursos de TI ao substituir **datacenters físicos** por serviços online. Antes da nuvem, empresas precisavam manter **hardware próprio**, o que era **caro** e **demandava** recursos. Com o crescimento da **internet**, a demanda por esses recursos aumentou, tornando as operações **ineficientes** e **caras**.
 
-A computação em nuvem oferece recursos de TI sob demanda pela internet, com pagamento conforme o uso. Empresas como a AWS possuem e gerenciam datacenters, fornecendo plataformas virtuais para usuários e empresas. Isso elimina a necessidade de gerenciar hardware próprio, permitindo às empresas focar em suas operações principais.
+**Computação em nuvem** oferece recursos de TI **sob demanda** pela internet, com **pagamento conforme o uso**. Empresas como a **AWS** possuem e gerenciam datacenters, fornecendo **plataformas virtuais** e eliminando a necessidade de gerenciar hardware próprio. Isso permite que as empresas se concentrem em suas operações principais.
 
-Um exemplo prático é o desenvolvimento de novos recursos de aplicação. Em um ambiente tradicional (on-premises), configurar um ambiente de teste separado exigiria a compra e instalação de hardware, além de configurações complexas. Isso pode ser lento e caro. Na nuvem, replicar ambientes de produção é rápido e eficiente, permitindo lançamentos rápidos de novos recursos.
+**Exemplo prático**: No ambiente tradicional (on-premises), criar um ambiente de **teste separado** exigiria compra e instalação de hardware, além de **configurações complexas**, o que é **lento** e **caro**. Na nuvem, replicar **ambientes de produção** é **rápido** e **eficiente**, possibilitando lançamentos rápidos de novos recursos.
 
-Ao adotar a computação em nuvem, empresas economizam tempo e recursos em configurações complexas e repetitivas, focando em aspectos estratégicos e diferenciadores de seus negócios. A AWS e serviços similares desempenham um papel crucial, gerenciando tarefas operacionais para que empresas possam concentrar-se em inovação e competitividade.
+Ao adotar a **computação em nuvem**, as empresas economizam tempo e recursos em configurações complexas e repetitivas, podendo se concentrar em **estratégia** e **inovação**. AWS e serviços similares são essenciais para **gerenciar tarefas operacionais**, permitindo às empresas focar em inovação e competitividade.
+
+#### <mark style="color:blue;">Comparação On-Premises vs Computação em Nuvem</mark>
+
+<figure><img src="../../.gitbook/assets/image (254).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -25,27 +29,32 @@ Ao adotar a computação em nuvem, empresas economizam tempo e recursos em confi
 
 #### <mark style="color:blue;">Pagamento conforme o uso</mark>
 
-Você paga apenas pelo uso dos recursos de computação, evitando investimentos antecipados em datacenters e hardware.
+* Pague apenas pelo uso dos recursos de computação.
+* Evita **investimentos antecipados** em **datacenters** e **hardware**.
 
-#### <mark style="color:blue;">Beneficiar-se de economia massiva de escala</mark>
+#### <mark style="color:blue;">Economia Massiva de Escala</mark>
 
-Graças ao grande número de clientes agregados na nuvem, os provedores conseguem oferecer preços mais baixos, beneficiando-se de economias massivas de escala, o que resulta em preços mais baixos com pagamento conforme o uso (pay as-you-go).
+* Preços mais baixos devido à agregação de muitos clientes.
+* Economias de escala resultam em **preços reduzidos** com **pagamento conforme o uso** (pay as-you-go).
 
-#### <mark style="color:blue;">Parar de adivinhar a capacidade</mark>
+#### <mark style="color:blue;">Elimine a Estimativa de Capacidade</mark>
 
-Com a nuvem, não é necessário estimar a capacidade de infraestrutura com antecedência. Você pode acessar recursos conforme necessário e ajustar a escala verticalmente em minutos.
+* Acesso a recursos conforme necessário, sem precisar estimar **capacidade de infraestrutura**.
+* **Ajuste a escala** verticalmente em minutos.
 
 #### <mark style="color:blue;">Aumentar a velocidade e a agilidade</mark>
 
-Recursos de TI podem ser provisionados em questão de minutos, aumentando significativamente a agilidade da organização e reduzindo o tempo e custo associados ao desenvolvimento e experimentação.
+* Provisionamento de recursos em **minutos**, aumentando a **agilidade**.
+* Reduz o tempo e custo associados ao desenvolvimento e **experimentação**.
 
-#### <mark style="color:blue;">Realize economia de custos</mark>
+#### <mark style="color:blue;">Economia de Custos</mark>
 
-Empresas podem concentrar seus esforços em projetos que diferenciam seus negócios, em vez de se preocuparem com a manutenção de datacenters e infraestrutura física.
+* Concentre-se em **projetos diferenciadores** em vez de **manutenção de datacenters** e infraestrutura física.
 
-#### <mark style="color:blue;">Obtenha alcance global em minutos</mark>
+#### <mark style="color:blue;">Alcance Global em Minutos</mark>
 
-As aplicações podem ser implantadas em várias regiões ao redor do mundo com alguns cliques. Isso significa que você pode oferecer baixa latência e uma melhor experiência aos seus clientes a um custo mínimo.
+* Implante aplicações em várias **regiões** com alguns cliques.
+* Ofereça **baixa latência** e **melhor experiência** ao cliente a um custo mínimo.
 
 ***
 

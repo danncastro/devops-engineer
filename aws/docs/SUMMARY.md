@@ -47,6 +47,10 @@
   * [Teste de conhecimento](fundamentos-tecnicos-da-aws/modulo-6-monitoramento-otimizacao-e-sem-servidor-serverless/teste-de-conhecimento.md)
   * [Arquitetura Final Otimizada](fundamentos-tecnicos-da-aws/modulo-6-monitoramento-otimizacao-e-sem-servidor-serverless/arquitetura-final-otimizada.md)
 
+## Solutions Architect - Associate
+
+* [Page 1](solutions-architect-associate/page-1.md)
+
 ## Laboratórios
 
 * [Online Course Supplement: Architecting on AWS](laboratorios/online-course-supplement-architecting-on-aws/README.md)
