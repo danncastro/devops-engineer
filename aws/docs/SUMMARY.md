@@ -76,3 +76,4 @@
     * [Core Security Concepts](laboratorios/cloud-quest/cloud-practitioner/core-security-concepts.md)
     * [Cloud Economics](laboratorios/cloud-quest/cloud-practitioner/cloud-economics.md)
     * [Questions](laboratorios/cloud-quest/cloud-practitioner/questions.md)
+* [Solutions Architect - Associate](laboratorios/solutions-architect-associate.md)
