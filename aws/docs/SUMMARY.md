@@ -50,8 +50,7 @@
 
 ## Solutions Architect - Associate
 
-* [SAA-C03](solutions-architect-associate/saa-c03/README.md)
-  * [Introdução a Amazon Web Services](solutions-architect-associate/saa-c03/introducao-a-amazon-web-services.md)
+* [SAA-C03](solutions-architect-associate/saa-c03.md)
 
 ## Laboratórios
 
@@ -79,3 +78,5 @@
     * [Cloud Economics](laboratorios/cloud-quest/cloud-practitioner/cloud-economics.md)
     * [Questions](laboratorios/cloud-quest/cloud-practitioner/questions.md)
 * [Solutions Architect - Associate](laboratorios/solutions-architect-associate.md)
+* [Architect Learning Plan](laboratorios/architect-learning-plan/README.md)
+  * [Criação de seu primeiro Amazon Virtual Private Cloud (VPC)](laboratorios/architect-learning-plan/criacao-de-seu-primeiro-amazon-virtual-private-cloud-vpc.md)
