@@ -7,6 +7,8 @@ description: >-
 
 # Criação de um Cluster Kubernetes Local
 
+
+
 {% embed url="https://kubernetes.io/docs/home/" %}
 Kubernetes Documentation
 {% endembed %}
@@ -43,7 +45,7 @@ Gitbook Vagrant
 {% hint style="info" %}
 Abaixo está o ambiente utilizado na criação do cluster utilizando 3 vms vagrant
 
-[https://github.com/danncastro/kubernetes\_projects/tree/main/k8s\_cluster\_local](https://github.com/danncastro/kubernetes\_projects/tree/main/k8s\_cluster\_local)
+[https://github.com/danncastro/kubernetes\_projects/tree/main/k8s\_cluster\_local](https://github.com/danncastro/kubernetes_projects/tree/main/k8s_cluster_local)
 {% endhint %}
 
 ***
@@ -174,7 +176,10 @@ sudo apt-get install ca-certificates curl gnupg
 ```bash
 sudo install -m 0755 -d /etc/apt/keyrings | \
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | \
-sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg | \
+sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+```
+
+```bash
 sudo chmod a+r /etc/apt/keyrings/docker.gpg
 ```
 
@@ -217,15 +222,22 @@ Vale ressaltar que não seguiremos com a instalação completa do Docker, instal
 Outro ponto é que o pacote `containerd.io` também contém `runc`, mas não contém plug-ins CNI.
 {% endhint %}
 
-> Utilizaremos a opção 1 neste mesmo Github para instalar manualmente os binários de plug-ins CNI
+> Utilizaremos a opção 1 neste mesmo Github para instalar manualmente os binários de plug-ins CNI [https://github.com/containerd/containerd/blob/main/docs/getting-started.md](https://github.com/containerd/containerd/blob/main/docs/getting-started.md)
 {% endtab %}
 
 {% tab title="Plug-in CNI" %}
-1. Baixe dentro da instancia provisionada a versão mais atual do plug-in CNI, que nesse exemplo é a `v1.3.0`
+1. Baixe dentro da instancia provisionada a versão mais atual do plug-in CNI, basicamente, podemos seguir  oque a documentação indica sobre a instalação do CNI.
+
+```url
+ https://github.com/containernetworking/plugins/releases
+```
 
 ```bash
-    cd /tmp
-    wget https://github.com/containernetworking/plugins/releases/download/v1.3.0/cni-plugins-linux-amd64-v1.3.0.tgz
+cd /tmp
+```
+
+```bash
+https://github.com/containernetworking/plugins/releases/download/v{release}/cni-plugins-linux-amd64-v{release}.tgz
 ```
 
 ***
@@ -237,7 +249,7 @@ sudo mkdir -p /opt/cni/bin
 ```
 
 ```bash
-sudo tar Cxzvf /opt/cni/bin cni-plugins-linux-amd64-v1.3.0.tgz
+sudo tar Cxzvf /opt/cni/bin cni-plugins-linux-amd64-v{release}.tgz
 ```
 
 > Após a instalação, executaremos as etapas necessárias para usar containerd como tempo de execução CRI
@@ -336,7 +348,7 @@ Após executar os passos de instalação do containerd vamos efetuar a instalaç
 ```bash
 sudo apt-get update
 # apt-transport-https may be a dummy package; if so, you can skip that package
-sudo apt-get install -y apt-transport-https ca-certificates curl
+sudo apt-get install -y apt-transport-https ca-certificates curl gpg
 ```
 
 ***
@@ -353,7 +365,6 @@ sudo gpg --dearmor -o /etc/apt/keyrings/kubernetes-apt-keyring.gpg
 3. Adicione o repositório Kubernetes apropriado `apt`:
 
 ```bash
-# This overwrites any existing configuration in /etc/apt/sources.list.d/kubernetes.list
 echo 'deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.28/deb/ /' | \
 sudo tee /etc/apt/sources.list.d/kubernetes.list
 ```
@@ -411,7 +422,8 @@ sudo kubeadm config images pull --kubernetes-version=1.28.0
 
 {% tab title="Init" %}
 ```bash
-sudo kubeadm init --kubernetes-version=1.28.0
+sudo kubeadm init --kubernetes-version=1.28.0 --pod-network-cidr=10.244.0.0/16
+
 ```
 
 > Observe que, para adicionar outro servidor ao cluster, você precisará fazer o mesmo trabalho de instalação e configuração do servidor e, em seguida, executar o comando _"`kubeadm join`_" com o token apropriado para o servidor com a função Master ou Worker.
