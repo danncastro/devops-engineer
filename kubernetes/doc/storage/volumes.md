@@ -27,7 +27,7 @@ Suporta uma grande variedade de tipos de volumes, até mesmo volumes não suport
 Não há limite para quantidade de volumes que podem ser utilizados por um Pod
 
 * Quando uma Pod é criada, um volume também é criado, isso é valido para volumes Ephemerals ou volumes Persistentes.
-* Todos os containers implementados dentro da Pod, podem acessar, ler e gravar, os mesmo arquivos nesse volume.
+* Todos os containers dentro de um Pod podem acessar, ler e gravar nos mesmos arquivos dentro do volume.
 
 #### <mark style="color:blue;">Ephemeral Volumes and Persistent Volumes</mark>
 
@@ -54,13 +54,13 @@ O problema da utilização de volumes ephemerals é que no momento em que uma Po
 
 Um outro problema da utilização de volumes Ephemerals é o caso de haver compartilhamento de dados entre containers detro da mesmo Pod, e essa Pod for reiniciada, os dados armazenados que foram perdidos, também não poderam ser acessados pelos outros containers.
 
-* Volumes compartilhados entre containers da mesma Pod, podem ser montados em caminhos diferentes, como se fossem alias para uma mesma localização.
+> Volumes compartilhados entre containers da mesma Pod, podem ser montados em caminhos diferentes, como se fossem alias para uma mesma localização.
 
 #### <mark style="color:blue;">EmptyDir</mark>
 
 Volumes do tipo emptyDir são volumes Ephemeral, mas ainda assim esse tipo de volume, sobrevive a uma reinicialização de container, como uma falha de liveness por exemplo, ele só será removido se a Pod morrer.
 
-* Podem ser armazenados em diversos tipos de mídia nos Workers-Nodes
+> Podem ser armazenados em diversos tipos de mídia nos Workers-Nodes
 
 ***
 
@@ -200,9 +200,11 @@ pod "volume-ephemeral-pod" deleted
 
 ## <mark style="color:red;">hostPath</mark>
 
-É um tipo de volume que fornece persistência de dados, o que significa que os dados armazenados em um volume desse tipo permanecem disponíveis mesmo após o reinício de contêineres ou a remoção/recriação de pods, isso é possivel devido ao hostPath criar um volume no próprio disco do nó de trabalho (Worker Node) do cluster. Isso significa que os dados salvos em um hostPath volume, permanece lá até que o cluster ou o Worker Node seja removido, ou então até que os arquivos sejam removidos manualmente.
+É um tipo de volume que fornece persistência de dados, o que significa que os dados armazenados em um volume desse tipo permanecem disponíveis mesmo após o reinício de contêineres ou a remoção/recriação de pods, isso é possivel por que o **hostPath** é um tipo de volume que armazena dados diretamente no disco de um **Worker Node** do cluster.&#x20;
 
-> _Por conta dos dados serem armazenados localmente no Worker Node, não são replicados automaticamente em outros nós. Isso significa que, se o pod for movido para outro nó, ele não terá acesso aos dados armazenados no hostPath do nó original, a menos que o volume seja montado em todos os nós ou os dados sejam movidos manualmente._
+Isso significa que os dados salvos em um hostPath, permanece lá até que o cluster ou o Worker Node seja removido, ou então até que os arquivos sejam removidos manualmente.
+
+> _Entretanto, por conta dos dados serem armazenados localmente no Worker Node, não são replicados automaticamente em outros nós. Isso significa que, se o pod for movido para outro nó, ele não terá acesso aos dados armazenados no hostPath do nó original, a menos que o volume seja montado em todos os nós ou os dados sejam movidos manualmente._
 
 ***
 
@@ -236,7 +238,7 @@ watch kubectl get po -owide
 kubectl exec -it volume-hostpath-pod bash
 ```
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -355,77 +357,57 @@ No resources found in default namespace.
 
 Quando falamos de armazenamento persistente em Kubernetes, precisamos entender dois recursos, o `PersistentVolumes` ou `PV` e o `PersistentVolumeClaim` ou `PVC`
 
-#### <mark style="color:blue;">Persistent Volume ou PV</mark>
+***
 
-&#x20;`PVs` é um recurso de armazenamento virtual disponível no cluster, que aponta para um armazenamento físico na infraestrutura.
+### <mark style="color:red;">PersistentVolume (PV)</mark>&#x20;
 
-#### <mark style="color:blue;">Persistent Volume Claim ou PVC</mark>&#x20;
+**PVs** é um recurso de armazenamento virtual disponível no cluster, que aponta para um armazenamento físico na infraestrutura podendo ser implementado em NFS, iSCSI ou armazenamento específico de um provedor de Cloud Pública.
 
-`PVCs` são solicitações de volume feitas pelo kubernetes que será atrelado a um APP.
-
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
-
-{% hint style="info" %}
-Podemos resumir como `PV` sendo a unidade lógica atribuída a uma unidade de armazenamento físico que será disponibilizado para o kubernetes, e o `PVC` como a solicitação do kubernetes para que um volume com especificação `x` seja utilizado.
-{% endhint %}
-
-{% hint style="warning" %}
-Um ponto importante a se notar é que o `PVC` sempre irá buscar o menor armazenamento possível que entregue todos os recursos que forem solicitados.
-{% endhint %}
-
-Caso um `PVC` solicite 500Mb e o menor volume com todas as características requisitadas tenha 1Gb, o `PVC` irá adquirir o `PV` de 1Gb e o utilizará para a aplicação.
-
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+Ele existe independentemente de qualquer Pod e tem seu ciclo de vida próprio, ou seja, mesmo que uma aplicação seja removida, os dados são mantidos e podem ser migrados entre aplicações e nós dependendo da politica de acesso.&#x20;
 
 #### <mark style="color:blue;">Modos de Acesso</mark>
 
 Os volumes no kubernetes podem ter diversos modos de acesso:
 
-* `ReadWriteOnce` ou `RWO` - O volume pode ser montado como leitura e escrita por apenas um único nó
+| ReadWriteOnce (RWO)                                                                                                                                                                                                                                                                           | ReadOnlyMany (ROX)                                                                                                                                                                                                       |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| O volume pode ser montado como **leitura e escrita** (read-write) em **apenas um único nó**. Isso significa que, embora o volume possa ser acessado por múltiplos **Pods** no mesmo nó, ele só pode ser acessado para leitura e escrita por um Pod por vez, no nó onde o volume está montado. | O volume pode ser montado como **somente leitura** (read-only) por **diversos nós**. Ou seja, múltiplos Pods podem acessar o volume, mas todos terão acesso apenas para leitura, e não será possível modificar os dados. |
 
-***
-
-* `ReadOnlyMany` ou `ROX` - O volume pode ser montado como apenas leitura por diversos nós
-
-***
-
-* `ReadWriteMany` ou `RWX` - O volume pode ser montado como leitura e escrita por diversos nós
-
-***
-
-* `ReadWriteOncePod` ou `RWOP` - O volume pode ser montado como leitura e escrita por apenas um pod. (Apenas no Kubernetes 1.22+)
-
-***
-
-## <mark style="color:red;">PersistentVolume (PV)</mark>&#x20;
-
-Este é o recurso Kubernetes que representa um volume de armazenamento. Ele existe independentemente de qualquer Pod e tem seu ciclo de vida próprio. O PV é provisionado por um administrador do cluster.
-
-> _PVs são plugins de `volume`, porém, com um ciclo de vida independente de qualquer pod que utilize um PV. Essa API tem por objetivo mostrar detalhes da implementação do armazenamento, seja ele NFS, iSCSI ou armazenamento específico de um provedor de Cloud Pública._
-
-***
+| ReadWriteMany (RWX)                                                                                                                                                                        | ReadWriteOncePod (RWOP) Kubernetes 1.22+                                                                                                                                                                                                           |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| O volume pode ser montado como **leitura e escrita** por **vários nós** simultaneamente. Vários Pods, em diferentes nós, podem acessar o volume e realizar operações de leitura e escrita. | O volume pode ser montado como **leitura e escrita** por **apenas um Pod**. Essa opção foi introduzida no Kubernetes 1.22 e garante que o volume seja montado como leitura e escrita, mas apenas em um Pod, mesmo que o Pod seja movido entre nós. |
 
 ### <mark style="color:red;">Criando PVs</mark>
 
-```bash
 ```
+// Some code
+```
+
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ## <mark style="color:red;">PersistentVolumeClaim (PVC)</mark>&#x20;
 
-Um PVC é uma solicitação de armazenamento por um usuário ou Pod. Ele é usado para solicitar um volume de armazenamento específico. O PVC especifica os requisitos, como tamanho e modo de acesso. Quando um PVC é criado, o Kubernetes procura um PV adequado que atenda aos requisitos definidos.
+Um PVC é uma solicitação de armazenamento persistente feita por um Pod ou usuário. Ele é usado para especificar requisitos como capacidade e modos de acesso, e opcionalmente, é possível atribuir uma **StorageClass**.&#x20;
 
-> _Uma reivindicação de volume persistente (PVC) é a solicitação de armazenamento, que é atendida vinculando a PVC a um volume persistente (PV)_
+Por padrão, o Kubernetes procura automaticamente um **PersistentVolume (PV)** que atenda às especificações do PVC, mas caso estejamos atribuindo uma **storageClassName,** ele buscará um PV compatível com essa **storageClassName** e outras especificações como recursos e tipo, Se encontrar um PV compatível, o Kubernetes realizará o que chamamos de **binding estático**, associando o PVC a esse PV existente. Caso o PVC tenha uma **storageClassName** e não haja um PV correspondente, o Kubernetes pode criar dinamicamente um PV que atenda aos requisitos da solicitação do PVC, processo conhecido como **binding dinâmico**.
 
-Claims podem solicitar ao PV tamanho e modos de acesso específicos. &#x20;
+{% hint style="warning" %}
+Um ponto importante a se notar é que em casos de criação de **PVC** default sem especificar nenhum **storageClass**, o **PVC** sempre irá buscar o menor armazenamento possível que entregue todos os recursos especificados na solicitação.
+
+\
+**Por exemplo:** Caso um **PVC** solicite **500Mb,** e o menor volume com todas as características requisitadas tenha **1Gb**, o **PVC** irá adquirir o **PV** de **1Gb** e o utilizará para a aplicação.
+{% endhint %}
+
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
-## <mark style="color:red;">StorageClasses(SC)</mark>&#x20;
+## <mark style="color:red;">StorageClasses (SC)</mark>&#x20;
 
-Uma Classe de Armazenamento define as propriedades do volume de armazenamento, como tipo de provisionamento, localização, desempenho, etc. As Classes de Armazenamento são usadas pelos PVCs para solicitar volumes de armazenamento com base em suas necessidades.
+Uma Classe de Armazenamento define as propriedades do volume de armazenamento, como tipo de provisionamento, localização, desempenho, nome, etc... As Classes de Armazenamento são usadas pelos PVCs para solicitar volumes de armazenamento com base em suas necessidades.
 
-> _Fornecem dinamismo para criação de `PersistentVolume` conforme demanda. Também são capazes de criar discos de armazenamento_
+> _Fornecem dinamismo para criação de `PersistentVolume` conforme demanda. Por que são capazes de solicitar a criação de discos de armazenamento._
 
 ***

@@ -8,19 +8,28 @@ description: >-
 
 {% embed url="https://kubernetes.io/pt-br/docs/concepts/overview/components/#componentes-da-camada-de-gerenciamento" %}
 
+**Funções da Camada de Gerenciamento:**
+
+* Coordena as operações e estados do cluster.
+* Monitora e reage a eventos, como falhas ou alterações de configuração.
+
 {% hint style="info" %}
+**Alta Disponibilidade:**\
 Em ambientes de produção, o ambiente de gerenciamento é geralmente executado em múltiplos computadores, provendo tolerância a falhas e alta disponibilidade.
 {% endhint %}
 
-> _Podem ser executados em qualquer máquina do cluster. Contudo, para simplificar, os scripts de configuração normalmente iniciam todos os componentes da camada de gerenciamento na mesma máquina._
+> Embora os componentes de gerenciamento possam ser executados em qualquer node do cluster, normalmente são configurados para rodar em uma única máquina, para simplificação na configuração inicial.
 
 ***
 
 ## <mark style="color:red;">kube-apiserver</mark>&#x20;
 
-É o componente central que expõe a API do Kubernetes e serve como ponto de entrada para o cluster.
+É o componente central que expõe a API do Kubernetes e serve como ponto de entrada para o cluster. Ele desempenha um papel fundamental no gerenciamento e na comunicação entre os diferentes componentes do Kubernetes.
 
-> Toda ação que acontece dentro do Cluster, passa pela kube-apiserver, somente ela pode escrever as configurações do _"banco de dados"_ do Kubernetes(etcd)
+* **Ponto de Entrada:** Toda ação no cluster passa pela **kube-apiserver**, que é responsável por aceitar e processar requisições, seja de usuários ou de outros componentes.
+* **Banco de Dados (etcd):** Apenas o **kube-apiserver** tem permissão para escrever nas configurações do banco de dados **etcd**, que armazena o estado do cluster.
+* **Validação e Configuração:** Valida e configura dados dos objetos no cluster, como **Pods**, **Serviços**, **Controladores de Replicação**, entre outros.
+* **Frontend do Cluster:** Fornece a interface de comunicação entre o estado compartilhado do cluster e todos os outros componentes que interagem com ele.
 
 O servidor de **API** do Kubernetes valida e configura dados para os objetos presentes no cluster, que incluem `pods`, `serviços`, `controladores de replicação` e outros.
 
@@ -34,9 +43,18 @@ O **API Server** atende às operações e fornece o **Frontend** para o estado c
 
 {% embed url="https://etcd.io/" %}
 
-`etcd` é um banco de dados do tipo "chave -> valor"  distribuído e fortemente consistente que fornece uma maneira confiável de armazenar dados que precisam ser acessados ​​por um sistema distribuído ou cluster de máquinas. Ele lida com as eleições de líder durante partições de rede e pode tolerar falhas de máquina, mesmo no nó líder.
+`etcd` é um banco de dados do tipo "chave -> valor"  distribuído e fortemente consistente que fornece uma maneira confiável de armazenar dados que precisam ser acessados ​​por um sistema distribuído ou cluster de máquinas.&#x20;
 
-Ele se destaca por ser o principal armazenamento de dados do Kubernetes, ele ajuda a viabilizar atualizações automáticas mais seguras, coordena a programação de trabalhos em hots e ajuda a configurar redes de sobreposição para containers.
+**Armazenamento no Kubernetes:**\
+O **etcd** é o principal armazenamento de dados do Kubernetes, armazenando o estado e a configuração do cluster. Ele é crucial para viabilizar atualizações automáticas e coordenar a programação de tarefas no cluster.
+
+**Tolerância a Falhas:**\
+Ele é resiliente a falhas de máquinas, inclusive no nó líder, e lida com **eleições de líder** durante partições de rede, garantindo a continuidade do funcionamento do cluster.
+
+**Funções no Kubernetes:**
+
+* Facilita a **configuração de redes de sobreposição** para containers.
+* Permite a **coordenação de jobs** e garante a consistência do estado do cluster.
 
 > _etcd é um componente importante de vários outros projetos, não apenas do Kubernetes, ou seja ele é um componente externo aplicado a infraestrutura Kubernetes._
 
@@ -44,9 +62,9 @@ Ele se destaca por ser o principal armazenamento de dados do Kubernetes, ele aju
 
 ## <mark style="color:red;">kube-schenduler</mark>&#x20;
 
-Faz o agendamento dos pods em nós apropriados com base em requisitos e restrições definidos, como recursos e afins.
+O **kube-scheduler** é responsável pelo agendamento de **Pods** nos nós apropriados do cluster, levando em consideração as especificações e restrições definidas, como disponibilidade de recursos.
 
-Ele recebe as requisições vindas do kube-apiserver, e gerência da melhor forma onde será instânciado a nova aplicação.&#x20;
+Ele recebe as requisições vindas do **kube-apiserver**, e gerência da melhor forma onde será instânciado a nova aplicação com base em critérios como recursos e políticas definidas..&#x20;
 
 <figure><img src="../.gitbook/assets/image (136).png" alt=""><figcaption></figcaption></figure>
 
@@ -60,11 +78,15 @@ Ele recebe as requisições vindas do kube-apiserver, e gerência da melhor form
 
 ## <mark style="color:red;">kube-controller-manager</mark>&#x20;
 
-Responsável por gerenciar os controladores que regulam o estado desejado do sistema. Há vários controladores, como o controlador de replicação, o controlador de serviço, etc.
+O **kube-controller-manager** é responsável por gerenciar os controladores que mantêm o estado desejado do sistema.&#x20;
 
-No Kubernetes, um controlador é um loop que observa o estado compartilhado do cluster por meio do `kube-apiserver` e faz alterações tentando mover o estado atual para o estado desejado.
+No Kubernetes, um controlador é um loop que observa o estado compartilhado do cluster por meio do `kube-apiserver` e faz ajustes para garantir que o sistema esteja sempre no estado configurado.
 
-> _Executa todas as operações de gerenciamento para manter a disponibilidade do cluster._
+\
+O **kube-controller-manager** coordena diversos controladores, como:
+
+* **Controlador de Replicação:** Garante que o número de réplicas de um pod esteja sempre conforme o especificado.
+* **Controlador de Serviço:** No Kubernetes, o **Controlador de Serviço** é responsável por garantir que os serviços estejam corretamente configurados e acessíveis dentro do cluster. Ele gerencia a criação e manutenção de objetos de **Service**, que são usados para expor aplicações em execução nos **Pods** para outros componentes internos ou externos ao cluster. O controlador verifica a saúde e disponibilidade dos Pods associados, fazendo a distribuição do tráfego de rede para os Pods disponíveis, garantindo que o serviço esteja sempre acessível, mesmo que haja falhas ou escalabilidade dinâmica dos Pods.
 
 <figure><img src="../.gitbook/assets/image (135).png" alt=""><figcaption></figcaption></figure>
 

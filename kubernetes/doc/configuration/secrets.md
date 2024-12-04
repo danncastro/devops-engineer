@@ -36,7 +36,7 @@ Para utilizar Secrets de forma segura, siga pelo menos as instruções abaixo:
 3. Quando apropriado, utilize mecanismos como RBAC para limitar quais perfis e usuários possuem permissão para criar novos Secrets ou substituir Secrets existentes.
 {% endhint %}
 
-Existem três formas principais para um Pod utilizar um Secret:
+Existem duas formas principais para um Pod utilizar um Secret:
 
 * Como [arquivos](https://kubernetes.io/pt-br/docs/concepts/configuration/secret/#using-secrets-as-files-from-a-pod) em um [volume](https://kubernetes.io/docs/concepts/storage/volumes/) montado em um ou mais de seus contêineres.
 

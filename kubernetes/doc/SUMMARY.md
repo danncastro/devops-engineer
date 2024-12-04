@@ -7,7 +7,7 @@
 
 * [Cluster Kubernetes](componentes-kubernetes/cluster-kubernetes.md)
 * [Camada de Gerenciamento](componentes-kubernetes/camada-de-gerenciamento.md)
-* [Camada de Nodes](componentes-kubernetes/camada-de-nodes.md)
+* [Camada de trabalho](componentes-kubernetes/camada-de-nodes.md)
 * [Arquivos YAML](componentes-kubernetes/arquivos-yaml.md)
 
 ## Cluster Local

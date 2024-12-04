@@ -1,10 +1,16 @@
 ---
 description: >-
-  Os componentes do nó são executados em todos os nós, mantendo os Pods em
-  execução e fornecendo o ambiente de execução do Kubernetes.
+  Composta pelos componentes executados em cada nó do cluster, que são
+  responsáveis por manter os Pods em execução e fornecer o ambiente de execução
+  necessário para as aplicações.
 ---
 
-# Camada de Nodes
+# Camada de trabalho
+
+**Função dos Componentes:**
+
+* **Executar Pods:** Os componentes da camada de trabalho garantem que os Pods estejam sempre funcionando, monitorando e corrigindo falhas, se necessário.
+* **Ambiente de Execução:** Proporcionam o ambiente necessário para os containers dentro dos Pods, incluindo a execução de containers e o gerenciamento de redes e armazenamento.
 
 ***
 
@@ -12,7 +18,7 @@ description: >-
 
 {% embed url="https://kubernetes.io/pt-br/docs/concepts/overview/components/#node-components" %}
 
-Agente de execução em cada [nó](https://kubernetes.io/pt-br/docs/concepts/architecture/nodes/) do cluster. Ele é responsável por garantir que os contêineres estejam em execução nos nós, gerenciando os pods e fornecendo informações sobre a saúde dos nós de volta ao `kube-apiserver`.
+O **kubelet** é o agente de execução presente em cada nó do cluster. responsável por garantir que os **Pods** e **Containers** sejam executados corretamente nos nós, gerenciando e fornecendo informações sobre a saúde dos nós de volta ao `kube-apiserver`.
 
 > _Componente que executa em todas as máquinas do cluster e gerencia tarefas como a inicialização de pods e contêineres._  Em cada worker-node deverá existir um agente Kubelet em execução.&#x20;
 
@@ -21,32 +27,37 @@ O kubelet só entra em cena quando o kube-scheduler já decidiu onde agendar um 
 {% endhint %}
 
 {% hint style="warning" %}
-O kubelet não gerencia contêineres que não foram criados pelo Kubernetes.
+O kubelet é executado em todos os **worker nodes** e não gerencia containers fora do Kubernetes, ou seja, ele só supervisiona containers que foram criados e estão sob o controle do Kubernetes.
 {% endhint %}
 
 * O **kubelet** pode ser visto como o **agente do k8s** que é executado nos `workers-nodes`.
 
 ***
 
-* O Kubelet é responsável por de fato gerenciar os pods, que foram direcionados pelo `controller` do cluster dentro dos nós, de forma que para isto o Kubelet pode **iniciar, parar e manter os contêineres e os pods em funcionamento** de acordo com o que foi instruído pelo controlador do cluster;
+* O kubelet assegura que os Pods, alocados pelo **kube-scheduler**, estejam em execução nos nós correspondentes. Ele pode iniciar, parar e manter os containers funcionando conforme as instruções do controlador do cluster.
 
 ***
 
 ## <mark style="color:red;">kube-proxy</mark>&#x20;
 
-kube-proxy é a implementação de um _proxy_ de rede executado em cada [nó](https://kubernetes.io/pt-br/docs/concepts/architecture/nodes/) no _cluster_, viabilizando parte do conceito de [serviço](https://kubernetes.io/docs/concepts/services-networking/service/) do Kubernetes atuando na comunicação de rede com os pods, dentro e fora do Cluster.
+O **kube-proxy** é um componente do Kubernetes que atua como um **proxy de rede** em cada nó do cluster, facilitando a comunicação entre os Pods e entre os Pods e o mundo externo.
 
-* Este componente é responsável por efetuar roteamento de requisições para os pods corretos, como também por cuidar da parte de rede dos nós;
-* [kube-proxy](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-proxy/) mantém regras de rede no host e lida com o balanceamento de carga de serviços.
+**Função do kube-proxy:**
+
+* **Roteamento de Requisições:** O kube-proxy é responsável por **rotear as requisições de rede** para os Pods corretos, garantindo que as comunicações dentro e fora do cluster sejam dirigidas corretamente.
+* **Balanceamento de Carga:** O [kube-proxy](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-proxy/) também gerencia o **balanceamento de carga** para os serviços, distribuindo o tráfego de forma equilibrada entre os Pods disponíveis.
+* **Regras de Rede:** O kube-proxy mantém **regras de rede** nos nós, cuidando da configuração e gerenciamento de conexões para os serviços e Pods.
+
+> Essencialmente, o **kube-proxy** facilita a conectividade e o balanceamento de tráfego dentro do cluster, viabilizando o conceito de **Serviços** no Kubernetes.
 
 ***
 
 ## <mark style="color:red;">Container Runtime</mark>&#x20;
 
-É o ambiente de execução de contêineres necessário para o funcionamento do k8s.&#x20;
+O **Container Runtime** é o ambiente de execução de contêineres responsável por executar e gerenciar os containers dentro de um cluster Kubernetes.&#x20;
 
 {% hint style="info" %}
-**Observação:** O Kubernetes não executa containers, quem faz esse trabalho é o "`Container runtime`"
+**Observação:** O Kubernetes em si **não executa containers**; essa função é desempenhada pelo **Container Runtime**.
 {% endhint %}
 
 <figure><img src="../.gitbook/assets/image (182).png" alt=""><figcaption></figcaption></figure>
@@ -82,6 +93,8 @@ kubectl + VERBO + recurso + OPÇÕES
 Alguns exemplos de verbos:
 
 > &#x20;_get, list, describe, create, update, patch, delete ..._
+
+* O comando `kubectl patch` no Kubernetes é usado para modificar ou atualizar recursos existentes no cluster de forma parcial. Em vez de substituir o recurso inteiro, como acontece com o `kubectl apply` ou `kubectl create`, o `kubectl patch` permite que você altere apenas uma parte específica de um recurso, sem afetar as configurações não modificadas.
 
 Alguns exemplos de recursos:
 

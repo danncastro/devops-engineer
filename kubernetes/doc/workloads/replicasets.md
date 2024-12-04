@@ -13,7 +13,7 @@ description: >-
 
 ## <mark style="color:red;">Overview</mark>
 
-Ele garante alta disponibilidade e escalabilidade ao monitorar continuamente o estado dos pods e iniciar ou encerrar réplicas conforme necessário para manter o estado desejado.&#x20;
+O **ReplicaSet** é um componente do Kubernetes responsável por garantir a alta disponibilidade e escalabilidade de uma aplicação, monitorando continuamente o estado dos pods e mantendo o número desejado de réplicas.
 
 Se um pod falhar ou for removido por qualquer motivo, o ReplicaSet iniciará automaticamente uma nova réplica para substituí-lo, garantindo que o número desejado de réplicas seja mantido em execução.
 
@@ -22,6 +22,8 @@ Se um pod falhar ou for removido por qualquer motivo, o ReplicaSet iniciará aut
 {% hint style="info" %}
 Uma das desvantagens da utilização de ReplicasSet, é que ele não faz a alteração dos recursos automaticamente, então toda vez que uma alteração é feita, um novo deploy deve ser aplicado.
 {% endhint %}
+
+> Em resumo, o ReplicaSet assegura que a quantidade de réplicas do pod seja mantida conforme o desejado, mas não lida com atualizações automáticas de recursos.
 
 ***
 

@@ -13,19 +13,9 @@ description: >-
 
 ## <mark style="color:red;">livenessProbe</mark>&#x20;
 
-Basicamente, é uma maneira de garantir que um contêiner esteja "vivo" e funcionando corretamente.
+A **Liveness Probe** no Kubernetes verifica a saúde de um contêiner em execução dentro de um pod em intervalos definidos pelo usuário. Essa verificação pode ser feita via HTTP, TCP ou execução de comandos no contêiner. No caso de verificação via HTTP, o Kubernetes faz solicitações regulares para um endpoint específico do contêiner. Se o código de retorno estiver fora do intervalo esperado (geralmente 200-399), o pod é considerado não saudável e pode ser reiniciado.
 
-A liveness probe é uma funcionalidade do Kubernetes que permite verificar continuamente a saúde de um contêiner em execução dentro de um pod. Essa verificação é realizada em intervalos definidos pelo usuário e pode ser feita de várias maneiras, incluindo via HTTP, TCP socket ou execução de comandos dentro do contêiner.
-
-No contexto da verificação via HTTP, a liveness probe faz solicitações regulares para um endpoint específico do contêiner. Se o código de retorno da solicitação estiver fora do intervalo esperado (geralmente menor que 200 ou maior ou igual a 400), o Kubernetes considera o pod como não saudável e pode tomar medidas, como reiniciar o pod para tentar recuperá-lo.
-
-Vamos imaginar que tem um aplicativo em execução dentro de um contêiner. Às vezes, esse aplicativo pode travar ou enfrentar algum problema que o impeça de funcionar corretamente, mas o contêiner ainda está tecnicamente "rodando". É aí que entra a liveness probe.
-
-A liveness probe é uma espécie de verificação automática que o Kubernetes faz no seu contêiner em intervalos regulares. Ele executa uma verificação específica para determinar se o aplicativo dentro do contêiner está funcionando conforme o esperado. Se a verificação for bem-sucedida, o Kubernetes sabe que o contêiner está "vivo" e funcionando corretamente. Se a verificação falhar repetidamente, o Kubernetes pode reiniciar o contêiner para tentar corrigir o problema.
-
-{% hint style="info" %}
-Além do HTTP, também pode fazer verificações via TCP Socket e Comandos CLI
-{% endhint %}
+A Liveness Probe ajuda a identificar problemas em que o contêiner ainda está "rodando", mas o aplicativo dentro dele pode estar travado. Se a verificação falhar repetidamente, o Kubernetes reinicia o contêiner para tentar corrigir o problema, garantindo que o serviço continue funcionando.
 
 ***
 
@@ -98,27 +88,23 @@ pod "liveness-pod" deleted
 
 ## <mark style="color:red;">readinessProbe</mark>&#x20;
 
-A readinessProbe é uma funcionalidade do Kubernetes que verifica se um contêiner está pronto para receber tráfego de rede. Enquanto a livenessProbe verifica se a aplicação está saudável e se deve ser reiniciada em caso de falha, a readinessProbe se concentra em determinar se a aplicação está pronta para aceitar solicitações de entrada após ser iniciada. Ela pode fazer verificações via HTTP ou TCP para garantir que a aplicação tenha atingido um estado operacional estável.
+A **Readiness Probe** no Kubernetes verifica se um contêiner está pronto para receber tráfego de rede. Ao contrário da **Liveness Probe**, que verifica a saúde da aplicação e decide se ela deve ser reiniciada, a **Readiness Probe** foca em garantir que a aplicação tenha atingido um estado estável e esteja pronta para aceitar solicitações.
 
-A readinessProbe pode ser configurada para realizar verificações via HTTP, o que significa que pode enviar solicitações HTTP regulares para um endpoint específico da aplicação e verificar se a resposta indica que a aplicação está pronta. Além disso, também é possível configurar a readinessProbe para realizar verificações via TCP, o que é útil para aplicativos que podem não ter um endpoint HTTP acessível imediatamente após a inicialização.
+Ela pode ser configurada para realizar verificações via **HTTP** ou **TCP**. No caso de verificação HTTP, a probe envia solicitações para um endpoint específico da aplicação e verifica a resposta. Já no caso do TCP, a verificação é feita conectando-se a uma porta específica do contêiner.
 
-Ao definir os parâmetros da readinessProbe, como o período de tempo entre as verificações e o tempo de espera para uma resposta bem-sucedida, os administradores de sistemas podem garantir que os contêineres estejam prontos para receber tráfego de rede de forma confiável e eficiente.
+Configurando adequadamente parâmetros como o tempo entre verificações e o tempo de espera para uma resposta bem-sucedida, a **Readiness Probe** ajuda a garantir que o contêiner só receba tráfego quando estiver de fato pronto para processá-lo, evitando falhas no serviço.
 
 > **LivenessProbe** são para saber se a aplicação está saudável e/ou se deve ser reiniciada, enquanto **ReadinessProbe** são para saber se a aplicação já está pronta para receber requisições depois de iniciar
-
-{% hint style="info" %}
-Além do HTTP, também pode fazer verificações via TCP
-{% endhint %}
 
 ***
 
 ## <mark style="color:red;">startupProbe</mark>&#x20;
 
-O `startupProbe` é especificamente projetado para verificar o estado inicial de um contêiner no momento em que ele é iniciado ou reiniciado. Ele difere das probes regulares, como o `livenessProbe` e o `readinessProbe`, que verificam a saúde contínua do contêiner após sua inicialização.
+A **Startup Probe** no Kubernetes é projetada para verificar o estado inicial de um contêiner durante sua inicialização ou reinicialização. Ela difere das probes regulares, como **Liveness** e **Readiness Probes**, que monitoram a saúde do contêiner após eles já estarem inicializados.
 
-Quando um contêiner é iniciado, o `startupProbe` é acionado para verificar se o aplicativo dentro do contêiner está pronto para receber tráfego. Se o `startupProbe` falhar, o Kubernetes pode reiniciar o contêiner, ou até mesmo falhar na inicialização do pod inteiro, dependendo da configuração.
+Quando um contêiner é iniciado, a **Startup Probe** verifica se o aplicativo está pronto para receber tráfego. Se a verificação falhar, o Kubernetes pode reiniciar o contêiner ou até falhar a inicialização do pod inteiro, dependendo da configuração.
 
-Essa sonda é útil para aplicativos que podem levar algum tempo para se inicializarem completamente ou para inicializações complexas que podem falhar inicialmente, mas se recuperarem depois de um tempo. Ao usar o `startupProbe`, você pode garantir que o Kubernetes não direcione o tráfego para um contêiner que ainda não está pronto para lidar com ele.
+Essa probe é especialmente útil para aplicativos com inicialização demorada ou complexa, garantindo que o Kubernetes não direcione tráfego para contêineres que ainda não estão prontos para processá-lo.
 
 > muito util para aplicações legadasque necessitam tempo adicional para inicializar na primeira vez
 

@@ -37,9 +37,13 @@ Os serviços podem ser consumidos de duas formas, pelo próprio cluster, que é 
 
 ***
 
-### <mark style="color:red;">Forward Port</mark>
+## <mark style="color:red;">Forward Port</mark>
 
-Podemos também criar um tipo de encaminhamento interno de portas da pod para ser acessível. Vamos começar criando nossa Pod ao qual estará executando um banco de dados. Esse banco de dados não terá acesso externo, sendo necessário a criação de um encaminhamento.
+O **Port Forwarding** no Kubernetes é uma funcionalidade que permite encaminhar o tráfego de uma porta local para uma porta dentro de um Pod específico. Isso é útil para acessar aplicativos ou serviços executando dentro de um Pod que não estão expostos externamente.
+
+Por exemplo, você pode criar um Pod executando um banco de dados que não será acessível diretamente por razões de segurança. No entanto, é possível acessar esse banco de dados localmente, utilizando o recurso de **port-forward** para criar um túnel temporário entre sua máquina local e o Pod.
+
+Vamos começar criando nossa Pod ao qual estará executando um banco de dados. Esse banco de dados não terá acesso externo, sendo necessário a criação de um encaminhamento.
 
 {% tabs %}
 {% tab title="Kind" %}
@@ -120,31 +124,46 @@ SELECT * FROM mensagens
 {% hint style="info" %}
 #### Todos os recursos utilizados nesses exemplos, estarão disponibilizados no Github:
 
-[https://github.com/danncastro/kubernetes\_projects/tree/main/k8s\_cka\_exemples/services](https://github.com/danncastro/kubernetes\_projects/tree/main/k8s\_cka\_exemples/services)
+[https://github.com/danncastro/kubernetes\_projects/tree/main/k8s\_cka\_exemples/services](https://github.com/danncastro/kubernetes_projects/tree/main/k8s_cka_exemples/services)
 {% endhint %}
+
+O **port-forward** é temporário e funciona enquanto o comando estiver em execução.
+
+Para acesso externo permanente, considere usar recursos como **Services** ou **Ingress**.
+
+***
 
 ## <mark style="color:red;">ClusterIP</mark>&#x20;
 
-Serviço padrão do Kubernetes, utilizado para comunicação interna do cluster. Faz a comunicação entre diferentes pods dentro de um mesmo cluster. Torna os serviços acessíveis apenas dentro do cluster.
+O **ClusterIP** é o tipo de serviço padrão no Kubernetes, projetado para facilitar a comunicação interna dentro do cluster. Ele é usado para expor aplicações que precisam ser acessadas apenas por outros serviços ou Pods no mesmo cluster.
 
 <figure><img src="../.gitbook/assets/image (129).png" alt=""><figcaption></figcaption></figure>
 
-* Não é possível chamar os serviço de fora do cluster sem a utilização de um Proxy.
 * Mantem os serviços apenas internos ao cluster
+
+**Principais Características:**
+
+* **Acesso Interno:** Torna os serviços acessíveis apenas dentro do cluster, não permitindo acesso externo sem a utilização de um proxy.
+* **Endereçamento Dinâmico:** Os Pods têm IPs efêmeros; se forem reiniciados ou substituídos, os IPs podem mudar.
+* **Resolução de DNS:** O Kube-DNS (ou CoreDNS) resolve automaticamente os endereços IPs dinâmicos dos Pods, permitindo que os serviços sejam acessados por nomes em vez de IPs.
+
+**Configuração de Portas em Serviços**
 
 #### <mark style="color:blue;">Ports envolvidas na comunicação com Serviços</mark>
 
 <figure><img src="../.gitbook/assets/image (127).png" alt=""><figcaption></figcaption></figure>
 
-Utilizado para acessar os recursos do Kubernetes, através dessas portas que os serviços são disponibilizados.
+**`port`:** Porta aberta no serviço para a comunicação interna.
+
+* Utilizado para acessar os recursos do Kubernetes, através dessas portas que os serviços são disponibilizados.
 
 #### <mark style="color:blue;">TargetPort</mark>
 
 <figure><img src="../.gitbook/assets/image (157).png" alt=""><figcaption></figcaption></figure>
 
-Informa em qual porta foi disponibilizado a aplicação dentro do container em um Pod.
+**`targetPort`:** Porta no container do Pod onde a aplicação está rodando. Se omitido, assume o mesmo valor de `port`.
 
-* Caso o valor de targetPort seja omitido, ele automaticamente assumirá o mesmo valor do atributo port.
+* Informa em qual porta foi disponibilizado a aplicação dentro do container em um Pod.
 
 <figure><img src="../.gitbook/assets/image (128).png" alt=""><figcaption></figcaption></figure>
 
@@ -395,27 +414,43 @@ kubernetes                   ClusterIP            10.96.0.1                 \<no
 
 ## <mark style="color:red;">NodePort</mark>&#x20;
 
-Permitem a comunicação externa ao cluster, disponibilizando uma porta ao qual é possível enviar requisições ao node, direcionada a alguma aplicação rodando nas Pods
+O **NodePort** é um tipo de serviço no Kubernetes que permite o acesso externo ao cluster, expondo uma porta em cada nó para que as requisições sejam redirecionadas aos Pods.
 
 <figure><img src="../.gitbook/assets/image (198).png" alt=""><figcaption></figcaption></figure>
 
-Quando configuramos um serviço para `NodePort`, o kubernetes aloca uma porta de um range (por padrão 30000-32767). &#x20;
+**Funcionamento:**
 
-* Cada nó faz um proxy para aquela porta no serviço.
+1. **Exposição de Porta:**
+   * O Kubernetes reserva uma porta específica no intervalo **30000-32767** (por padrão) em todos os nós.
+2. **Proxy do Nó:**
+   * Cada nó no cluster atua como um proxy para a aplicação, redirecionando as requisições recebidas nessa porta para o serviço associado.
+
+**Benefícios do NodePort:**
+
+1. **Acesso Externo Direto:** Permite que aplicações sejam acessadas de fora do cluster sem configurações adicionais, desde que o IP do nó seja conhecido.
+2. **Simplicidade:** Requer apenas a configuração do serviço, sem a necessidade de ferramentas externas.
+
+**Limitações do NodePort:**
+
+1. **Exposição Manual:** Exige que o cliente conheça o IP do nó e a porta alocada.
+2. **Restrição de Range:** Portas alocadas limitadas ao intervalo padrão.
+3. **Escalabilidade:** Não é ideal para clusters grandes ou para cenários com alto tráfego externo. Para esses casos, recomenda-se o uso de LoadBalancer ou Ingress.
 
 <figure><img src="../.gitbook/assets/image (199).png" alt=""><figcaption></figcaption></figure>
 
 Quando falamos de `NodePort` temos 3 parâmetros importantes:
 
-* <mark style="color:blue;">port</mark> - Expõe o serviço kubernetes na `port` para o cluster, ou seja, utilizada para a comunicação com a Pod
+* <mark style="color:blue;">port</mark> - Porta aberta no serviço para a comunicação interna do cluster.
 
 ***
 
-* <mark style="color:blue;">targetPort</mark> - Porta na qual o serviço enviará requests para o pod
+* <mark style="color:blue;">targetPort</mark> - Porta dentro do container onde a aplicação está em execução.
+  * Se omitido, assume o mesmo valor de `port`.
 
 ***
 
-* <mark style="color:blue;">nodePort</mark> - Porta na qual o serviço será acessível através dos IP's dos nodes de forma externa ao Cluster.
+* <mark style="color:blue;">nodePort</mark> - Porta fixa no nó usada para acesso externo através dos IP's dos nodes.
+  * Pode ser especificada ou deixada para o Kubernetes alocar automaticamente dentro do intervalo padrão.
 
 <figure><img src="../.gitbook/assets/image (200).png" alt=""><figcaption></figcaption></figure>
 
@@ -589,9 +624,42 @@ kubernetes                   ClusterIP            10.96.0.1                 \<no
 
 ## <mark style="color:red;">LoadBalancer</mark>&#x20;
 
-O LoadBalancer é muito similar ao NodePort, que permite a comunicação entre uma maquina do mundo externo aos nossos pods. As diferenças são que os LoadBalancers normalmente ficam alocados em um Cloud provider, e que ele automaticamente distribuí as cargas de acesso entre nós do cluster.
+O **LoadBalancer** é um tipo de serviço que expõe aplicações do cluster Kubernetes para o mundo externo, distribuindo automaticamente o tráfego entre os nós do cluster.
+
+**Principais Características:**
+
+1. **Acesso Externo Automatizado:**
+   * Diferentemente do NodePort, o LoadBalancer cria automaticamente um balanceador de carga externo, geralmente fornecido por um **Cloud Provider**.
+2. **Distribuição de Carga:**
+   * Garante que o tráfego seja distribuído de forma equilibrada entre os nós disponíveis, otimizando o desempenho e a disponibilidade.
+3. **Dependência de Cloud Providers:**
+   * Utiliza a integração com o **Cloud Controller Manager (C-C-M)** para provisionar e gerenciar balanceadores de carga externos.
 
 > Caso seja necessario a utilização do serviço do tipo LoadBalancer, será utilizado o Recurso Cloud Controller Manager (C-C-M)
+
+**Funcionamento:**
+
+* O LoadBalancer provisiona um balanceador externo diretamente no Cloud Provider (como AWS, GCP ou Azure).
+* O balanceador de carga externo encaminha as requisições para as portas NodePort dos nós do cluster.
+* Internamente, o Kubernetes utiliza seletores para direcionar o tráfego aos Pods associados.
+
+**Benefícios do LoadBalancer:**
+
+1. **Simplicidade:**
+   * Abstrai a configuração manual de balanceadores de carga externos.
+2. **Distribuição Automática:**
+   * Balanceia o tráfego entre os nós de forma transparente.
+3. **Escalabilidade:**
+   * Ideal para ambientes de produção com alto tráfego.
+
+**Limitações do LoadBalancer:**
+
+1. **Dependência de Cloud Providers:**
+   * Disponível principalmente em ambientes gerenciados por provedores de nuvem.
+2. **Custos Adicionais:**
+   * A utilização de balanceadores de carga externos pode gerar custos no Cloud Provider.
+3. **Restrições em Clusters Bare-Metal:**
+   * Em clusters locais, pode exigir ferramentas adicionais como **MetalLB** para implementar funcionalidades equivalentes.
 
 <figure><img src="../.gitbook/assets/image (201).png" alt=""><figcaption></figcaption></figure>
 
@@ -743,15 +811,47 @@ kubernetes                   ClusterIP            10.96.0.1                 \<no
 
 ## <mark style="color:red;">External Name</mark>&#x20;
 
-É um tipo de serviço especial que atua como um alias para um host externo. Ele não direciona o tráfego para um pod interno, como outros tipos de serviços, mas sim redireciona para um nome de host externo.
+O **ExternalName** é um tipo especial de serviço no Kubernetes que mapeia um nome de serviço interno para um nome de host externo, funcionando como um alias DNS. Ele é ideal para acessar recursos externos ao cluster, como bancos de dados ou APIs externas, sem expor pods ou nós diretamente.
 
 Digamos que tenhamos um serviço ou recurso fora do cluster do Kubernetes, como um banco de dados hospedado em algum lugar na internet. Podemos querer acessar esse banco de dados de dentro do cluster Kubernetes. Para fazer isso, podemos criar um serviço `externalName` que mapeia o nome do serviço do Kubernetes para o nome de host externo do banco de dados.
 
 > Expõe um serviço externo para ser acessado através do pod interno, por exemplo um banco de dados.
 
+**Principais Características:**
+
+1. **Resolução de Nome de Host Externo:**
+   * Redireciona o tráfego de dentro do cluster para um nome de domínio externo.
+   * Não cria um endereço IP ou proxy no cluster.
+2. **Simplicidade:**
+   * Não gerencia pods ou endpoints, apenas faz a tradução do nome.
+3. **Flexibilidade:**
+   * Caso o host externo mude, basta atualizar o serviço ExternalName sem alterar as aplicações.
+
+**Funcionamento:**
+
+* Ao configurar um serviço com o tipo **ExternalName**, o Kubernetes adiciona um registro CNAME ao DNS interno do cluster.
+* Quando os pods acessam o serviço, o nome é resolvido para o host externo.
+
 ```yaml
 externalName: mongo-service.database.svc.cluster.local
 ```
+
+**Benefícios do ExternalName:**
+
+1. **Abstração:**
+   * Isola as aplicações das dependências externas, permitindo mudanças no host sem alterações nos pods.
+2. **Simplicidade de Configuração:**
+   * Apenas configurações DNS internas, sem necessidade de balanceadores ou pods.
+3. **Integração com Serviços Externos:**
+   * Ideal para conectar-se a bancos de dados ou APIs fora do cluster.
+
+**Limitações do ExternalName:**
+
+1. **Apenas Resolução de DNS:**
+   * Não fornece balanceamento de carga ou proxy.
+   * O tráfego é diretamente roteado ao host externo.
+2. **Dependência do DNS:**
+   * Requer que os pods consigam resolver o nome DNS configurado.
 
 <table><thead><tr><th width="207" align="center">Nome do serviço</th><th align="center">Namespace </th><th width="181" align="center">Tipo de Resources</th><th align="center">Cluster default </th></tr></thead><tbody><tr><td align="center"><code>mongo-service</code></td><td align="center"><code>database</code></td><td align="center"><code>svc</code></td><td align="center"><code>cluster.local</code></td></tr></tbody></table>
 

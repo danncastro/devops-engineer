@@ -10,17 +10,26 @@ description: Ao implantar o Kubernetes, você obtém um cluster.
 
 ## <mark style="color:red;">Overview</mark>
 
-Um cluster Kubernetes consiste em um conjunto de servidores de processamento, chamados nodes, que executam aplicações em contêineres  dentro das `PODS`. &#x20;
+Um **cluster Kubernetes** é composto por um conjunto de servidores, chamados **nodes**, que executam aplicações em containers dentro de **Pods**.
 
 > _Quando se executa o Kubernetes, está se executando um cluster._&#x20;
 
-* No mínimo, um cluster K8s contém um plano de controle `Control-plane` e pelo menos um servidor de processamento `Worker node` ("Máquina ou nó `(node)"`).
+* **Cluster:** Representa a infraestrutura em execução, sempre composta por:
+  * **Control Plane:** Gerencia o cluster e coordena os nós de processamento.
+  * **Worker Nodes:** Servidores que hospedam os Pods, onde as aplicações realmente rodam.
+
+> No mínimo, um cluster K8s contém um plano de controle `Control-plane` e pelo menos um servidor de processamento `Worker node` ("Máquina ou nó `(node)"`).
 
 <figure><img src="../.gitbook/assets/image (170).png" alt=""><figcaption></figcaption></figure>
 
-* O servidor de processamento (`Worker`) hospeda os Pods que são componentes de uma aplicação.
+* O servidor de processamento (`Worker`) hospeda os **Pods,** que são as unidades básicas de execução no Kubernetes, encapsulando um ou mais containers de uma aplicação.
 
 <figure><img src="../.gitbook/assets/image (178).png" alt=""><figcaption></figcaption></figure>
+
+**Ambiente de Gerenciamento:**
+
+* Supervisiona os nodes e Pods do cluster.
+* Em produção, é distribuído por múltiplas máquinas para garantir alta disponibilidade e tolerância a falhas.
 
 > _O ambiente de gerenciamento cuida dos nós de processamento e os Pods no cluster._&#x20;
 

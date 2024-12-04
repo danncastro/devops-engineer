@@ -1,8 +1,8 @@
 ---
 description: >-
-  O YAML é uma linguagem de serialização de dados muito usada na escrita de
-  arquivos de configuração. O YAML usa um recuo no estilo Python para indicar o
-  alinhamento.
+  O YAML (YAML Ain't Markup Language) é um formato de dados legível por humanos,
+  usado principalmente para configuração de aplicações e definição de recursos,
+  como no Kubernetes.
 ---
 
 # Arquivos YAML
@@ -13,22 +13,15 @@ YAML significa -> "**Y**AML **A**int't **M**arkup **L**anguage" (YAML Não é um
 
 <figure><img src="../.gitbook/assets/image (183).png" alt=""><figcaption></figcaption></figure>
 
-* Case sensitive
-* UTF-8 ou UTF-16
-* **Não se deve utilizar o tab**
-
-> _É necessário utilizar espaços em branco porque os caracteres de tabulação não são permitidos. Não há símbolos de formato comuns, como chaves, colchetes, tags de fechamento ou aspas._
-
+* **Case sensitive:** YAML diferencia maiúsculas de minúsculas.
+* **Codificação de Caracteres:** Suporta **UTF-8** ou **UTF-16**.
+* **Não se deve utilizar o tab:** _É necessário utilizar espaços em branco porque os caracteres de tabulação não são permitidos_
+* **Formato Simples:** Não utiliza chaves, colchetes, tags de fechamento ou aspas como no XML ou JSON._._
 * Os arquivos YAML têm a extensão **.yml** ou **.yaml**
 
 <figure><img src="../.gitbook/assets/image (184).png" alt=""><figcaption></figcaption></figure>
 
-* HR - Human Readable
-* Melhor compreensão do que XML e JSON
-
-<figure><img src="../.gitbook/assets/image (137).png" alt=""><figcaption></figcaption></figure>
-
-***
+* HumanResource - O formato YAML é projetado para ser facilmente compreendido por seres humanos, oferecendo uma legibilidade superior em comparação ao **XML** ou **JSON**.
 
 ## <mark style="color:red;">YAML Kubernetes Exemple</mark>
 
@@ -64,7 +57,7 @@ Por exemplo ao criar um pod, o pod está dentro da versão estável da API, logo
 
 ### <mark style="color:red;">Kind</mark>&#x20;
 
-Qual tipo de componente será utilizado.   Tipo de recurso que está sendo criado.
+O **`kind`** define o tipo de recurso a ser criado no Kubernetes. Alguns exemplos incluem:
 
 > _Ex: (Pod, Deployment, Service... etc.)_
 
@@ -72,41 +65,33 @@ Qual tipo de componente será utilizado.   Tipo de recurso que está sendo criad
 
 ### <mark style="color:red;">Metadata</mark>&#x20;
 
-Dados que ajudam a identificar de forma única o objeto, incluindo uma string `nome`, `UID` e um `namespace`.&#x20;
+Dados que ajudam a identificar de forma única o objeto.
 
-> _Dados de informações sobre o recurso_
+* **Nome (name):** O nome do recurso.
+* **UID:** Identificador único do objeto.
+* **Namespace:** O namespace onde o objeto está localizado.
 
 #### <mark style="color:blue;">Labels</mark>
 
-_Labels_ são pares chave/valor anexados a [objetos](https://kubernetes.io/docs/concepts/overview/working-with-objects/#kubernetes-objects) como pods. Os _Labels_ destinam-se a ser usados ​​para especificar atributos de identificação de objetos que são significativos e relevantes para os usuários, mas não implicam diretamente em semântica para o sistema central.
-
-* Os _Labels_ podem ser usados ​​para organizar e selecionar subconjuntos de objetos.
-
-***
+Pares chave/valor usados para organizar e selecionar objetos e subconjuntos de objetos dentro do Kubernetes.
 
 * As _Labels_ podem ser anexadas aos objetos no momento da criação e posteriormente adicionadas e modificadas a qualquer momento.
-
-***
-
 * Cada objeto pode ter um conjunto de _Labels_ de chave/valor definidos.
-
-***
-
 * Cada chave deve ser exclusiva para um determinado objeto.
 
 ***
 
 ### <mark style="color:red;">Spec</mark>&#x20;
 
-Especificações do que ira conter no container.  O formato preciso do objeto `spec` é diferente para cada objeto Kubernetes, e contém campos aninhados específicos para aquele objeto.&#x20;
+Contém as especificações e definições do objeto Kubernetes. Cada tipo de objeto tem seu formato de spec específico. Por exemplo, um `Pod` pode ter uma lista de containers, enquanto um `Deployment` define o número de réplicas.
 
-* A documentação de [referência da API do Kubernetes](https://kubernetes.io/docs/reference/kubernetes-api/) pode ajudar a encontrar o formato de especificação para todos os objetos que você pode criar usando Kubernetes.
+> A documentação de [referência da API do Kubernetes](https://kubernetes.io/docs/reference/kubernetes-api/) pode ajudar a encontrar o formato de especificação para todos os objetos que você pode criar usando Kubernetes.
 
 ***
 
 ### <mark style="color:red;">Selectors</mark>
 
-Os _Seletores de Campos_ permitem que você [selecione recursos do Kubernetes](https://kubernetes.io/docs/concepts/overview/working-with-objects/kubernetes-objects) baseado no valor de um ou mais campos de um recurso.&#x20;
+Os **Selectors** permitem [selecione recursos do Kubernetes](https://kubernetes.io/docs/concepts/overview/working-with-objects/kubernetes-objects) baseado no valor de um ou mais campos de um recurso. Eles são úteis para selecionar subconjuntos de recursos que atendem a critérios definidos, como o nome ou o status.
 
 Seguem alguns exemplos de buscas utilizando seletores de campos:
 

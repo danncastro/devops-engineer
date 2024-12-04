@@ -32,8 +32,8 @@ Um **Pod Kubernetes** é um grupo de um ou mais [containers](https://kubernetes.
 
 <figure><img src="../.gitbook/assets/image (181).png" alt=""><figcaption></figcaption></figure>
 
-* Os containers são agrupados nesses pods para que os recursos sejam compartilhados de modo mais inteligente, recebem endereços IP's únicos e compartilham o mesmo Namespaces, incluindo endereços IP.&#x20;
-* Pods também contem redes compartilhadas e recursos de armazenamento entre os containers mas não podem compartilhar a mesma porta de acesso dentro de um mesmo pod.
+* Os containers são agrupados nesses pods para que os recursos possam ser compartilhados entre eles, então eles recebem endereços IP's únicos e compartilham o mesmo Namespaces.&#x20;
+* Pods também além do compartilhamento de redes, elas podem conter recursos de armazenamento entre os containers, **mas não podem compartilhar a mesma porta de acesso** dentro de um mesmo pod.
 
 <figure><img src="../.gitbook/assets/image (166).png" alt=""><figcaption></figcaption></figure>
 
@@ -41,7 +41,13 @@ Um **Pod Kubernetes** é um grupo de um ou mais [containers](https://kubernetes.
 Containers em um mesmo pod se comunicam através de localhost.
 {% endhint %}
 
-> Os Pods são `efêmeros` e representam uma única instância de um processo em execução no cluster.
+> Os Pods são `efêmeros` , ou seja, a menos que você mapei um volume persistente ali para as pods. Quando um Pod é **reiniciado ou removido**, ele é destruído e uma nova Pod é criado no lugar, com **configuração nova**, o que implica que:
+>
+> * O **IP do Pod** será alterado. Cada vez que um Pod é recriado, ele recebe um novo IP interno.
+> * **Dados voláteis** dentro do Pod serão perdidos, a menos que você utilize volumes persistentes.
+>
+> \
+> Para garantir um IP fixo ou estável para acesso, você pode usar um **Service**, que fornece um ponto de acesso estável, independentemente da reinicialização dos Pods."
 
 ***
 

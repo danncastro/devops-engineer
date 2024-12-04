@@ -17,9 +17,9 @@ description: >-
 
 ## <mark style="color:red;">About Deployment</mark>
 
-Um ponto interessante de um `deployment` é que o `replicaset` sempre tentará atingir o estado desejado dos `pods`. Ou seja, mesmo que os pods sejam deletados, o `replicaset` se encarregará de garantir o deployment dos mesmos.
+Um dos aspectos mais interessantes de um Deployment é que ele trabalha diretamente com o **ReplicaSet.** Ou seja, mesmo que os pods sejam deletados, o **ReplicaSet** se encarregará de garantir o que a quantidade especificada dentro do deployment seja mantida.
 
-Essa é uma das grandes "magias" do kubernetes, e é uma das maiores "pegadinhas" para aqueles que não conhecem o funcionamento do mesmo e tentam apagar os pods porem eles continuam reaparecendo.
+Essa é uma das grandes "magias" do kubernetes, e é uma das maiores "pegadinhas" para aqueles que não conhecem o funcionamento e tentam apagar os pods, e eles continuam reaparecendo.
 
 {% hint style="info" %}
 Para remover nossos pods precisamos remover o deployment.
@@ -27,11 +27,27 @@ Para remover nossos pods precisamos remover o deployment.
 
 #### <mark style="color:blue;">Responsável pela implantação da aplicação</mark>
 
-Por default o Kubernetes utiliza a estratégia Rolling Updates (Rolling Release), que executa uma atualização baseada em um percentual de indisponibilidade de pods, que por padrão é ter no máximo 25% de indisponibilidade do total de pods em execução.
+Por default o Kubernetes utiliza a estratégia Rolling Updates (Rolling Release), que executa uma atualização baseada em um percentual de indisponibilidade de pods, que por padrão é ter no máximo 25% de indisponibilidade do total de pods em execução. Oque isso significa?
+
+Quando você atualiza um **Deployment** no Kubernetes, (por exemplo, atualizando a imagem de um container), a atualização não acontece de uma vez só. Em vez disso, o Kubernetes realiza a atualização **gradualmente**:
+
+1. **Substituição Sequencial:** O Kubernetes começa criando novos Pods com a nova configuração (por exemplo, com a nova imagem do container) enquanto mantém os Pods antigos em execução.
+2. **Verificação de Saúde:** Após iniciar os novos Pods, o Kubernetes verifica se eles estão funcionando corretamente, e aí que acontece o trabalho em conjunto com o controlador de replicas, o **ReplicaSet** fica ali monitorando a saúde dos Pods para garantir que a quantidade de replicas funcionando estejam provisionadas.
+3. **Atualização Gradual:** Assim que o Kubernetes garante que os novos Pods estão funcionando, ele **removerá gradualmente os Pods antigos**, substituindo-os pelos novos até que todos os Pods sejam atualizados.
+
+***
+
+### <mark style="color:red;">RollingUpdateStrategy</mark>
+
+**Max Unavailable (Máximo Indisponível)**: Isso define o número máximo de pods da aplicação que podem estar indisponíveis durante a atualização. Por exemplo, se você definir `max unavailable` como 1, isso significa que durante a atualização, apenas um pod do aplicativo pode ser removido de cada vez. Os outros continuam funcionando normalmente, garantindo que o aplicativo permaneça disponível, mesmo durante a atualização.
+
+**Max Surge (Máximo de Excesso)**: Este é o número máximo de pods extras que podem ser criados além do número original durante a atualização. Por exemplo, se você definir `max surge` como 1 em um aplicativo com 5 pods, durante a atualização, o Kubernetes pode temporariamente criar um sexto pod antes de remover os antigos. Isso ajuda a garantir que haja capacidade suficiente para lidar com qualquer aumento repentino na carga de trabalho durante a atualização.
 
 <figure><img src="../.gitbook/assets/image (185).png" alt=""><figcaption><p>Estrategia Rolling Updates</p></figcaption></figure>
 
-Uma outra forma de implantação é a estratégia Recreate Deployment, mas não é recomendada pois isso pode causar uma indisponibilidade total da aplicação. Porém em ambas as estratégias utilizadas a sempre a possibilidade da utilização do Rollback, que retorna a aplicação ao estado anterior.
+Uma outra forma de implantação é a estratégia Recreate Deployment, mas não é recomendada pois isso pode causar uma indisponibilidade total da aplicação.&#x20;
+
+Porém em ambas as estratégias utilizadas a sempre a possibilidade da utilização do Rollback, que retorna a aplicação ao estado anterior.
 
 ***
 
@@ -102,15 +118,13 @@ deployment.apps "deployment-webserver" deleted
 {% endtab %}
 {% endtabs %}
 
-#### <mark style="color:blue;">RollingUpdateStrategy</mark>
-
-**Max Unavailable (Máximo Indisponível)**: Isso define o número máximo de pods do aplicativo que podem estar indisponíveis durante a atualização. Por exemplo, se você definir `max unavailable` como 1, isso significa que durante a atualização, apenas um pod do aplicativo pode ser removido de cada vez. Os outros continuam funcionando normalmente, garantindo que o aplicativo permaneça disponível, mesmo durante a atualização.
-
-**Max Surge (Máximo de Excesso)**: Este é o número máximo de pods extras que podem ser criados além do número original durante a atualização. Por exemplo, se você definir `max surge` como 1 em um aplicativo com 5 pods, durante a atualização, o Kubernetes pode temporariamente criar um sexto pod antes de remover os antigos. Isso ajuda a garantir que haja capacidade suficiente para lidar com qualquer aumento repentino na carga de trabalho durante a atualização.
-
 ***
 
 ### <mark style="color:red;">Rollout History</mark>
+
+Refere-se ao histórico de versões anteriores de um **Deployment**, permitindo que você retorne a uma versão anterior de um recurso caso a atualização atual cause problemas. O Kubernetes mantém um histórico de alterações feitas no Deployment, e você pode usar o comando `kubectl rollout undo` para reverter para uma versão anterior, garantindo recuperação rápida em caso de falhas.
+
+Em resumo, o **rollback history** é um mecanismo de segurança que permite desfazer atualizações e voltar a um estado estável anterior de uma aplicação.
 
 {% tabs %}
 {% tab title="Create" %}

@@ -17,7 +17,7 @@ kubectl describe pod [name]
 
 ***
 
-## <mark style="color:red;">**Compreendendo a saída do comando**</mark><mark style="color:red;">** **</mark><mark style="color:red;">**`kubectl describe pod`**</mark>
+## <mark style="color:red;">**Compreendendo a saída do comando**</mark><mark style="color:red;">**&#x20;**</mark><mark style="color:red;">**`kubectl describe pod`**</mark>
 
 Aqui está um exemplo de saída do comando `kubectl describe pod`
 
@@ -167,7 +167,7 @@ Continue a depuração com base no estado do pod.
 
 ***
 
-### <mark style="color:red;">**`Pod Stays Waiting`**</mark><mark style="color:red;">** **</mark><mark style="color:red;">**(Pod permanece pendente)**</mark>
+### <mark style="color:red;">**`Pod Stays Waiting`**</mark><mark style="color:red;">**&#x20;**</mark><mark style="color:red;">**(Pod permanece pendente)**</mark>
 
 Se o status de um pod for Pendente por um tempo, isso pode significar que ele não pode ser agendado em um nó.&#x20;
 
@@ -183,7 +183,7 @@ Tente identificar as mensagens que indicam por que o pod não pôde ser agendado
 
 ***
 
-### <mark style="color:red;">**`Pod Stays Pending`**</mark><mark style="color:red;">** **</mark><mark style="color:red;">**(Pod fica esperando)**</mark>
+### <mark style="color:red;">**`Pod Stays Pending`**</mark><mark style="color:red;">**&#x20;**</mark><mark style="color:red;">**(Pod fica esperando)**</mark>
 
 Se o status de um pod for Aguardando, isso significa que ele está agendado em um nó, mas não pode ser executado. Observe a saída do `describe pod` , na seção '`Eventos`', e tente identificar os motivos pelos quais o pod não pode ser executado.
 

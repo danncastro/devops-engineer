@@ -8,9 +8,27 @@ description: >-
 
 ***
 
-&#x20;[Pods](https://kubernetes.io/docs/concepts/workloads/pods/) podem consumir `Configmaps` como variáveis de ambiente, argumentos de linha de comando ou como arquivos de configuração em um [volume](https://kubernetes.io/docs/concepts/storage/volumes/).
+&#x20;Um **ConfigMap** é um recurso utilizado para armazenar dados de configuração em pares **chave-valor**. [Pods](https://kubernetes.io/docs/concepts/workloads/pods/) podem consumir `Configmaps` como variáveis de ambiente, argumentos de linha de comando ou como arquivos de configuração em um [volume](https://kubernetes.io/docs/concepts/storage/volumes/).
 
 Um ConfigMap ajuda a desacoplar configurações vinculadas ao ambiente das [imagens de contêiner](https://kubernetes.io/pt-br/docs/reference/glossary/?all=true#term-image), de modo a tornar aplicações mais facilmente portáveis.
+
+**Como os Pods Consomem ConfigMaps:**
+
+1. **Variáveis de Ambiente:**
+   * Os valores armazenados no ConfigMap podem ser expostos como variáveis de ambiente nos contêineres.
+2. **Argumentos de Linha de Comando:**
+   * Configurações podem ser passadas como parâmetros ao iniciar o contêiner.
+3. **Arquivos de Configuração:**
+   * ConfigMaps podem ser montados como volumes nos pods, expondo os dados como arquivos no sistema de arquivos do contêiner.
+
+**Benefícios do ConfigMap:**
+
+1. **Desacoplamento:**
+   * Separa as configurações específicas do ambiente das imagens, evitando a necessidade de reconstruir contêineres para cada alteração.
+2. **Facilidade de Atualização:**
+   * Atualizar as configurações não requer a reinicialização do pod, dependendo de como o ConfigMap é consumido.
+3. **Portabilidade:**
+   * Permite que aplicações sejam movidas entre ambientes sem alterações nas imagens.
 
 ***
 
