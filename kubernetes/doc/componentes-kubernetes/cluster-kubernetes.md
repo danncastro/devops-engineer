@@ -10,7 +10,7 @@ description: Ao implantar o Kubernetes, você obtém um cluster.
 
 ## <mark style="color:red;">Overview</mark>
 
-Um **cluster Kubernetes** é composto por um conjunto de servidores, chamados **nodes**, que executam aplicações em containers dentro de **Pods**.
+Um **cluster Kubernetes** é composto por um conjunto de servidores, chamados **nodes**, que executam aplicações em containers dentro de **Pods,** que são as unidades básicas de execução no Kubernetes, encapsulando um ou mais containers de uma aplicação.
 
 > _Quando se executa o Kubernetes, está se executando um cluster._&#x20;
 
@@ -21,8 +21,6 @@ Um **cluster Kubernetes** é composto por um conjunto de servidores, chamados **
 > No mínimo, um cluster K8s contém um plano de controle `Control-plane` e pelo menos um servidor de processamento `Worker node` ("Máquina ou nó `(node)"`).
 
 <figure><img src="../.gitbook/assets/image (170).png" alt=""><figcaption></figcaption></figure>
-
-* O servidor de processamento (`Worker`) hospeda os **Pods,** que são as unidades básicas de execução no Kubernetes, encapsulando um ou mais containers de uma aplicação.
 
 <figure><img src="../.gitbook/assets/image (178).png" alt=""><figcaption></figcaption></figure>
 

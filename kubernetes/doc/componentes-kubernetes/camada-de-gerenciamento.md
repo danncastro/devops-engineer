@@ -31,10 +31,6 @@ Em ambientes de produção, o ambiente de gerenciamento é geralmente executado 
 * **Validação e Configuração:** Valida e configura dados dos objetos no cluster, como **Pods**, **Serviços**, **Controladores de Replicação**, entre outros.
 * **Frontend do Cluster:** Fornece a interface de comunicação entre o estado compartilhado do cluster e todos os outros componentes que interagem com ele.
 
-O servidor de **API** do Kubernetes valida e configura dados para os objetos presentes no cluster, que incluem `pods`, `serviços`, `controladores de replicação` e outros.
-
-O **API Server** atende às operações e fornece o **Frontend** para o estado compartilhado do cluster por meio do qual todos os outros componentes interagem.
-
 <figure><img src="../.gitbook/assets/image (171).png" alt=""><figcaption></figcaption></figure>
 
 ***
@@ -95,3 +91,25 @@ O **kube-controller-manager** coordena diversos controladores, como:
 ## <mark style="color:red;">Cloud-controller-manager</mark>
 
 ***
+
+## <mark style="color:red;">Container Runtime</mark>&#x20;
+
+O **Container Runtime** é o ambiente de execução de contêineres responsável por executar e gerenciar os containers dentro de um cluster Kubernetes.&#x20;
+
+{% hint style="info" %}
+**Observação:** O Kubernetes em si **não executa containers**; essa função é desempenhada pelo **Container Runtime**.
+{% endhint %}
+
+<figure><img src="../.gitbook/assets/image (182).png" alt=""><figcaption></figcaption></figure>
+
+> _O Kubernetes suporta diversos agentes de execução de contêineres:_ [_Docker_](https://docs.docker.com/engine/)_,_ [_containerd_](https://containerd.io/docs/)_,_ [_CRI-O_](https://cri-o.io/#what-is-cri-o)_, e qualquer implementação do_ [_Kubernetes CRI (Container Runtime Interface)_](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-node/container-runtime-interface.md)_._
+
+* Desde a **versão v1.24** o k8s requer que você utilize um container runtime compatível com o `CRI (Container Runtime Interface)` que foi apresentado em 2016 como uma interface capaz de criar um padrão de comunicação entre o container runtime e k8s.
+
+***
+
+* Versões anteriores à v1.24 ofereciam integração direta com o `Docker Engine` usando um componente chamado `dockershim` porém essa integração direta não está mais disponível.
+
+***
+
+* A documentação oficial do Kubernetes **(v1.24)** apresenta alguns ambientes de execução e suas respectivas configurações como o `containerd` um projeto avaliado com o nível graduado pela `CNCF(Cloud Native Computing Foundation)` e o **CRI-0** projeto incubado pela **CNCF**.
