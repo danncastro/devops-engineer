@@ -26,14 +26,7 @@ Um **cluster Kubernetes** é composto por um conjunto de servidores, chamados **
 
 **Ambiente de Gerenciamento:**
 
-* Supervisiona os nodes e Pods do cluster.
 * Em produção, é distribuído por múltiplas máquinas para garantir alta disponibilidade e tolerância a falhas.
-
-> _O ambiente de gerenciamento cuida dos nós de processamento e os Pods no cluster._&#x20;
-
-{% hint style="info" %}
-Em ambientes de produção, o ambiente de gerenciamento é geralmente executado em múltiplos computadores, provendo tolerância a falhas e alta disponibilidade.
-{% endhint %}
 
 ***
 

@@ -1,7 +1,8 @@
 ---
 description: >-
-  Os componentes da camada de gerenciamento tomam decisões globais sobre o
-  cluster, bem como detectam e respondem aos eventos do cluster.
+  Os componentes da camada de gerenciamento são responsáveis por tomar decisões
+  globais sobre o estado do cluster e por monitorar e reagir aos eventos que
+  ocorrem dentro dele.
 ---
 
 # Camada de Gerenciamento
@@ -13,20 +14,15 @@ description: >-
 * Coordena as operações e estados do cluster.
 * Monitora e reage a eventos, como falhas ou alterações de configuração.
 
-{% hint style="info" %}
-**Alta Disponibilidade:**\
-Em ambientes de produção, o ambiente de gerenciamento é geralmente executado em múltiplos computadores, provendo tolerância a falhas e alta disponibilidade.
-{% endhint %}
-
 > Embora os componentes de gerenciamento possam ser executados em qualquer node do cluster, normalmente são configurados para rodar em uma única máquina, para simplificação na configuração inicial.
 
 ***
 
 ## <mark style="color:red;">kube-apiserver</mark>&#x20;
 
-É o componente central que expõe a API do Kubernetes e serve como ponto de entrada para o cluster. Ele desempenha um papel fundamental no gerenciamento e na comunicação entre os diferentes componentes do Kubernetes.
+É o componente central que expõe a API do Kubernetes e serve como ponto de entrada para o cluster.
 
-* **Ponto de Entrada:** Toda ação no cluster passa pela **kube-apiserver**, que é responsável por aceitar e processar requisições, seja de usuários ou de outros componentes.
+* **Ponto de Entrada:** Toda ação no cluster passa pela **kube-apiserver**, que é responsável por aceitar e processar requisições, seja de usuários ou de outros componentes do cluster.
 * **Banco de Dados (etcd):** Apenas o **kube-apiserver** tem permissão para escrever nas configurações do banco de dados **etcd**, que armazena o estado do cluster.
 * **Validação e Configuração:** Valida e configura dados dos objetos no cluster, como **Pods**, **Serviços**, **Controladores de Replicação**, entre outros.
 * **Frontend do Cluster:** Fornece a interface de comunicação entre o estado compartilhado do cluster e todos os outros componentes que interagem com ele.
@@ -60,7 +56,7 @@ Ele é resiliente a falhas de máquinas, inclusive no nó líder, e lida com **e
 
 O **kube-scheduler** é responsável pelo agendamento de **Pods** nos nós apropriados do cluster, levando em consideração as especificações e restrições definidas, como disponibilidade de recursos.
 
-Ele recebe as requisições vindas do **kube-apiserver**, e gerência da melhor forma onde será instânciado a nova aplicação com base em critérios como recursos e políticas definidas..&#x20;
+Como ele funciona? Ele recebe as requisições vindas do **kube-apiserver**, e gerência da melhor forma onde será instânciado a nova aplicação com base em critérios como recursos e políticas definidas..&#x20;
 
 <figure><img src="../.gitbook/assets/image (136).png" alt=""><figcaption></figcaption></figure>
 
@@ -82,7 +78,7 @@ No Kubernetes, um controlador é um loop que observa o estado compartilhado do c
 O **kube-controller-manager** coordena diversos controladores, como:
 
 * **Controlador de Replicação:** Garante que o número de réplicas de um pod esteja sempre conforme o especificado.
-* **Controlador de Serviço:** No Kubernetes, o **Controlador de Serviço** é responsável por garantir que os serviços estejam corretamente configurados e acessíveis dentro do cluster. Ele gerencia a criação e manutenção de objetos de **Service**, que são usados para expor aplicações em execução nos **Pods** para outros componentes internos ou externos ao cluster. O controlador verifica a saúde e disponibilidade dos Pods associados, fazendo a distribuição do tráfego de rede para os Pods disponíveis, garantindo que o serviço esteja sempre acessível, mesmo que haja falhas ou escalabilidade dinâmica dos Pods.
+* **Controlador de Serviço:** No Kubernetes, o **Controlador de Serviço** é responsável por garantir que os serviços estejam configurados e acessíveis dentro do cluster. Ele gerencia a criação e manutenção de objetos de **Service**, que são usados para expor aplicações em execução nos **Pods** para outros componentes internos ou externos ao cluster. Então fica verificando a saúde e disponibilidade das aplicações, fazendo a distribuição do tráfego de rede para os Pods disponíveis, garantindo que o serviço esteja sempre acessível, mesmo que haja falhas ou escalabilidade dinâmica dos Pods.
 
 <figure><img src="../.gitbook/assets/image (135).png" alt=""><figcaption></figcaption></figure>
 
