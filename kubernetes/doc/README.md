@@ -116,9 +116,9 @@ Segue o princípio de infraestrutura imutável, onde alterações nos objetos (c
 * **Configuração Declarativa (Arquivos):** Define o estado desejado da aplicação em arquivos `YAML/JSON`, permitindo recriação automática em caso de falhas.
 * **Comandos imperativos (Ações no terminal):** Executa ações pontuais no terminal para ajustes ou diagnósticos rápidos.
 * **Self-Healing System:** Detecta e substitui automaticamente componentes com falhas, garantindo continuidade.
-* **Autoscale Up/Down:** Ajusta automaticamente a quantidade de recursos (replicas) para cima ou para baixo, conforme a demanda.
 * **DevOps Automation Tool:** Automatiza tarefas repetitivas, integrando operações e desenvolvimento.
 * **Fault Protection (Ações preventivas):** Implementa ações preventivas para reduzir impactos de falhas e melhorar a confiabilidade.
+* **Autoscale Up/Down:** Ajusta automaticamente a quantidade de recursos (replicas) para cima ou para baixo, conforme a demanda.
 
 #### <mark style="color:blue;">Escalabilidade -> Services/Applications</mark>
 
