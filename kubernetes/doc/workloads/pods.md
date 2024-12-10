@@ -11,7 +11,7 @@ description: >-
 {% hint style="info" %}
 #### Todos os recursos utilizados nesses exemplos, estarão disponibilizados no Github:
 
-[https://github.com/danncastro/nki-kubernetes-projects/tree/main/k8s-cka-exemples/pods](https://github.com/danncastro/nki-kubernetes-projects/tree/main/k8s-cka-exemples/pods)
+[https://github.com/danncastro/k8s-hands-on-testing/tree/main/k8s-cka-exemples/pods](https://github.com/danncastro/k8s-hands-on-testing/tree/main/k8s-cka-exemples/pods)
 {% endhint %}
 
 ***
@@ -142,7 +142,7 @@ No resources found in default namespace.
 {% tabs %}
 {% tab title="Pod" %}
 ```bash
-kubectl apply -f nki-kubernetes-projects/k8s-cka-exemples/pods/pod_webserver.yml
+kubectl apply -f k8s-hands-on-testing/k8s-cka-exemples/pods/pod_webserver.yml
 ```
 
 pod/pod-webserver created
@@ -158,7 +158,7 @@ kubectl get po -owide
 
 {% tab title="Deleted" %}
 ```bash
-kubectl delete -f nki-kubernetes-projects/k8s-cka-exemples/pods/pod_webserver.yml
+kubectl delete -f k8s-hands-on-testing/k8s-cka-exemples/pods/pod_webserver.yml
 ```
 
 pod "pod-webserver" deleted

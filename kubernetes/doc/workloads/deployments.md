@@ -48,7 +48,9 @@ Porém em ambas as estratégias utilizadas a sempre a possibilidade da utilizaç
 ***
 
 {% hint style="info" %}
-**Todos os recursos utilizados nesses exemplos, estarão disponibilizados no Github:**  [https://github.com/danncastro/nki-kubernetes-projects/tree/main/k8s-cka-exemples/deployments](https://github.com/danncastro/nki-kubernetes-projects/tree/main/k8s-cka-exemples/deployments)
+**Todos os recursos utilizados nesses exemplos, estarão disponibilizados no Github:**&#x20;
+
+[**https://github.com/danncastro/k8s-hands-on-testing/tree/main/k8s-cka-exemples/deployments**](https://github.com/danncastro/k8s-hands-on-testing/tree/main/k8s-cka-exemples/deployments)
 {% endhint %}
 
 ## <mark style="color:red;">Criando Deployments</mark>
@@ -56,7 +58,7 @@ Porém em ambas as estratégias utilizadas a sempre a possibilidade da utilizaç
 {% tabs %}
 {% tab title="Deployment" %}
 ```bash
-kubectl apply -f nki-kubernetes-projects/k8s-cka-exemples/deployments/deployment-webserver.yml
+kubectl apply -f k8s-hands-on-testing/k8s-cka-exemples/deployments/deployment-webserver.yml
 ```
 
 deployment.apps/deployment-webserver created
@@ -107,7 +109,7 @@ kubectl describe deploy deployment-webserver
 
 {% tab title="Deleted" %}
 ```
-kubectl delete -f nki-kubernetes-projects/k8s-cka-exemples/deployments/deployment-webserver.yml
+kubectl delete -f k8s-hands-on-testing/k8s-cka-exemples/deployments/deployment-webserver.yml
 ```
 
 deployment.apps "deployment-webserver" deleted
@@ -125,7 +127,7 @@ Em resumo, o **rollback history** é um mecanismo de segurança que permite desf
 {% tabs %}
 {% tab title="Create" %}
 ```bash
-kubectl apply -f nki-kubernetes-projects/k8s-cka-exemples/deployments/deployment-webserver.yml
+kubectl apply -f k8s-hands-on-testing/k8s-cka-exemples/deployments/deployment-webserver.yml
 ```
 
 deployment.apps/deployment-webserver created
@@ -160,38 +162,17 @@ Alteraremos o número de replicas no manifesto para 4
 ***
 
 ```bash
-vim nki-kubernetes-projects/k8s-cka-exemples/deployments/deployment-webserver.yml
+vim k8s-hands-on-testing/k8s-cka-exemples/deployments/deployment-webserver.yml
 ```
 
 ```yaml
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: deployment-webserver
-  labels:
-    app: frontend
-
-spec:
-  template:
-    metadata:
-      name: pod-nginx
-      labels:
-        env: production
-    spec:
-      containers:
-      - name: container-nginx
-        image: nginx
-
-  selector:
-    matchLabels:
-      env: production
   replicas: 4
 ```
 
 ***
 
 ```bash
-kubectl apply -f nki-kubernetes-projects/k8s-cka-exemples/deployments/deployment-webserver.yml
+kubectl apply -f k8s-hands-on-testing/k8s-cka-exemples/deployments/deployment-webserver.yml
 ```
 
 deployment.apps/deployment-webserver configured
@@ -221,34 +202,14 @@ Alteraremos a versão da imagem do container
 ***
 
 ```yaml
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: deployment-webserver
-  labels:
-    app: frontend
-
-spec:
-  template:
-    metadata:
-      name: pod-nginx
-      labels:
-        env: production
-    spec:
-      containers:
-      - name: container-nginx
-        image: nginx:1.18.0
-
-  selector:
-    matchLabels:
-      env: production
-  replicas: 4
+...
+image: nginx:1.18.0
 ```
 {% endtab %}
 
 {% tab title="Apply" %}
 ```bash
-kubectl apply -f nki-kubernetes-projects/k8s-cka-exemples/deployments/deployment-webserver.yml
+kubectl apply -f k8s-hands-on-testing/k8s-cka-exemples/deployments/deployment-webserver.yml
 ```
 
 deployment.apps/deployment-webserver configured
@@ -296,40 +257,16 @@ kubectl rollout history deployment.apps/frontend-deploy
 {% endtabs %}
 
 {% tabs %}
-{% tab title="Manifest" %}
+{% tab title="Old image" %}
 Voltaremos a imagem a versão anterior
 
-***
-
 ```yaml
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: deployment-webserver
-  labels:
-    app: frontend
-
-spec:
-  template:
-    metadata:
-      name: pod-nginx
-      labels:
-        env: production
-    spec:
-      containers:
-      - name: container-nginx
-        image: nginx
-
-  selector:
-    matchLabels:
-      env: production
-  replicas: 4
+...
+image: nginx
 ```
-{% endtab %}
 
-{% tab title="Apply" %}
-```bash
-kubectl apply -f nki-kubernetes-projects/k8s-cka-exemples/deployments/deployment-webserver.yml
+```
+kubectl apply -f k8s-hands-on-testing/k8s-cka-exemples/deployments/deployment-webserver.yml
 ```
 
 deployment.apps/deployment-webserver configured
@@ -351,38 +288,18 @@ kubectl rollout history deployment.apps/deployment-webserver
 Alteraremos novamente a versão da imagem
 
 ```bash
-vi nki-kubernetes-projects/k8s-cka-exemples/deployments/deployment-webserver.yml
+vi k8s-hands-on-testing/k8s-cka-exemples/deployments/deployment-webserver.yml
 ```
 
 ```yaml
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: deployment-webserver
-  labels:
-    app: frontend
-
-spec:
-  template:
-    metadata:
-      name: pod-nginx
-      labels:
-        env: production
-    spec:
-      containers:
-      - name: container-nginx
-        image: nginx:1.14.2
-
-  selector:
-    matchLabels:
-      env: production
-  replicas: 4
+...
+image: nginx:1.14.2
 ```
 {% endtab %}
 
 {% tab title="Apply" %}
 ```bash
-kubectl apply -f nki-kubernetes-projects/k8s-cka-exemples/deployments/deployment-webserver.yml
+kubectl apply -f k8s-hands-on-testing/k8s-cka-exemples/deployments/deployment-webserver.yml
 ```
 
 deployment.apps/deployment-webserver configured
@@ -424,7 +341,7 @@ deployment.apps/deployment-webserver with revision #2
 {% tabs %}
 {% tab title="Manifest" %}
 ```bash
-vi nki-kubernetes-projects/k8s-cka-exemples/deployments/deployment-webserver.yml
+vi k8s-hands-on-testing/k8s-cka-exemples/deployments/deployment-webserver.yml
 ```
 
 ```yaml
@@ -455,7 +372,7 @@ spec:
 
 {% tab title="Apply" %}
 ```bash
-kubectl apply -f nki-kubernetes-projects/k8s-cka-exemples/deployments/deployment-webserver.yml --record
+kubectl apply -f k8s-hands-on-testing/k8s-cka-exemples/deployments/deployment-webserver.yml --record
 ```
 
 Flag --record has been deprecated, --record will be removed in the future
@@ -529,7 +446,7 @@ kubectl rollout history deployment.apps/frontend-deploy --revision=7
 {% tabs %}
 {% tab title="Deleted" %}
 ```bash
-kubectl delete -f nki-kubernetes-projects/k8s-cka-exemples/deployments/deployment-webserver.yml
+kubectl delete -f k8s-hands-on-testing/k8s-cka-exemples/deployments/deployment-webserver.yml
 ```
 
 deployment.apps "deployment-webserver" deleted
@@ -537,7 +454,7 @@ deployment.apps "deployment-webserver" deleted
 
 {% tab title="Manifest" %}
 ```bash
-vi nki-kubernetes-projects/k8s-cka-exemples/deployments/deployment-webserver.yml
+vi k8s-hands-on-testing/k8s-cka-exemples/deployments/deployment-webserver.yml
 ```
 
 ```yaml
@@ -568,7 +485,7 @@ spec:
 
 {% tab title="Apply" %}
 ```bash
-kubectl apply -f nki-kubernetes-projects/k8s-cka-exemples/deployments/deployment-webserver.yml
+kubectl apply -f k8s-hands-on-testing/k8s-cka-exemples/deployments/deployment-webserver.yml
 ```
 
 deployment.apps/deployment-webserver created
@@ -589,7 +506,7 @@ Vamos alterar a versão da imagem para gerar uma nova revisão
 ***
 
 ```bash
-vim nki-kubernetes-projects/k8s-cka-exemples/deployments/deployment-webserver.yml
+vim k8s-hands-on-testing/k8s-cka-exemples/deployments/deployment-webserver.yml
 ```
 
 ```yaml
@@ -622,7 +539,7 @@ spec:
 > Deixe um terminal aberto com o comando `watch kubectl get pod` e outro com o comando de `pause` já preparados, pois como estamos utilizando um contexto de testes, existem poucas pods em execução, então a alteração das versões pode ocorrer de forma instantânea, sendo assim já dê o pause assim que executar o apply
 
 ```bash
-kubectl apply -f nki-kubernetes-projects/k8s-cka-exemples/deployments/deployment-webserver.yml
+kubectl apply -f k8s-hands-on-testing/k8s-cka-exemples/deployments/deployment-webserver.yml
 ```
 
 deployment.apps/deployment-webserver configured
@@ -688,7 +605,7 @@ Vamos escalar mais 2 pods no arquivo de manifesto ou o que chamamos de **scale u
 ***
 
 ```bash
-vim nki-kubernetes-projects/k8s-cka-exemples/deployments/deployment-webserver.yml
+vim k8s-hands-on-testing/k8s-cka-exemples/deployments/deployment-webserver.yml
 ```
 
 ```yaml
@@ -719,7 +636,7 @@ spec:
 
 {% tab title="Apply" %}
 ```bash
-kubectl apply -f nki-kubernetes-projects/k8s-cka-exemples/deployments/deployment-webserver.yml
+kubectl apply -f k8s-hands-on-testing/k8s-cka-exemples/deployments/deployment-webserver.yml
 ```
 
 deployment.apps/deployment-webserver configured
@@ -779,7 +696,7 @@ Vamos novamente alterar a versão da imagem para gerar um novo valor de revisão
 ***
 
 ```bash
-vim nki-kubernetes-projects/k8s-cka-exemples/deployments/deployment-webserver.yml
+vim k8s-hands-on-testing/k8s-cka-exemples/deployments/deployment-webserver.yml
 ```
 
 ```yaml
@@ -811,7 +728,7 @@ spec:
 
 {% tab title="Apply" %}
 ```bash
-kubectl apply -f nki-kubernetes-projects/k8s-cka-exemples/deployments/deployment-webserver.yml
+kubectl apply -f k8s-hands-on-testing/k8s-cka-exemples/deployments/deployment-webserver.yml
 ```
 
 deployment.apps/deployment-webserver configured
@@ -843,7 +760,7 @@ kubectl describe deployment.apps/deployment-webserver | grep StrategyType
 {% tabs %}
 {% tab title="Deleted" %}
 ```bash
-kubectl delete -f nki-kubernetes-projects/k8s-cka-exemples/deployments/deployment-webserver.yml
+kubectl delete -f k8s-hands-on-testing/k8s-cka-exemples/deployments/deployment-webserver.yml
 ```
 
 deployment.apps "deployment-webserver" deleted

@@ -37,7 +37,7 @@ Uma das desvantagens da utilização de ReplicasSet, é que ele não faz a alter
 **Todos os recursos utilizados nesses exemplos, estarão disponibilizados no Github:**\
 
 
-[https://github.com/danncastro/nki-kubernetes-projects/tree/main/k8s-cka-exemples/replicasets](https://github.com/danncastro/nki-kubernetes-projects/tree/main/k8s-cka-exemples/replicasets)
+[https://github.com/danncastro/k8s-hands-on-testing/tree/main/k8s-cka-exemples/replicasets](https://github.com/danncastro/k8s-hands-on-testing/tree/main/k8s-cka-exemples/replicasets)
 {% endhint %}
 
 {% tabs %}
@@ -59,7 +59,7 @@ No resources found in default namespace.
 ***
 
 ```bash
-kubectl apply -f nki-kubernetes-projects/k8s-cka-exemples/replicasets/replicaset-webserver.yml
+kubectl apply -f k8s-hands-on-testing/k8s-cka-exemples/replicasets/replicaset-webserver.yml
 ```
 
 replicaset.apps/pods-replicaset created
@@ -113,13 +113,13 @@ kubectl get po -owide
 1. Vamos aumentar o valor de replicas dentro do manifesto
 
 ```bash
-vi nki-kubernetes-projects/k8s-cka-exemples/replicasets/replicaset-webserver.yml
+vi k8s-hands-on-testing/k8s-cka-exemples/replicasets/replicaset-webserver.yml
 ```
 
 <figure><img src="../.gitbook/assets/image (56).png" alt=""><figcaption></figcaption></figure>
 
 ```bash
-kubectl apply -f nki-kubernetes-projects/k8s-cka-exemples/replicasets/replicaset-webserver.yml
+kubectl apply -f k8s-hands-on-testing/k8s-cka-exemples/replicasets/replicaset-webserver.yml
 ```
 
 replicaset.apps/pods-replicaset configured
@@ -147,7 +147,7 @@ kubectl get rs -owide
 1. Vamos novamente ajustar o manifesto, e diminuir a quantidade de replicas.
 
 ```bash
-vi nki-kubernetes-projects/k8s-cka-exemples/replicasets/replicaset-webserver.yml
+vi k8s-hands-on-testing/k8s-cka-exemples/replicasets/replicaset-webserver.yml
 ```
 
 <figure><img src="../.gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
@@ -155,7 +155,7 @@ vi nki-kubernetes-projects/k8s-cka-exemples/replicasets/replicaset-webserver.yml
 ***
 
 ```bash
-kubectl apply -f nki-kubernetes-projects/k8s-cka-exemples/replicasets/replicaset-webserver.yml
+kubectl apply -f k8s-hands-on-testing/k8s-cka-exemples/replicasets/replicaset-webserver.yml
 ```
 
 replicaset.apps/pods-replicaset configured
@@ -209,7 +209,7 @@ No resources found in default namespace.
 {% tabs %}
 {% tab title="ReplicaSet" %}
 ```bash
-kubectl apply -f nki-kubernetes-projects/k8s-cka-exemples/replicasets/replicaset-webserver.yml
+kubectl apply -f k8s-hands-on-testing/k8s-cka-exemples/replicasets/replicaset-webserver.yml
 ```
 
 replicaset.apps/pods-replicaset created
