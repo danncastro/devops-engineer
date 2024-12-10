@@ -7,6 +7,10 @@ description: >-
 
 # ReplicaSets
 
+`ReplicaSets` no kubernetes funcionam como `Replicas` do Docker Swarm
+
+
+
 {% embed url="https://kubernetes.io/pt-br/docs/concepts/workloads/controllers/replicaset/" %}
 
 ***

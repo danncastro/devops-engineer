@@ -33,6 +33,7 @@
 ## Services/Network
 
 * [Services](services-network/services.md)
+* [Ingress Controller Manager](services-network/ingress-controller-manager.md)
 * [Networking](services-network/networking.md)
 
 ## Storage

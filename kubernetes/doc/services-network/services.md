@@ -139,13 +139,13 @@ O **ClusterIP** é o tipo de serviço padrão no Kubernetes, projetado para faci
 
 <figure><img src="../.gitbook/assets/image (129).png" alt=""><figcaption></figcaption></figure>
 
-* Mantem os serviços apenas internos ao cluster
-
 **Principais Características:**
 
 * **Acesso Interno:** Torna os serviços acessíveis apenas dentro do cluster, não permitindo acesso externo sem a utilização de um proxy.
 * **Endereçamento Dinâmico:** Os Pods têm IPs efêmeros; se forem reiniciados ou substituídos, os IPs podem mudar.
 * **Resolução de DNS:** O Kube-DNS (ou CoreDNS) resolve automaticamente os endereços IPs dinâmicos dos Pods, permitindo que os serviços sejam acessados por nomes em vez de IPs.
+* Nesse contexto o Kube-DNS se encarrega de resolver o caminho até os pods. Ou seja ele se encarrega de todo esse endereçamento IP.
+* Ajuda o Administrador apenas a se preocupar com o serviço.
 
 **Configuração de Portas em Serviços**
 
@@ -170,15 +170,6 @@ O **ClusterIP** é o tipo de serviço padrão no Kubernetes, projetado para faci
 #### <mark style="color:blue;">Características</mark>
 
 <figure><img src="../.gitbook/assets/image (130).png" alt=""><figcaption></figcaption></figure>
-
-{% hint style="info" %}
-Pods não possuem IPs estáticos
-{% endhint %}
-
-Ou seja quando um pod e reinicializado ou até mesmo deletado, ele pode retornar com um novo endereço IP.&#x20;
-
-* Nesse contexto o Kube-DNS se encarrega de resolver o caminho até os pods. Ou seja ele se encarrega de todo esse endereçamento IP.
-* Ajuda o Administrador apenas a se preocupar com o serviço.
 
 ***
 

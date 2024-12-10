@@ -7,10 +7,6 @@ description: >-
 
 # Deployments
 
-> `ReplicaSets` no kubernetes funcionam como `Replicas` do Docker Swarm
-
-
-
 {% embed url="https://kubernetes.io/docs/concepts/workloads/controllers/deployment/" %}
 
 ***
@@ -202,7 +198,11 @@ deployment.apps/deployment-webserver configured
 {% endtab %}
 
 {% tab title="History" %}
-Note que apenas alterar o número de replicas não altera o valor de revisão, isso acontece apenas quando a mudanças significativas, exemplo a versão da imagem do container.
+Note que apenas alterar o número de replicas não altera o valor de revisão, isso acontece apenas quando a mudanças significativas, então por exemplo:&#x20;
+
+* Atualização da imagem do contêiner (`image`);
+* Alteração de argumentos ou comandos do contêiner;
+* Modificação de variáveis de ambiente diretamente definidas no Deploymen
 
 ***
 

@@ -13,6 +13,7 @@ YAML significa -> "**Y**AML **A**int't **M**arkup **L**anguage" (YAML Não é um
 
 <figure><img src="../.gitbook/assets/image (183).png" alt=""><figcaption></figcaption></figure>
 
+* **Estrutura de dados:** Chave-valor.
 * **Case sensitive:** YAML diferencia maiúsculas de minúsculas.
 * **Codificação de Caracteres:** Suporta **UTF-8** ou **UTF-16**.
 * **Não se deve utilizar o tab:** _É necessário utilizar espaços em branco porque os caracteres de tabulação não são permitidos_
@@ -49,7 +50,7 @@ Qual a versão de API do Kubernetes que será usado para criar esse recurso. API
 
 > _E ela possui também diversos grupos para utilizar._
 
-Por exemplo ao criar um pod, o pod está dentro da versão estável da API, logo está na versão **"v"** seguida de algum número. Nesse caso ele está na versão **"v1"**.
+Isso pode ser consultado executando o comando kubectl api-resource
 
 <table><thead><tr><th width="146" align="center">POD</th><th width="218" align="center">Deployment </th><th width="180" align="center">Service</th><th align="center">ReplicaSet</th></tr></thead><tbody><tr><td align="center">v1</td><td align="center">apps/v1</td><td align="center">v1</td><td align="center">apps/v1</td></tr></tbody></table>
 

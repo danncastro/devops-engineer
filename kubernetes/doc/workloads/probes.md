@@ -94,8 +94,6 @@ Ela pode ser configurada para realizar verificações via **HTTP** ou **TCP**. N
 
 Configurando adequadamente parâmetros como o tempo entre verificações e o tempo de espera para uma resposta bem-sucedida, a **Readiness Probe** ajuda a garantir que o contêiner só receba tráfego quando estiver de fato pronto para processá-lo, evitando falhas no serviço.
 
-> **LivenessProbe** são para saber se a aplicação está saudável e/ou se deve ser reiniciada, enquanto **ReadinessProbe** são para saber se a aplicação já está pronta para receber requisições depois de iniciar
-
 ***
 
 ## <mark style="color:red;">startupProbe</mark>&#x20;

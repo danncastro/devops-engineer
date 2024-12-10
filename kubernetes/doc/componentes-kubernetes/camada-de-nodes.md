@@ -48,8 +48,6 @@ O **kube-proxy** é um componente do Kubernetes que atua como um **proxy de rede
 * **Balanceamento de Carga:** O [kube-proxy](https://kubernetes.io/docs/reference/command-line-tools-reference/kube-proxy/) também gerencia o **balanceamento de carga** para os serviços, distribuindo o tráfego de forma equilibrada entre os Pods disponíveis.
 * **Regras de Rede:** O kube-proxy mantém **regras de rede** nos nós, cuidando da configuração e gerenciamento de conexões para os serviços e Pods.
 
-> Essencialmente, o **kube-proxy** facilita a conectividade e o balanceamento de tráfego dentro do cluster, viabilizando o conceito de **Serviços** no Kubernetes.
-
 ***
 
 ## <mark style="color:red;">kubectl</mark>&#x20;
@@ -58,7 +56,7 @@ O **kube-proxy** é um componente do Kubernetes que atua como um **proxy de rede
 
 Ferramenta de linha de comando do Kubernetes, permite executar comandos em clusters do Kubernetes, podendo ser usado para **implantar aplicativos, inspecionar e gerenciar recursos de cluster e visualização de logs**.
 
-* É uma sigla para `Kubernetes Control`, muitas das vezes podemos ouvir seu nome pronunciado como `"Kube C T L"`, `"Kube Control"` e `"Kube Cuttle/Cuddle"`, esse ultimo surgiu como um apelido, devido ao seu "Mascote" ser o Cuttle fish (Em português Choco, sibas ou sépia) que é uma espécie de molusco parecido com o polvo
+* É uma sigla para `Kubernetes Control`, muitas das vezes podemos ouvir seu nome pronunciado como `"Kube C T L"`, `"Kube Control"` e `"Kube Cuttle/Cuddle"`, esse ultimo surgiu como um apelido, devido ao seu "Mascote" ser o Cuttle fish (Em português Choco, sibas ou sépia) que é uma espécie de molusco parecido com o polvo.
 
 Os comandos do `kubectl` seguem a seguinte semântica:
 

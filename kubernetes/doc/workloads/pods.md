@@ -22,18 +22,16 @@ description: >-
 **Observação:** você precisa instalar um [ambiente de execução de contêiner](https://kubernetes.io/docs/setup/production-environment/container-runtimes/) em cada nó do cluster para que os pods possam ser executados nele.
 {% endhint %}
 
-Pods são as menores unidades de computação implantáveis ​​que você pode criar e gerenciar no Kubernetes.
-
 <figure><img src="../.gitbook/assets/image (165).png" alt=""><figcaption></figcaption></figure>
 
-Um **Pod Kubernetes** é um grupo de um ou mais [containers](https://kubernetes.io/docs/concepts/containers/), **(como Docker)** que inclui armazenamento compartilhado (`volumes`), endereços IP e informações sobre como executa-lo, sendo a menor unidade de uma aplicação Kubernetes.&#x20;
+Um **Pod Kubernetes** é um grupo de um ou mais [containers](https://kubernetes.io/docs/concepts/containers/), **(como Docker)** que inclui armazenamento compartilhado (`volumes`), endereços IP e informações sobre como executa-lo
 
 > Os pods são compostos por um container nos casos de uso mais comuns ou por vários containers fortemente acoplados em cenários mais avançados.
 
 <figure><img src="../.gitbook/assets/image (181).png" alt=""><figcaption></figcaption></figure>
 
 * Os containers são agrupados nesses pods para que os recursos possam ser compartilhados entre eles, então eles recebem endereços IP's únicos e compartilham o mesmo Namespaces.&#x20;
-* Pods também além do compartilhamento de redes, elas podem conter recursos de armazenamento entre os containers, **mas não podem compartilhar a mesma porta de acesso** dentro de um mesmo pod.
+* Pods além do compartilhamento de rede, também compartilhar recursos de armazenamento entre os containers, **mas não podem compartilhar a mesma porta de acesso** dentro de um mesmo pod.
 
 <figure><img src="../.gitbook/assets/image (166).png" alt=""><figcaption></figcaption></figure>
 
